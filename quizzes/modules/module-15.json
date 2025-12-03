@@ -1,0 +1,157 @@
+{
+  "id": "module-15",
+  "type": "module",
+  "title": "Module 15: Firewall Technologies",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m15-q1",
+      "question": "Which statement is a characteristic of a packet filtering firewall?",
+      "type": "single",
+      "options": [
+        { "text": "They examine each packet in the context of the state of a connection.", "isCorrect": false },
+        { "text": "They filter fragmented packets.", "isCorrect": false },
+        { "text": "They are susceptible to IP spoofing.", "isCorrect": true },
+        { "text": "They have a high impact on network performance.", "isCorrect": false }
+      ],
+      "explanation": "Packet filtering firewalls have a low impact on network performance. They are stateless, examining each packet individually and they do not filter fragmented packets well."
+    },
+    {
+      "id": "m15-q2",
+      "question": "What is one benefit of using a next-generation firewall rather than a stateful firewall?",
+      "type": "single",
+      "options": [
+        { "text": "support of logging", "isCorrect": false },
+        { "text": "integrated use of an intrusion prevention system (IPS)", "isCorrect": true },
+        { "text": "support of TCP-based packet filtering", "isCorrect": false },
+        { "text": "reactive protection against Internet threats", "isCorrect": false }
+      ],
+      "explanation": "Next-generation firewalls provide integrated IPS, granularity control within applications, and proactive protection from Internet threats."
+    },
+    {
+      "id": "m15-q3",
+      "question": "What are two characteristics of an application gateway firewall? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Analyzes traffic at Layers 3, 4, 5 and 7 of the OSI model.", "isCorrect": true },
+        { "text": "Uses a simple policy table look-up to filter traffic based on Layer 3 and Layer 4 information.", "isCorrect": false },
+        { "text": "Uses connection information maintained in a state table and analyzes traffic at OSI Layers 3, 4, and 5.", "isCorrect": false },
+        { "text": "Performs most filtering and firewall control in software.", "isCorrect": true },
+        { "text": "Provides an integrated intrusion prevention and detection feature.", "isCorrect": false }
+      ],
+      "explanation": "An application gateway firewall is able to filter information at Layers 3, 4, 5, and 7 of the OSI reference model. When using this type of firewall, most firewall control and filtering is done in software."
+    },
+    {
+      "id": "m15-q4",
+      "question": "What are two benefits of implementing a firewall in a network? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "A firewall will inspect network traffic and forward traffic based solely on the Layer 2 Ethernet MAC address.", "isCorrect": false },
+        { "text": "A firewall will prevent unauthorized traffic from being tunneled or hidden as legitimate traffic through an enterprise network.", "isCorrect": false },
+        { "text": "A firewall will sanitize protocol flow.", "isCorrect": true },
+        { "text": "A firewall will reduce security management complexity.", "isCorrect": true },
+        { "text": "A firewall will provide accessibility of applications and sensitive resources to external untrusted users.", "isCorrect": false }
+      ],
+      "explanation": "Firewalls sanitize protocol flow (preventing exploitation of protocol flaws) and reduce security management complexity by off-loading access control to a few devices."
+    },
+    {
+      "id": "m15-q5",
+      "question": "Which type of firewall is commonly part of a router firewall and allows or blocks traffic based on Layer 3 or 4 information?",
+      "type": "single",
+      "options": [
+        { "text": "proxy firewall", "isCorrect": false },
+        { "text": "next generation firewall", "isCorrect": false },
+        { "text": "packet filtering firewall", "isCorrect": true },
+        { "text": "stateful firewall", "isCorrect": false }
+      ],
+      "explanation": "A packet filtering firewall uses a simple policy table look-up that filters traffic based on specific criteria. These firewalls are usually part of a router firewall."
+    },
+    {
+      "id": "m15-q6",
+      "question": "Which three layers of the OSI model include information that is commonly inspected by a stateful firewall? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Layer 2", "isCorrect": false },
+        { "text": "Layer 5", "isCorrect": true },
+        { "text": "Layer 7", "isCorrect": false },
+        { "text": "Layer 3", "isCorrect": true },
+        { "text": "Layer 4", "isCorrect": true },
+        { "text": "Layer 1", "isCorrect": false }
+      ],
+      "explanation": "A stateful firewall provides filtering at the network layer (Layer 3), but also analyzes traffic at OSI Layer 4 (Transport) and Layer 5 (Session)."
+    },
+    {
+      "id": "m15-q7",
+      "question": "Which type of firewall is supported by most routers and is the easiest to implement?",
+      "type": "single",
+      "options": [
+        { "text": "stateful firewall", "isCorrect": false },
+        { "text": "next generation firewall", "isCorrect": false },
+        { "text": "application gateway firewall", "isCorrect": false },
+        { "text": "packet filtering firewall", "isCorrect": true }
+      ],
+      "explanation": "A packet filtering firewall uses a simple policy table look-up that filters traffic based on specific criteria and is considered the easiest firewall to implement."
+    },
+    {
+      "id": "m15-q8",
+      "question": "Which type of firewall generally has a low impact on network performance?",
+      "type": "single",
+      "options": [
+        { "text": "application gateway firewall", "isCorrect": false },
+        { "text": "next generation firewall", "isCorrect": false },
+        { "text": "stateless firewall", "isCorrect": true },
+        { "text": "stateful firewall", "isCorrect": false }
+      ],
+      "explanation": "A stateless firewall uses a simple policy table look-up that filters traffic based on specific criteria and causes minimal impact on network performance."
+    },
+    {
+      "id": "m15-q9",
+      "question": "Which two protocols are stateless and do not generate connection information needed to build a state table? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "ICMP", "isCorrect": true },
+        { "text": "HTTP", "isCorrect": false },
+        { "text": "UDP", "isCorrect": true },
+        { "text": "FTP", "isCorrect": false },
+        { "text": "TCP", "isCorrect": false }
+      ],
+      "explanation": "Connectionless protocols, such as ICMP and UDP, are not stateful and do not generate connection information for a state table."
+    },
+    {
+      "id": "m15-q10",
+      "question": "Which type of traffic is usually blocked when implementing a demilitarized zone?",
+      "type": "single",
+      "options": [
+        { "text": "traffic originating from the private network and traveling to the DMZ network", "isCorrect": false },
+        { "text": "traffic that is returning from the public network and traveling to the DMZ network", "isCorrect": false },
+        { "text": "traffic that is returning from the DMZ network and traveling to the private network", "isCorrect": false },
+        { "text": "traffic originating from the DMZ network and traveling to the private network", "isCorrect": true }
+      ],
+      "explanation": "A firewall will usually block traffic that is originating from the DMZ network and traveling to the private network."
+    },
+    {
+      "id": "m15-q11",
+      "question": "How does a firewall handle traffic that is originating from the DMZ network and traveling to a private network?",
+      "type": "single",
+      "options": [
+        { "text": "Traffic is allowed when it is originating from the private network, but the response traffic from the DMZ network will be blocked.", "isCorrect": false },
+        { "text": "Traffic is usually allowed when it is originating from the DMZ network and traveling to a private network.", "isCorrect": false },
+        { "text": "Traffic is usually blocked when it is originating from the DMZ network and traveling to a private network.", "isCorrect": true },
+        { "text": "Traffic is usually not filtered using firewall rules when it is originating from the DMZ network and traveling to a private network.", "isCorrect": false }
+      ],
+      "explanation": "A firewall will usually block traffic that is originating from the DMZ network and traveling to the private network to protect the internal network."
+    },
+    {
+      "id": "m15-q12",
+      "question": "When implementing a ZPF, which statement describes a zone?",
+      "type": "single",
+      "options": [
+        { "text": "A zone is a group of administrative devices that protect against rogue access point installations.", "isCorrect": false },
+        { "text": "A zone is a group of one or more interfaces that have similar functions or features.", "isCorrect": true },
+        { "text": "A zone is a group of hardened computers known as bastion hosts.", "isCorrect": false },
+        { "text": "A zone is a group of one or more devices that provide backup and disaster recovery mechanisms.", "isCorrect": false }
+      ],
+      "explanation": "When implementing a zone-based policy firewall (ZPF), a zone is a group of one or more interfaces that have similar functions or features."
+    }
+  ]
+}

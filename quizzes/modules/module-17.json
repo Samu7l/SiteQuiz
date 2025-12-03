@@ -1,0 +1,142 @@
+{
+  "id": "module-17",
+  "type": "module",
+  "title": "Module 17: Cloud Security",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m17-q1",
+      "question": "What are the two classes of encryption algorithms? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "advanced", "isCorrect": false },
+        { "text": "symmetric", "isCorrect": true },
+        { "text": "open", "isCorrect": false },
+        { "text": "asymmetric", "isCorrect": true },
+        { "text": "classic", "isCorrect": false }
+      ],
+      "explanation": "Encryption algorithms belong to one of two classes: symmetric (same key for sender/receiver) and asymmetric (two keys: public/private)."
+    },
+    {
+      "id": "m17-q2",
+      "question": "What term is used to describe the phenomenon of more VMs than can be managed effectively?",
+      "type": "single",
+      "options": [
+        { "text": "VM Sprawl", "isCorrect": true },
+        { "text": "VM Escape", "isCorrect": false },
+        { "text": "VM Scaling", "isCorrect": false },
+        { "text": "VM Exhaustion", "isCorrect": false }
+      ],
+      "explanation": "VM Sprawl occurs when an organization has more VMs in the cloud than it can effectively control and manage."
+    },
+    {
+      "id": "m17-q3",
+      "question": "Which cloud security domain covers the challenges of delivering, measuring, and communicating compliances when organizations migrate from traditional data centers to the cloud?",
+      "type": "single",
+      "options": [
+        { "text": "Information Governance", "isCorrect": false },
+        { "text": "Management Plane and Business Continuity", "isCorrect": false },
+        { "text": "Compliance and Audit Management", "isCorrect": true },
+        { "text": "Infrastructure Security", "isCorrect": false }
+      ],
+      "explanation": "Compliance and Audit Management describes challenges of delivering, measuring, and communicating compliance when migrating to the cloud."
+    },
+    {
+      "id": "m17-q4",
+      "question": "A company is deploying a product ordering system on a public cloud. The company IT specialist is working on security measures to protect the cloud resources. What are two possible negative impacts that should be considered when deploying a virtual firewall and an IPS appliance? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "processor overloading", "isCorrect": true },
+        { "text": "compatibility with VM operating systems", "isCorrect": false },
+        { "text": "possible VM escape attacks", "isCorrect": false },
+        { "text": "routing issues associated with virtual security appliances", "isCorrect": false },
+        { "text": "traffic bottleneck", "isCorrect": true }
+      ],
+      "explanation": "Virtual security appliances may introduce bottlenecks when accessing resources or lead to processor overloading."
+    },
+    {
+      "id": "m17-q5",
+      "question": "What should be deployed to protect traffic confidentiality between a public cloud and a private cloud?",
+      "type": "single",
+      "options": [
+        { "text": "IPS", "isCorrect": false },
+        { "text": "VPN", "isCorrect": true },
+        { "text": "proxy device", "isCorrect": false },
+        { "text": "firewall", "isCorrect": false }
+      ],
+      "explanation": "A site-to-site VPN connection should be used to protect the traffic flow confidentiality between a public cloud and a private cloud."
+    },
+    {
+      "id": "m17-q6",
+      "question": "In which type of environment would a developer run software to verify that required security settings are met prior to production deployment?",
+      "type": "single",
+      "options": [
+        { "text": "sandbox environment", "isCorrect": false },
+        { "text": "production environment", "isCorrect": false },
+        { "text": "staging environment", "isCorrect": true },
+        { "text": "development environment", "isCorrect": false }
+      ],
+      "explanation": "The staging environment should closely match the production environment, allowing developers to verify that software runs under required security settings."
+    },
+    {
+      "id": "m17-q7",
+      "question": "Which state of data refers to data moving between the CPU and the hard drive of a server?",
+      "type": "single",
+      "options": [
+        { "text": "data at rest", "isCorrect": false },
+        { "text": "data in process", "isCorrect": false },
+        { "text": "data in storage", "isCorrect": false },
+        { "text": "data in transit", "isCorrect": true }
+      ],
+      "explanation": "Data in transit refers to any data that is being transmitted, including between devices or motherboard components."
+    },
+    {
+      "id": "m17-q8",
+      "question": "Which technology is used to verify the integrity of files to ensure they were not modified in transit?",
+      "type": "single",
+      "options": [
+        { "text": "normalization", "isCorrect": false },
+        { "text": "secure cookies", "isCorrect": false },
+        { "text": "asymmetric encryption", "isCorrect": false },
+        { "text": "checksum", "isCorrect": true }
+      ],
+      "explanation": "Verification of file integrity is accomplished by using a checksum. If the checksums match, no change has occurred."
+    },
+    {
+      "id": "m17-q9",
+      "question": "Which threat type describes the case when cloud computing resources are set up incorrectly?",
+      "type": "single",
+      "options": [
+        { "text": "data breaches", "isCorrect": false },
+        { "text": "cloud misconfiguration", "isCorrect": true },
+        { "text": "poor cloud security architecture strategy", "isCorrect": false },
+        { "text": "inside threat", "isCorrect": false }
+      ],
+      "explanation": "Cloud misconfiguration occurs when cloud computing resources are set up incorrectly, making them vulnerable to attacks."
+    },
+    {
+      "id": "m17-q10",
+      "question": "What term is used to refer to readable data in the context of the data encryption process?",
+      "type": "single",
+      "options": [
+        { "text": "opentext", "isCorrect": false },
+        { "text": "cleantext", "isCorrect": false },
+        { "text": "plaintext", "isCorrect": true },
+        { "text": "ciphertext", "isCorrect": false }
+      ],
+      "explanation": "Readable data is called plaintext, while the encrypted version is encrypted text or ciphertext."
+    },
+    {
+      "id": "m17-q11",
+      "question": "Which key component of virtualization allows for running multiple independent operating systems on one physical computing system?",
+      "type": "single",
+      "options": [
+        { "text": "hypervisor", "isCorrect": true },
+        { "text": "container", "isCorrect": false },
+        { "text": "VDI", "isCorrect": false },
+        { "text": "VM", "isCorrect": false }
+      ],
+      "explanation": "A hypervisor is a software or hardware program that builds a virtualization environment to support multiple independent virtual machines on one physical system."
+    }
+  ]
+}

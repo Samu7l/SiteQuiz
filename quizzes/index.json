@@ -59,6 +59,66 @@
       "title": "Module 10: Cybersecurity Principles, Practices and Processes",
       "file": "modules/module-10.json",
       "moduleNumber": 10
+    },
+    {
+      "id": "module-11",
+      "title": "Module 11: Understanding Defense",
+      "file": "modules/module-11.json",
+      "moduleNumber": 11
+    },
+    {
+      "id": "module-12",
+      "title": "Module 12: System and Network Defense",
+      "file": "modules/module-12.json",
+      "moduleNumber": 12
+    },
+    {
+      "id": "module-13",
+      "title": "Module 13: Access Control",
+      "file": "modules/module-13.json",
+      "moduleNumber": 13
+    },
+    {
+      "id": "module-14",
+      "title": "Module 14: Access Control Lists",
+      "file": "modules/module-14.json",
+      "moduleNumber": 14
+    },
+    {
+      "id": "module-15",
+      "title": "Module 15: Firewall Technologies",
+      "file": "modules/module-15.json",
+      "moduleNumber": 15
+    },
+    {
+      "id": "module-16",
+      "title": "Module 16: Zone Based Policy Firewalls",
+      "file": "modules/module-16.json",
+      "moduleNumber": 16
+    },
+    {
+      "id": "module-17",
+      "title": "Module 17: Cloud Security",
+      "file": "modules/module-17.json",
+      "moduleNumber": 17
+    },
+    {
+      "id": "module-18",
+      "title": "Module 18: Cryptography",
+      "file": "modules/module-18.json",
+      "moduleNumber": 18
+    },
+    {
+      "id": "module-19",
+      "title": "Module 19: Technologies and Protocols",
+      "file": "modules/module-19.json",
+      "moduleNumber": 19
+    },
+    {
+      "id": "module-20",
+      "title": "Module 20: Network Security Data",
+      "file": "modules/module-20.json",
+      "moduleNumber": 20
     }
   ],
   "checkpoints": [

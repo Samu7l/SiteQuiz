@@ -1,0 +1,154 @@
+{
+  "id": "module-12",
+  "type": "module",
+  "title": "Module 12: System and Network Defense",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m12-q1",
+      "question": "A user has created a new program and wants to distribute it to everyone in the company. The user wants to ensure that when the program is downloaded that the program is not changed while in transit. What can the user do to ensure that the program is not changed when downloaded?",
+      "type": "single",
+      "options": [
+        { "text": "Create a hash of the program file that can be used to verify the integrity of the file after it is downloaded.", "isCorrect": true },
+        { "text": "Install the program on individual computers.", "isCorrect": false },
+        { "text": "Encrypt the program and require a password after it is downloaded.", "isCorrect": false },
+        { "text": "Distribute the program on a thumb drive.", "isCorrect": false },
+        { "text": "Turn off antivirus on all the computers.", "isCorrect": false }
+      ],
+      "explanation": "Hashing is a method to ensure integrity and ensures that the data is not changed."
+    },
+    {
+      "id": "m12-q2",
+      "question": "A user is running a routine audit of the server hardware in the company data center. Several servers are using single drives to host operating systems and multiple types of attached storage solutions for storing data. The user wants to offer a better solution to provide fault tolerance during a drive failure. Which solution is best?",
+      "type": "single",
+      "options": [
+        { "text": "tape backup", "isCorrect": false },
+        { "text": "RAID", "isCorrect": true },
+        { "text": "UPS", "isCorrect": false },
+        { "text": "offsite backup", "isCorrect": false }
+      ],
+      "explanation": "Fault tolerance is addressing a single point of failure, in this case the hard drives. RAID provides this redundancy."
+    },
+    {
+      "id": "m12-q3",
+      "question": "A user was hired by a company to provide a highly available network infrastructure. The user wants to build redundancy into the network in case of a switch failure, but wants to prevent Layer 2 looping. What would the user implement in the network?",
+      "type": "single",
+      "options": [
+        { "text": "HSRP", "isCorrect": false },
+        { "text": "VRRP", "isCorrect": false },
+        { "text": "Spanning Tree Protocol", "isCorrect": true },
+        { "text": "GLBP", "isCorrect": false }
+      ],
+      "explanation": "Loops and duplicate frames cause poor performance in a switched network. The Spanning Tree Protocol (STP) provides a loop-free path through the switch network."
+    },
+    {
+      "id": "m12-q4",
+      "question": "Why is WPA2 better than WPA?",
+      "type": "single",
+      "options": [
+        { "text": "reduced processing time", "isCorrect": false },
+        { "text": "supports TKIP", "isCorrect": false },
+        { "text": "mandatory use of AES algorithms", "isCorrect": true },
+        { "text": "reduced keyspace", "isCorrect": false }
+      ],
+      "explanation": "Each evolution of wireless security increased security measures. WPA2 mandates the use of AES algorithms, which are stronger than the methods used in WPA."
+    },
+    {
+      "id": "m12-q5",
+      "question": "An administrator of a small data center wants a flexible, secure method of remotely connecting to servers. Which protocol would be best to use?",
+      "type": "single",
+      "options": [
+        { "text": "Telnet", "isCorrect": false },
+        { "text": "Remote Desktop", "isCorrect": false },
+        { "text": "Secure Copy", "isCorrect": false },
+        { "text": "Secure Shell", "isCorrect": true }
+      ],
+      "explanation": "Because hackers sniffing traffic can read clear text passwords, any connection needs to be encrypted. SSH (Secure Shell) provides encrypted remote connections."
+    },
+    {
+      "id": "m12-q6",
+      "question": "Which service will resolve a specific web address into an IP address of the destination web server?",
+      "type": "single",
+      "options": [
+        { "text": "DHCP", "isCorrect": false },
+        { "text": "NTP", "isCorrect": false },
+        { "text": "ICMP", "isCorrect": false },
+        { "text": "DNS", "isCorrect": true }
+      ],
+      "explanation": "DNS resolves a website address to the actual IP address of that destination."
+    },
+    {
+      "id": "m12-q7",
+      "question": "A company wants to implement biometric access to its data center. The company is concerned with people being able to circumvent the system by being falsely accepted as legitimate users. What type of error is false acceptance?",
+      "type": "single",
+      "options": [
+        { "text": "Type I", "isCorrect": false },
+        { "text": "Type II", "isCorrect": true },
+        { "text": "false rejection", "isCorrect": false },
+        { "text": "CER", "isCorrect": false }
+      ],
+      "explanation": "There are two types of errors that biometrics can have: false acceptance and false rejection. False acceptance is a Type II error."
+    },
+    {
+      "id": "m12-q8",
+      "question": "Mutual authentication can prevent which type of attack?",
+      "type": "single",
+      "options": [
+        { "text": "man-in-the-middle", "isCorrect": true },
+        { "text": "wireless sniffing", "isCorrect": false },
+        { "text": "wireless IP spoofing", "isCorrect": false },
+        { "text": "wireless poisoning", "isCorrect": false }
+      ],
+      "explanation": "Mutual authentication ensures both parties are verified, preventing an intermediary from intercepting communications (man-in-the-middle)."
+    },
+    {
+      "id": "m12-q9",
+      "question": "Which utility uses the Internet Control Messaging Protocol (ICMP)?",
+      "type": "single",
+      "options": [
+        { "text": "RIP", "isCorrect": false },
+        { "text": "DNS", "isCorrect": false },
+        { "text": "ping", "isCorrect": true },
+        { "text": "NTP", "isCorrect": false }
+      ],
+      "explanation": "ICMP is used by network devices to send error messages. Ping is a utility that uses ICMP."
+    },
+    {
+      "id": "m12-q10",
+      "question": "Which technology can be used to protect VoIP against eavesdropping?",
+      "type": "single",
+      "options": [
+        { "text": "SSH", "isCorrect": false },
+        { "text": "ARP", "isCorrect": false },
+        { "text": "strong authentication", "isCorrect": false },
+        { "text": "encrypted voice messages", "isCorrect": true }
+      ],
+      "explanation": "Many advanced technologies such as VoIP require advanced countermeasures like encrypted voice messages to prevent eavesdropping."
+    },
+    {
+      "id": "m12-q11",
+      "question": "What is the purpose of a DMZ?",
+      "type": "single",
+      "options": [
+        { "text": "It analyzes traffic for intrusion attempts and sends reports to management stations.", "isCorrect": false },
+        { "text": "It creates an encrypted and authenticated tunnel for remote hosts to access the internal network.", "isCorrect": false },
+        { "text": "It provides secure connectivity for clients that connect to the internal network through a wireless LAN.", "isCorrect": false },
+        { "text": "It allows external hosts to access specific company servers while maintaining the security restrictions for the internal network.", "isCorrect": true }
+      ],
+      "explanation": "The DMZ is an area of the network that is accessible to both internal and external users. It is more secure than the external network but not as secure as the internal network."
+    },
+    {
+      "id": "m12-q12",
+      "question": "What two steps should be taken before connecting any IoT device to a home or business network? (Choose 2.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Update the device firmware with all relevant security patches.", "isCorrect": true },
+        { "text": "Change all default administrator credentials.", "isCorrect": true },
+        { "text": "Ensure all IoT devices are isolated to a single broadcast domain.", "isCorrect": false },
+        { "text": "Reset all IoT device settings to their defaults before connecting to a live network.", "isCorrect": false },
+        { "text": "Record the administrative credentials on the login plate in case you forget them.", "isCorrect": false }
+      ],
+      "explanation": "IoT devices should be evaluated to ensure that they are able to update their firmware with security patches. In addition, default administrator credentials should always be changed."
+    }
+  ]
+}

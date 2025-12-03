@@ -1,0 +1,156 @@
+{
+  "id": "module-16",
+  "type": "module",
+  "title": "Module 16: Zone Based Policy Firewalls",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m16-q1",
+      "question": "Which statement describes a feature of a zone-based policy firewall?",
+      "type": "single",
+      "options": [
+        { "text": "The router security posture is to allow traffic unless explicitly blocked.", "isCorrect": false },
+        { "text": "It does not depend on ACLs.", "isCorrect": true },
+        { "text": "It uses a flat, non-hierarchical data structure making it easier to configure and troubleshoot.", "isCorrect": false },
+        { "text": "All traffic through a given interface is subject to the same inspection.", "isCorrect": false }
+      ],
+      "explanation": "A zone-based policy firewall (ZPF) does not require the use of complex ACLs. By default, traffic traveling between zones is blocked unless specifically permitted."
+    },
+    {
+      "id": "m16-q2",
+      "question": "Which statement describes a zone when implementing ZPF on a Cisco router?",
+      "type": "single",
+      "options": [
+        { "text": "A zone is used to implement traffic filtering for either TCP or UDP.", "isCorrect": false },
+        { "text": "A zone establishes a security border of a network.", "isCorrect": true },
+        { "text": "A zone is used to define security policies for a unique interface on the router.", "isCorrect": false },
+        { "text": "Only one zone can be attached to a single interface.", "isCorrect": false }
+      ],
+      "explanation": "Zones establish the security borders of a network. A zone defines a boundary where traffic is subjected to policy restrictions as it crosses to another region of the network."
+    },
+    {
+      "id": "m16-q3",
+      "question": "Designing a ZPF requires several steps. Which step involves defining boundaries where traffic is subjected to policy restrictions as it crosses to another region of the network?",
+      "type": "single",
+      "options": [
+        { "text": "establish policies between zones", "isCorrect": false },
+        { "text": "design the physical infrastructure", "isCorrect": false },
+        { "text": "determine the zones", "isCorrect": true },
+        { "text": "identify subsets within zones and merge traffic requirements", "isCorrect": false }
+      ],
+      "explanation": "The first step in designing a ZPF is determining the zones, which involves separating the network into zones that establish security borders."
+    },
+    {
+      "id": "m16-q4",
+      "question": "Which statement describes one of the rules that govern interface behavior in the context of implementing a zone-based policy firewall configuration?",
+      "type": "single",
+      "options": [
+        { "text": "An administrator can assign an interface to multiple security zones.", "isCorrect": false },
+        { "text": "By default, traffic is allowed to flow among interfaces that are members of the same zone.", "isCorrect": true },
+        { "text": "By default, traffic is allowed to flow between a zone member interface and any interface that is not a zone member.", "isCorrect": false },
+        { "text": "An administrator can assign interfaces to zones, regardless of whether the zone has been configured.", "isCorrect": false }
+      ],
+      "explanation": "Interfaces that belong to the same zone allow traffic flow between them by default. An interface can belong to only one zone."
+    },
+    {
+      "id": "m16-q5",
+      "question": "Which three statements describe zone-based policy firewall rules that govern interface behavior and the traffic moving between zone member interfaces? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Traffic is implicitly prevented from flowing by default among interfaces that are members of the same zone.", "isCorrect": false },
+        { "text": "Pass, inspect, and drop options can only be applied between two zones.", "isCorrect": true },
+        { "text": "Interfaces can be assigned to a zone before the zone is created.", "isCorrect": false },
+        { "text": "If traffic is to flow between all interfaces in a router, each interface must be a member of a zone.", "isCorrect": true },
+        { "text": "An interface can be assigned to multiple security zones.", "isCorrect": false },
+        { "text": "To permit traffic to and from a zone member interface, a policy allowing or inspecting traffic must be configured between that zone and any other zone.", "isCorrect": true }
+      ],
+      "explanation": "If traffic is to flow between all interfaces, each must be in a zone. Policies (pass, inspect, drop) are applied between zones. Traffic flow requires a policy between different zones."
+    },
+    {
+      "id": "m16-q6",
+      "question": "In ZPF design, what is described as the self zone?",
+      "type": "single",
+      "options": [
+        { "text": "the router itself, including all interfaces with assigned IP addresses", "isCorrect": true },
+        { "text": "a predefined cluster of servers with configured interfaces", "isCorrect": false },
+        { "text": "a predefined cluster of routers with configured interfaces", "isCorrect": false },
+        { "text": "the outward facing interface on the edge router", "isCorrect": false }
+      ],
+      "explanation": "The self zone is the router itself and includes all the IP addresses assigned to the router interfaces."
+    },
+    {
+      "id": "m16-q7",
+      "question": "How does ZPF handle traffic between an interface that is a zone member and another interface that does not belong to any zone?",
+      "type": "single",
+      "options": [
+        { "text": "drop", "isCorrect": true },
+        { "text": "inspect", "isCorrect": false },
+        { "text": "pass", "isCorrect": false },
+        { "text": "allow", "isCorrect": false }
+      ],
+      "explanation": "If one interface is a zone member and the other is not, the resulting action is to drop the traffic regardless of whether a zone-pair exists."
+    },
+    {
+      "id": "m16-q8",
+      "question": "Which statement describes a factor to be considered when configuring a zone-based policy firewall?",
+      "type": "single",
+      "options": [
+        { "text": "An interface can belong to multiple zones.", "isCorrect": false },
+        { "text": "A zone must be configured with the zone security global command before it can be used in the zone-member security command.", "isCorrect": true },
+        { "text": "The router always filters the traffic between interfaces in the same zone.", "isCorrect": false },
+        { "text": "The classic firewall ip inspect command can coexist with ZPF as long as it is used on interfaces that are in the same security zones.", "isCorrect": false }
+      ],
+      "explanation": "A zone must be created (using the zone security global command) before it can be assigned to an interface."
+    },
+    {
+      "id": "m16-q9",
+      "question": "Which statement accurately describes Cisco IOS zone-based policy firewall operation?",
+      "type": "single",
+      "options": [
+        { "text": "A router interface can belong to multiple zones.", "isCorrect": false },
+        { "text": "Router management interfaces must be manually assigned to the self zone.", "isCorrect": false },
+        { "text": "The pass action works in only one direction.", "isCorrect": true },
+        { "text": "Service policies are applied in interface configuration mode.", "isCorrect": false }
+      ],
+      "explanation": "The pass action allows traffic only in one direction."
+    },
+    {
+      "id": "m16-q10",
+      "question": "When a Cisco IOS zone-based policy firewall is being configured, which two actions can be applied to a traffic class? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "forward", "isCorrect": false },
+        { "text": "drop", "isCorrect": true },
+        { "text": "hold", "isCorrect": false },
+        { "text": "copy", "isCorrect": false },
+        { "text": "inspect", "isCorrect": true },
+        { "text": "log", "isCorrect": false }
+      ],
+      "explanation": "The three actions that can be applied to a traffic class in ZPF are inspect, drop, and pass."
+    },
+    {
+      "id": "m16-q11",
+      "question": "In what step of zone-based policy firewall configuration is traffic identified for policy application?",
+      "type": "single",
+      "options": [
+        { "text": "configuring class maps", "isCorrect": true },
+        { "text": "creating policy maps", "isCorrect": false },
+        { "text": "defining zones", "isCorrect": false },
+        { "text": "assigning policy maps to zones", "isCorrect": false }
+      ],
+      "explanation": "Traffic is identified for policy application during the configuration of class maps."
+    },
+    {
+      "id": "m16-q12",
+      "question": "When configuring a class map for a zone-based policy firewall, how is the match criteria applied when using the match-all parameter?",
+      "type": "single",
+      "options": [
+        { "text": "Traffic must match all of the criteria solely defined by ACLs.", "isCorrect": false },
+        { "text": "Traffic must match at least one of the match criteria statements.", "isCorrect": false },
+        { "text": "Traffic must match all of the match criteria specified in the statement.", "isCorrect": true },
+        { "text": "Traffic must match the first criteria in the statement.", "isCorrect": false }
+      ],
+      "explanation": "The match-all parameter dictates that packets must meet all the match criteria specified to be considered a member of the class."
+    }
+  ]
+}

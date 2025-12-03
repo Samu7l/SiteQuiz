@@ -1,0 +1,180 @@
+{
+  "id": "module-19",
+  "type": "module",
+  "title": "Module 19: Technologies and Protocols",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m19-q1",
+      "question": "How do cybercriminals make use of a malicious iFrame?",
+      "type": "single",
+      "options": [
+        { "text": "The attacker redirects traffic to an incorrect DNS server.", "isCorrect": false },
+        { "text": "The iFrame allows multiple DNS subdomains to be used.", "isCorrect": false },
+        { "text": "The attacker embeds malicious content in business appropriate files.", "isCorrect": false },
+        { "text": "The iFrame allows the browser to load a web page from another source.", "isCorrect": true }
+      ],
+      "explanation": "An inline frame or iFrame is an HTML element that allows the browser to load a different web page from another source."
+    },
+    {
+      "id": "m19-q2",
+      "question": "In which way does the use of HTTPS increase the security monitoring challenges within enterprise networks?",
+      "type": "single",
+      "options": [
+        { "text": "HTTPS traffic does not require authentication.", "isCorrect": false },
+        { "text": "HTTPS traffic is much faster than HTTP traffic.", "isCorrect": false },
+        { "text": "HTTPS traffic can carry a much larger data payload than HTTP can carry.", "isCorrect": false },
+        { "text": "HTTPS traffic enables end-to-end encryption.", "isCorrect": true }
+      ],
+      "explanation": "HTTPS enables end-to-end encrypted network communication, which adds further challenges for network administrators to monitor the content of packets to catch malicious attacks."
+    },
+    {
+      "id": "m19-q3",
+      "question": "Which network service synchronizes the time across all devices on the network?",
+      "type": "single",
+      "options": [
+        { "text": "NetFlow", "isCorrect": false },
+        { "text": "SNMP", "isCorrect": false },
+        { "text": "syslog", "isCorrect": false },
+        { "text": "NTP", "isCorrect": true }
+      ],
+      "explanation": "The NTP keeps the time across all devices synchronized by using a hierarchical system of sources."
+    },
+    {
+      "id": "m19-q4",
+      "question": "Which type of server daemon accepts messages sent by network devices to create a collection of log entries?",
+      "type": "single",
+      "options": [
+        { "text": "syslog", "isCorrect": true },
+        { "text": "AAA", "isCorrect": false },
+        { "text": "SSH", "isCorrect": false },
+        { "text": "NTP", "isCorrect": false }
+      ],
+      "explanation": "Syslog creates a collection of log entries by accepting messages from network devices."
+    },
+    {
+      "id": "m19-q5",
+      "question": "What port number would be used if a threat actor was using NTP to direct DDoS attacks?",
+      "type": "single",
+      "options": [
+        { "text": "69", "isCorrect": false },
+        { "text": "123", "isCorrect": true },
+        { "text": "443", "isCorrect": false },
+        { "text": "25", "isCorrect": false }
+      ],
+      "explanation": "NTP uses UDP port number 123. Threat actors could use port 123 on NTP systems in order to direct DDoS attacks through vulnerabilities in client or server software."
+    },
+    {
+      "id": "m19-q6",
+      "question": "Which protocol is used to send e-mail messages between two servers that are in different e-mail domains?",
+      "type": "single",
+      "options": [
+        { "text": "SMTP", "isCorrect": true },
+        { "text": "IMAP4", "isCorrect": false },
+        { "text": "POP3", "isCorrect": false },
+        { "text": "HTTP", "isCorrect": false }
+      ],
+      "explanation": "SMTP is used to send data between mail servers and to send data from a host to a mail server."
+    },
+    {
+      "id": "m19-q7",
+      "question": "What type of server can threat actors use DNS to communicate with?",
+      "type": "single",
+      "options": [
+        { "text": "CnC", "isCorrect": true },
+        { "text": "NTP", "isCorrect": false },
+        { "text": "database", "isCorrect": false },
+        { "text": "web", "isCorrect": false }
+      ],
+      "explanation": "Some malware uses DNS to communicate with command-and-control (CnC) servers to exfiltrate data in traffic that is disguised as normal DNS query traffic."
+    },
+    {
+      "id": "m19-q8",
+      "question": "Which type of server would support the SMTP, POP, and IMAP protocols?",
+      "type": "single",
+      "options": [
+        { "text": "syslog", "isCorrect": false },
+        { "text": "email", "isCorrect": true },
+        { "text": "DHCP", "isCorrect": false },
+        { "text": "proxy", "isCorrect": false }
+      ],
+      "explanation": "The Simple Mail Transfer Protocol (SMTP) is used to send email. The Post Office Protocol (POP) and Internet Message Access Protocol (IMAP) are used to retrieve email."
+    },
+    {
+      "id": "m19-q9",
+      "question": "What method allows VPN traffic to remain confidential?",
+      "type": "single",
+      "options": [
+        { "text": "verification", "isCorrect": false },
+        { "text": "authentication", "isCorrect": false },
+        { "text": "encapsulation", "isCorrect": false },
+        { "text": "encryption", "isCorrect": true }
+      ],
+      "explanation": "Plain text data that is transported over the Internet can be intercepted and read. The data should be encrypted to keep it private."
+    },
+    {
+      "id": "m19-q10",
+      "question": "To facilitate the troubleshooting process, which inbound ICMP message should be permitted on an outside interface?",
+      "type": "single",
+      "options": [
+        { "text": "echo reply", "isCorrect": true },
+        { "text": "time-stamp reply", "isCorrect": false },
+        { "text": "time-stamp request", "isCorrect": false },
+        { "text": "echo request", "isCorrect": false },
+        { "text": "router advertisement", "isCorrect": false }
+      ],
+      "explanation": "By allowing the ICMP echo reply message inbound to the organization, internal users are allowed to ping external addresses (and the reply message allowed to return)."
+    },
+    {
+      "id": "m19-q11",
+      "question": "Which statement describes the function provided by the Tor network?",
+      "type": "single",
+      "options": [
+        { "text": "It manipulates packets by mapping IP addresses between two networks.", "isCorrect": false },
+        { "text": "It conceals packet contents by establishing end-to-end tunnels.", "isCorrect": false },
+        { "text": "It distributes user packets through load balancing.", "isCorrect": false },
+        { "text": "It allows users to browse the Internet anonymously.", "isCorrect": true }
+      ],
+      "explanation": "The Tor network allows users to browse the Internet anonymously."
+    },
+    {
+      "id": "m19-q12",
+      "question": "How can NAT/PAT complicate network security monitoring if NetFlow is being used?",
+      "type": "single",
+      "options": [
+        { "text": "It hides internal IP addresses by allowing them to share one or a few outside IP addresses.", "isCorrect": true },
+        { "text": "It disguises the application initiated by a user by manipulating port numbers.", "isCorrect": false },
+        { "text": "It changes the source and destination MAC addresses.", "isCorrect": false },
+        { "text": "It conceals the contents of a packet by encrypting the data payload.", "isCorrect": false }
+      ],
+      "explanation": "NAT/PAT maps multiple internal IP addresses with only a single or a few outside IP addresses breaking end-to-end flows. The result makes it difficult to log the inside device that is requesting and receiving the traffic."
+    },
+    {
+      "id": "m19-q13",
+      "question": "A cyberanalyst is reviewing an entry-point ACL. What three types of ICMP traffic should be allowed to access an internal network from the internet? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "ping", "isCorrect": false },
+        { "text": "reply", "isCorrect": true },
+        { "text": "request", "isCorrect": false },
+        { "text": "squelch", "isCorrect": true },
+        { "text": "destination unreachable", "isCorrect": true },
+        { "text": "time exceeded", "isCorrect": false }
+      ],
+      "explanation": "ACLs should only permit special types of ICMP messages to enter an internal network. Allowed ICMP traffic includes an ICMP reply, source quench (squelch), and any ICMP unreachable messages."
+    },
+    {
+      "id": "m19-q14",
+      "question": "A company decides to purchase a device capable of managing load balancing so that traffic will be distributed between their servers. What could be a potential problem using the new device on the network?",
+      "type": "single",
+      "options": [
+        { "text": "All links to redundant servers will require encrypted tunneling protocols.", "isCorrect": false },
+        { "text": "It will cause extra traffic going to a server resource that is not available.", "isCorrect": false },
+        { "text": "The LBM probe messages may appear as suspicious traffic.", "isCorrect": true },
+        { "text": "It will require the purchase of more servers so that existing servers are not overwhelmed.", "isCorrect": false },
+        { "text": "The traffic will require more bandwidth to send to multiple servers.", "isCorrect": false }
+      ],
+      "explanation": "LBM devices may send probes to different servers to detect that the servers are operating. These probes can appear to be suspicious traffic."
+    }
+  ]
+}

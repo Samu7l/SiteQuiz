@@ -1,0 +1,156 @@
+{
+  "id": "module-18",
+  "type": "module",
+  "title": "Module 18: Cryptography",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m18-q1",
+      "question": "What is the purpose of the DH algorithm?",
+      "type": "single",
+      "options": [
+        { "text": "to generate a shared secret between two hosts that have not communicated before", "isCorrect": true },
+        { "text": "to support email data confidentiality", "isCorrect": false },
+        { "text": "to provide nonrepudiation support", "isCorrect": false },
+        { "text": "to encrypt data traffic after a VPN is established", "isCorrect": false }
+      ],
+      "explanation": "DH is an asymmetric mathematical algorithm that allows two computers to generate an identical shared secret, without having communicated before."
+    },
+    {
+      "id": "m18-q2",
+      "question": "Which statement is a feature of HMAC?",
+      "type": "single",
+      "options": [
+        { "text": "HMAC is based on the RSA hash function.", "isCorrect": false },
+        { "text": "HMAC uses a secret key that is only known to the sender and defeats man-in-the-middle attacks.", "isCorrect": false },
+        { "text": "HMAC uses protocols such as SSL or TLS to provide session layer confidentiality.", "isCorrect": false },
+        { "text": "HMAC uses a secret key as input to the hash function, adding authentication to integrity assurance.", "isCorrect": true }
+      ],
+      "explanation": "HMACs use an additional secret key as input to the hash function, adding authentication to data integrity assurance."
+    },
+    {
+      "id": "m18-q3",
+      "question": "Which requirement of secure communications is ensured by the implementation of MD5 or SHA hash generating algorithms?",
+      "type": "single",
+      "options": [
+        { "text": "authentication", "isCorrect": false },
+        { "text": "integrity", "isCorrect": true },
+        { "text": "confidentiality", "isCorrect": false },
+        { "text": "nonrepudiation", "isCorrect": false }
+      ],
+      "explanation": "Integrity is ensured by implementing either MD5 or SHA hash generating algorithms. Authentication uses protocols like HMAC, and confidentiality uses encryption."
+    },
+    {
+      "id": "m18-q4",
+      "question": "Which two statements correctly describe certificate classes used in the PKI? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "The lower the class number, the more trusted the certificate.", "isCorrect": false },
+        { "text": "A class 0 certificate is for testing purposes.", "isCorrect": true },
+        { "text": "A class 4 certificate is for online business transactions between companies.", "isCorrect": true },
+        { "text": "A class 0 certificate is more trusted than a class 1 certificate.", "isCorrect": false },
+        { "text": "A class 5 certificate is for users with a focus on verification of email.", "isCorrect": false }
+      ],
+      "explanation": "A digital certificate class is identified by a number. The higher the number, the more trusted the certificate. Class 0 is for testing; Class 4 is for online business transactions."
+    },
+    {
+      "id": "m18-q5",
+      "question": "Which statement describes the use of certificate classes in the PKI?",
+      "type": "single",
+      "options": [
+        { "text": "Email security is provided by the vendor, not by a certificate.", "isCorrect": false },
+        { "text": "A class 5 certificate is more trustworthy than a class 4 certificate.", "isCorrect": true },
+        { "text": "The lower the class number, the more trusted the certificate.", "isCorrect": false },
+        { "text": "A vendor must issue only one class of certificates when acting as a CA.", "isCorrect": false }
+      ],
+      "explanation": "The higher the certificate number, the more trustworthy the certificate. Class 5 is for private organizations or governmental security, which is higher than Class 4."
+    },
+    {
+      "id": "m18-q6",
+      "question": "What technology allows users to verify the identity of a website and to trust code that is downloaded from the Internet?",
+      "type": "single",
+      "options": [
+        { "text": "hash algorithm", "isCorrect": false },
+        { "text": "asymmetric key algorithm", "isCorrect": false },
+        { "text": "digital signature", "isCorrect": true },
+        { "text": "encryption", "isCorrect": false }
+      ],
+      "explanation": "Digital signatures provide assurance of the authenticity and integrity of software codes and verify the identity of websites."
+    },
+    {
+      "id": "m18-q7",
+      "question": "What two assurances does digital signing provide about code that is downloaded from the Internet? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "The code was encrypted with both a private and public key.", "isCorrect": false },
+        { "text": "The code has not been modified since it left the software publisher.", "isCorrect": true },
+        { "text": "The code contains no viruses.", "isCorrect": false },
+        { "text": "The code is authentic and is actually sourced by the publisher.", "isCorrect": true },
+        { "text": "The code contains no errors.", "isCorrect": false }
+      ],
+      "explanation": "Digitally signing code assures that the code is authentic (sourced by the publisher) and has not been modified since it left the publisher."
+    },
+    {
+      "id": "m18-q8",
+      "question": "What term is used to describe the technology that replaces sensitive information with a nonsensitive version?",
+      "type": "single",
+      "options": [
+        { "text": "blanking", "isCorrect": false },
+        { "text": "hiding", "isCorrect": false },
+        { "text": "whiteout", "isCorrect": false },
+        { "text": "masking", "isCorrect": true },
+        { "text": "retracting", "isCorrect": false }
+      ],
+      "explanation": "Data masking replaces sensitive information with nonsensitive information that looks and acts like the original."
+    },
+    {
+      "id": "m18-q9",
+      "question": "What term is used to describe concealing data in another file such as a graphic, audio, or other text file?",
+      "type": "single",
+      "options": [
+        { "text": "steganography", "isCorrect": true },
+        { "text": "obfuscation", "isCorrect": false },
+        { "text": "hiding", "isCorrect": false },
+        { "text": "masking", "isCorrect": false }
+      ],
+      "explanation": "Steganography conceals data in a file such as a graphic, audio, or other text file to prevent extra attention to the encrypted data."
+    },
+    {
+      "id": "m18-q10",
+      "question": "What is a strength of using a hashing function?",
+      "type": "single",
+      "options": [
+        { "text": "It can take only a fixed length message.", "isCorrect": false },
+        { "text": "It is a one-way function and not reversible.", "isCorrect": true },
+        { "text": "It has a variable length output.", "isCorrect": false },
+        { "text": "Two different files can be created that have the same output.", "isCorrect": false },
+        { "text": "It is not commonly used in security.", "isCorrect": false }
+      ],
+      "explanation": "Hashing functions are one-way functions, meaning they are not reversible. They take arbitrary input length and produce a fixed output."
+    },
+    {
+      "id": "m18-q11",
+      "question": "An investigator finds a USB drive at a crime scene and wants to present it as evidence in court. The investigator takes the USB drive and creates a forensic image of it and takes a hash of both the original USB device and the image that was created. What is the investigator attempting to prove about the USB drive when the evidence is submitted in court?",
+      "type": "single",
+      "options": [
+        { "text": "An exact copy cannot be made of a device.", "isCorrect": false },
+        { "text": "The investigator found a USB drive and was able to make a copy of it.", "isCorrect": false },
+        { "text": "The data in the image is an exact copy and nothing has been altered by the process.", "isCorrect": true },
+        { "text": "The data is all there.", "isCorrect": false }
+      ],
+      "explanation": "A hash function ensures the integrity of a file or device. If the hashes match, it proves the forensic image is identical to the original evidence."
+    },
+    {
+      "id": "m18-q12",
+      "question": "In which way does the use of HTTPS increase the security monitoring challenges within enterprise networks?",
+      "type": "single",
+      "options": [
+        { "text": "HTTPS traffic does not require authentication.", "isCorrect": false },
+        { "text": "HTTPS traffic is much faster than HTTP traffic.", "isCorrect": false },
+        { "text": "HTTPS traffic can carry a much larger data payload than HTTP can carry.", "isCorrect": false },
+        { "text": "HTTPS traffic enables end-to-end encryption.", "isCorrect": true }
+      ],
+      "explanation": "HTTPS enables end-to-end encrypted network communication, which makes it difficult for network administrators to monitor the content of packets for malicious attacks."
+    }
+  ]
+}

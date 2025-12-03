@@ -1,0 +1,185 @@
+{
+  "id": "module-14",
+  "type": "module",
+  "title": "Module 14: Access Control Lists",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m14-q1",
+      "question": "In applying an ACL to a router interface, which traffic is designated as outbound?",
+      "type": "single",
+      "options": [
+        { "text": "traffic that is leaving the router and going toward the destination host", "isCorrect": true },
+        { "text": "traffic that is going from the destination IP address into the router", "isCorrect": false },
+        { "text": "traffic for which the router can find no routing table entry", "isCorrect": false },
+        { "text": "traffic that is coming from the source IP address into the router", "isCorrect": false }
+      ],
+      "explanation": "Inbound and outbound are interpreted from the point of view of the router. Traffic that is designated in an outbound ACL will be denied or permitted when going out the interface to the destination."
+    },
+    {
+      "id": "m14-q2",
+      "question": "Refer to the exhibit. A network administrator wants to create a standard ACL to prevent network 1 traffic from being transmitted to the Research and Development network. On which router interface and in which direction should the standard ACL be applied?",
+      "image": "m14-q2.png",
+      "type": "single",
+      "options": [
+        { "text": "R2 Gi0/0 inbound", "isCorrect": false },
+        { "text": "R1 S0/0/0 outbound", "isCorrect": false },
+        { "text": "R2 S0/0/0 inbound", "isCorrect": false },
+        { "text": "R1 Gi0/0 outbound", "isCorrect": false },
+        { "text": "R2 Gi0/0 outbound", "isCorrect": true },
+        { "text": "R1 Gi0/0 inbound", "isCorrect": false }
+      ],
+      "explanation": "Standard ACLs can only specify source addresses, so the standard ACL should be placed as close to the destination as possible. The destination is the Research and Development LAN (R2 Gi0/0 interface)."
+    },
+    {
+      "id": "m14-q3",
+      "question": "Which operator is used in an ACL statement to match packets of a specific application?",
+      "type": "single",
+      "options": [
+        { "text": "eq", "isCorrect": true },
+        { "text": "established", "isCorrect": false },
+        { "text": "lt", "isCorrect": false },
+        { "text": "gt", "isCorrect": false }
+      ],
+      "explanation": "The operator (eq) toward the end of the ACL lines is used to match a specific port/service (e.g., eq 80)."
+    },
+    {
+      "id": "m14-q4",
+      "question": "Which two statements describe appropriate general guidelines for configuring and applying ACLs? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "If an ACL contains no permit statements, all traffic is denied by default.", "isCorrect": true },
+        { "text": "The most specific ACL statements should be entered first because of the top-down sequential nature of ACLs.", "isCorrect": true },
+        { "text": "If a single ACL is to be applied to multiple interfaces, it must be configured with a unique number for each interface.", "isCorrect": false },
+        { "text": "Multiple ACLs per protocol and per direction can be applied to an interface.", "isCorrect": false },
+        { "text": "Standard ACLs are placed closest to the source, whereas extended ACLs are placed closest to the destination.", "isCorrect": false }
+      ],
+      "explanation": "An implicit deny any exists at the end of all ACLs. Specific statements must be placed at the top because processing stops after the first match."
+    },
+    {
+      "id": "m14-q5",
+      "question": "Refer to the exhibit. Which statement describes the function of the ACEs?",
+      "image": "m14-q5.png",
+      "type": "single",
+      "options": [
+        { "text": "These ACEs must be manually added to the end of every IPv6 ACL to allow IPv6 routing to occur.", "isCorrect": false },
+        { "text": "These ACEs allow for IPv6 neighbor discovery traffic.", "isCorrect": true },
+        { "text": "These ACEs automatically appear at the end of every IPv6 ACL to allow IPv6 routing to occur.", "isCorrect": false },
+        { "text": "These are optional ACEs that can be added to the end of an IPv6 ACL to allow ICMP messages that are defined in object groups named nd-na and nd-ns.", "isCorrect": false }
+      ],
+      "explanation": "The ICMP protocol is used for neighbor discovery. The permit statements allow neighbor advertisement and neighbor solicitation messages."
+    },
+    {
+      "id": "m14-q6",
+      "question": "What wild card mask will match networks 172.16.0.0 through 172.19.0.0?",
+      "type": "single",
+      "options": [
+        { "text": "0.252.255.255", "isCorrect": false },
+        { "text": "0.3.255.255", "isCorrect": false },
+        { "text": "0.0.255.255", "isCorrect": false },
+        { "text": "0.0.3.255", "isCorrect": true }
+      ],
+      "explanation": "The subnets 172.16.0.0 through 172.19.0.0 share the same 14 high level bits. The wildcard mask matching the difference in the third octet (0, 1, 2, 3) is 0.0.3.255."
+    },
+    {
+      "id": "m14-q7",
+      "question": "What method is used to apply an IPv6 ACL to a router interface?",
+      "type": "single",
+      "options": [
+        { "text": "the use of the access-class command", "isCorrect": false },
+        { "text": "the use of the ipv6 traffic-filter command", "isCorrect": true },
+        { "text": "the use of the ip access-group command", "isCorrect": false },
+        { "text": "the use of the ipv6 access-list command", "isCorrect": false }
+      ],
+      "explanation": "A network administrator will use the ipv6 traffic-filter command within interface configuration mode to apply an IPv6 ACL."
+    },
+    {
+      "id": "m14-q8",
+      "question": "Which ICMP message type should be stopped inbound?",
+      "type": "single",
+      "options": [
+        { "text": "echo", "isCorrect": true },
+        { "text": "source quench", "isCorrect": false },
+        { "text": "echo-reply", "isCorrect": false },
+        { "text": "unreachable", "isCorrect": false }
+      ],
+      "explanation": "The echo ICMP packet (ping request) should not be allowed inbound on an interface to prevent reconnaissance. Echo-reply should be allowed."
+    },
+    {
+      "id": "m14-q9",
+      "question": "What type of ACL offers greater flexibility and control over network access?",
+      "type": "single",
+      "options": [
+        { "text": "extended", "isCorrect": true },
+        { "text": "named standard", "isCorrect": false },
+        { "text": "numbered standard", "isCorrect": false },
+        { "text": "flexible", "isCorrect": false }
+      ],
+      "explanation": "Extended ACLs offer greater flexibility because they filter on source and destination addresses, protocols, and port numbers."
+    },
+    {
+      "id": "m14-q10",
+      "question": "Refer to the exhibit. A network administrator is configuring an IPv6 ACL to allow hosts on the 2001:DB8:CAFÉ:10::/64 network to access remote web servers, except for PC1. However, a user on PC1 can successfully access the web server PC2. Why is this possible?",
+      "image": "m14-q10.png",
+      "type": "single",
+      "options": [
+        { "text": "The IPv6 ACL Deny_WEB is applied to the wrong interface of router R1.", "isCorrect": false },
+        { "text": "The IPv6 ACL Deny_WEB is permitting all web traffic before the specific host is blocked.", "isCorrect": true },
+        { "text": "The IPv6 ACL Deny_WEB is spelled incorrectly when applied to the interface.", "isCorrect": false },
+        { "text": "The IPv6 ACL Deny_WEB is applied in the incorrect direction on router R1.", "isCorrect": false }
+      ],
+      "explanation": "The IPv6 ACL is permitting all traffic before the specific deny statement for the host, due to incorrect sequence of commands."
+    },
+    {
+      "id": "m14-q11",
+      "question": "Which scenario would cause an ACL misconfiguration and deny all traffic?",
+      "type": "single",
+      "options": [
+        { "text": "Apply an ACL that has all deny ACE statements.", "isCorrect": true },
+        { "text": "Apply a named ACL to a VTY line.", "isCorrect": false },
+        { "text": "Apply a standard ACL using the ip access-group out command.", "isCorrect": false },
+        { "text": "Apply a standard ACL in the inbound direction.", "isCorrect": false }
+      ],
+      "explanation": "Having all ACEs with deny statements denies all traffic because there is an implicit deny any command at the end of every ACL."
+    },
+    {
+      "id": "m14-q12",
+      "question": "What is the quickest way to remove a single ACE from a named ACL?",
+      "type": "single",
+      "options": [
+        { "text": "Copy the ACL into a text editor, remove the ACE, then copy the ACL back into the router.", "isCorrect": false },
+        { "text": "Use the no access-list command to remove the entire ACL, then recreate it without the ACE.", "isCorrect": false },
+        { "text": "Use the no keyword and the sequence number of the ACE to be removed.", "isCorrect": true },
+        { "text": "Create a new ACL with a different number and apply the new ACL to the router interface.", "isCorrect": false }
+      ],
+      "explanation": "Named ACL ACEs can be removed quickly using the 'no' command followed by the sequence number of the specific ACE."
+    },
+    {
+      "id": "m14-q13",
+      "question": "Which two keywords can be used in an access control list to replace a wildcard mask or address and wildcard mask pair? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "host", "isCorrect": true },
+        { "text": "gt", "isCorrect": false },
+        { "text": "any", "isCorrect": true },
+        { "text": "most", "isCorrect": false },
+        { "text": "all", "isCorrect": false },
+        { "text": "some", "isCorrect": false }
+      ],
+      "explanation": "The 'host' keyword substitutes for 0.0.0.0 wildcard mask (single host), and 'any' substitutes for 255.255.255.255 wildcard mask (any address)."
+    },
+    {
+      "id": "m14-q14",
+      "question": "Consider the following access list.\n\naccess-list 100 permit ip host 192.168.10.1 any\naccess-list 100 deny icmp 192.168.10.0 0.0.0.255 any echo\naccess-list 100 permit ip any any\n\nWhich two actions are taken if the access list is placed inbound on a router Gigabit Ethernet port that has the IP address 192.168.10.254 assigned? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Only the network device assigned the IP address 192.168.10.1 is allowed to access the router.", "isCorrect": false },
+        { "text": "Devices on the 192.168.10.0/24 network can sucessfully ping devices on the 192.168.11.0 network.", "isCorrect": false },
+        { "text": "Devices on the 192.168.10.0/24 network are allowed to reply to any ping requests.", "isCorrect": true },
+        { "text": "Only Layer 3 connections are allowed to be made from the router to any other network device.", "isCorrect": false },
+        { "text": "A Telnet or SSH session is allowed from any device on the 192.168.10.0 into the router with this access list assigned.", "isCorrect": true }
+      ],
+      "explanation": "The ACL permits all IP traffic from any source (3rd line) except ICMP echo requests (pings) from the 10.0 subnet. Thus, ping replies and Telnet/SSH (which use TCP) are allowed."
+    }
+  ]
+}

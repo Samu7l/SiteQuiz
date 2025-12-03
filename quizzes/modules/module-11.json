@@ -1,0 +1,134 @@
+{
+  "id": "module-11",
+  "type": "module",
+  "title": "Module 11: Understanding Defense",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m11-q1",
+      "question": "In a defense-in-depth approach, which three options must be identified to effectively defend a network against attacks? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "vulnerabilities in the system", "isCorrect": true },
+        { "text": "past security breaches", "isCorrect": false },
+        { "text": "total number of devices that attach to the wired and wireless network", "isCorrect": false },
+        { "text": "assets that need protection", "isCorrect": true },
+        { "text": "threats to assets", "isCorrect": true },
+        { "text": "location of attacker or attackers", "isCorrect": false }
+      ],
+      "explanation": "In order to prepare for a security attack, IT security personnel must identify assets that need to be protected, potential threats to the assets, and vulnerabilities in the system or design."
+    },
+    {
+      "id": "m11-q2",
+      "question": "Which device is usually the first line of defense in a layered defense-in-depth approach?",
+      "type": "single",
+      "options": [
+        { "text": "internal router", "isCorrect": false },
+        { "text": "firewall", "isCorrect": false },
+        { "text": "edge router", "isCorrect": true },
+        { "text": "access layer switch", "isCorrect": false }
+      ],
+      "explanation": "The edge router connects an organization to a service provider and is typically the first line of defense, having a set of rules that specify which traffic is allowed or denied."
+    },
+    {
+      "id": "m11-q3",
+      "question": "Which device in a layered defense-in-depth approach denies connections initiated from untrusted networks to internal networks, but allows internal users within an organization to connect to untrusted networks?",
+      "type": "single",
+      "options": [
+        { "text": "IPS", "isCorrect": false },
+        { "text": "firewall", "isCorrect": true },
+        { "text": "access layer switch", "isCorrect": false },
+        { "text": "internal router", "isCorrect": false }
+      ],
+      "explanation": "A firewall is typically a second line of defense. It tracks connections initiated within the company going out and denies initiation of connections from external untrusted networks going to internal trusted networks."
+    },
+    {
+      "id": "m11-q4",
+      "question": "With the evolution of borderless networks, which vegetable is now used to describe a defense-in-depth approach?",
+      "type": "single",
+      "options": [
+        { "text": "artichoke", "isCorrect": true },
+        { "text": "lettuce", "isCorrect": false },
+        { "text": "onion", "isCorrect": false },
+        { "text": "cabbage", "isCorrect": false }
+      ],
+      "explanation": "The artichoke is now used to provide a visual analogy to describe a defense-in-depth security approach because a single petal or leaf can be moved or removed to reveal sensitive information, unlike the older onion analogy."
+    },
+    {
+      "id": "m11-q5",
+      "question": "What is the benefit of a defense-in-depth approach?",
+      "type": "single",
+      "options": [
+        { "text": "The effectiveness of other security measures is not impacted when a security mechanism fails.", "isCorrect": true },
+        { "text": "Only a single layer of security at the network core is required.", "isCorrect": false },
+        { "text": "All network vulnerabilities are mitigated.", "isCorrect": false },
+        { "text": "The need for firewalls is eliminated.", "isCorrect": false }
+      ],
+      "explanation": "The benefit of the defense-in-depth approach is that network defenses are implemented in layers so that failure of any single security mechanism does not impact other security measures."
+    },
+    {
+      "id": "m11-q6",
+      "question": "Which tool can be used to gather information about the different types of traffic that exist in a network?",
+      "type": "single",
+      "options": [
+        { "text": "RTP", "isCorrect": false },
+        { "text": "application server", "isCorrect": false },
+        { "text": "QoS", "isCorrect": false },
+        { "text": "protocol analyzer", "isCorrect": true }
+      ],
+      "explanation": "A protocol analyzer is a tool that can be used to survey the network to determine the different traffic types and the amount of traffic in a network."
+    },
+    {
+      "id": "m11-q7",
+      "question": "What component of a security policy explicitly defines the type of traffic allowed on a network and what users are allowed and not allowed to do?",
+      "type": "single",
+      "options": [
+        { "text": "remote access policies", "isCorrect": false },
+        { "text": "identification and authentication policies", "isCorrect": false },
+        { "text": "password policies", "isCorrect": false },
+        { "text": "acceptable use policies", "isCorrect": true }
+      ],
+      "explanation": "Acceptable use policies (AUP) identify network applications and network usage that are allowed within the organization."
+    },
+    {
+      "id": "m11-q8",
+      "question": "Which section of a security policy is used to specify that only authorized individuals should have access to enterprise data?",
+      "type": "single",
+      "options": [
+        { "text": "statement of scope", "isCorrect": false },
+        { "text": "campus access policy", "isCorrect": false },
+        { "text": "statement of authority", "isCorrect": false },
+        { "text": "Internet access policy", "isCorrect": false },
+        { "text": "identification and authentication policy", "isCorrect": true },
+        { "text": "acceptable use policy", "isCorrect": false }
+      ],
+      "explanation": "The identification and authentication policy section specifies authorized persons that can have access to network resources and identity verification procedures."
+    },
+    {
+      "id": "m11-q9",
+      "question": "An administrator discovers that a user is accessing a newly established website that may be detrimental to company security. What action should the administrator take first in terms of the security policy?",
+      "type": "single",
+      "options": [
+        { "text": "Revise the AUP immediately and get all users to sign the updated AUP.", "isCorrect": true },
+        { "text": "Immediately suspend the network privileges of the user.", "isCorrect": false },
+        { "text": "Create a firewall rule blocking the respective website.", "isCorrect": false },
+        { "text": "Ask the user to stop immediately and inform the user that this constitutes grounds for dismissal.", "isCorrect": false }
+      ],
+      "explanation": "An AUP would list prohibited websites. Any changes to this must be updated immediately and signed by all users to be enforced effectively."
+    },
+    {
+      "id": "m11-q10",
+      "question": "What three goals does a BYOD security policy accomplish? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "identify and prevent all heuristic virus signatures", "isCorrect": false },
+        { "text": "identify which employees can bring their own devices", "isCorrect": true },
+        { "text": "identify all malware signatures and synchronize them across corporate databases", "isCorrect": false },
+        { "text": "describe the rights to access and activities permitted to security personnel on the device", "isCorrect": true },
+        { "text": "identify safeguards to put in place if a device is compromised", "isCorrect": true },
+        { "text": "identify a list of websites that users are not permitted to access", "isCorrect": false }
+      ],
+      "explanation": "A comprehensive BYOD policy identifies which employees can bring devices, describes access rights for security personnel, and identifies safeguards for compromised devices."
+    }
+  ]
+}

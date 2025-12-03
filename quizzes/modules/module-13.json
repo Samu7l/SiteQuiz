@@ -1,0 +1,181 @@
+{
+  "id": "module-13",
+  "type": "module",
+  "title": "Module 13: Access Control",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m13-q1",
+      "question": "Which three processes are examples of logical access controls? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "fences to protect the perimeter of a building", "isCorrect": false },
+        { "text": "swipe cards to allow access to a restricted area", "isCorrect": true },
+        { "text": "guards to monitor security screens", "isCorrect": false },
+        { "text": "firewalls to monitor traffic", "isCorrect": true },
+        { "text": "biometrics to validate physical characteristics", "isCorrect": true },
+        { "text": "intrusion detection system (IDS) to watch for suspicious network activity", "isCorrect": false }
+      ],
+      "explanation": "Logical access controls include smart cards, passwords, biometrics, ACLs, protocols, and firewalls."
+    },
+    {
+      "id": "m13-q2",
+      "question": "Match the type of multifactor authentication with the description.",
+      "type": "match",
+      "pairs": [
+        { "left": "something you know", "right": "a password" },
+        { "left": "something you have", "right": "a security key fob" },
+        { "left": "something you are", "right": "a fingerprint scan" }
+      ],
+      "explanation": "Multifactor authentication factors: 'something you know' is a password, 'something you have' is a token/key fob, 'something you are' is biometrics like fingerprint."
+    },
+    {
+      "id": "m13-q3",
+      "question": "An organization plans to implement security training to educate employees about security policies. What type of access control is the organization trying to implement?",
+      "type": "single",
+      "options": [
+        { "text": "technological", "isCorrect": false },
+        { "text": "logical", "isCorrect": false },
+        { "text": "administrative", "isCorrect": true },
+        { "text": "physical", "isCorrect": false }
+      ],
+      "explanation": "Administrative access control involves policies, procedures, and training to limit access."
+    },
+    {
+      "id": "m13-q4",
+      "question": "When a security audit is performed at a company, the auditor reports that new users have access to network resources beyond their normal job roles. Additionally, users who move to different positions retain their prior permissions. What kind of violation is occurring?",
+      "type": "single",
+      "options": [
+        { "text": "password", "isCorrect": false },
+        { "text": "least privilege", "isCorrect": true },
+        { "text": "network policy", "isCorrect": false },
+        { "text": "audit", "isCorrect": false }
+      ],
+      "explanation": "The principle of least privilege states that users should only have access to information on a need-to-know basis required for their job."
+    },
+    {
+      "id": "m13-q5",
+      "question": "Which access control model assigns security privileges based on the position, responsibilities, or job classification of an individual or group within an organization?",
+      "type": "single",
+      "options": [
+        { "text": "mandatory", "isCorrect": false },
+        { "text": "discretionary", "isCorrect": false },
+        { "text": "rule-based", "isCorrect": false },
+        { "text": "role-based", "isCorrect": true }
+      ],
+      "explanation": "Role-based access control (RBAC) models assign privileges based on position or responsibilities. It is also known as nondiscretionary access control."
+    },
+    {
+      "id": "m13-q6",
+      "question": "Which type of access control applies the strictest access control and is commonly used in military or mission critical applications?",
+      "type": "single",
+      "options": [
+        { "text": "mandatory access control (MAC)", "isCorrect": true },
+        { "text": "attribute-based access control (ABAC)", "isCorrect": false },
+        { "text": "discretionary access control (DAC)", "isCorrect": false },
+        { "text": "Non-discretionary access control", "isCorrect": false }
+      ],
+      "explanation": "Mandatory Access Control (MAC) is the strictest access control model, typically used in military environments."
+    },
+    {
+      "id": "m13-q7",
+      "question": "Which component is a pillar of the zero trust security approach that focuses on the secure access of devices, such as servers, printers, and other endpoints, including devices attached to IoT?",
+      "type": "single",
+      "options": [
+        { "text": "workforce", "isCorrect": false },
+        { "text": "workplace", "isCorrect": true },
+        { "text": "workflows", "isCorrect": false },
+        { "text": "workloads", "isCorrect": false }
+      ],
+      "explanation": "The workplace pillar focuses on secure access for any and all devices, including IoT, that connect to enterprise networks."
+    },
+    {
+      "id": "m13-q8",
+      "question": "A user has been asked to implement IPsec for inbound external connections. The user plans to use SHA-1 as part of the implementation. The user wants to ensure the integrity and authenticity of the connection. What security tool can the user use?",
+      "type": "single",
+      "options": [
+        { "text": "HMAC", "isCorrect": true },
+        { "text": "MD5", "isCorrect": false },
+        { "text": "ISAKMP", "isCorrect": false },
+        { "text": "SHA256", "isCorrect": false }
+      ],
+      "explanation": "HMAC (Hash-based Message Authentication Code) provides the additional feature of a secret key to ensure both integrity and authentication."
+    },
+    {
+      "id": "m13-q9",
+      "question": "After a security audit for an organization, multiple accounts were found to have privileged access to systems and devices. Which three best practices for securing privileged accounts should be included in the audit report? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Only the CIO should have privileged access.", "isCorrect": false },
+        { "text": "Reduce the number of privileged accounts.", "isCorrect": true },
+        { "text": "Only managers should have privileged access.", "isCorrect": false },
+        { "text": "Secure password storage.", "isCorrect": true },
+        { "text": "No one should have privileged access.", "isCorrect": false },
+        { "text": "Enforce the principle of least privilege.", "isCorrect": true }
+      ],
+      "explanation": "Best practices include reducing privileged accounts, enforcing least privilege, and securing password storage."
+    },
+    {
+      "id": "m13-q10",
+      "question": "What Windows utility should be used to configure password rules and account lockout policies on a system that is not part of a domain?",
+      "type": "single",
+      "options": [
+        { "text": "Computer Management", "isCorrect": false },
+        { "text": "Active Directory Security tool", "isCorrect": false },
+        { "text": "Local Security Policy tool", "isCorrect": true },
+        { "text": "Event Viewer security log", "isCorrect": false }
+      ],
+      "explanation": "The Local Security Policy tool is used to manage security settings on a standalone Windows system."
+    },
+    {
+      "id": "m13-q11",
+      "question": "What is the purpose of the network security accounting function?",
+      "type": "single",
+      "options": [
+        { "text": "to require users to prove who they are", "isCorrect": false },
+        { "text": "to keep track of the actions of a user", "isCorrect": true },
+        { "text": "to provide challenge and response questions", "isCorrect": false },
+        { "text": "to determine which resources a user can access", "isCorrect": false }
+      ],
+      "explanation": "Accounting keeps track of the actions of the user (e.g., logging usage)."
+    },
+    {
+      "id": "m13-q12",
+      "question": "Because of implemented security controls, a user can only access a server with FTP. Which AAA component accomplishes this?",
+      "type": "single",
+      "options": [
+        { "text": "accounting", "isCorrect": false },
+        { "text": "authorization", "isCorrect": true },
+        { "text": "auditing", "isCorrect": false },
+        { "text": "authentication", "isCorrect": false },
+        { "text": "accessibility", "isCorrect": false }
+      ],
+      "explanation": "Authorization determines which resources the user can access and which operations the user is allowed to perform."
+    },
+    {
+      "id": "m13-q13",
+      "question": "What is used to scan a BYOD device to verify that it is compliant with company security policies before the device is permitted to access the network?",
+      "type": "single",
+      "options": [
+        { "text": "reconnaissance", "isCorrect": false },
+        { "text": "NAC", "isCorrect": true },
+        { "text": "ACL", "isCorrect": false },
+        { "text": "proxy server", "isCorrect": false },
+        { "text": "IDS", "isCorrect": false }
+      ],
+      "explanation": "Network Admission Control (NAC) evaluates device compliance with security policies prior to permitting network access."
+    },
+    {
+      "id": "m13-q14",
+      "question": "Which AAA component can be established using token cards?",
+      "type": "single",
+      "options": [
+        { "text": "accounting", "isCorrect": false },
+        { "text": "authentication", "isCorrect": true },
+        { "text": "auditing", "isCorrect": false },
+        { "text": "authorization", "isCorrect": false }
+      ],
+      "explanation": "Authentication validates identity and can be established using token cards ('something you have')."
+    }
+  ]
+}
