@@ -1,0 +1,154 @@
+{
+  "id": "module-06",
+  "type": "module",
+  "title": "Module 6: Network Security Infrastructure",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m6-q1",
+      "question": "What is the purpose of a personal firewall on a computer?",
+      "type": "single",
+      "options": [
+        { "text": "to protect the computer from viruses and malware", "isCorrect": false },
+        { "text": "to protect the hardware against fire hazard", "isCorrect": false },
+        { "text": "to increase the speed of the Internet connection", "isCorrect": false },
+        { "text": "to filter the traffic that is moving in and out of the PC", "isCorrect": true }
+      ],
+      "explanation": "The purpose of a firewall is to filter the traffic that is moving in and out of the PC. A computer firewall cannot deny all illegal traffic from a computer or increase the speed of any connection."
+    },
+    {
+      "id": "m6-q2",
+      "question": "What is the main difference between the implementation of IDS and IPS devices?",
+      "type": "single",
+      "options": [
+        { "text": "An IDS uses signature-based technology to detect malicious packets, whereas an IPS uses profile-based technology.", "isCorrect": false },
+        { "text": "An IDS can negatively impact the packet flow, whereas an IPS can not.", "isCorrect": false },
+        { "text": "An IDS would allow malicious traffic to pass before it is addressed, whereas an IPS stops it immediately.", "isCorrect": true },
+        { "text": "An IDS needs to be deployed together with a firewall device, whereas an IPS can replace a firewall.", "isCorrect": false }
+      ],
+      "explanation": "An IPS is deployed in inline mode and will not allow malicious traffic to enter the internal network without first analyzing it. An advantage of this is that it can stop an attack immediately. An IDS is deployed in promiscuous mode."
+    },
+    {
+      "id": "m6-q3",
+      "question": "Which protocol provides authentication, integrity, and confidentiality services and is a type of VPN?",
+      "type": "single",
+      "options": [
+        { "text": "ESP", "isCorrect": false },
+        { "text": "IPsec", "isCorrect": true },
+        { "text": "MD5", "isCorrect": false },
+        { "text": "AES", "isCorrect": false }
+      ],
+      "explanation": "IPsec services allow for authentication, integrity, access control, and confidentiality. With IPsec, the information exchanged between remote sites can be encrypted and verified."
+    },
+    {
+      "id": "m6-q4",
+      "question": "What is a feature of the TACACS+ protocol?",
+      "type": "single",
+      "options": [
+        { "text": "It hides passwords during transmission using PAP and sends the rest of the packet in plaintext.", "isCorrect": false },
+        { "text": "It encrypts the entire body of the packet for more secure communications.", "isCorrect": true },
+        { "text": "It combines authentication and authorization as one process.", "isCorrect": false },
+        { "text": "It utilizes UDP to provide more efficient packet transfer.", "isCorrect": false }
+      ],
+      "explanation": "TACACS+ separates authentication and authorization, encrypts all communication, and uses TCP port 49."
+    },
+    {
+      "id": "m6-q5",
+      "question": "Which firewall feature is used to ensure that packets coming into a network are legitimate responses to requests initiated from internal hosts?",
+      "type": "single",
+      "options": [
+        { "text": "stateful packet inspection", "isCorrect": true },
+        { "text": "packet filtering", "isCorrect": false },
+        { "text": "application filtering", "isCorrect": false },
+        { "text": "URL filtering", "isCorrect": false }
+      ],
+      "explanation": "Stateful packet inspection on a firewall checks that incoming packets are actually legitimate responses to requests originating from hosts inside the network."
+    },
+    {
+      "id": "m6-q6",
+      "question": "Refer to the exhibit. The network 'A' contains multiple corporate servers that are accessed by hosts from the Internet for information about the corporation. What term is used to describe the network marked as 'A'?",
+      "image": "m6-q6.png",
+      "type": "single",
+      "options": [
+        { "text": "perimeter security boundary", "isCorrect": false },
+        { "text": "internal network", "isCorrect": false },
+        { "text": "untrusted network", "isCorrect": false },
+        { "text": "DMZ", "isCorrect": true }
+      ],
+      "explanation": "A demilitarized zone or DMZ is a network area protected by one or more firewalls. The DMZ typically contains servers that are commonly accessed by external users."
+    },
+    {
+      "id": "m6-q7",
+      "question": "Which statement describes the Cisco Cloud Web Security?",
+      "type": "single",
+      "options": [
+        { "text": "It is a secure web server specifically designed for cloud computing.", "isCorrect": false },
+        { "text": "It is an advanced firewall solution to guard web servers against security threats.", "isCorrect": false },
+        { "text": "It is a cloud-based security service to scan traffic for malware and policy enforcement.", "isCorrect": true },
+        { "text": "It is a security appliance that provides an all-in-one solution for securing and controlling web traffic.", "isCorrect": false }
+      ],
+      "explanation": "The Cisco Cloud Web Security (CWS) is a cloud-based security service that uses web proxies in the Cisco cloud environment to scan traffic for malware and policy enforcement."
+    },
+    {
+      "id": "m6-q8",
+      "question": "Which two statements are true about NTP servers in an enterprise network? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "NTP servers control the mean time between failures (MTBF) for key network devices.", "isCorrect": false },
+        { "text": "All NTP servers synchronize directly to a stratum 1 time source.", "isCorrect": false },
+        { "text": "NTP servers at stratum 1 are directly connected to an authoritative time source.", "isCorrect": true },
+        { "text": "There can only be one NTP server on an enterprise network.", "isCorrect": false },
+        { "text": "NTP servers ensure an accurate time stamp on logging and debugging information.", "isCorrect": true }
+      ],
+      "explanation": "Network Time Protocol (NTP) is used to synchronize the time across all devices on the network to make sure accurate timestamping on devices for managing, securing and troubleshooting. The stratum 1 devices are directly connected to the authoritative time sources."
+    },
+    {
+      "id": "m6-q9",
+      "question": "How is a source IP address used in a standard ACL?",
+      "type": "single",
+      "options": [
+        { "text": "It is the address that is unknown, so the ACL must be placed on the interface closest to the source address.", "isCorrect": false },
+        { "text": "It is used to determine the default gateway of the router that has the ACL applied.", "isCorrect": false },
+        { "text": "It is the criterion that is used to filter traffic.", "isCorrect": true },
+        { "text": "It is the address to be used by a router to determine the best path to forward packets.", "isCorrect": false }
+      ],
+      "explanation": "The only filter that can be applied with a standard ACL is the source IP address. An extended ACL is used to filter on such traffic as the source IP address, destination IP address, type of traffic, and type of message."
+    },
+    {
+      "id": "m6-q10",
+      "question": "Which network service allows administrators to monitor and manage network devices?",
+      "type": "single",
+      "options": [
+        { "text": "NetFlow", "isCorrect": false },
+        { "text": "NTP", "isCorrect": false },
+        { "text": "syslog", "isCorrect": false },
+        { "text": "SNMP", "isCorrect": true }
+      ],
+      "explanation": "SNMP is an application layer protocol that allows administrators to manage and monitor devices on the network such as routers, switches, and servers."
+    },
+    {
+      "id": "m6-q11",
+      "question": "What is a function of a proxy firewall?",
+      "type": "single",
+      "options": [
+        { "text": "drops or forwards traffic based on packet header information", "isCorrect": false },
+        { "text": "filters IP traffic between bridged interfaces", "isCorrect": false },
+        { "text": "uses signatures to detect patterns in network traffic", "isCorrect": false },
+        { "text": "connects to remote servers on behalf of clients", "isCorrect": true }
+      ],
+      "explanation": "Proxy firewalls filter traffic through the application layer of the TPC/IP model and shield client information by connecting to remote servers on behalf of clients."
+    },
+    {
+      "id": "m6-q12",
+      "question": "What network monitoring technology enables a switch to copy and forward traffic sent and received on multiple interfaces out another interface toward a network analysis device?",
+      "type": "single",
+      "options": [
+        { "text": "port mirroring", "isCorrect": true },
+        { "text": "NetFlow", "isCorrect": false },
+        { "text": "network tap", "isCorrect": false },
+        { "text": "SNMP", "isCorrect": false }
+      ],
+      "explanation": "When enabled on a switch, port mirroring copies frames sent and recieved by the switch and forwards them to another port, which has a analysis device attached."
+    }
+  ]
+}

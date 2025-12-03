@@ -1,0 +1,87 @@
+{
+  "modules": [
+    {
+      "id": "module-01",
+      "title": "Module 1: Cybersecurity Threats, Vulnerabilities, and Attacks",
+      "file": "modules/module-01.json",
+      "moduleNumber": 1
+    },
+    {
+      "id": "module-02",
+      "title": "Module 2: Securing Networks",
+      "file": "modules/module-02.json",
+      "moduleNumber": 2
+    },
+    {
+      "id": "module-03",
+      "title": "Module 3: Attacking the Foundation",
+      "file": "modules/module-03.json",
+      "moduleNumber": 3
+    },
+    {
+      "id": "module-04",
+      "title": "Module 4: Attacking what we do",
+      "file": "modules/module-04.json",
+      "moduleNumber": 4
+    },
+    {
+      "id": "module-05",
+      "title": "Module 5: Wireless Network Communication",
+      "file": "modules/module-05.json",
+      "moduleNumber": 5
+    },
+    {
+      "id": "module-06",
+      "title": "Module 6: Network Security Infrastructure",
+      "file": "modules/module-06.json",
+      "moduleNumber": 6
+    },
+    {
+      "id": "module-07",
+      "title": "Module 7: The Windows Operating System",
+      "file": "modules/module-07.json",
+      "moduleNumber": 7
+    },
+    {
+      "id": "module-08",
+      "title": "Module 8: Linux Overview",
+      "file": "modules/module-08.json",
+      "moduleNumber": 8
+    },
+    {
+      "id": "module-09",
+      "title": "Module 9: System and Endpoint Protection",
+      "file": "modules/module-09.json",
+      "moduleNumber": 9
+    },
+    {
+      "id": "module-10",
+      "title": "Module 10: Cybersecurity Principles, Practices and Processes",
+      "file": "modules/module-10.json",
+      "moduleNumber": 10
+    }
+  ],
+  "checkpoints": [
+    {
+      "id": "checkpoint-01",
+      "title": "Checkpoint 1: Network Security",
+      "file": "checkpoint/checkpoint-01.json",
+      "moduleRange": [1, 6],
+      "description": "Covers Modules 1 through 6."
+    },
+    {
+      "id": "checkpoint-02",
+      "title": "Checkpoint 2: OS and Endpoint Security",
+      "file": "checkpoint/checkpoint-02.json",
+      "moduleRange": [7, 10],
+      "description": "Covers Modules 7 through 10."
+    }
+  ],
+  "finalExam": {
+    "id": "final-exam",
+    "title": "Course Final Exam",
+    "file": "final/final-exam.json",
+    "fromModules": "all"
+  },
+  "customSaved": []
+}

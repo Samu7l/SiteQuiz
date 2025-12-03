@@ -1,0 +1,165 @@
+{
+  "id": "module-04",
+  "type": "module",
+  "title": "Module 4: Attacking what we do",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m4-q1",
+      "question": "Which action best describes a MAC address spoofing attack?",
+      "type": "single",
+      "options": [
+        { "text": "altering the MAC address of an attacking host to match that of a legitimate host", "isCorrect": true },
+        { "text": "bombarding a switch with fake source MAC addresses", "isCorrect": false },
+        { "text": "forcing the election of a rogue root bridge", "isCorrect": false },
+        { "text": "flooding the LAN with excessive traffic", "isCorrect": false }
+      ],
+      "explanation": "The attacker commonly runs a program or script that sends a stream of frames to the switch so the switch keeps the incorrect (spoofed) information in the MAC address table."
+    },
+    {
+      "id": "m4-q2",
+      "question": "What is an objective of a DHCP spoofing attack?",
+      "type": "single",
+      "options": [
+        { "text": "to gain illegal access to a DHCP server and modify its configuration", "isCorrect": false },
+        { "text": "to attack a DHCP server and make it unable to provide valid IP addresses to DHCP clients", "isCorrect": false },
+        { "text": "to intercept DHCP messages and alter the information before sending to DHCP clients", "isCorrect": false },
+        { "text": "to provide false DNS server addresses to DHCP clients so that visits to a legitimate web server are directed to a fake server", "isCorrect": true }
+      ],
+      "explanation": "In DHCP spoofing attacks, an attacker configures a fake DHCP server on the network to provide false DNS server addresses to clients. When a client tries to access a server using a server domain name (for example, a web server), the name to IP resolution request is sent to a DNS server that is under the control of the attacker, which provides the IP address of a fake server."
+    },
+    {
+      "id": "m4-q3",
+      "question": "What is the primary means for mitigating virus and Trojan horse attacks?",
+      "type": "single",
+      "options": [
+        { "text": "antivirus software", "isCorrect": true },
+        { "text": "encryption", "isCorrect": false },
+        { "text": "antisniffer software", "isCorrect": false },
+        { "text": "blocking ICMP echo and echo-replies", "isCorrect": false }
+      ],
+      "explanation": "Antivirus software is the primary means of mitigating both virus and Trojan horse attacks. By using up-to-date antivirus software, the spread of viruses and Trojan horse attacks can be reduced."
+    },
+    {
+      "id": "m4-q4",
+      "question": "What method can be used to mitigate ping sweeps?",
+      "type": "single",
+      "options": [
+        { "text": "blocking ICMP echo and echo-replies at the network edge", "isCorrect": true },
+        { "text": "deploying antisniffer software on all network devices", "isCorrect": false },
+        { "text": "using encrypted or hashed authentication protocols", "isCorrect": false },
+        { "text": "installing antivirus software on hosts", "isCorrect": false }
+      ],
+      "explanation": "To mitigate ping sweeps, ICMP echo and echo-reply messages can be blocked on network edge routers. This does come at a cost. Because ICMP is also used for network diagnostic data, this diagnostic data will be blocked as well."
+    },
+    {
+      "id": "m4-q5",
+      "question": "What worm mitigation phase involves actively disinfecting infected systems?",
+      "type": "single",
+      "options": [
+        { "text": "quarantine", "isCorrect": false },
+        { "text": "inoculation", "isCorrect": false },
+        { "text": "treatment", "isCorrect": true },
+        { "text": "containment", "isCorrect": false }
+      ],
+      "explanation": "The four phases of worm mitigation are: Containment, Inoculation, Quarantine, Treatment. Disinfecting systems is accomplished in the treatment phase and involves terminating the worm process, removing infected files, and patching vulnerabilities exploited by the worm."
+    },
+    {
+      "id": "m4-q6",
+      "question": "What is the result of a DHCP starvation attack?",
+      "type": "single",
+      "options": [
+        { "text": "Legitimate clients are unable to lease IP addresses.", "isCorrect": true },
+        { "text": "Clients receive IP address assignments from a rogue DHCP server.", "isCorrect": false },
+        { "text": "The attacker provides incorrect DNS and default gateway information to clients.", "isCorrect": false },
+        { "text": "The IP addresses assigned to legitimate clients are hijacked.", "isCorrect": false }
+      ],
+      "explanation": "DCHP starvation attacks are launched by an attacker with the intent to create a DoS for DHCP clients. To accomplish this goal, the attacker uses a tool that sends many DHCPDISCOVER messages to lease the entire pool of available IP addresses, thus denying them to legitimate hosts."
+    },
+    {
+      "id": "m4-q7",
+      "question": "Which term is used for bulk advertising emails flooded to as many end users as possible?",
+      "type": "single",
+      "options": [
+        { "text": "Phishing", "isCorrect": false },
+        { "text": "Brute force", "isCorrect": false },
+        { "text": "Spam", "isCorrect": true },
+        { "text": "Adware", "isCorrect": false }
+      ],
+      "explanation": "Spam is annoying and unwanted bulk email that is sent to as many end users as possible."
+    },
+    {
+      "id": "m4-q8",
+      "question": "Which type of DNS attack involves the cybercriminal compromising a parent domain and creating multiple subdomains to be used during the attacks?",
+      "type": "single",
+      "options": [
+        { "text": "cache poisoning", "isCorrect": false },
+        { "text": "amplification and reflection", "isCorrect": false },
+        { "text": "tunneling", "isCorrect": false },
+        { "text": "shadowing", "isCorrect": true }
+      ],
+      "explanation": "Two threats to DNS are DNS shadowing and DNS tunneling attacks. DNS shadowing attacks compromise a parent domain and then the cybercriminal creates subdomains to be used in attacks. DNS tunneling attacks build botnets to bypass traditional security solutions."
+    },
+    {
+      "id": "m4-q9",
+      "question": "Which protocol would be the target of a cushioning attack?",
+      "type": "single",
+      "options": [
+        { "text": "DNS", "isCorrect": false },
+        { "text": "HTTP", "isCorrect": true },
+        { "text": "ARP", "isCorrect": false },
+        { "text": "DHCP", "isCorrect": false }
+      ],
+      "explanation": "The HTTP 302 cushioning attack is used by cybercriminals to take advantage of the 302 Found HTTP response status code to redirect the browser of the user to a new location, usually a malicious site."
+    },
+    {
+      "id": "m4-q10",
+      "question": "Which language is used to query a relational database?",
+      "type": "single",
+      "options": [
+        { "text": "Python", "isCorrect": false },
+        { "text": "C++", "isCorrect": false },
+        { "text": "Java", "isCorrect": false },
+        { "text": "SQL", "isCorrect": true }
+      ],
+      "explanation": "Cybercriminals use SQL injections to breach a relational database, create malicious SQL queries, and obtain sensitive data."
+    },
+    {
+      "id": "m4-q11",
+      "question": "Which two attacks target web servers through exploiting possible vulnerabilities of input functions used by an application? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "SQL injection", "isCorrect": true },
+        { "text": "port scanning", "isCorrect": false },
+        { "text": "port redirection", "isCorrect": false },
+        { "text": "trust exploitation", "isCorrect": false },
+        { "text": "cross-site scripting", "isCorrect": true }
+      ],
+      "explanation": "When a web application uses input fields to collect data from clients, threat actors may exploit possible vulnerabilities for entering malicious commands. SQL injection and cross-site scripting are two different types of command injection attacks."
+    },
+    {
+      "id": "m4-q12",
+      "question": "In which type of attack is falsified information used to redirect users to malicious Internet sites?",
+      "type": "single",
+      "options": [
+        { "text": "DNS cache poisoning", "isCorrect": true },
+        { "text": "ARP cache poisoning", "isCorrect": false },
+        { "text": "DNS amplification and reflection", "isCorrect": false },
+        { "text": "domain generation", "isCorrect": false }
+      ],
+      "explanation": "In a DNS cache poisoning attack, falsified information is used to redirect users from legitimate to malicious internet sites."
+    },
+    {
+      "id": "m4-q13",
+      "question": "What is a characteristic of a DNS amplification and reflection attack?",
+      "type": "single",
+      "options": [
+        { "text": "Threat actors use DNS open resolvers to increase the volume of attacks and to hide the true source of an attack.", "isCorrect": true },
+        { "text": "Threat actors use a DoS attack that consumes the resources of the DNS open resolvers.", "isCorrect": false },
+        { "text": "Threat actors hide their phishing and malware delivery sites behind a quickly-changing network of compromised DNS hosts.", "isCorrect": false },
+        { "text": "Threat actors use malware to randomly generate domain names to act as rendezvous points.", "isCorrect": false }
+      ],
+      "explanation": "Threat actors use DNS open resolvers to increase the volume of attacks and to hide the true source of an attack by sending DNS messages to the open resolvers and using the IP address of a target host (victim)."
+    }
+  ]
+}

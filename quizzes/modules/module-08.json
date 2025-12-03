@@ -1,0 +1,179 @@
+{
+  "id": "module-08",
+  "type": "module",
+  "title": "Module 8: Linux Overview",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m8-q1",
+      "question": "An author is uploading one chapter document from a personal computer to a file server of a book publisher. What role is the personal computer assuming in this network model?",
+      "type": "single",
+      "options": [
+        { "text": "client", "isCorrect": true },
+        { "text": "slave", "isCorrect": false },
+        { "text": "transient", "isCorrect": false },
+        { "text": "server", "isCorrect": false },
+        { "text": "master", "isCorrect": false }
+      ],
+      "explanation": "In the client/server network model, a network device assumes the role of server in order to provide a particular service such as file transfer and storage. The device requesting the service assumes the role of client."
+    },
+    {
+      "id": "m8-q2",
+      "question": "In the context of a Linux operating system, which command can be used to display the syntax and parameters for a specific command?",
+      "type": "single",
+      "options": [
+        { "text": "cat", "isCorrect": false },
+        { "text": "crontab", "isCorrect": false },
+        { "text": "grep", "isCorrect": false },
+        { "text": "man", "isCorrect": true }
+      ],
+      "explanation": "The 'man' command displays the documentation (manual) for a specific command. 'cat' lists contents, 'crontab' manages scheduling, and 'grep' searches for strings."
+    },
+    {
+      "id": "m8-q3",
+      "question": "A system administrator issues the command ps on a server that is running the Linux operating system. What is the purpose of this command?",
+      "type": "single",
+      "options": [
+        { "text": "to list the processes currently running in the system", "isCorrect": true },
+        { "text": "to change file permissions", "isCorrect": false },
+        { "text": "to display the contents of the current directory", "isCorrect": false },
+        { "text": "to process a new task", "isCorrect": false }
+      ],
+      "explanation": "The Linux ps command is used to list the currently running processes in the system. If needed, this command can be instructed to display running processes initiated by the current user or other users."
+    },
+    {
+      "id": "m8-q4",
+      "question": "A system administrator issues the apt-get upgrade command on a Linux operating system. What is the purpose of this command?",
+      "type": "single",
+      "options": [
+        { "text": "A specific application named upgrade will be installed.", "isCorrect": false },
+        { "text": "Every application installed will update itself to the latest version.", "isCorrect": true },
+        { "text": "The remote repository of applications and dependencies will be updated to the latest version.", "isCorrect": false },
+        { "text": "Operating system updates are downloaded and will be installed.", "isCorrect": false }
+      ],
+      "explanation": "When the apt-get upgrade command is issued in a Linux terminal, all installed applications will attempt to upgrade to the latest version available."
+    },
+    {
+      "id": "m8-q5",
+      "question": "Why would a rootkit be used by a hacker?",
+      "type": "single",
+      "options": [
+        { "text": "to gain access to a device without being detected", "isCorrect": true },
+        { "text": "to try to guess a password", "isCorrect": false },
+        { "text": "to do reconnaissance", "isCorrect": false },
+        { "text": "to reverse engineer binary files", "isCorrect": false }
+      ],
+      "explanation": "Hackers use rootkits to avoid detection as well as hide any software installed by the hacker."
+    },
+    {
+      "id": "m8-q6",
+      "question": "Consider the result of the ls -l command in the Linux output below.\n\nls –l analyst.txt -rwxrw-r-- sales staff 1028 May 28 15:50 analyst.txt\n\nWhat are the group file permissions assigned to the analyst.txt file?",
+      "type": "single",
+      "options": [
+        { "text": "full access", "isCorrect": false },
+        { "text": "read, write, execute", "isCorrect": false },
+        { "text": "read only", "isCorrect": false },
+        { "text": "read, write", "isCorrect": true }
+      ],
+      "explanation": "The permissions are displayed as rwxrw-r--. The first set (rwx) is for the user. The second set (rw-) is for the group. The group, staff, who owns the file can read and write to the file."
+    },
+    {
+      "id": "m8-q7",
+      "question": "Which type of tool is used by a Linux administrator to attack a computer or network to find vulnerabilities?",
+      "type": "single",
+      "options": [
+        { "text": "firewall", "isCorrect": false },
+        { "text": "PenTesting", "isCorrect": true },
+        { "text": "intrusion detection system", "isCorrect": false },
+        { "text": "malware analysis", "isCorrect": false }
+      ],
+      "explanation": "PenTesting is known as penetration testing and includes tools that are used to search for vulnerabilities in a network or computer by attacking it."
+    },
+    {
+      "id": "m8-q8",
+      "question": "What is a benefit of Linux being an open source operating system?",
+      "type": "single",
+      "options": [
+        { "text": "Linux distributions are simpler operating systems since they are not designed to be connected to a network.", "isCorrect": false },
+        { "text": "Linux distributions must include free support without cost.", "isCorrect": false },
+        { "text": "Linux distributions are maintained by a single organization.", "isCorrect": false },
+        { "text": "Linux distribution source code can be modified and then recompiled.", "isCorrect": true }
+      ],
+      "explanation": "Linux is an open source operating system and any person can access the source code, inspect it, modify it, and recompile it."
+    },
+    {
+      "id": "m8-q9",
+      "question": "Which method can be used to harden a device?",
+      "type": "single",
+      "options": [
+        { "text": "Allow USB auto-detection.", "isCorrect": false },
+        { "text": "Allow users to re-use old passwords.", "isCorrect": false },
+        { "text": "Force periodic password changes.", "isCorrect": true },
+        { "text": "Allow default services to remain enabled.", "isCorrect": false }
+      ],
+      "explanation": "Basic best practices for device hardening include forcing periodic password changes, enforcing strong passwords, and disabling unused services."
+    },
+    {
+      "id": "m8-q10",
+      "question": "Which Linux command can be used to display the name of the current working directory?",
+      "type": "single",
+      "options": [
+        { "text": "ps", "isCorrect": false },
+        { "text": "pwd", "isCorrect": true },
+        { "text": "sudo", "isCorrect": false },
+        { "text": "chmod", "isCorrect": false }
+      ],
+      "explanation": "One of the most important commands in Linux is the pwd command, which stands for print working directory. It shows users the physical path for the directory they are working in."
+    },
+    {
+      "id": "m8-q11",
+      "question": "Which file system is the primary file system used by Apple in current Macintosh computers?",
+      "type": "single",
+      "options": [
+        { "text": "ext3", "isCorrect": false },
+        { "text": "APFS", "isCorrect": true },
+        { "text": "CDFS", "isCorrect": false },
+        { "text": "ext2", "isCorrect": false },
+        { "text": "HFS", "isCorrect": false }
+      ],
+      "explanation": "The primary file system used by Apple in its latest Macintosh computers is APFS."
+    },
+    {
+      "id": "m8-q12",
+      "question": "A technician has captured packets on a network that has been running slowly when accessing the internet. Which port number should the technician look for within the captured material to locate HTTP packets?",
+      "type": "single",
+      "options": [
+        { "text": "20", "isCorrect": false },
+        { "text": "53", "isCorrect": false },
+        { "text": "21", "isCorrect": false },
+        { "text": "110", "isCorrect": false },
+        { "text": "80", "isCorrect": true }
+      ],
+      "explanation": "HTTP uses TCP port 80 and HTTPS uses TCP port 443. HTTP and HTTPS are protocols commonly used to access web pages."
+    },
+    {
+      "id": "m8-q13",
+      "question": "Which operating system source code can be downloaded and modified by any person or company?",
+      "type": "single",
+      "options": [
+        { "text": "Cisco IOS", "isCorrect": false },
+        { "text": "Mac OS X", "isCorrect": false },
+        { "text": "Windows", "isCorrect": false },
+        { "text": "Linux", "isCorrect": true }
+      ],
+      "explanation": "Open-source programs, like Linux, allow the source code to be distributed and changed by anyone."
+    },
+    {
+      "id": "m8-q14",
+      "question": "What is a daemon?",
+      "type": "single",
+      "options": [
+        { "text": "an application that monitors and analyzes suspicious activity", "isCorrect": false },
+        { "text": "a type of security attack", "isCorrect": false },
+        { "text": "a record to keep track of important events", "isCorrect": false },
+        { "text": "a background process that runs without the need for user interaction", "isCorrect": true }
+      ],
+      "explanation": "A daemon in Linux is a background process that runs without the need for user interaction. A network administrator can view log files in order to see information about daemons running on the Linux server."
+    }
+  ]
+}

@@ -1,0 +1,302 @@
+
+{
+  "id": "checkpoint-01",
+  "type": "checkpoint",
+  "title": "Checkpoint 1: Network Security",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "cp1-q1",
+      "question": "A cyber criminal sends a series of maliciously formatted packets to the database server. The server cannot parse the packets and the event causes the server to crash. What is the type of attack the cyber criminal launches?",
+      "type": "single",
+      "options": [
+        { "text": "packet Injection", "isCorrect": false },
+        { "text": "SQL injection", "isCorrect": false },
+        { "text": "DoS", "isCorrect": true },
+        { "text": "man-in-the-middle", "isCorrect": false }
+      ],
+      "explanation": "A crash resulting from malformed packets is a hallmark of a Denial of Service (DoS) attack."
+    },
+    {
+      "id": "cp1-q2",
+      "question": "What three best practices can help defend against social engineering attacks? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Deploy well-designed firewall appliances.", "isCorrect": false },
+        { "text": "Educate employees regarding policies.", "isCorrect": true },
+        { "text": "Add more security guards.", "isCorrect": false },
+        { "text": "Do not provide password resets in a chat window.", "isCorrect": true },
+        { "text": "Enable a policy that states that the IT department should supply information over the phone only to managers.", "isCorrect": false },
+        { "text": "Resist the urge to click on enticing web links.", "isCorrect": true }
+      ],
+      "explanation": "A cybersecurity specialist must be aware of the technologies and measures that are used as countermeasures to protect the organization from threats and vulnerabilities."
+    },
+    {
+      "id": "cp1-q3",
+      "question": "What type of attack targets an SQL database using the input field of a user?",
+      "type": "single",
+      "options": [
+        { "text": "XML injection", "isCorrect": false },
+        { "text": "Cross-site scripting", "isCorrect": false },
+        { "text": "SQL injection", "isCorrect": true },
+        { "text": "buffer overflow", "isCorrect": false }
+      ],
+      "explanation": "A criminal can insert a malicious SQL statement in an entry field on a website where the system does not filter the user input correctly."
+    },
+    {
+      "id": "cp1-q4",
+      "question": "The employees in a company receive an email stating that the account password will expire immediately and requires a password reset within 5 minutes. Which statement would classify this email?",
+      "type": "single",
+      "options": [
+        { "text": "It is a hoax.", "isCorrect": true },
+        { "text": "It is an impersonation attack.", "isCorrect": false },
+        { "text": "It is a piggy-back attack.", "isCorrect": false },
+        { "text": "It is a DDoS attack.", "isCorrect": false }
+      ],
+      "explanation": "False warnings about immediate expiration are often classified as hoaxes designed to create panic."
+    },
+    {
+      "id": "cp1-q5",
+      "question": "What is the first line of defense to protect a device from improper access control?",
+      "type": "single",
+      "options": [
+        { "text": "encryption", "isCorrect": false },
+        { "text": "end user license agreement (EULA)", "isCorrect": false },
+        { "text": "passwords", "isCorrect": true },
+        { "text": "shredding", "isCorrect": false }
+      ],
+      "explanation": "Passwords are the first line of defense because stolen or weak passwords provide a threat actor access to machines and data on the network."
+    },
+    {
+      "id": "cp1-q6",
+      "question": "A security service company is conducting an audit in several risk areas within a major corporate client. What attack or data loss vector term would be used to describe providing access to corporate data by gaining access to stolen or weak passwords?",
+      "type": "single",
+      "options": [
+        { "text": "an internal threat", "isCorrect": false },
+        { "text": "unencrypted devices", "isCorrect": false },
+        { "text": "improper access control", "isCorrect": true },
+        { "text": "hard copy", "isCorrect": false }
+      ],
+      "explanation": "Improper access control allows the exploitation of stolen or weak passwords to gain access to corporate data."
+    },
+    {
+      "id": "cp1-q7",
+      "question": "Match the type of cyberattackers to the description.",
+      "type": "match",
+      "pairs": [
+        { "left": "make political statements in order to create an awareness of issues that are important to them", "right": "hacktivists" },
+        { "left": "discover exploits and report them to vendors", "right": "vulnerability brokers" },
+        { "left": "gather intelligence or commit sabotage on specific goals on behalf of their government", "right": "state-sponsored attackers" }
+      ],
+      "explanation": "Hacktivists make political statements. Vulnerability brokers discover exploits. State-sponsored attackers gather intelligence or commit sabotage for their government."
+    },
+    {
+      "id": "cp1-q8",
+      "question": "A social media site is describing a security breach in a sensitive branch of a national bank. In the post, it refers to a vulnerability. What statement describes that term?",
+      "type": "single",
+      "options": [
+        { "text": "The potential damage to the organization that is caused by the threat.", "isCorrect": false },
+        { "text": "The actions that are taken to protect assets by mitigating a threat or reducing risk.", "isCorrect": false },
+        { "text": "The likelihood that a particular threat will exploit a vulnerability of an asset and result in an undesirable consequence.", "isCorrect": false },
+        { "text": "A weakness in a system or its design that could be exploited by a threat.", "isCorrect": true }
+      ],
+      "explanation": "A vulnerability is a weakness in a system or its design that could be exploited by a threat."
+    },
+    {
+      "id": "cp1-q9",
+      "question": "A disgruntled employee is using Wireshark to discover administrative Telnet usernames and passwords. What type of network attack does this describe?",
+      "type": "single",
+      "options": [
+        { "text": "denial of service", "isCorrect": false },
+        { "text": "port redirection", "isCorrect": false },
+        { "text": "reconnaissance", "isCorrect": true },
+        { "text": "trust exploitation", "isCorrect": false }
+      ],
+      "explanation": "Through the capture of network packets (using tools like Wireshark), weak security network connectivity protocols such as Telnet can be inspected for passwords. This is a reconnaissance attack."
+    },
+    {
+      "id": "cp1-q10",
+      "question": "Which type of network attack involves randomly opening many Telnet requests to a router and results in a valid network administrator not being able to access the device?",
+      "type": "single",
+      "options": [
+        { "text": "spoofing", "isCorrect": false },
+        { "text": "man-in-the-middle", "isCorrect": false },
+        { "text": "SYN flooding", "isCorrect": true },
+        { "text": "DNS poisoning", "isCorrect": false }
+      ],
+      "explanation": "The TCP SYN Flood attack exploits the TCP three-way handshake. The threat actor continually sends TCP SYN session request packets, overwhelming the target with half-open TCP connections."
+    },
+    {
+      "id": "cp1-q11",
+      "question": "Which term describes a field in the IPv4 packet header used to detect corruption in the IPv4 header?",
+      "type": "single",
+      "options": [
+        { "text": "header checksum", "isCorrect": true },
+        { "text": "version", "isCorrect": false },
+        { "text": "destination IPv4 address", "isCorrect": false },
+        { "text": "protocol", "isCorrect": false }
+      ],
+      "explanation": "The header checksum field is used to detect corruption in the IPv4 header."
+    },
+    {
+      "id": "cp1-q12",
+      "question": "What kind of ICMP message can be used by threat actors to create a man-in-the-middle attack?",
+      "type": "single",
+      "options": [
+        { "text": "ICMP echo request", "isCorrect": false },
+        { "text": "ICMP unreachable", "isCorrect": false },
+        { "text": "ICMP mask reply", "isCorrect": false },
+        { "text": "ICMP redirects", "isCorrect": true }
+      ],
+      "explanation": "ICMP redirects are used to lure a target host into sending all traffic through a compromised device, creating a man-in-the-middle attack."
+    },
+    {
+      "id": "cp1-q13",
+      "question": "How do cybercriminals make use of a malicious iFrame?",
+      "type": "single",
+      "options": [
+        { "text": "The iFrame allows the browser to load a web page from another source.", "isCorrect": true },
+        { "text": "The attacker embeds malicious content in business appropriate files.", "isCorrect": false },
+        { "text": "The attacker redirects traffic to an incorrect DNS server.", "isCorrect": false },
+        { "text": "The iFrame allows multiple DNS subdomains to be used.", "isCorrect": false }
+      ],
+      "explanation": "An inline frame or iFrame is an HTML element that allows the browser to load a different web page from another source."
+    },
+    {
+      "id": "cp1-q14",
+      "question": "Which security measure is best used to limit the success of a reconnaissance attack from within a campus area network?",
+      "type": "single",
+      "options": [
+        { "text": "Implement access lists on the border router.", "isCorrect": false },
+        { "text": "Implement encryption for sensitive traffic.", "isCorrect": true },
+        { "text": "Implement a firewall at the edge of the network.", "isCorrect": false },
+        { "text": "Implement restrictions on the use of ICMP echo-reply messages.", "isCorrect": false }
+      ],
+      "explanation": "The best security measure is to encrypt as much network traffic as possible, both user data and network management traffic, to prevent clear-text data from being vulnerable."
+    },
+    {
+      "id": "cp1-q15",
+      "question": "An attacker is redirecting traffic to a false default gateway in an attempt to intercept the data traffic of a switched network. What type of attack could achieve this?",
+      "type": "single",
+      "options": [
+        { "text": "ARP cache poisoning", "isCorrect": false },
+        { "text": "DHCP spoofing", "isCorrect": true },
+        { "text": "DNS tunneling", "isCorrect": false },
+        { "text": "TCP SYN flood", "isCorrect": false }
+      ],
+      "explanation": "In DHCP spoofing attacks, a threat actor configures a fake DHCP server on the network to issue DHCP addresses to clients with the aim of forcing the clients to use a false or invalid default gateway."
+    },
+    {
+      "id": "cp1-q16",
+      "question": "Which risk management plan involves discontinuing an activity that creates a risk?",
+      "type": "single",
+      "options": [
+        { "text": "risk reduction", "isCorrect": false },
+        { "text": "risk retention", "isCorrect": false },
+        { "text": "risk avoidance", "isCorrect": true },
+        { "text": "risk sharing", "isCorrect": false }
+      ],
+      "explanation": "If an activity involves more risk than benefit, an organization may decide to avoid the risk altogether by discontinuing the activity. This is known as risk avoidance."
+    },
+    {
+      "id": "cp1-q17",
+      "question": "Which combination of WLAN authentication and encryption is recommended as a best practice for home users?",
+      "type": "single",
+      "options": [
+        { "text": "WEP and TKIP", "isCorrect": false },
+        { "text": "WPA2 and AES", "isCorrect": true },
+        { "text": "EAP and AES", "isCorrect": false },
+        { "text": "WPA and PSK", "isCorrect": false },
+        { "text": "WEP and RC4", "isCorrect": false }
+      ],
+      "explanation": "WPA2 is the Wi-Fi alliance version of 802.11i, and AES aligns with WPA2 as an encryption standard which is stronger than TKIP or RC4."
+    },
+    {
+      "id": "cp1-q18",
+      "question": "A user calls the help desk complaining that the password to access the wireless network has changed without warning. The user is allowed to change the password, but an hour later, the same thing occurs. What might be happening in this situation?",
+      "type": "single",
+      "options": [
+        { "text": "rogue access point", "isCorrect": true },
+        { "text": "password policy", "isCorrect": false },
+        { "text": "user error", "isCorrect": false },
+        { "text": "user laptop", "isCorrect": false },
+        { "text": "weak password", "isCorrect": false }
+      ],
+      "explanation": "A rogue access point can act as a mechanism to intercept credentials or manipulate connections in a man-in-the-middle style attack."
+    },
+    {
+      "id": "cp1-q19",
+      "question": "What are the two methods that a wireless NIC can use to discover an AP? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "sending an ARP request broadcast", "isCorrect": false },
+        { "text": "sending a multicast frame", "isCorrect": false },
+        { "text": "transmitting a probe request", "isCorrect": true },
+        { "text": "initiating a three-way handshake", "isCorrect": false },
+        { "text": "receiving a broadcast beacon frame", "isCorrect": true }
+      ],
+      "explanation": "Two methods can be used by a wireless device to discover an access point: passive mode (receiving a broadcast beacon frame) and active mode (transmitting a probe request)."
+    },
+    {
+      "id": "cp1-q20",
+      "question": "What is a characteristic of the WLAN passive discover mode?",
+      "type": "single",
+      "options": [
+        { "text": "The AP periodically sends beacon frames containing the SSID.", "isCorrect": true },
+        { "text": "The beaconing feature on the AP is disabled.", "isCorrect": false },
+        { "text": "The client begins the discover process by sending a probe request.", "isCorrect": false },
+        { "text": "The client must know the name of the SSID to begin the discover process.", "isCorrect": false }
+      ],
+      "explanation": "In passive mode, the AP sends a broadcast beacon frame that contains the SSID and other wireless settings."
+    },
+    {
+      "id": "cp1-q21",
+      "question": "Which statement describes one of the rules that govern interface behavior in the context of implementing a zone-based policy firewall configuration?",
+      "type": "single",
+      "options": [
+        { "text": "An administrator can assign an interface to multiple security zones.", "isCorrect": false },
+        { "text": "An administrator can assign interfaces to zones, regardless of whether the zone has been configured.", "isCorrect": false },
+        { "text": "By default, traffic is allowed to flow among interfaces that are members of the same zone.", "isCorrect": true },
+        { "text": "By default, traffic is allowed to flow between a zone member interface and any interface that is not a zone member.", "isCorrect": false }
+      ],
+      "explanation": "By default, traffic is allowed to flow among interfaces that are members of the same zone. Traffic can never flow between an interface assigned to a zone and an interface not assigned to a zone."
+    },
+    {
+      "id": "cp1-q22",
+      "question": "What is an IPS signature?",
+      "type": "single",
+      "options": [
+        { "text": "It is the timestamp that is applied to logged security events and alarms.", "isCorrect": false },
+        { "text": "It is the authorization that is required to implement a security policy.", "isCorrect": false },
+        { "text": "It is a set of rules used to detect typical intrusive activity.", "isCorrect": true },
+        { "text": "It is a security script that is used to detect unknown threats.", "isCorrect": false }
+      ],
+      "explanation": "An IPS signature uniquely identifies specific malware, protocol anomalies, or malicious traffic. It is a set of rules used to detect typical intrusive activity."
+    },
+    {
+      "id": "cp1-q23",
+      "question": "What are two drawbacks to using HIPS? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "HIPS has difficulty constructing an accurate network picture or coordinating events that occur across the entire network.", "isCorrect": true },
+        { "text": "HIPS installations are vulnerable to fragmentation attacks or variable TTL attacks.", "isCorrect": false },
+        { "text": "With HIPS, the network administrator must verify support for all the different operating systems used in the network.", "isCorrect": true },
+        { "text": "If the network traffic stream is encrypted, HIPS is unable to access unencrypted forms of the traffic.", "isCorrect": false },
+        { "text": "With HIPS, the success or failure of an attack cannot be readily determined.", "isCorrect": false }
+      ],
+      "explanation": "HIPS cannot create a complete view of the network (as it runs on individual hosts) and requires support for every host operating system in the organization."
+    },
+    {
+      "id": "cp1-q24",
+      "question": "Which statement describes a VPN?",
+      "type": "single",
+      "options": [
+        { "text": "VPNs use dedicated physical connections to transfer data between remote users.", "isCorrect": false },
+        { "text": "VPNs use logical connections to create public networks through the Internet.", "isCorrect": false },
+        { "text": "VPNs use open source virtualization software to create the tunnel through the Internet.", "isCorrect": false },
+        { "text": "VPNs use virtual connections to create a private network through a public network.", "isCorrect": true }
+      ],
+      "explanation": "A VPN is a private network that is created over a public network. It uses virtual connections routed through a public network."
+    }
+  ]
+}

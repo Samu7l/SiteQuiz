@@ -1,0 +1,154 @@
+{
+  "id": "module-01",
+  "type": "module",
+  "title": "Module 1: Cybersecurity Threats, Vulnerabilities, and Attacks",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m1-q1",
+      "question": "What type of attack occurs when data goes beyond the memory areas allocated to an application?",
+      "type": "single",
+      "options": [
+        { "text": "SQL injection", "isCorrect": false },
+        { "text": "RAM injection", "isCorrect": false },
+        { "text": "RAM spoofing", "isCorrect": false },
+        { "text": "Buffer overflow", "isCorrect": true }
+      ],
+      "explanation": "A buffer overflow occurs when data is written beyond the limits of a buffer. By modifying data outside the allocated boundaries, the application may access memory intended for other processes. This can lead to system crashes, data compromise, or even privilege escalation."
+    },
+    {
+      "id": "m1-q2",
+      "question": "Which of the following statements describes a distributed denial of service (DDoS) attack?",
+      "type": "single",
+      "options": [
+        { "text": "An attacker sends an enormous quantity of data that a server cannot handle", "isCorrect": false },
+        { "text": "An attacker monitors network traffic to learn authentication credentials", "isCorrect": false },
+        { "text": "One computer accepts data packets based on the MAC address of another computer", "isCorrect": false },
+        { "text": "A botnet of zombies, coordinated by an attacker, overwhelms a server with DoS attacks", "isCorrect": true }
+      ],
+      "explanation": "In a distributed denial-of-service (DDoS) attack, the attacker uses multiple compromised computer systems, known as zombies, to flood a targeted server with traffic. The server becomes overwhelmed and is unable to respond to legitimate requests."
+    },
+    {
+      "id": "m1-q3",
+      "question": "Employees in an organization report that the network access is slow. Further investigation reveals that one employee downloaded a third-party scanning program for the printer. What type of malware may have been introduced?",
+      "type": "single",
+      "options": [
+        { "text": "Worm", "isCorrect": true },
+        { "text": "Trojan horse", "isCorrect": false },
+        { "text": "Spam", "isCorrect": false },
+        { "text": "Phishing", "isCorrect": false }
+      ],
+      "explanation": "A worm is malicious software that can spread across a network and operate without user involvement. Worms often consume bandwidth and resources, causing the network to slow down."
+    },
+    {
+      "id": "m1-q4",
+      "question": "Employees in an organization report that they cannot access the customer database on the main server. Further investigation reveals that the database file is now encrypted. Shortly afterward, the organization receives a threatening email demanding payment for the decryption of the database file. What type of attack has the organization experienced?",
+      "type": "single",
+      "options": [
+        { "text": "DoS attack", "isCorrect": false },
+        { "text": "Man-in-the-middle attack", "isCorrect": false },
+        { "text": "Ransomware", "isCorrect": true },
+        { "text": "Trojan horse", "isCorrect": false }
+      ],
+      "explanation": "In a ransomware attack, the attacker compromises the victim’s computer and encrypts the data so it is no longer accessible. The attacker then demands payment from the victim in exchange for decrypting the data."
+    },
+    {
+      "id": "m1-q5",
+      "question": "A penetration test carried out by an organization identified a backdoor on the network. What action should the organization take to find out if their systems have been compromised?",
+      "type": "single",
+      "options": [
+        { "text": "Scan the systems for viruses", "isCorrect": false },
+        { "text": "Look for policy changes in Event Viewer", "isCorrect": false },
+        { "text": "Look for unauthorized accounts", "isCorrect": true },
+        { "text": "Look for usernames that do not have passwords", "isCorrect": false }
+      ],
+      "explanation": "After a successful penetration test, the organization should check for vulnerabilities in the network and verify whether any unauthorized accounts have been created, as this is a common indicator of a compromise."
+    },
+    {
+      "id": "m1-q6",
+      "question": "What non-technical method could a cybercriminal use to gather sensitive information from an organization?",
+      "type": "single",
+      "options": [
+        { "text": "Man-in-the-middle", "isCorrect": false },
+        { "text": "Ransomware", "isCorrect": false },
+        { "text": "Social engineering", "isCorrect": true },
+        { "text": "Pharming", "isCorrect": false }
+      ],
+      "explanation": "Social engineering is a technique where cybercriminals manipulate or deceive individuals to obtain personal or sensitive information. They often rely on trust, familiarity, or psychological manipulation rather than technical hacking methods."
+    },
+    {
+      "id": "m1-q7",
+      "question": "A secretary receives a phone call from someone claiming that their manager is about to give an important presentation but the presentation files are corrupted. The caller sternly asks that the secretary email the presentation right away to a personal email address. The caller also states that the secretary is being held personally responsible for the success of this presentation. What type of social engineering tactic is the caller using?",
+      "type": "single",
+      "options": [
+        { "text": "Trusted partners", "isCorrect": false },
+        { "text": "Familiarity", "isCorrect": false },
+        { "text": "Intimidation", "isCorrect": true },
+        { "text": "Urgency", "isCorrect": false }
+      ],
+      "explanation": "Intimidation is a tactic used by cybercriminals to pressure or bully a victim into taking an action that compromises security."
+    },
+    {
+      "id": "m1-q8",
+      "question": "All employees in an organization receive an email stating that their account password will expire immediately and that they should reset their password within five minutes. Which of the following statements best describes this email?",
+      "type": "single",
+      "options": [
+        { "text": "It is an impersonation attack", "isCorrect": false },
+        { "text": "It is a piggyback attack", "isCorrect": false },
+        { "text": "It is a hoax", "isCorrect": true },
+        { "text": "It is a DDoS attack", "isCorrect": false }
+      ],
+      "explanation": "A hoax is a false message designed to mislead or trick individuals. This type of email creates unnecessary fear, confusion, and extra work without posing an actual technical threat."
+    },
+    {
+      "id": "m1-q9",
+      "question": "Which best practices can help defend against social engineering attacks? (Select three correct answers)",
+      "type": "multiple",
+      "options": [
+        { "text": "Deploy well-designed firewall appliances", "isCorrect": false },
+        { "text": "Add more security guards", "isCorrect": false },
+        { "text": "Educate employees regarding security policies", "isCorrect": true },
+        { "text": "Enable a policy that states that the IT department should supply information over the phone only to managers", "isCorrect": false },
+        { "text": "Do not provide password resets in a chat window", "isCorrect": true },
+        { "text": "Resist the urge to click on enticing web links", "isCorrect": true }
+      ],
+      "explanation": "Employees should be trained to recognize and avoid social engineering attempts. They should never click suspicious links, never share passwords, and never send sensitive information under pressure or to unknown recipients."
+    },
+    {
+      "id": "m1-q10",
+      "question": "What do you call an impersonation attack that takes advantage of a trusted relationship between two systems?",
+      "type": "single",
+      "options": [
+        { "text": "Sniffing", "isCorrect": false },
+        { "text": "Spamming", "isCorrect": false },
+        { "text": "Spoofing", "isCorrect": true },
+        { "text": "Man-in-the-middle", "isCorrect": false }
+      ],
+      "explanation": "In a spoofing attack, attackers disguise their device or identity by using a valid address from the network, allowing them to bypass authentication. MAC and IP addresses can be spoofed, and this technique is often used to exploit ARP trust relationships."
+    },
+    {
+      "id": "m1-q11",
+      "question": "A cybercriminal sends a series of maliciously formatted packets to a database server, which causes the server to crash. What do you call this type of attack?",
+      "type": "single",
+      "options": [
+        { "text": "Packet injection", "isCorrect": false },
+        { "text": "SQL injection", "isCorrect": false },
+        { "text": "DoS", "isCorrect": true },
+        { "text": "Man-in-the-middle", "isCorrect": false }
+      ],
+      "explanation": "In a denial-of-service (DoS) attack, the attacker sends malicious or overwhelming traffic to a server in order to make it unavailable to legitimate users."
+    },
+    {
+      "id": "m1-q12",
+      "question": "The awareness and identification of vulnerabilities is a critical function of a cybersecurity specialist. Which of the following resources can they use to identify specific details about vulnerabilities?",
+      "type": "single",
+      "options": [
+        { "text": "NIST/NICE framework", "isCorrect": false },
+        { "text": "ISO/IEC 27000 model", "isCorrect": false },
+        { "text": "CVE national database", "isCorrect": true },
+        { "text": "Infragard", "isCorrect": false }
+      ],
+      "explanation": "The CVE (Common Vulnerabilities and Exposures) database provides standardized identifiers and detailed descriptions of publicly known cybersecurity vulnerabilities. It is maintained by MITRE and is a key reference for security professionals."
+    }
+  ]
+}

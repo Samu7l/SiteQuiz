@@ -1,0 +1,153 @@
+{
+  "id": "module-03",
+  "type": "module",
+  "title": "Module 3: Attacking the Foundation",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m3-q1",
+      "question": "Which field in an IPv6 packet is used by the router to determine if a packet has expired and should be dropped?",
+      "type": "single",
+      "options": [
+        { "text": "TTL", "isCorrect": false },
+        { "text": "Hop Limit", "isCorrect": true },
+        { "text": "Address Unreachable", "isCorrect": false },
+        { "text": "No Route to Destination", "isCorrect": false }
+      ],
+      "explanation": "ICMPv6, like IPv4, sends a Time Exceeded message if the router cannot forward an IPv6 packet because the packet has expired. However, the IPv6 packet does not have a TTL field. Instead, it uses the Hop Limit field to determine if the packet has expired."
+    },
+    {
+      "id": "m3-q2",
+      "question": "An attacker is using a laptop as a rogue access point to capture all network traffic from a targeted user. Which type of attack is this?",
+      "type": "single",
+      "options": [
+        { "text": "trust exploitation", "isCorrect": false },
+        { "text": "buffer overflow", "isCorrect": false },
+        { "text": "man in the middle", "isCorrect": true },
+        { "text": "port redirection", "isCorrect": false }
+      ],
+      "explanation": "An access attack tries to gain access to a resource using a hijacked account or other means. The five types of access attacks include the following: password, trust exploitation, port redirection, man-in-the-middle (an unauthorized device positioned between two legitimate devices in order to redirect or capture traffic), and buffer overflow."
+    },
+    {
+      "id": "m3-q3",
+      "question": "Which field in the IPv4 header is used to prevent a packet from traversing a network endlessly?",
+      "type": "single",
+      "options": [
+        { "text": "Time-to-Live", "isCorrect": true },
+        { "text": "Sequence Number", "isCorrect": false },
+        { "text": "Acknowledgment Number", "isCorrect": false },
+        { "text": "Differentiated Services", "isCorrect": false }
+      ],
+      "explanation": "The value of the Time-to-Live (TTL) field in the IPv4 header is used to limit the lifetime of a packet. The sending host sets the initial TTL value, which is decreased by one each time the packet is processed by a router. If the TTL field decrements to zero, the router discards the packet."
+    },
+    {
+      "id": "m3-q4",
+      "question": "What is involved in an IP address spoofing attack?",
+      "type": "single",
+      "options": [
+        { "text": "A legitimate network IP address is hijacked by a rogue node.", "isCorrect": true },
+        { "text": "A rogue node replies to an ARP request with its own MAC address indicated for the target IP address.", "isCorrect": false },
+        { "text": "A rogue DHCP server provides false IP configuration parameters to legitimate DHCP clients.", "isCorrect": false },
+        { "text": "Bogus DHCPDISCOVER messages are sent to consume all the available IP addresses on a DHCP server.", "isCorrect": false }
+      ],
+      "explanation": "In an IP address spoofing attack, the IP address of a legitimate network host is hijacked and used by a rogue node. This allows the rogue node to pose as a valid node on the network."
+    },
+    {
+      "id": "m3-q5",
+      "question": "Which type of attack involves the unauthorized discovery and mapping of network systems and services?",
+      "type": "single",
+      "options": [
+        { "text": "reconnaissance", "isCorrect": true },
+        { "text": "DoS", "isCorrect": false },
+        { "text": "access", "isCorrect": false },
+        { "text": "trust exploitation", "isCorrect": false }
+      ],
+      "explanation": "Network reconnaissance attacks involve the unauthorized discovery and mapping of the network and network systems. Access attacks and trust exploitation involve unauthorized manipulation of data, access to systems, or user privileges. DoS attacks are intended to prevent legitimate users and devices from accessing network resources."
+    },
+    {
+      "id": "m3-q6",
+      "question": "In which TCP attack is the cybercriminal attempting to overwhelm a target host with half-open TCP connections?",
+      "type": "single",
+      "options": [
+        { "text": "reset attack", "isCorrect": false },
+        { "text": "port scan attack", "isCorrect": false },
+        { "text": "SYN flood attack", "isCorrect": true },
+        { "text": "session hijacking attack", "isCorrect": false }
+      ],
+      "explanation": "In a TCP SYN flood attack, the attacker sends to the target host a continuous flood of TCP SYN session requests with a spoofed source IP address. The target host responds with a TCP-SYN-ACK to each of the SYN session requests and waits for a TCP ACK that will never arrive. Eventually, the target is overwhelmed with half-open TCP connections."
+    },
+    {
+      "id": "m3-q7",
+      "question": "How is optional network layer information carried by IPv6 packets?",
+      "type": "single",
+      "options": [
+        { "text": "inside an options field that is part of the IPv6 packet header", "isCorrect": false },
+        { "text": "inside the Flow Label field", "isCorrect": false },
+        { "text": "inside an extension header attached to the main IPv6 packet header", "isCorrect": true },
+        { "text": "inside the payload carried by the IPv6 packet", "isCorrect": false }
+      ],
+      "explanation": "IPv6 uses extension headers to carry optional network layer information. Extension headers are not part of the main IPv6 header but are separate headers placed between the IPv6 header and the payload."
+    },
+    {
+      "id": "m3-q8",
+      "question": "A threat actor wants to interrupt a normal TCP communication between two hosts by sending a spoofed packet to both endpoints. Which TCP option bit would the threat actor set in the spoofed packet?",
+      "type": "single",
+      "options": [
+        { "text": "ACK", "isCorrect": false },
+        { "text": "FIN", "isCorrect": false },
+        { "text": "RST", "isCorrect": true },
+        { "text": "SYN", "isCorrect": false }
+      ],
+      "explanation": "A TCP reset attack can be used to terminate TCP communications between two hosts by sending a spoofed TCP RST packet. A TCP connection is torn down when it receives an RST bit."
+    },
+    {
+      "id": "m3-q9",
+      "question": "A threat actor uses a program to launch an attack by sending a flood of UDP packets to a server on the network. The program sweeps through all of the known ports trying to find closed ports. Which two programs could be used by the threat actor to launch the attack? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "ping", "isCorrect": false },
+        { "text": "Smurf", "isCorrect": false },
+        { "text": "WireShark", "isCorrect": false },
+        { "text": "UDP Unicorn", "isCorrect": true },
+        { "text": "Low Orbit Ion Cannon", "isCorrect": true }
+      ],
+      "explanation": "A threat actor can use a tool like UDP Unicorn or Low Orbit Ion Cannon to send a flood of UDP packets to launch a UDP flood attack that causes all the resources on a network to become consumed."
+    },
+    {
+      "id": "m3-q10",
+      "question": "Which term describes a field in the IPv4 packet header used to detect corruption in the IPv4 header?",
+      "type": "single",
+      "options": [
+        { "text": "header checksum", "isCorrect": true },
+        { "text": "source IPv4 address", "isCorrect": false },
+        { "text": "protocol", "isCorrect": false },
+        { "text": "TTL", "isCorrect": false }
+      ],
+      "explanation": "The header checksum field is used to detect corruption in the IPv4 header."
+    },
+    {
+      "id": "m3-q11",
+      "question": "What kind of ICMP message can be used by threat actors to map an internal IP network?",
+      "type": "single",
+      "options": [
+        { "text": "ICMP echo request", "isCorrect": false },
+        { "text": "ICMP router discovery", "isCorrect": false },
+        { "text": "ICMP mask reply", "isCorrect": true },
+        { "text": "ICMP redirects", "isCorrect": false }
+      ],
+      "explanation": "Common ICMP messages of interest to threat actors include: ICMP mask reply (used to map an internal IP network), ICMP echo request (host verification/DoS), ICMP unreachable (reconnaissance), ICMP redirects (man-in-the-middle), and ICMP router discovery (bogus route entries)."
+    },
+    {
+      "id": "m3-q12",
+      "question": "Users in a company have complained about network performance. After investigation, the IT staff has determined that an attacker has used a specific technique that affects the TCP three-way handshake. What is the name of this type of network attack?",
+      "type": "single",
+      "options": [
+        { "text": "SYN flood", "isCorrect": true },
+        { "text": "DDoS", "isCorrect": false },
+        { "text": "DNS poisoning", "isCorrect": false },
+        { "text": "session hijacking", "isCorrect": false }
+      ],
+      "explanation": "The TCP SYN flood attack exploits the TCP three-way handshake. The threat actor continually sends TCP SYN session request packets with a randomly spoofed source IP address to an intended target."
+    }
+  ]
+}

@@ -1,0 +1,152 @@
+{
+  "id": "module-02",
+  "type": "module",
+  "title": "Module 2: Securing Networks",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m2-q1",
+      "question": "When considering network security, what is the most valuable asset of an organization?",
+      "type": "single",
+      "options": [
+        { "text": "customers", "isCorrect": false },
+        { "text": "data", "isCorrect": true },
+        { "text": "financial resources", "isCorrect": false },
+        { "text": "personnel", "isCorrect": false }
+      ],
+      "explanation": "Data—such as research and development data, sales records, financial information, HR and legal data, employee and contractor data, and customer data—is typically the most valuable asset of an organization."
+    },
+    {
+      "id": "m2-q2",
+      "question": "Which resource is affected due to weak security settings for a device owned by the company, but housed in another location?",
+      "type": "single",
+      "options": [
+        { "text": "cloud storage device", "isCorrect": true },
+        { "text": "hard copy", "isCorrect": false },
+        { "text": "removable media", "isCorrect": false },
+        { "text": "social networking", "isCorrect": false }
+      ],
+      "explanation": "Cloud storage is widely used and offers many benefits, but data stored in the cloud can be compromised if security settings are weak."
+    },
+    {
+      "id": "m2-q3",
+      "question": "Which Cisco group is responsible for investigating and mitigating potential vulnerabilities in Cisco products?",
+      "type": "single",
+      "options": [
+        { "text": "Cisco Talos Intelligence Group", "isCorrect": false },
+        { "text": "National Cyber Security Alliance", "isCorrect": false },
+        { "text": "Cisco Product Security Incident Response Team", "isCorrect": true },
+        { "text": "Cybersecurity Infrastructure and Security Agency", "isCorrect": false }
+      ],
+      "explanation": "The Cisco Product Security Incident Response Team (PSIRT) is responsible for identifying, investigating, and addressing security vulnerabilities in Cisco products to help protect customers and ensure product security."
+    },
+    {
+      "id": "m2-q4",
+      "question": "What is an attack vector?",
+      "type": "single",
+      "options": [
+        { "text": "It refers to a threat group that launches DDoS attacks.", "isCorrect": false },
+        { "text": "It refers to attacks carried out specifically by internal users.", "isCorrect": false },
+        { "text": "It is a tool by which a threat actor uses to attack an organization.", "isCorrect": false },
+        { "text": "It is a path by which a threat actor can gain access to a server, host, or network.", "isCorrect": true }
+      ],
+      "explanation": "An attack vector is a path or method used by a threat actor to gain access to a server, host, or network. Attack vectors can originate from inside or outside the organization."
+    },
+    {
+      "id": "m2-q5",
+      "question": "Match the common data loss vectors to the description.",
+      "type": "multiple",
+      "options": [
+        { "text": "Removable Media: An employee could perform an unauthorized transfer of data to a USB drive. In addition, a USB drive containing valuable corporate data could be lost.", "isCorrect": true },
+        { "text": "Unencrypted Devices: If the data is not stored using an encryption algorithm, then the thief can retrieve valuable confidential data from a stolen corporate laptop.", "isCorrect": true },
+        { "text": "Improper Access Control: Stolen passwords or weak passwords that have been compromised can provide an attacker easy access to corporate data.", "isCorrect": true },
+        { "text": "Email/Social Networking: Intercepted email or IM messages could be captured and reveal confidential information.", "isCorrect": true }
+      ],
+      "explanation": "These are the correct associations for common data loss vectors as described."
+    },
+    {
+      "id": "m2-q6",
+      "question": "Which term in network security is used to describe a potential danger to an asset such as data or the network itself?",
+      "type": "single",
+      "options": [
+        { "text": "Risk", "isCorrect": false },
+        { "text": "Threat", "isCorrect": true },
+        { "text": "Exploit", "isCorrect": false },
+        { "text": "Vulnerability", "isCorrect": false }
+      ],
+      "explanation": "Common network security terms include: Threat – A potential danger to an asset such as data or the network itself. Vulnerability – A weakness in a system or its design that could be exploited by a threat. Exploit – The mechanism that is used to leverage a vulnerability to compromise an asset. Risk – The likelihood that a particular threat will exploit a particular vulnerability of an asset and result in an undesirable consequence."
+    },
+    {
+      "id": "m2-q7",
+      "question": "Which statement describes the network security term attack surface?",
+      "type": "single",
+      "options": [
+        { "text": "It is a weakness in a system or its design that could be exploited by a threat.", "isCorrect": false },
+        { "text": "It is the mechanism that is used to leverage a vulnerability to compromise an asset.", "isCorrect": false },
+        { "text": "It is the total sum of the vulnerabilities in each system that are accessible to an attacker.", "isCorrect": true },
+        { "text": "It is the likelihood that a particular threat will exploit a particular vulnerability of an asset and result in an undesirable consequence.", "isCorrect": false }
+      ],
+      "explanation": "Common network security terms include: Attack surface – The total sum of the vulnerabilities in each system that are accessible to an attacker."
+    },
+    {
+      "id": "m2-q8",
+      "question": "The IT department performs a thorough assessment of security posture for the company data center operation. The risk of potential loss or compromise of critical data is identified. In discussion with the management team, a decision is reached that the critical data should be replicated to a cloud service provider and further insured with an insurance company. Which risk management strategy is employed?",
+      "type": "single",
+      "options": [
+        { "text": "Risk transfer", "isCorrect": true },
+        { "text": "Risk reduction", "isCorrect": false },
+        { "text": "Risk avoidance", "isCorrect": false },
+        { "text": "Risk acceptance", "isCorrect": false }
+      ],
+      "explanation": "There are four common ways to manage risk: Risk transfer – Some or all the risk is transferred to a willing third party such as a cloud service provider or an insurance company."
+    },
+    {
+      "id": "m2-q9",
+      "question": "Match the type of hackers to the description.",
+      "type": "multiple",
+      "options": [
+        { "text": "Black hat hackers: They are unethical criminals who violate computer and network security for personal gain, or for malicious reasons, such as attacking networks.", "isCorrect": true },
+        { "text": "Gray hat hackers: They are individuals who commit crimes and do arguably unethical things, but not for personal gain or to cause damage. An example would be someone who compromises a network without permission and then discloses the vulnerability publicly.", "isCorrect": true },
+        { "text": "White hat hackers: They are ethical hackers who use their programming skills for good, ethical, and legal purposes. They may perform network penetration tests to compromise networks and systems by using their knowledge of computer security systems to discover network vulnerabilities.", "isCorrect": true }
+      ],
+      "explanation": "These are the correct definitions for Black hat, Gray hat, and White hat hackers."
+    },
+    {
+      "id": "m2-q10",
+      "question": "Which term refers to the type of threat actors who are either self-employed or working for large cybercrime organizations?",
+      "type": "single",
+      "options": [
+        { "text": "Hacktivists", "isCorrect": false },
+        { "text": "Cybercriminals", "isCorrect": true },
+        { "text": "State-Sponsored", "isCorrect": false },
+        { "text": "Vulnerability brokers", "isCorrect": false }
+      ],
+      "explanation": "Cybercriminals – A term for black hat hackers who are either self-employed or working for large cybercrime organizations. Each year, cybercriminals are responsible for stealing billions of dollars from consumers and businesses."
+    },
+    {
+      "id": "m2-q11",
+      "question": "Which statement describes the characteristics of the indicators of attack (IOA)?",
+      "type": "single",
+      "options": [
+        { "text": "They are shared through the system AIS (Automated Indicator Sharing) and help to limit the size of attack surface.", "isCorrect": false },
+        { "text": "They help cybersecurity personnel identify what has happened in an attack and develop defenses against the attack.", "isCorrect": false },
+        { "text": "They focus on the motivation behind an attack and the potential means by which threat actors have, or will, compromise vulnerabilities to gain access to assets.", "isCorrect": true },
+        { "text": "They focus on identifying malware files, IP addresses of servers that are used in attacks, filenames, and characteristic changes made to end system software, among others.", "isCorrect": false }
+      ],
+      "explanation": "Indicators of attack (IOA) focus more on the motivation behind an attack and the potential means by which threat actors have, or will, compromise vulnerabilities to gain access to assets. IOAs are concerned with the strategies that are used by attackers."
+    },
+    {
+      "id": "m2-q12",
+      "question": "What are two reasons that internal threats from within an organization may cause greater damage than external threats? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Internal users have better access to attacking tools.", "isCorrect": false },
+        { "text": "Internet users can easily conceal their attacking trails.", "isCorrect": false },
+        { "text": "State-Sponsored hacking is typically carried out by internal users.", "isCorrect": false },
+        { "text": "Internal users have direct access to the building and its infrastructure devices.", "isCorrect": true },
+        { "text": "Internal users may have knowledge of the corporate network, its resources, and its confidential data.", "isCorrect": true }
+      ],
+      "explanation": "Internal threats have the potential to cause greater damage than external threats because internal users have direct access to the building and its infrastructure devices. Employees may also have knowledge of the corporate network, its resources, and its confidential data."
+    }
+  ]
+}

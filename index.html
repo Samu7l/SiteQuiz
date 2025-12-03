@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Course Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="app-header">
+        <div class="logo">CyberSec Assessment</div>
+        <nav>
+            <button onclick="app.showHome()">Welcome Screen</button>
+            <button onclick="app.showCustomBuilder()">Build Custom Quiz</button>
+        </nav>
+    </header>
+
+    <div class="layout-container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>Module Quizzes</h3>
+                <div id="list-modules" class="sidebar-list"></div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Checkpoint Exams</h3>
+                <div id="list-checkpoints" class="sidebar-list"></div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Final Exam</h3>
+                <div id="list-final" class="sidebar-list"></div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Saved Custom Quizzes</h3>
+                <div id="list-saved" class="sidebar-list">
+                    <p class="empty-msg">No saved quizzes.</p>
+                </div>
+            </div>
+        </aside>
+
+        <main id="app-content">
+            
+            <section id="view-home" class="view active">
+                <div class="hero">
+                    <h1>Cybersecurity Essentials</h1>
+                    <p>Select a module from the sidebar to begin, or build a custom exam.</p>
+                    <button class="btn-primary" onclick="app.showCustomBuilder()">Create Custom Quiz</button>
+                </div>
+            </section>
+
+            <section id="view-custom-builder" class="view">
+                <h2>Build a Custom Quiz</h2>
+                <div class="builder-controls">
+                    <div class="form-group">
+                        <label>Quiz Title:</label>
+                        <input type="text" id="custom-title" value="My Custom Quiz">
+                    </div>
+                    <div class="form-group">
+                        <label>Number of Questions:</label>
+                        <input type="number" id="custom-count" value="20" min="5" max="100">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn-primary" onclick="app.generateCustomQuiz()">Start Quiz</button>
+                    </div>
+                </div>
+                <h3>Select Source Modules:</h3>
+                <div id="builder-module-list" class="checkbox-grid"></div>
+            </section>
+
+            <section id="view-start" class="view">
+                <div class="start-card">
+                    <h1 id="start-title">Module Title</h1>
+                    <div class="info-box">
+                        <p><strong>Pass Percentage:</strong> <span id="start-pass">70</span>%</p>
+                        <p><strong>Questions:</strong> <span id="start-qcount">0</span></p>
+                        <p>You have unlimited attempts. There is no time limit.</p>
+                    </div>
+                    <button id="btn-begin" class="btn-primary btn-large">Start Quiz</button>
+                </div>
+            </section>
+
+            <section id="view-quiz" class="view">
+                <div class="quiz-header">
+                    <h3 id="quiz-title-display">Quiz Title</h3>
+                    <div class="progress-wrapper">
+                        <span id="progress-text">Question 1 of 10</span>
+                        <div class="progress-bar"><div id="progress-fill"></div></div>
+                    </div>
+                </div>
+                
+                <div class="nav-map" id="question-nav-map"></div>
+
+                <div class="question-card">
+                    <h2 id="q-number">Question 1</h2>
+                    <div id="q-anim-wrapper">
+                        <p id="q-text" class="q-text">Question text...</p>
+                        <img id="q-image" class="q-img hidden" src="" alt="Question Image">
+                        <small id="q-instruction" style="color: #666; display:block; margin-bottom:10px;"></small>
+                        <div id="q-options" class="options-list"></div>
+                    </div>
+                </div>
+
+                <div class="quiz-controls">
+                    <button id="btn-prev" class="btn-secondary">Previous</button>
+                    <button id="btn-next" class="btn-primary">Next</button>
+                    <button id="btn-finish" class="btn-danger hidden">Submit Quiz</button>
+                </div>
+            </section>
+
+            <section id="view-result" class="view">
+                <div class="result-card">
+                    <h1 id="result-score">80%</h1>
+                    <h3 id="result-msg">Result Message</h3>
+                    <div class="result-actions">
+                        <button class="btn-secondary" onclick="app.resetQuiz()">Reset Quiz</button>
+                        <button class="btn-primary" onclick="app.startReview()">Review Assessment</button>
+                        <button id="btn-save-custom" class="btn-secondary hidden" onclick="app.saveCustomQuiz()">Save This Quiz</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="view-review" class="view">
+                <div class="review-header">
+                    <h2>Review Assessment</h2>
+                    <button class="btn-small" onclick="app.showHome()">Exit Review</button>
+                </div>
+                <div id="review-container"></div>
+                <div class="review-footer">
+                    <button class="btn-primary" onclick="app.showHome()">Return Home</button>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

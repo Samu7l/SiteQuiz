@@ -1,0 +1,165 @@
+{
+  "id": "module-07",
+  "type": "module",
+  "title": "Module 7: The Windows Operating System",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m7-q1",
+      "question": "When a user makes changes to the settings of a Windows system, where are these changes stored?",
+      "type": "single",
+      "options": [
+        { "text": "Control Panel", "isCorrect": false },
+        { "text": "boot.ini", "isCorrect": false },
+        { "text": "win.ini", "isCorrect": false },
+        { "text": "Registry", "isCorrect": true }
+      ],
+      "explanation": "The registry contains information about applications, users, hardware, network settings, and file types. The registry also contains a unique section for every user, which contains the settings configured by that particular user."
+    },
+    {
+      "id": "m7-q2",
+      "question": "For security reasons a network administrator needs to ensure that local computers cannot ping each other. Which settings can accomplish this task?",
+      "type": "single",
+      "options": [
+        { "text": "file system settings", "isCorrect": false },
+        { "text": "smartcard settings", "isCorrect": false },
+        { "text": "firewall settings", "isCorrect": true },
+        { "text": "MAC address settings", "isCorrect": false }
+      ],
+      "explanation": "Smartcard and file system settings do not affect network operation. MAC address settings and filtering may be used to control device network access but cannot be used to filter different data traffic types."
+    },
+    {
+      "id": "m7-q3",
+      "question": "Which user account should be used only to perform system management and not as the account for regular use?",
+      "type": "single",
+      "options": [
+        { "text": "power user", "isCorrect": false },
+        { "text": "administrator", "isCorrect": true },
+        { "text": "guest", "isCorrect": false },
+        { "text": "standard user", "isCorrect": false }
+      ],
+      "explanation": "The administrator account is used to manage the computer and is very powerful. Best practices recommend that it be used only when it is needed to avoid accidentally performing significant changes to the system."
+    },
+    {
+      "id": "m7-q4",
+      "question": "What technology was created to replace the BIOS program on modern personal computer motherboards?",
+      "type": "single",
+      "options": [
+        { "text": "MBR", "isCorrect": false },
+        { "text": "RAM", "isCorrect": false },
+        { "text": "CMOS", "isCorrect": false },
+        { "text": "UEFI", "isCorrect": true }
+      ],
+      "explanation": "As of 2015, most personal computer motherboards are shipped with UEFI as the replacement for the BIOS program."
+    },
+    {
+      "id": "m7-q5",
+      "question": "What term is used to describe a logical drive that can be formatted to store data?",
+      "type": "single",
+      "options": [
+        { "text": "track", "isCorrect": false },
+        { "text": "sector", "isCorrect": false },
+        { "text": "volume", "isCorrect": false },
+        { "text": "partition", "isCorrect": true },
+        { "text": "cluster", "isCorrect": false }
+      ],
+      "explanation": "Hard disk drives are organized by several physical and logical structures. Partitions are logical portions of the disk that can be formatted to store data. Partitions consist of tracks, sectors, and clusters."
+    },
+    {
+      "id": "m7-q6",
+      "question": "What utility is used to show the system resources consumed by each user?",
+      "type": "single",
+      "options": [
+        { "text": "Event Viewer", "isCorrect": false },
+        { "text": "Device Manager", "isCorrect": false },
+        { "text": "Task Manager", "isCorrect": true },
+        { "text": "User Accounts", "isCorrect": false }
+      ],
+      "explanation": "The Windows Task Manager utility includes a Users tab from which the system resources consumed by each user can be displayed."
+    },
+    {
+      "id": "m7-q7",
+      "question": "Which command is used to manually query a DNS server to resolve a specific host name?",
+      "type": "single",
+      "options": [
+        { "text": "tracert", "isCorrect": false },
+        { "text": "nslookup", "isCorrect": true },
+        { "text": "ipconfig / displaydns", "isCorrect": false },
+        { "text": "net", "isCorrect": false }
+      ],
+      "explanation": "The nslookup command was created to allow a user to manually query a DNS server to resolve a given host name. The ipconfig /displaydns command only displays previously resolved DNS entries. The tracert command was created to examine the path that packets take as they cross a network and can resolve a hostname by automatically querying a DNS server."
+    },
+    {
+      "id": "m7-q8",
+      "question": "Which net command is used on a Windows PC to establish a connection to a shared directory on a remote server?",
+      "type": "single",
+      "options": [
+        { "text": "net session", "isCorrect": false },
+        { "text": "net use", "isCorrect": true },
+        { "text": "net start", "isCorrect": false },
+        { "text": "net share", "isCorrect": false }
+      ],
+      "explanation": "The net command is a very important command in Windows. 'net use' connects, disconnects, and displays information about shared network resources."
+    },
+    {
+      "id": "m7-q9",
+      "question": "What would be displayed if the netstat -abno command was entered on a Windows PC?",
+      "type": "single",
+      "options": [
+        { "text": "only active UDP connections in an LISTENING state", "isCorrect": false },
+        { "text": "all active TCP and UDP connections, their current state, and their associated process ID (PID)", "isCorrect": true },
+        { "text": "only active TCP connections in an ESTABLISHED state", "isCorrect": false },
+        { "text": "a local routing table", "isCorrect": false }
+      ],
+      "explanation": "With the optional switch -abno, the netstat command will display all network connections together with associated running processes. It helps a user identify possible malware connections."
+    },
+    {
+      "id": "m7-q10",
+      "question": "What is the purpose of the cd\\ command?",
+      "type": "single",
+      "options": [
+        { "text": "changes directory to the next highest directory", "isCorrect": false },
+        { "text": "changes directory to the next lower directory", "isCorrect": false },
+        { "text": "changes directory to the root directory", "isCorrect": true },
+        { "text": "changes directory to the previous directory", "isCorrect": false }
+      ],
+      "explanation": "CLI commands are typed into the Command Prompt window of the Windows operating system. The cd\\ command is used to change the directory to the Windows root directory."
+    },
+    {
+      "id": "m7-q11",
+      "question": "Which Windows version was the first to introduce a 64-bit Windows operating system?",
+      "type": "single",
+      "options": [
+        { "text": "Windows 10", "isCorrect": false },
+        { "text": "Windows NT", "isCorrect": false },
+        { "text": "Windows XP", "isCorrect": true },
+        { "text": "Windows 7", "isCorrect": false }
+      ],
+      "explanation": "There are more than 20 releases and versions of the Windows operating system. The Windows XP release introduced 64-bit processing to Windows computing."
+    },
+    {
+      "id": "m7-q12",
+      "question": "How much RAM is addressable by a 32-bit version of Windows?",
+      "type": "single",
+      "options": [
+        { "text": "4 GB", "isCorrect": true },
+        { "text": "8 GB", "isCorrect": false },
+        { "text": "32 GB", "isCorrect": false },
+        { "text": "16 GB", "isCorrect": false }
+      ],
+      "explanation": "A 32-bit operating system is capable of supporting approximately 4 GB of memory. This is because 2^32 is approximately 4 GB."
+    },
+    {
+      "id": "m7-q13",
+      "question": "A security incident has been filed and an employee believes that someone has been on the computer since the employee left last night. The employee states that the computer was turned off before the employee left for the evening. The computer is running slowly and applications are acting strangely. Which Microsoft Windows tool would be used by the security analyst to determine if and when someone logged on to the computer after working hours?",
+      "type": "single",
+      "options": [
+        { "text": "PowerShell", "isCorrect": false },
+        { "text": "Task Manager", "isCorrect": false },
+        { "text": "Performance Monitor", "isCorrect": false },
+        { "text": "Event Viewer", "isCorrect": true }
+      ],
+      "explanation": "Event Viewer is used to investigate the history of application, security, and system events. Events show the date and time that the event occurred along with the source of the event."
+    }
+  ]
+}

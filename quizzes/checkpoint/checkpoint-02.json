@@ -1,0 +1,308 @@
+{
+  "id": "checkpoint-02",
+  "type": "checkpoint",
+  "title": "Checkpoint 2: OS and Endpoint Security",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "cp2-q1",
+      "question": "A user is proposing the purchase of a patch management solution for a company. The user wants to give reasons why the company should spend money on a solution. What benefits does patch management provide? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Patches can be written quickly.", "isCorrect": false },
+        { "text": "Administrators can approve or deny patches.", "isCorrect": true },
+        { "text": "Computers require a connection to the Internet to receive patches.", "isCorrect": false },
+        { "text": "Updates cannot be circumvented.", "isCorrect": true },
+        { "text": "Updates can be forced on systems immediately.", "isCorrect": true },
+        { "text": "Patches can be chosen by the user.", "isCorrect": false }
+      ],
+      "explanation": "A centralized patch management system can speed up deployment of patches and automate the process. Administrators control the update process, reports are generated, and users cannot circumvent the update process."
+    },
+    {
+      "id": "cp2-q2",
+      "question": "What are three access control security services? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "authorization", "isCorrect": true },
+        { "text": "accounting", "isCorrect": true },
+        { "text": "access", "isCorrect": false },
+        { "text": "repudiation", "isCorrect": false },
+        { "text": "availability", "isCorrect": false },
+        { "text": "authentication", "isCorrect": true }
+      ],
+      "explanation": "This question refers to AAA: authentication, authorization, and accounting."
+    },
+    {
+      "id": "cp2-q3",
+      "question": "What principle prevents the disclosure of information to unauthorized people, resources, and processes?",
+      "type": "single",
+      "options": [
+        { "text": "availability", "isCorrect": false },
+        { "text": "confidentiality", "isCorrect": true },
+        { "text": "accounting", "isCorrect": false },
+        { "text": "integrity", "isCorrect": false },
+        { "text": "nonrepudiation", "isCorrect": false }
+      ],
+      "explanation": "The security principle of confidentiality refers to the prevention of the disclosure of information to unauthorized people, resources, and processes."
+    },
+    {
+      "id": "cp2-q4",
+      "question": "What are two advantages of the NTFS file system compared with FAT32? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "NTFS supports larger files.", "isCorrect": true },
+        { "text": "NTFS is easier to configure.", "isCorrect": false },
+        { "text": "NTFS allows faster formatting of drives.", "isCorrect": false },
+        { "text": "NTFS allows the automatic detection of bad sectors.", "isCorrect": false },
+        { "text": "NTFS provides more security features.", "isCorrect": true },
+        { "text": "NTFS allows faster access to external peripherals such as a USB drive.", "isCorrect": false }
+      ],
+      "explanation": "NTFS supports larger files and provides more security features compared to FAT32."
+    },
+    {
+      "id": "cp2-q5",
+      "question": "In the Linux shell, which character is used between two commands to instruct the shell to combine and execute these two commands in sequence?",
+      "type": "single",
+      "options": [
+        { "text": "$", "isCorrect": false },
+        { "text": "%", "isCorrect": false },
+        { "text": "|", "isCorrect": true }
+      ],
+      "explanation": "The piping process is indicated by inserting the character '|' between two consecutive commands."
+    },
+    {
+      "id": "cp2-q6",
+      "question": "What three tasks are accomplished by a comprehensive security policy? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "defines legal consequences of violations", "isCorrect": true },
+        { "text": "gives security staff the backing of management", "isCorrect": true },
+        { "text": "sets rules for expected behavior", "isCorrect": true },
+        { "text": "useful for management", "isCorrect": false },
+        { "text": "is not legally binding", "isCorrect": false },
+        { "text": "vagueness", "isCorrect": false }
+      ],
+      "explanation": "A comprehensive security policy sets rules for expected behavior, defines legal consequences of violations, and gives security staff the backing of management."
+    },
+    {
+      "id": "cp2-q7",
+      "question": "A security specialist is asked for advice on a security measure to prevent unauthorized hosts from accessing the home network of employees. Which measure would be most effective?",
+      "type": "single",
+      "options": [
+        { "text": "Implement a VLAN.", "isCorrect": false },
+        { "text": "Implement intrusion detection systems.", "isCorrect": false },
+        { "text": "Implement a firewall.", "isCorrect": true },
+        { "text": "Implement RAID.", "isCorrect": false }
+      ],
+      "explanation": "A firewall filters traffic and is effective in preventing unauthorized hosts from accessing a network."
+    },
+    {
+      "id": "cp2-q8",
+      "question": "What are three states of data during which data is vulnerable? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "purged data", "isCorrect": false },
+        { "text": "data decrypted", "isCorrect": false },
+        { "text": "data in-transit", "isCorrect": true },
+        { "text": "data in-process", "isCorrect": true },
+        { "text": "stored data", "isCorrect": true },
+        { "text": "data encrypted", "isCorrect": false }
+      ],
+      "explanation": "Data is vulnerable in three states: data in-transit, data in-process, and stored data."
+    },
+    {
+      "id": "cp2-q9",
+      "question": "Which two options are window managers for Linux? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Gnome", "isCorrect": true },
+        { "text": "KDE", "isCorrect": true },
+        { "text": "Kali", "isCorrect": false },
+        { "text": "File Explorer", "isCorrect": false },
+        { "text": "PenTesting", "isCorrect": false }
+      ],
+      "explanation": "Gnome and KDE are popular window managers for Linux."
+    },
+    {
+      "id": "cp2-q10",
+      "question": "What is the function of the kernel of an operating system?",
+      "type": "single",
+      "options": [
+        { "text": "The kernel links the hardware drivers with the underlying electronics of a computer.", "isCorrect": false },
+        { "text": "It provides a user interface that allows users to request a specific task.", "isCorrect": false },
+        { "text": "It is an application that allows the initial configuration of a Cisco device.", "isCorrect": false },
+        { "text": "The kernel provisions hardware resources to meet software requirements.", "isCorrect": true }
+      ],
+      "explanation": "The kernel provisions resources from the hardware to meet software requirements."
+    },
+    {
+      "id": "cp2-q11",
+      "question": "A user creates a file with .ps1 extension in Windows. What type of file is it?",
+      "type": "single",
+      "options": [
+        { "text": "PowerShell script", "isCorrect": true },
+        { "text": "PowerShell documentation", "isCorrect": false },
+        { "text": "PowerShell cmdlet", "isCorrect": false },
+        { "text": "PowerShell function", "isCorrect": false }
+      ],
+      "explanation": "Files with a .ps1 extension contain PowerShell commands and are known as PowerShell scripts."
+    },
+    {
+      "id": "cp2-q12",
+      "question": "Why would a network administrator choose Linux as an operating system in the Security Operations Center (SOC)?",
+      "type": "single",
+      "options": [
+        { "text": "More network applications are created for this environment.", "isCorrect": false },
+        { "text": "It is easier to use than other operating systems.", "isCorrect": false },
+        { "text": "It is more secure than other server operating systems.", "isCorrect": false },
+        { "text": "The administrator has more control over the operating system.", "isCorrect": true }
+      ],
+      "explanation": "Linux provides more control over the operating system, has a powerful CLI, and allows for better network communication control."
+    },
+    {
+      "id": "cp2-q13",
+      "question": "Which statement describes the policy-based intrusion detection approach?",
+      "type": "single",
+      "options": [
+        { "text": "It compares the antimalware definitions to a central repository for the latest updates.", "isCorrect": false },
+        { "text": "It compares the behaviors of a host to an established baseline to identify potential intrusion.", "isCorrect": false },
+        { "text": "It compares the signatures of incoming traffic to a known intrusion database.", "isCorrect": false },
+        { "text": "It compares the operations of a host against well-defined security rules.", "isCorrect": true }
+      ],
+      "explanation": "Policy-based intrusion detection compares the operations of a host against well-defined security rules or policies."
+    },
+    {
+      "id": "cp2-q14",
+      "question": "Which statement describes the term iptables?",
+      "type": "single",
+      "options": [
+        { "text": "It is a file used by a DHCP server to store current active IP addresses.", "isCorrect": false },
+        { "text": "It is a DNS daemon in Linux.", "isCorrect": false },
+        { "text": "It is a DHCP application in Windows.", "isCorrect": false },
+        { "text": "It is a rule-based firewall application in Linux.", "isCorrect": true }
+      ],
+      "explanation": "Iptables is a rule-based firewall application that allows Linux system administrators to configure network access rules."
+    },
+    {
+      "id": "cp2-q15",
+      "question": "Match the network-based anti-malware solution to the function.",
+      "type": "match",
+      "pairs": [
+        { "left": "provides filtering of SPAM and potentially malicious emails before they reach the endpoint", "right": "email security appliance" },
+        { "left": "provides filtering of websites and blacklisting before they reach the endpoint", "right": "web security appliance" },
+        { "left": "permits only authorized and compliant systems to connect to the network", "right": "network admission control" },
+        { "left": "provides endpoint protection from viruses and malware", "right": "advanced malware protection" }
+      ],
+      "explanation": "Email security appliance filters spam. Web security appliance filters websites. Network admission control manages authorized connections. Advanced malware protection protects endpoints."
+    },
+    {
+      "id": "cp2-q16",
+      "question": "Match typical Linux log files to the function.",
+      "type": "match",
+      "pairs": [
+        { "left": "used by RedHat and CentOS computers and tracks authentication-related events", "right": "/var/log/secure" },
+        { "left": "contains generic computer activity logs, and is used to store informational and noncritical system messages", "right": "/var/log/messages" },
+        { "left": "stores information related to hardware devices and their drivers", "right": "/var/log/dmesg" },
+        { "left": "used by Debian and Ubuntu computers and stores all authentication-related events", "right": "/var/log/auth.log" }
+      ],
+      "explanation": "/var/log/secure tracks auth on RedHat. /var/log/messages stores generic logs. /var/log/dmesg stores hardware info. /var/log/auth.log tracks auth on Debian."
+    },
+    {
+      "id": "cp2-q17",
+      "question": "On a Windows host, which tool can be used to create and maintain blacklists and whitelists?",
+      "type": "single",
+      "options": [
+        { "text": "Computer Management", "isCorrect": false },
+        { "text": "Local Users and Groups", "isCorrect": false },
+        { "text": "Group Policy Editor", "isCorrect": true },
+        { "text": "Task Manager", "isCorrect": false }
+      ],
+      "explanation": "In Windows, blacklisting and whitelisting settings can be managed through the Group Policy Editor."
+    },
+    {
+      "id": "cp2-q18",
+      "question": "Match the Windows command to the description.",
+      "type": "match",
+      "pairs": [
+        { "left": "renames a file", "right": "ren" },
+        { "left": "creates a new directory", "right": "mkdir" },
+        { "left": "changes the current directory", "right": "cd" },
+        { "left": "lists files in a directory", "right": "dir" }
+      ],
+      "explanation": "ren renames, mkdir creates directories, cd changes directory, dir lists files."
+    },
+    {
+      "id": "cp2-q19",
+      "question": "Match the antimalware approach to the description.",
+      "type": "match",
+      "pairs": [
+        { "left": "recognizes characteristics of known malware files", "right": "signature-based" },
+        { "left": "recognizes general features shared by types of malware", "right": "heuristics-based" },
+        { "left": "recognizes malware through analysis of suspicious actions", "right": "behavior-based" }
+      ],
+      "explanation": "Signature-based uses known files. Heuristics-based uses general features. Behavior-based analyzes actions."
+    },
+    {
+      "id": "cp2-q20",
+      "question": "Which statement describes the Cisco Threat Grid Glovebox?",
+      "type": "single",
+      "options": [
+        { "text": "It is a firewall appliance.", "isCorrect": false },
+        { "text": "It is a host-based intrusion detection system (HIDS) solution to fight against malware.", "isCorrect": false },
+        { "text": "It is a sandbox product for analyzing malware behaviors.", "isCorrect": true },
+        { "text": "It is a network-based IDS/IPS.", "isCorrect": false }
+      ],
+      "explanation": "Cisco ThreatGrid Glovebox is a sandbox product for analyzing malware behaviors."
+    },
+    {
+      "id": "cp2-q21",
+      "question": "A client device has initiated a secure HTTP request to a web browser. Which well-known port address number is associated with the destination address?",
+      "type": "single",
+      "options": [
+        { "text": "110", "isCorrect": false },
+        { "text": "404", "isCorrect": false },
+        { "text": "80", "isCorrect": false },
+        { "text": "443", "isCorrect": true }
+      ],
+      "explanation": "The well-known port number used by HTTPs (secure HTTP) is port 443."
+    },
+    {
+      "id": "cp2-q22",
+      "question": "Why is Kali Linux a popular choice in testing the network security of an organization?",
+      "type": "single",
+      "options": [
+        { "text": "It is an open source Linux security distribution containing many penetration tools.", "isCorrect": true },
+        { "text": "It can be used to test weaknesses by using only malicious software.", "isCorrect": false },
+        { "text": "It is a network scanning tool that prioritizes security risks.", "isCorrect": false },
+        { "text": "It can be used to intercept and log network traffic.", "isCorrect": false }
+      ],
+      "explanation": "Kali is an open source Linux security distribution containing many penetration tools commonly used by IT professionals to test network security."
+    },
+    {
+      "id": "cp2-q23",
+      "question": "What three methods help to ensure system availability? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "fire extinguishers", "isCorrect": false },
+        { "text": "system resiliency", "isCorrect": false },
+        { "text": "up-to-date operating systems", "isCorrect": true },
+        { "text": "system backups", "isCorrect": true },
+        { "text": "integrity checking", "isCorrect": false },
+        { "text": "equipment maintenance", "isCorrect": true }
+      ],
+      "explanation": "Equipment maintenance, system backups, and up-to-date operating systems all help ensure system availability."
+    },
+    {
+      "id": "cp2-q24",
+      "question": "Match the Windows system tool with the description.",
+      "type": "match",
+      "pairs": [
+        { "left": "a hierarchical database of all system and user information", "right": "Registry" },
+        { "left": "selectively denies traffic on specified interfaces", "right": "Windows Firewall" },
+        { "left": "a CLI environment used to run scripts and automate tasks", "right": "PowerShell" },
+        { "left": "maintains system logs", "right": "Event Viewer" }
+      ],
+      "explanation": "Registry stores system info. Windows Firewall denies traffic. PowerShell runs scripts. Event Viewer maintains logs."
+    }
+  ]
+}

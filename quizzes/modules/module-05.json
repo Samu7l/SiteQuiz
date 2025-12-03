@@ -1,0 +1,177 @@
+{
+  "id": "module-05",
+  "type": "module",
+  "title": "Module 5: Wireless Network Communication",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m5-q1",
+      "question": "City Center Hospital provides WLAN connectivity to its employees. The security policy requires that communication between employee mobile devices and the access points must be encrypted. What is the purpose of this requirement?",
+      "type": "single",
+      "options": [
+        { "text": "to prevent a computer virus on a mobile device from infecting other devices", "isCorrect": false },
+        { "text": "to prevent the contents of intercepted messages from being read", "isCorrect": true },
+        { "text": "to block denial of service attacks originating on the Internet", "isCorrect": false },
+        { "text": "to ensure that users who connect to an AP are employees of the hospital", "isCorrect": false }
+      ],
+      "explanation": "Encrypting data during communication prevents the contents from intercepted communications from being read."
+    },
+    {
+      "id": "m5-q2",
+      "question": "What is a feature that can be used by an administrator to prevent unauthorized users from connecting to a wireless access point?",
+      "type": "single",
+      "options": [
+        { "text": "MAC filtering", "isCorrect": true },
+        { "text": "software firewall", "isCorrect": false },
+        { "text": "proxy server", "isCorrect": false },
+        { "text": "WPA encryption", "isCorrect": false }
+      ],
+      "explanation": "Limiting a certain set of MAC addresses to connect to an access point is a way to ensure that only those devices are allowed to use the wireless network. A software firewall is used to prevent other users from gaining access to the protected computer. Configuring WPA encryption does not guarantee that the unauthorized user will not find the way to connect to the network. A proxy server is mostly used to filter traffic based on content."
+    },
+    {
+      "id": "m5-q3",
+      "question": "What is an advantage of SSID cloaking?",
+      "type": "single",
+      "options": [
+        { "text": "It provides free Internet access in public locations where knowing the SSID is of no concern.", "isCorrect": false },
+        { "text": "Clients will have to manually identify the SSID to connect to the network.", "isCorrect": true },
+        { "text": "SSIDs are very difficult to discover because APs do not broadcast them.", "isCorrect": false },
+        { "text": "It is the best way to secure a wireless network.", "isCorrect": false }
+      ],
+      "explanation": "SSID cloaking is a weak security feature that is performed by APs and some wireless routers by allowing the SSID beacon frame to be disabled. Although clients have to manually identify the SSID to be connected to the network, the SSID can be easily discovered. The best way to secure a wireless network is to use authentication and encryption systems. SSID cloaking does not provide free Internet access in public locations, but an open system authentication could be used in that situation."
+    },
+    {
+      "id": "m5-q4",
+      "question": "For which discovery mode will an AP generate the most traffic on a WLAN?",
+      "type": "single",
+      "options": [
+        { "text": "passive mode", "isCorrect": true },
+        { "text": "open mode", "isCorrect": false },
+        { "text": "mixed mode", "isCorrect": false },
+        { "text": "active mode", "isCorrect": false }
+      ],
+      "explanation": "The two discovery modes are passive and active. When operating in passive mode, an AP will generate more traffic as it continually broadcasts beacon frames to potential clients. In active mode, the client initiates the discovery process instead of the AP. Mixed mode refers to network mode settings, and open mode refers to security parameter settings."
+    },
+    {
+      "id": "m5-q5",
+      "question": "At a local college, students are allowed to connect to the wireless network without using a password. Which mode is the access point using?",
+      "type": "single",
+      "options": [
+        { "text": "network", "isCorrect": false },
+        { "text": "open", "isCorrect": true },
+        { "text": "passive", "isCorrect": false },
+        { "text": "shared-key", "isCorrect": false }
+      ],
+      "explanation": "Network mode is not an authentication mode, it refers to WLAN standards for 802.11a/b/g/n/ac/ad and the ability for access points to operate in mixed mode to support different standards, but it is not an authentication mode. Open authentication is a null authentication mode because wireless connectivity is granted to any wireless device. This authentication is used where security is not a concern. Passive mode is not an authentication mode, it refers to the open advertisement of the SSID, standards, and security settings by an access point. Shared-key authentication uses a pre-shared key between the client and the access point."
+    },
+    {
+      "id": "m5-q6",
+      "question": "An employee connects wirelessly to the company network using a cell phone. The employee then configures the cell phone to act as a wireless access point that will allow new employees to connect to the company network. Which type of security threat best describes this situation?",
+      "type": "single",
+      "options": [
+        { "text": "cracking", "isCorrect": false },
+        { "text": "denial of service", "isCorrect": false },
+        { "text": "rogue access point", "isCorrect": true },
+        { "text": "spoofing", "isCorrect": false }
+      ],
+      "explanation": "Configuring the cell phone to act as a wireless access point means that the cell phone is now a rogue access point. The employee unknowingly breached the security of the company network by allowing a user to access the network without connecting through the company access point. Cracking is the process of obtaining passwords from data stored or transmitted on a network. Denial of service attacks refer to sending large amounts of data to a networked device, such as a server, to prevent legitimate access to the server. Spoofing refers to access gained to a network or data by an attacker appearing to be a legitimate network device or user."
+    },
+    {
+      "id": "m5-q7",
+      "question": "The company handbook states that employees cannot have microwave ovens in their offices. Instead, all employees must use the microwave ovens located in the employee cafeteria. What wireless security risk is the company trying to avoid?",
+      "type": "single",
+      "options": [
+        { "text": "accidental interference", "isCorrect": true },
+        { "text": "improperly configured devices", "isCorrect": false },
+        { "text": "interception of data", "isCorrect": false },
+        { "text": "rogue access points", "isCorrect": false }
+      ],
+      "explanation": "Denial of service attacks can be the result of improperly configured devices which can disable the WLAN. Accidental interference from devices such as microwave ovens and cordless phones can impact both the security and performance of a WLAN. Man-in-the-middle attacks can allow an attacker to intercept data. Rogue access points can allow unauthorized users to access the wireless network."
+    },
+    {
+      "id": "m5-q8",
+      "question": "Which two roles are typically performed by a wireless router that is used in a home or small business? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "repeater", "isCorrect": false },
+        { "text": "access point", "isCorrect": true },
+        { "text": "WLAN controller", "isCorrect": false },
+        { "text": "Ethernet switch", "isCorrect": true },
+        { "text": "RADIUS authentication server", "isCorrect": false }
+      ],
+      "explanation": "In addition to its roles as router, a typical SOHO wireless router acts as both a wireless access point and an Ethernet switch. RADIUS authentication is provided by an external server. A WLAN controller is used in enterprise deployments to manage groups of lightweight access points. A repeater is a device that enhances an incoming signal and retransmits it."
+    },
+    {
+      "id": "m5-q9",
+      "question": "What method of wireless authentication is dependent on a RADIUS authentication server?",
+      "type": "single",
+      "options": [
+        { "text": "WEP", "isCorrect": false },
+        { "text": "WPA Personal", "isCorrect": false },
+        { "text": "WPA2 Personal", "isCorrect": false },
+        { "text": "WPA2 Enterprise", "isCorrect": true }
+      ],
+      "explanation": "WPA2 Enterprise relies on an external RADIUS server to authenticate clients when they attempt to connect. WEP and WPA/WPA2 Personal both use a pre-shared key that the clients must know in order to authenticate."
+    },
+    {
+      "id": "m5-q10",
+      "question": "Which wireless encryption method is the most secure?",
+      "type": "single",
+      "options": [
+        { "text": "WPA", "isCorrect": false },
+        { "text": "WEP", "isCorrect": false },
+        { "text": "WPA2 with TKIP", "isCorrect": false },
+        { "text": "WPA2 with AES", "isCorrect": true }
+      ],
+      "explanation": "IEEE 802.11i and WPA2 both use the Advanced Encryption Standard (AES) for encryption. AES is currently considered the strongest encryption protocol. WPA2 does not use TKIP (Temporal Key Integrity Protocol). It is WPA that uses TKIP. Although WPA provides stronger encryption than WEP, it is is not as strong as WPA2 (AES)."
+    },
+    {
+      "id": "m5-q11",
+      "question": "Which parameter is commonly used to identify a wireless network name when a home wireless AP is being configured?",
+      "type": "single",
+      "options": [
+        { "text": "ad hoc", "isCorrect": false },
+        { "text": "BESS", "isCorrect": false },
+        { "text": "ESS", "isCorrect": false },
+        { "text": "SSID", "isCorrect": true }
+      ],
+      "explanation": "The SSID is used to name a wireless network. This parameter is required in order for a wireless client to attach to a wireless AP."
+    },
+    {
+      "id": "m5-q12",
+      "question": "Which wireless parameter refers to the frequency bands used to transmit data to a wireless access point?",
+      "type": "single",
+      "options": [
+        { "text": "SSID", "isCorrect": false },
+        { "text": "channel settings", "isCorrect": true },
+        { "text": "security mode", "isCorrect": false },
+        { "text": "scanning mode", "isCorrect": false }
+      ],
+      "explanation": "An access point can be manually set to a specific frequency band or channel in order to avoid interference with other wireless devices in the area."
+    },
+    {
+      "id": "m5-q13",
+      "question": "Which device can control and manage a large number of corporate APs?",
+      "type": "single",
+      "options": [
+        { "text": "LWAP", "isCorrect": false },
+        { "text": "router", "isCorrect": false },
+        { "text": "switch", "isCorrect": false },
+        { "text": "WLC", "isCorrect": true }
+      ],
+      "explanation": "A wireless LAN controller (WLC) can be configured to manage multiple lightweight access points (LWAPs). On the WLC, a network administrator can configure SSIDs, security, IP addressing, and other wireless network parameters in a centralized management environment."
+    },
+    {
+      "id": "m5-q14",
+      "question": "A wireless engineer is comparing the deployment of a network using WPA2 versus WPA3 authentication. How is WPA3 authentication more secure when deployed in an open WLAN network in a newly built company-owned cafe shop?",
+      "type": "single",
+      "options": [
+        { "text": "WPA3 uses OWE to encrypt wireless traffic", "isCorrect": true },
+        { "text": "WPA3 requires the use of a 192-bit cryptographic suite", "isCorrect": false },
+        { "text": "WPA3 prevents brute force attacks by using SAE", "isCorrect": false },
+        { "text": "WPA3 uses DPP to securely onboard available IoT devices", "isCorrect": false }
+      ],
+      "explanation": "WPA3 uses Opportunistic Wireless Encryption (OWE) to encrypt all wireless traffic for open networks."
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "id": "module-10",
+  "type": "module",
+  "title": "Module 10: Cybersecurity Principles, Practices and Processes",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m10-q1",
+      "question": "What is identified by the first dimension of the cybersecurity cube?",
+      "type": "single",
+      "options": [
+        { "text": "rules", "isCorrect": false },
+        { "text": "goals", "isCorrect": true },
+        { "text": "knowledge", "isCorrect": false },
+        { "text": "safeguards", "isCorrect": false },
+        { "text": "tools", "isCorrect": false }
+      ],
+      "explanation": "The first dimension of the cybersecurity cube identifies the goals or security principles required to protect the cyber world."
+    },
+    {
+      "id": "m10-q2",
+      "question": "What type of cybersecurity laws protect you from an organization that might want to share your sensitive data?",
+      "type": "single",
+      "options": [
+        { "text": "privacy", "isCorrect": true },
+        { "text": "integrity", "isCorrect": false },
+        { "text": "nonrepudiation", "isCorrect": false },
+        { "text": "authentication", "isCorrect": false },
+        { "text": "confidentiality", "isCorrect": false }
+      ],
+      "explanation": "Privacy laws control appropriate use of data and access to data."
+    },
+    {
+      "id": "m10-q3",
+      "question": "Which two methods help to ensure data integrity? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "privacy", "isCorrect": false },
+        { "text": "availability", "isCorrect": false },
+        { "text": "hashing", "isCorrect": true },
+        { "text": "repudiation", "isCorrect": false },
+        { "text": "authorization", "isCorrect": false },
+        { "text": "data consistency checks", "isCorrect": true }
+      ],
+      "explanation": "Data integrity systems include methods such as hashing and data consistency checks."
+    },
+    {
+      "id": "m10-q4",
+      "question": "What name is given to a storage device connected to a network?",
+      "type": "single",
+      "options": [
+        { "text": "SAN", "isCorrect": false },
+        { "text": "Cloud", "isCorrect": false },
+        { "text": "RAID", "isCorrect": false },
+        { "text": "DAS", "isCorrect": false },
+        { "text": "NAS", "isCorrect": true }
+      ],
+      "explanation": "NAS refers to a storage device connected to a network that allows storage and retrieval of data from a centralized location by authorized network users."
+    },
+    {
+      "id": "m10-q5",
+      "question": "What is a method of sending information from one device to another using removable media?",
+      "type": "single",
+      "options": [
+        { "text": "packet", "isCorrect": false },
+        { "text": "LAN", "isCorrect": false },
+        { "text": "sneaker net", "isCorrect": true },
+        { "text": "wired", "isCorrect": false },
+        { "text": "infrared", "isCorrect": false },
+        { "text": "wireless", "isCorrect": false }
+      ],
+      "explanation": "Sneaker net refers to hand delivering the removable data."
+    },
+    {
+      "id": "m10-q6",
+      "question": "Which data state is maintained in NAS and SAN services?",
+      "type": "single",
+      "options": [
+        { "text": "data in-transit", "isCorrect": false },
+        { "text": "encrypted data", "isCorrect": false },
+        { "text": "data in-process", "isCorrect": false },
+        { "text": "stored data", "isCorrect": true }
+      ],
+      "explanation": "A cybersecurity specialist must be familiar with the types of technologies used to store, transmit, and process data. NAS and SAN services maintain stored data."
+    },
+    {
+      "id": "m10-q7",
+      "question": "Which type of networks poses increasing challenges to cybersecurity specialists due to the growth of BYOD on campus?",
+      "type": "single",
+      "options": [
+        { "text": "virtual networks", "isCorrect": false },
+        { "text": "wired networks", "isCorrect": false },
+        { "text": "wireless networks", "isCorrect": true },
+        { "text": "sneaker net", "isCorrect": false }
+      ],
+      "explanation": "The growth of BYOD (Bring Your Own Device) on campus primarily increases the use and challenges of wireless networks."
+    },
+    {
+      "id": "m10-q8",
+      "question": "An organization allows employees to work from home two days a week. Which technology should be implemented to ensure data confidentiality as data is transmitted?",
+      "type": "single",
+      "options": [
+        { "text": "RAID", "isCorrect": false },
+        { "text": "SHS", "isCorrect": false },
+        { "text": "VPN", "isCorrect": true },
+        { "text": "VLANS", "isCorrect": false }
+      ],
+      "explanation": "Protecting data confidentiality during transmission requires encryption technologies such as VPNs (Virtual Private Networks)."
+    },
+    {
+      "id": "m10-q9",
+      "question": "Which of the following are types of sensitive information? (Select three answers)",
+      "type": "multiple",
+      "options": [
+        { "text": "Classified", "isCorrect": true },
+        { "text": "Published", "isCorrect": false },
+        { "text": "Declassified", "isCorrect": false },
+        { "text": "Public", "isCorrect": false },
+        { "text": "Business", "isCorrect": true },
+        { "text": "Personal", "isCorrect": true }
+      ],
+      "explanation": "There are three types of sensitive information: personal information, business information, and classified information. This type of information must be protected from unauthorized access."
+    },
+    {
+      "id": "m10-q10",
+      "question": "Which of the following are foundational principles of the cybersecurity domain? (Select three answers)",
+      "type": "multiple",
+      "options": [
+        { "text": "Security", "isCorrect": false },
+        { "text": "Encryption", "isCorrect": false },
+        { "text": "Policy", "isCorrect": false },
+        { "text": "Availability", "isCorrect": true },
+        { "text": "Confidentiality", "isCorrect": true },
+        { "text": "Integrity", "isCorrect": true }
+      ],
+      "explanation": "There are three foundational principles of security: confidentiality, integrity, and availability. Together these three principles make up the security triad."
+    },
+    {
+      "id": "m10-q11",
+      "question": "What tasks are accomplished by a comprehensive security policy? (Select three answers)",
+      "type": "multiple",
+      "options": [
+        { "text": "It defines legal consequences of violations", "isCorrect": true },
+        { "text": "It provides vagueness", "isCorrect": false },
+        { "text": "It is is useful for management", "isCorrect": false },
+        { "text": "It gives security staff the backing of management", "isCorrect": true },
+        { "text": "It is not legally binding", "isCorrect": false },
+        { "text": "It sets rules for expected behavior", "isCorrect": true }
+      ],
+      "explanation": "The security policy of an organization sets the rules for expected behavior, defines the legal consequences of violations, and gives security staff the backing of management."
+    }
+  ]
+}
