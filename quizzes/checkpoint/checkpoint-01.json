@@ -297,6 +297,69 @@
         { "text": "VPNs use virtual connections to create a private network through a public network.", "isCorrect": true }
       ],
       "explanation": "A VPN is a private network that is created over a public network. It uses virtual connections routed through a public network."
+    },
+    {
+      "id": "cp1-q25",
+      "question": "What does the term vulnerability mean?",
+      "type": "single",
+      "options": [
+        { "text": "a known target or victim machine", "isCorrect": false },
+        { "text": "a method of attack to exploit a target", "isCorrect": false },
+        { "text": "a computer that contains sensitive information", "isCorrect": false },
+        { "text": "a weakness that makes a target susceptible to an attack", "isCorrect": true },
+        { "text": "a potential threat that a hacker creates", "isCorrect": false }
+      ],
+      "explanation": "A vulnerability is not a threat, but it is a weakness that makes the PC or the software a target for attacks."
+    },
+    {
+      "id": "cp1-q26",
+      "question": "Which three IPv4 header fields have no equivalent in an IPv6 header? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "protocol", "isCorrect": false },
+        { "text": "fragment offset", "isCorrect": true },
+        { "text": "version", "isCorrect": false },
+        { "text": "TTL", "isCorrect": false },
+        { "text": "flag", "isCorrect": true },
+        { "text": "identification", "isCorrect": true }
+      ],
+      "explanation": "Unlike IPv4, IPv6 routers do not perform fragmentation. Therefore, all three fields supporting fragmentation in the IPv4 header are removed and have no equivalent in the IPv6 header. These three fields are fragment offset, flag, and identification. IPv6 does support host packet fragmentation through the use of extension headers, which are not part of the IPv6 header."
+    },
+    {
+      "id": "cp1-q27",
+      "question": "What is a vulnerability that allows criminals to inject scripts into web pages viewed by users?",
+      "type": "single",
+      "options": [
+        { "text": "XML injection", "isCorrect": false },
+        { "text": "buffer overflow", "isCorrect": false },
+        { "text": "SQL injection", "isCorrect": false },
+        { "text": "Cross-site scripting", "isCorrect": true }
+      ],
+      "explanation": "Cross-site scripting (XSS) allows criminals to inject scripts that contain malicious code into web applications."
+    },
+    {
+      "id": "cp1-q28",
+      "question": "A network administrator of a small advertising company is configuring WLAN security by using the WPA2 PSK method. Which credential do office users need in order to connect their laptops to the WLAN?",
+      "type": "single",
+      "options": [
+        { "text": "the company username and password through Active Directory service", "isCorrect": false },
+        { "text": "a key that matches the key on the AP", "isCorrect": true },
+        { "text": "a username and password configured on the AP", "isCorrect": false },
+        { "text": "a user passphrase", "isCorrect": false }
+      ],
+      "explanation": "When a WLAN is configured with WPA2 PSK, wireless users must know the pre-shared key to associate and authenticate with the AP."
+    },
+    {
+      "id": "cp1-q29",
+      "question": "What is a function of SNMP?",
+      "type": "single",
+      "options": [
+        { "text": "provides statistical analysis on packets flowing through a Cisco router or multilayer switch", "isCorrect": false },
+        { "text": "captures packets entering and exiting the network interface card", "isCorrect": false },
+        { "text": "provides a message format for communication between network device managers and agents", "isCorrect": true },
+        { "text": "synchronizes the time across all devices on the network", "isCorrect": false }
+      ],
+      "explanation": "SNMP is an application layer protocol that allows administrators to manage devices on the network by providing a messaging format for communication between network device managers and agents."
     }
   ]
 }
