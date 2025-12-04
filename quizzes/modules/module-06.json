@@ -26,7 +26,7 @@
         { "text": "An IDS would allow malicious traffic to pass before it is addressed, whereas an IPS stops it immediately.", "isCorrect": true },
         { "text": "An IDS needs to be deployed together with a firewall device, whereas an IPS can replace a firewall.", "isCorrect": false }
       ],
-      "explanation": "An IPS is deployed in inline mode and will not allow malicious traffic to enter the internal network without first analyzing it. An advantage of this is that it can stop an attack immediately. An IDS is deployed in promiscuous mode."
+      "explanation": "An IPS is deployed in inline mode and will not allow malicious traffic to enter the internal network without first analyzing it. An advantage of this is that it can stop an attack immediately. An IDS is deployed in promiscuous mode. It copies the traffic patterns and analyzes them offline, thus it cannot stop the attack immediately and it relies on another device to take further actions once it detects an attack. Being deployed in inline mode, an IPS can negatively impact the traffic flow. Both IDS and IPS can use signature-based technology to detect malicious packets. An IPS cannot replace other security devices, such as firewalls, because they perform different tasks."
     },
     {
       "id": "m6-q3",
@@ -62,7 +62,7 @@
         { "text": "application filtering", "isCorrect": false },
         { "text": "URL filtering", "isCorrect": false }
       ],
-      "explanation": "Stateful packet inspection on a firewall checks that incoming packets are actually legitimate responses to requests originating from hosts inside the network."
+      "explanation": "Stateful packet inspection on a firewall checks that incoming packets are actually legitimate responses to requests originating from hosts inside the network. Packet filtering can be used to permit or deny access to resources based on IP or MAC address. Application filtering can permit or deny access based on port number. URL filtering is used to permit or deny access based on URL or on keywords."
     },
     {
       "id": "m6-q6",
@@ -87,7 +87,7 @@
         { "text": "It is a cloud-based security service to scan traffic for malware and policy enforcement.", "isCorrect": true },
         { "text": "It is a security appliance that provides an all-in-one solution for securing and controlling web traffic.", "isCorrect": false }
       ],
-      "explanation": "The Cisco Cloud Web Security (CWS) is a cloud-based security service that uses web proxies in the Cisco cloud environment to scan traffic for malware and policy enforcement."
+      "explanation": "The Cisco Cloud Web Security (CWS) is a cloud-based security service that uses web proxies in the Cisco cloud environment to scan traffic for malware and policy enforcement. It is not a firewall or web server solution. The Cisco Web Security Appliance (WSA) combines multiple security solutions to provide an all-in-one solution on a single platform to address the challenges of securing and controlling web traffic."
     },
     {
       "id": "m6-q8",

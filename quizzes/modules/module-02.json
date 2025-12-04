@@ -38,7 +38,7 @@
         { "text": "Cisco Product Security Incident Response Team", "isCorrect": true },
         { "text": "Cybersecurity Infrastructure and Security Agency", "isCorrect": false }
       ],
-      "explanation": "The Cisco Product Security Incident Response Team (PSIRT) is responsible for identifying, investigating, and addressing security vulnerabilities in Cisco products to help protect customers and ensure product security."
+      "explanation": "*Network security relates directly to an organization's business continuity. Many tools are available to help network administrators adapt, develop, and implement threat mitigation techniques. The Cisco Product Security Incident Response Team (PSIRT) is responsible for investigating and mitigating potential vulnerabilities in Cisco products. The Cisco Talos Intelligence Group website provides comprehensive security and threat intelligence to defend customers and protect their assets. US Cybersecurity Infrastructure and Security Agency (CISA) and the National Cyber Security Alliance (NCSA) are US government organizations to promote cybersecurity."
     },
     {
       "id": "m2-q4",
@@ -55,12 +55,12 @@
     {
       "id": "m2-q5",
       "question": "Match the common data loss vectors to the description.",
-      "type": "multiple",
-      "options": [
-        { "text": "Removable Media: An employee could perform an unauthorized transfer of data to a USB drive. In addition, a USB drive containing valuable corporate data could be lost.", "isCorrect": true },
-        { "text": "Unencrypted Devices: If the data is not stored using an encryption algorithm, then the thief can retrieve valuable confidential data from a stolen corporate laptop.", "isCorrect": true },
-        { "text": "Improper Access Control: Stolen passwords or weak passwords that have been compromised can provide an attacker easy access to corporate data.", "isCorrect": true },
-        { "text": "Email/Social Networking: Intercepted email or IM messages could be captured and reveal confidential information.", "isCorrect": true }
+      "type": "match",
+      "pairs": [
+        { "left": "Removable Media","right":"An employee could perform an unauthorized transfer of data to a USB drive. In addition, a USB drive containing valuable corporate data could be lost."},
+        { "left": "Unencrypted Devices", "right":"If the data is not stored using an encryption algorithm, then the thief can retrieve valuable confidential data from a stolen corporate laptop."},
+        { "left": "Improper Access Control","right":"Stolen passwords or weak passwords that have been compromised can provide an attacker easy access to corporate data."},
+        { "left": "Email/Social Networking","right": "Intercepted email or IM messages could be captured and reveal confidential information."}
       ],
       "explanation": "These are the correct associations for common data loss vectors as described."
     },
@@ -74,7 +74,7 @@
         { "text": "Exploit", "isCorrect": false },
         { "text": "Vulnerability", "isCorrect": false }
       ],
-      "explanation": "Common network security terms include: Threat – A potential danger to an asset such as data or the network itself. Vulnerability – A weakness in a system or its design that could be exploited by a threat. Exploit – The mechanism that is used to leverage a vulnerability to compromise an asset. Risk – The likelihood that a particular threat will exploit a particular vulnerability of an asset and result in an undesirable consequence."
+      "explanation": "Common network security terms include:\n - Threat - A potential danger to an asset such as data or the network itself.\n - Vulnerability - A weakness in a system or its design that could be exploited by a threat.\n - Exploit - The mechanism that is used to leverage a vulnerability to compromise an asset.\n - Risk - The likelihood that a particular threat will exploit a particular vulnerability of an asset and result in an undesirable consequence."
     },
     {
       "id": "m2-q7",
@@ -86,7 +86,7 @@
         { "text": "It is the total sum of the vulnerabilities in each system that are accessible to an attacker.", "isCorrect": true },
         { "text": "It is the likelihood that a particular threat will exploit a particular vulnerability of an asset and result in an undesirable consequence.", "isCorrect": false }
       ],
-      "explanation": "Common network security terms include: Attack surface – The total sum of the vulnerabilities in each system that are accessible to an attacker."
+      "explanation": "Common network security terms include:\n - Threat - A potential danger to an asset such as data or the network itself.\n - Vulnerability - A weakness in a system or its design that could be exploited by a threat.\n - Exploit - The mechanism that is used to leverage a vulnerability to compromise an asset.\n - Risk - The likelihood that a particular threat will exploit a particular vulnerability of an asset and result in an undesirable consequence."
     },
     {
       "id": "m2-q8",
@@ -98,16 +98,16 @@
         { "text": "Risk avoidance", "isCorrect": false },
         { "text": "Risk acceptance", "isCorrect": false }
       ],
-      "explanation": "There are four common ways to manage risk: Risk transfer – Some or all the risk is transferred to a willing third party such as a cloud service provider or an insurance company."
+      "explanation": "There are four common ways to manage risk: \n - Risk transfer - Some or all the risk is transferred to a willing third party such as a cloud service provider or an insurance company.\n - Risk reduction - This reduces exposure to risk or reduces the impact of risk by taking action to decrease the risk. This strategy requires careful evaluation of the costs of loss, the mitigation strategy, and the benefits gained from the operation or activity that is at risk. \n - Risk avoidance - This means avoiding any exposure to the risk by eliminating the activity or device that presents the risk. By eliminating an activity to avoid risk, any benefits that are possible from the activity are also lost.\n - Risk acceptance - This is when the cost of risk management options outweighs the cost of the risk itself. The risk is accepted, and no action is taken."
     },
     {
       "id": "m2-q9",
       "question": "Match the type of hackers to the description.",
-      "type": "multiple",
-      "options": [
-        { "text": "Black hat hackers: They are unethical criminals who violate computer and network security for personal gain, or for malicious reasons, such as attacking networks.", "isCorrect": true },
-        { "text": "Gray hat hackers: They are individuals who commit crimes and do arguably unethical things, but not for personal gain or to cause damage. An example would be someone who compromises a network without permission and then discloses the vulnerability publicly.", "isCorrect": true },
-        { "text": "White hat hackers: They are ethical hackers who use their programming skills for good, ethical, and legal purposes. They may perform network penetration tests to compromise networks and systems by using their knowledge of computer security systems to discover network vulnerabilities.", "isCorrect": true }
+      "type": "match",
+      "pairs": [
+        { "left": "Black hat hackers","right":"They are unethical criminals who violate computer and network security for personal gain, or for malicious reasons, such as attacking networks."},
+        { "left": "Gray hat hackers","right":"They are individuals who commit crimes and do arguably unethical things, but not for personal gain or to cause damage. An example would be someone who compromises a network without permission and then discloses the vulnerability publicly."},
+        { "left": "White hat hackers","right":"They are ethical hackers who use their programming skills for good, ethical, and legal purposes. They may perform network penetration tests to compromise networks and systems by using their knowledge of computer security systems to discover network vulnerabilities."}
       ],
       "explanation": "These are the correct definitions for Black hat, Gray hat, and White hat hackers."
     },
@@ -121,7 +121,7 @@
         { "text": "State-Sponsored", "isCorrect": false },
         { "text": "Vulnerability brokers", "isCorrect": false }
       ],
-      "explanation": "Cybercriminals – A term for black hat hackers who are either self-employed or working for large cybercrime organizations. Each year, cybercriminals are responsible for stealing billions of dollars from consumers and businesses."
+      "explanation": "Definitions for the different types of threat actors are: \n - Hacktivists - a term that refers to grey hat hackers who rally and protest against different political and social ideas. Hacktivists publicly protest against organizations or governments by posting articles, videos, leaking sensitive information, and performing distributed denial of service (DDoS) attacks. \n - Cybercriminals - a term for black hat hackers who are either self-employed or working for large cybercrime organizations. Each year, cyber criminals are responsible for stealing billions of dollars from consumers and businesses.\n - State-Sponsored hackers - threat actors who steal government secrets, gather intelligence, and sabotage networks of foreign governments, terrorist groups, and corporations. Most countries in the world participate to some degree in state-sponsored hacking.\n - Vulnerability brokers - typically grey hat hackers who attempt to discover exploits and report them to vendors, sometimes for prizes or rewards."
     },
     {
       "id": "m2-q11",

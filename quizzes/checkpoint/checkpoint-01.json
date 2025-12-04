@@ -1,4 +1,3 @@
-
 {
   "id": "checkpoint-01",
   "type": "checkpoint",
@@ -15,7 +14,7 @@
         { "text": "DoS", "isCorrect": true },
         { "text": "man-in-the-middle", "isCorrect": false }
       ],
-      "explanation": "A crash resulting from malformed packets is a hallmark of a Denial of Service (DoS) attack."
+      "explanation": "A crash resulting from malformed packets is a hallmark of a <b>Denial of Service (DoS)</b> attack."
     },
     {
       "id": "cp1-q2",
@@ -53,7 +52,7 @@
         { "text": "It is a piggy-back attack.", "isCorrect": false },
         { "text": "It is a DDoS attack.", "isCorrect": false }
       ],
-      "explanation": "False warnings about immediate expiration are often classified as hoaxes designed to create panic."
+      "explanation": "False warnings about immediate expiration are often classified as <b>hoaxes</b> designed to create panic."
     },
     {
       "id": "cp1-q5",
@@ -65,7 +64,7 @@
         { "text": "passwords", "isCorrect": true },
         { "text": "shredding", "isCorrect": false }
       ],
-      "explanation": "Passwords are the first line of defense because stolen or weak passwords provide a threat actor access to machines and data on the network."
+      "explanation": "<b>Passwords</b> are the first line of defense because stolen or weak passwords provide a threat actor access to machines and data on the network."
     },
     {
       "id": "cp1-q6",
@@ -77,7 +76,7 @@
         { "text": "improper access control", "isCorrect": true },
         { "text": "hard copy", "isCorrect": false }
       ],
-      "explanation": "Improper access control allows the exploitation of stolen or weak passwords to gain access to corporate data."
+      "explanation": "<b>Improper access control</b> allows the exploitation of stolen or weak passwords to gain access to corporate data."
     },
     {
       "id": "cp1-q7",
@@ -88,7 +87,7 @@
         { "left": "discover exploits and report them to vendors", "right": "vulnerability brokers" },
         { "left": "gather intelligence or commit sabotage on specific goals on behalf of their government", "right": "state-sponsored attackers" }
       ],
-      "explanation": "Hacktivists make political statements. Vulnerability brokers discover exploits. State-sponsored attackers gather intelligence or commit sabotage for their government."
+      "explanation": "<b>Hacktivists</b> make political statements. <b>Vulnerability brokers</b> discover exploits. <b>State-sponsored attackers</b> gather intelligence or commit sabotage for their government."
     },
     {
       "id": "cp1-q8",
@@ -100,7 +99,7 @@
         { "text": "The likelihood that a particular threat will exploit a vulnerability of an asset and result in an undesirable consequence.", "isCorrect": false },
         { "text": "A weakness in a system or its design that could be exploited by a threat.", "isCorrect": true }
       ],
-      "explanation": "A vulnerability is a weakness in a system or its design that could be exploited by a threat."
+      "explanation": "A <b>vulnerability</b> is a weakness in a system or its design that could be exploited by a threat."
     },
     {
       "id": "cp1-q9",
@@ -112,7 +111,7 @@
         { "text": "reconnaissance", "isCorrect": true },
         { "text": "trust exploitation", "isCorrect": false }
       ],
-      "explanation": "Through the capture of network packets (using tools like Wireshark), weak security network connectivity protocols such as Telnet can be inspected for passwords. This is a reconnaissance attack."
+      "explanation": "Through the capture of network packets (using tools like Wireshark), weak security network connectivity protocols such as Telnet can be inspected for passwords. This is a <b>reconnaissance</b> attack."
     },
     {
       "id": "cp1-q10",
@@ -124,7 +123,7 @@
         { "text": "SYN flooding", "isCorrect": true },
         { "text": "DNS poisoning", "isCorrect": false }
       ],
-      "explanation": "The TCP SYN Flood attack exploits the TCP three-way handshake. The threat actor continually sends TCP SYN session request packets, overwhelming the target with half-open TCP connections."
+      "explanation": "The <b>TCP SYN Flood attack</b> exploits the TCP three-way handshake. The threat actor continually sends TCP SYN session request packets, overwhelming the target with half-open TCP connections. Common <b>ICMP messages</b> of interest to threat actors include the following: <b>ICMP echo request and echo reply</b>: used to perform host verification and DoS attacks<br><b>ICMP unreachable</b>: used to perform network reconnaissance and scanning attacks<br><b>ICMP mask reply</b>: used to map an internal IP network<br><b>ICMP redirects</b>: used to lure a target host into sending all traffic through a compromised device and create a man-in-the-middle attack<br><b>ICMP router discovery</b>: used to inject bogus route entries into the routing table of a target host"
     },
     {
       "id": "cp1-q11",
@@ -136,7 +135,7 @@
         { "text": "destination IPv4 address", "isCorrect": false },
         { "text": "protocol", "isCorrect": false }
       ],
-      "explanation": "The header checksum field is used to detect corruption in the IPv4 header."
+      "explanation": "The <b>header checksum</b> field is used to detect corruption in the IPv4 header."
     },
     {
       "id": "cp1-q12",
@@ -148,7 +147,7 @@
         { "text": "ICMP mask reply", "isCorrect": false },
         { "text": "ICMP redirects", "isCorrect": true }
       ],
-      "explanation": "ICMP redirects are used to lure a target host into sending all traffic through a compromised device, creating a man-in-the-middle attack."
+      "explanation": "<b>ICMP redirects</b> are used to lure a target host into sending all traffic through a compromised device, creating a man-in-the-middle attack."
     },
     {
       "id": "cp1-q13",
@@ -160,7 +159,7 @@
         { "text": "The attacker redirects traffic to an incorrect DNS server.", "isCorrect": false },
         { "text": "The iFrame allows multiple DNS subdomains to be used.", "isCorrect": false }
       ],
-      "explanation": "An inline frame or iFrame is an HTML element that allows the browser to load a different web page from another source."
+      "explanation": "An inline frame or <b>iFrame</b> is an HTML element that allows the browser to load a different web page from another source."
     },
     {
       "id": "cp1-q14",
@@ -172,7 +171,7 @@
         { "text": "Implement a firewall at the edge of the network.", "isCorrect": false },
         { "text": "Implement restrictions on the use of ICMP echo-reply messages.", "isCorrect": false }
       ],
-      "explanation": "The best security measure is to encrypt as much network traffic as possible, both user data and network management traffic, to prevent clear-text data from being vulnerable."
+      "explanation": "The best security measure is to <b>encrypt</b> as much network traffic as possible, both user data and network management traffic, to prevent clear-text data from being vulnerable."
     },
     {
       "id": "cp1-q15",
@@ -184,7 +183,7 @@
         { "text": "DNS tunneling", "isCorrect": false },
         { "text": "TCP SYN flood", "isCorrect": false }
       ],
-      "explanation": "In DHCP spoofing attacks, a threat actor configures a fake DHCP server on the network to issue DHCP addresses to clients with the aim of forcing the clients to use a false or invalid default gateway."
+      "explanation": "In <b>DHCP spoofing</b> attacks, a threat actor configures a fake DHCP server on the network to issue DHCP addresses to clients with the aim of forcing the clients to use a false or invalid default gateway."
     },
     {
       "id": "cp1-q16",
@@ -196,7 +195,7 @@
         { "text": "risk avoidance", "isCorrect": true },
         { "text": "risk sharing", "isCorrect": false }
       ],
-      "explanation": "If an activity involves more risk than benefit, an organization may decide to avoid the risk altogether by discontinuing the activity. This is known as risk avoidance."
+      "explanation": "If an activity involves more risk than benefit, an organization may decide to avoid the risk altogether by discontinuing the activity. This is known as <b>risk avoidance</b>."
     },
     {
       "id": "cp1-q17",
@@ -209,7 +208,7 @@
         { "text": "WPA and PSK", "isCorrect": false },
         { "text": "WEP and RC4", "isCorrect": false }
       ],
-      "explanation": "WPA2 is the Wi-Fi alliance version of 802.11i, and AES aligns with WPA2 as an encryption standard which is stronger than TKIP or RC4."
+      "explanation": "<b>WPA2</b> is the Wi-Fi alliance version of 802.11i, and <b>AES</b> aligns with WPA2 as an encryption standard which is stronger than TKIP or RC4."
     },
     {
       "id": "cp1-q18",
@@ -222,7 +221,7 @@
         { "text": "user laptop", "isCorrect": false },
         { "text": "weak password", "isCorrect": false }
       ],
-      "explanation": "A rogue access point can act as a mechanism to intercept credentials or manipulate connections in a man-in-the-middle style attack."
+      "explanation": "A <b>rogue access point</b> can act as a mechanism to intercept credentials or manipulate connections in a man-in-the-middle style attack. Two methods can be used by a wireless device to discover and register with an access point: <b>passive mode</b> and <b>active mode</b>. In <b>passive mode</b>, the AP sends a broadcast beacon frame that contains the SSID and other wireless settings. In <b>active mode</b>, the wireless device must be manually configured for the SSID, and then the device broadcasts a probe request."
     },
     {
       "id": "cp1-q19",
@@ -235,7 +234,7 @@
         { "text": "initiating a three-way handshake", "isCorrect": false },
         { "text": "receiving a broadcast beacon frame", "isCorrect": true }
       ],
-      "explanation": "Two methods can be used by a wireless device to discover an access point: passive mode (receiving a broadcast beacon frame) and active mode (transmitting a probe request)."
+      "explanation": "Two methods can be used by a wireless device to discover an access point: <b>passive mode</b> (receiving a broadcast beacon frame) and <b>active mode</b> (transmitting a probe request)."
     },
     {
       "id": "cp1-q20",
@@ -247,7 +246,7 @@
         { "text": "The client begins the discover process by sending a probe request.", "isCorrect": false },
         { "text": "The client must know the name of the SSID to begin the discover process.", "isCorrect": false }
       ],
-      "explanation": "In passive mode, the AP sends a broadcast beacon frame that contains the SSID and other wireless settings."
+      "explanation": "In <b>passive mode</b>, the AP sends a broadcast <b>beacon frame</b> that contains the SSID and other wireless settings."
     },
     {
       "id": "cp1-q21",
@@ -259,7 +258,7 @@
         { "text": "By default, traffic is allowed to flow among interfaces that are members of the same zone.", "isCorrect": true },
         { "text": "By default, traffic is allowed to flow between a zone member interface and any interface that is not a zone member.", "isCorrect": false }
       ],
-      "explanation": "By default, traffic is allowed to flow among interfaces that are members of the same zone. Traffic can never flow between an interface assigned to a zone and an interface not assigned to a zone."
+      "explanation": "By default, traffic is allowed to flow among interfaces that are members of the <b>same zone</b>. Traffic can never flow between an interface assigned to a zone and an interface not assigned to a zone."
     },
     {
       "id": "cp1-q22",
@@ -271,7 +270,7 @@
         { "text": "It is a set of rules used to detect typical intrusive activity.", "isCorrect": true },
         { "text": "It is a security script that is used to detect unknown threats.", "isCorrect": false }
       ],
-      "explanation": "An IPS signature uniquely identifies specific malware, protocol anomalies, or malicious traffic. It is a set of rules used to detect typical intrusive activity."
+      "explanation": "An <b>IPS signature</b> uniquely identifies specific malware, protocol anomalies, or malicious traffic. It is a set of rules used to detect typical intrusive activity."
     },
     {
       "id": "cp1-q23",
@@ -284,7 +283,7 @@
         { "text": "If the network traffic stream is encrypted, HIPS is unable to access unencrypted forms of the traffic.", "isCorrect": false },
         { "text": "With HIPS, the success or failure of an attack cannot be readily determined.", "isCorrect": false }
       ],
-      "explanation": "HIPS cannot create a complete view of the network (as it runs on individual hosts) and requires support for every host operating system in the organization."
+      "explanation": "<b>HIPS</b> cannot create a complete view of the network (as it runs on individual hosts) and requires support for every host <b>operating system</b> in the organization."
     },
     {
       "id": "cp1-q24",
@@ -296,7 +295,7 @@
         { "text": "VPNs use open source virtualization software to create the tunnel through the Internet.", "isCorrect": false },
         { "text": "VPNs use virtual connections to create a private network through a public network.", "isCorrect": true }
       ],
-      "explanation": "A VPN is a private network that is created over a public network. It uses virtual connections routed through a public network."
+      "explanation": "A <b>VPN</b> is a private network that is created over a public network. It uses <b>virtual connections</b> routed through a public network."
     },
     {
       "id": "cp1-q25",
@@ -309,7 +308,7 @@
         { "text": "a weakness that makes a target susceptible to an attack", "isCorrect": true },
         { "text": "a potential threat that a hacker creates", "isCorrect": false }
       ],
-      "explanation": "A vulnerability is not a threat, but it is a weakness that makes the PC or the software a target for attacks."
+      "explanation": "A <b>vulnerability</b> is not a threat, but it is a weakness that makes the PC or the software a target for attacks."
     },
     {
       "id": "cp1-q26",
@@ -323,7 +322,7 @@
         { "text": "flag", "isCorrect": true },
         { "text": "identification", "isCorrect": true }
       ],
-      "explanation": "Unlike IPv4, IPv6 routers do not perform fragmentation. Therefore, all three fields supporting fragmentation in the IPv4 header are removed and have no equivalent in the IPv6 header. These three fields are fragment offset, flag, and identification. IPv6 does support host packet fragmentation through the use of extension headers, which are not part of the IPv6 header."
+      "explanation": "Unlike IPv4, IPv6 routers do not perform fragmentation. Therefore, all three fields supporting fragmentation in the IPv4 header are removed and have no equivalent in the IPv6 header. These three fields are <b>fragment offset</b>, <b>flag</b>, and <b>identification</b>. IPv6 does support host packet fragmentation through the use of extension headers, which are not part of the IPv6 header."
     },
     {
       "id": "cp1-q27",
@@ -335,7 +334,7 @@
         { "text": "SQL injection", "isCorrect": false },
         { "text": "Cross-site scripting", "isCorrect": true }
       ],
-      "explanation": "Cross-site scripting (XSS) allows criminals to inject scripts that contain malicious code into web applications."
+      "explanation": "<b>Cross-site scripting (XSS)</b> allows criminals to inject scripts that contain malicious code into web applications."
     },
     {
       "id": "cp1-q28",
@@ -347,7 +346,7 @@
         { "text": "a username and password configured on the AP", "isCorrect": false },
         { "text": "a user passphrase", "isCorrect": false }
       ],
-      "explanation": "When a WLAN is configured with WPA2 PSK, wireless users must know the pre-shared key to associate and authenticate with the AP."
+      "explanation": "When a WLAN is configured with <b>WPA2 PSK</b>, wireless users must know the <b>pre-shared key</b> to associate and authenticate with the AP."
     },
     {
       "id": "cp1-q29",
@@ -359,7 +358,7 @@
         { "text": "provides a message format for communication between network device managers and agents", "isCorrect": true },
         { "text": "synchronizes the time across all devices on the network", "isCorrect": false }
       ],
-      "explanation": "SNMP is an application layer protocol that allows administrators to manage devices on the network by providing a messaging format for communication between network device managers and agents."
+      "explanation": "<b>SNMP</b> is an application layer protocol that allows administrators to manage devices on the network by providing a messaging format for communication between network device managers and agents."
     }
   ]
 }

@@ -148,7 +148,7 @@
         { "text": "CVE national database", "isCorrect": true },
         { "text": "Infragard", "isCorrect": false }
       ],
-      "explanation": "The CVE (Common Vulnerabilities and Exposures) database provides standardized identifiers and detailed descriptions of publicly known cybersecurity vulnerabilities. It is maintained by MITRE and is a key reference for security professionals."
+      "explanation": "The United States Computer Emergency Readiness Team (US-CERT) and the U.S. Department of Homeland Security sponsor a dictionary of common vulnerabilities and exposures (CVE).\n Each CVE entry contains a standard identifier number, a brief description of the security vulnerability and any important references to related vulnerability reports. The CVE list is maintained by a not-for-profit, the MITRE Corporation, on its public website."
     }
   ]
 }

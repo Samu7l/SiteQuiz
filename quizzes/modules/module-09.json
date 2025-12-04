@@ -14,7 +14,7 @@
         { "text": "signature-based", "isCorrect": true },
         { "text": "behavior-based", "isCorrect": false }
       ],
-      "explanation": "Antimalware programs may detect viruses using three different approaches: signature-based (recognizing characteristics of known malware), heuristics-based (general features), and behavior-based (suspicious activities)."
+      "explanation": "Antimalware programs may detect viruses using three different approaches: <b>signature-based</b> - by recognizing various characteristics of known malware files<br><b>heuristics-based</b> - by recognizing general features shared by various types of malware<br><b>behavior-based</b> - through analysis of suspicious activities"
     },
     {
       "id": "m9-q2",
@@ -26,7 +26,7 @@
         { "left": "Antimalware technology", "right": "XProtect" },
         { "left": "Allows the hard drive to be wiped remotely", "right": "Find My Mac" }
       ],
-      "explanation": "Gatekeeper ensures signed software. FileVault handles encryption. XProtect is the built-in antimalware. Find My Mac allows remote wiping."
+      "explanation": "<b>Gatekeeper</b> ensures signed software. <b>FileVault</b> handles encryption. <b>XProtect</b> is the built-in antimalware. <b>Find My Mac</b> allows remote wiping."
     },
     {
       "id": "m9-q3",
@@ -38,7 +38,7 @@
         { "text": "firewall", "isCorrect": false },
         { "text": "switch", "isCorrect": true }
       ],
-      "explanation": "Switches are LAN infrastructure devices interconnecting endpoints. They are susceptible to LAN-related attacks including MAC address-table overflow attacks, spoofing attacks, and VLAN attacks."
+      "explanation": "<b>Switches</b> are LAN infrastructure devices interconnecting endpoints. They are susceptible to LAN-related attacks including MAC address-table overflow attacks, spoofing attacks, and VLAN attacks."
     },
     {
       "id": "m9-q4",
@@ -50,7 +50,7 @@
         { "text": "telemetry", "isCorrect": true },
         { "text": "intrusion detection and prevention", "isCorrect": false }
       ],
-      "explanation": "The telemetry functionality in most host-based security suites provides robust logging functionality and submits logs to a central location for analysis."
+      "explanation": "The <b>telemetry</b> functionality in most host-based security suites provides robust logging functionality and submits logs to a central location for analysis."
     },
     {
       "id": "m9-q5",
@@ -62,7 +62,7 @@
         { "text": "data storage", "isCorrect": false },
         { "text": "network bandwidth", "isCorrect": false }
       ],
-      "explanation": "With cloud computing, boundaries of enterprise networks are expanded to include locations on the Internet for which the enterprises are not responsible. Malicious software might access the internal network endpoints to attack internal networks."
+      "explanation": "With <b>cloud computing</b>, boundaries of enterprise networks are expanded to include locations on the Internet for which the enterprises are not responsible. Malicious software might access the internal network endpoints to attack internal networks."
     },
     {
       "id": "m9-q6",
@@ -74,7 +74,7 @@
         { "text": "Antivirus scans are performed on hosts from a centralized system.", "isCorrect": true },
         { "text": "The antivirus protection is provided by the router that is connected to a cloud service.", "isCorrect": false }
       ],
-      "explanation": "Agentless antivirus protection performs scans on hosts from a centralized system, whereas agent-based protection runs on every protected machine."
+      "explanation": "<b>Agentless antivirus protection</b> performs scans on hosts from a centralized system, whereas agent-based protection runs on every protected machine."
     },
     {
       "id": "m9-q7",
@@ -86,7 +86,7 @@
         { "text": "Tripwire", "isCorrect": false },
         { "text": "Cisco AMP", "isCorrect": false }
       ],
-      "explanation": "The Open Source HIDS SECurity (OSSEC) software is an open-source HIDS that uses a central manager server and agents that are installed on the hosts that are to be monitored."
+      "explanation": "The Open Source HIDS SECurity (<b>OSSEC</b>) software is an <b>open-source HIDS</b> that uses a central manager server and agents that are installed on the hosts that are to be monitored."
     },
     {
       "id": "m9-q8",
@@ -98,7 +98,7 @@
         { "text": "when the host checks emails from an enterprise email server", "isCorrect": false },
         { "text": "when the host is connected to an isolated network from the Internet by another security device", "isCorrect": false }
       ],
-      "explanation": "The Domain profile in Windows Firewall configuration is for connections to a trusted network, such as a business network, that is assumed to have an adequate security infrastructure."
+      "explanation": "The <b>Domain profile</b> in Windows Firewall configuration is for connections to a trusted network, such as a business network, that is assumed to have an adequate security infrastructure."
     },
     {
       "id": "m9-q9",
@@ -110,7 +110,7 @@
         { "text": "It is an agentless system that scans files on a host for potential malware.", "isCorrect": false },
         { "text": "It identifies potential attacks and sends alerts but does not stop the traffic.", "isCorrect": false }
       ],
-      "explanation": "A current HIDS is a comprehensive security application that combines the functionalities of antimalware applications with firewall protection. It not only detects malware but also prevents it from executing."
+      "explanation": "A current <b>HIDS</b> is a comprehensive security application that combines the functionalities of <b>antimalware applications with firewall protection</b>. It not only detects malware but also prevents it from executing."
     },
     {
       "id": "m9-q10",
@@ -122,7 +122,7 @@
         { "text": "Internet attack surface", "isCorrect": false },
         { "text": "software attack surface", "isCorrect": false }
       ],
-      "explanation": "The Network Attack Surface involves the exploitation of vulnerabilities in networks."
+      "explanation": "The SANS Institute describes three components of the attack surface: <b>Network Attack Surface</b> - exploitation of vulnerabilities in networks<br><b>Software Attack Surface</b> - exploitation of vulnerabilities in web, cloud, or host-based software applications<br><b>Human Attack Surface</b> - exploitation of weaknesses in user behavior"
     },
     {
       "id": "m9-q11",
@@ -134,7 +134,7 @@
         { "text": "It is the total number of attacks toward an organization within a day.", "isCorrect": false },
         { "text": "It is the network interface where attacks originate.", "isCorrect": false }
       ],
-      "explanation": "An attack surface is the total sum of the vulnerabilities in a system that is accessible to an attacker. It can consist of open ports, software, network protocols, and users."
+      "explanation": "An <b>attack surface</b> is the <b>total sum of the vulnerabilities</b> in a system that is accessible to an attacker. It can consist of open ports, software, network protocols, and users."
     },
     {
       "id": "m9-q12",
@@ -146,7 +146,7 @@
         { "text": "human attack surface", "isCorrect": true },
         { "text": "Internet attack surface", "isCorrect": false }
       ],
-      "explanation": "The Human Attack Surface involves the exploitation of weaknesses in user behavior, such as social engineering."
+      "explanation": "The SANS Institute describes three components of the attack surface: <b>Network Attack Surface</b> - exploitation of vulnerabilities in networks<br><b>Software Attack Surface</b> - exploitation of vulnerabilities in web, cloud, or host-based software applications<br><b>Human Attack Surface</b> - exploitation of weaknesses in user behavior"
     },
     {
       "id": "m9-q13",
@@ -158,7 +158,7 @@
         { "text": "baselining", "isCorrect": false },
         { "text": "whitelisting", "isCorrect": false }
       ],
-      "explanation": "Blacklists are applications that are prevented from executing because they pose a security risk. They can be manually entered or obtained from a centralized security system."
+      "explanation": "<b>Blacklists</b> are applications that are prevented from executing because they pose a security risk. They can be manually entered or obtained from a centralized security system."
     },
     {
       "id": "m9-q14",
@@ -170,7 +170,7 @@
         { "text": "Implement data classification standards", "isCorrect": false },
         { "text": "Install patches and updates regularly", "isCorrect": true }
       ],
-      "explanation": "To secure operating systems against threats, policies that address application system and operating system updates should be implemented so that patches and updates are installed regularly, and software is tested."
+      "explanation": "To secure operating systems against threats, policies that address application system and operating system updates should be implemented so that <b>patches and updates are installed regularly</b>, and <b>software is tested</b>."
     },
     {
       "id": "m9-q15",
@@ -181,19 +181,19 @@
         { "text": "Spyware protection", "isCorrect": false },
         { "text": "Adware protection", "isCorrect": true }
       ],
-      "explanation": "Adware protection is software that can be installed on a computer system to prevent popup ads from displaying."
+      "explanation": "<b>Adware protection</b> is software that can be installed on a computer system to prevent popup ads from displaying."
     },
     {
       "id": "m9-q16",
       "question": "What type of lock is recommended to secure an office door?",
       "type": "single",
       "options": [
-        { "text": "Cipher lock", "isCorrect": false },
+        { "text": "Cipher lock", "isCorrect": true },
         { "text": "Cable lock", "isCorrect": false },
         { "text": "Security cage", "isCorrect": false },
-        { "text": "Keyed entry lock", "isCorrect": true }
+        { "text": "Keyed entry lock", "isCorrect": false }
       ],
-      "explanation": "A keyed entry lock that requires a physical key is the most common and recommended lock to secure an office door."
+      "explanation": "A <b>cipher lock</b> i.e. a lock that requires a code (keyless entry) is the most common and recommended lock to secure an office door."
     }
   ]
 }

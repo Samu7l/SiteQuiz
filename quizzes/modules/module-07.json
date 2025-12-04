@@ -14,7 +14,7 @@
         { "text": "win.ini", "isCorrect": false },
         { "text": "Registry", "isCorrect": true }
       ],
-      "explanation": "The registry contains information about applications, users, hardware, network settings, and file types. The registry also contains a unique section for every user, which contains the settings configured by that particular user."
+      "explanation": "The <b>registry</b> contains information about applications, users, hardware, network settings, and file types. The registry also contains a unique section for every user, which contains the settings configured by that particular user."
     },
     {
       "id": "m7-q2",
@@ -38,7 +38,7 @@
         { "text": "guest", "isCorrect": false },
         { "text": "standard user", "isCorrect": false }
       ],
-      "explanation": "The administrator account is used to manage the computer and is very powerful. Best practices recommend that it be used only when it is needed to avoid accidentally performing significant changes to the system."
+      "explanation": "The <b>administrator account</b> is used to manage the computer and is very powerful. Best practices recommend that it be used only when it is needed to avoid accidentally performing significant changes to the system."
     },
     {
       "id": "m7-q4",
@@ -50,7 +50,7 @@
         { "text": "CMOS", "isCorrect": false },
         { "text": "UEFI", "isCorrect": true }
       ],
-      "explanation": "As of 2015, most personal computer motherboards are shipped with UEFI as the replacement for the BIOS program."
+      "explanation": "As of 2015, most personal computer motherboards are shipped with <b>UEFI</b> as the replacement for the BIOS program."
     },
     {
       "id": "m7-q5",
@@ -63,7 +63,7 @@
         { "text": "partition", "isCorrect": true },
         { "text": "cluster", "isCorrect": false }
       ],
-      "explanation": "Hard disk drives are organized by several physical and logical structures. Partitions are logical portions of the disk that can be formatted to store data. Partitions consist of tracks, sectors, and clusters."
+      "explanation": "Hard disk drives are organized by several physical and logical structures. <b>Partitions</b> are logical portions of the disk that can be formatted to store data. Partitions consist of <b>tracks</b>, <b>sectors</b>, and <b>clusters</b>. Tracks are concentric rings on the disk surface. Tracks are divided into sectors and multiple sectors are combined logically to form clusters"
     },
     {
       "id": "m7-q6",
@@ -75,7 +75,7 @@
         { "text": "Task Manager", "isCorrect": true },
         { "text": "User Accounts", "isCorrect": false }
       ],
-      "explanation": "The Windows Task Manager utility includes a Users tab from which the system resources consumed by each user can be displayed."
+      "explanation": "The Windows <b>Task Manager</b> utility includes a Users tab from which the system resources consumed by each user can be displayed."
     },
     {
       "id": "m7-q7",
@@ -87,7 +87,7 @@
         { "text": "ipconfig / displaydns", "isCorrect": false },
         { "text": "net", "isCorrect": false }
       ],
-      "explanation": "The nslookup command was created to allow a user to manually query a DNS server to resolve a given host name. The ipconfig /displaydns command only displays previously resolved DNS entries. The tracert command was created to examine the path that packets take as they cross a network and can resolve a hostname by automatically querying a DNS server."
+      "explanation": "The <b>nslookup</b> command was created to allow a user to manually query a DNS server to resolve a given host name. The <b>ipconfig /displaydns</b> command only displays previously resolved DNS entries. The <b>tracert</b> command was created to examine the path that packets take as they cross a network and can resolve a hostname by automatically querying a DNS server. The <b>net</b> command is used to manage network computers, servers, printers, and network drives."
     },
     {
       "id": "m7-q8",
@@ -99,7 +99,7 @@
         { "text": "net start", "isCorrect": false },
         { "text": "net share", "isCorrect": false }
       ],
-      "explanation": "The net command is a very important command in Windows. 'net use' connects, disconnects, and displays information about shared network resources."
+      "explanation": "The <b>net</b> command is a very important command in Windows. Some common net commands include the following: <b>net accounts</b> – sets password and logon requirements for users<br><b>net session</b> – lists or disconnects sessions between a computer and other computers on the network<br><b>net share</b> – creates, removes, or manages shared resources<br><b>net start</b> – starts a network service or lists running network services<br><b>net stop</b> – stops a network service<br><b>net use</b> – connects, disconnects, and displays information about shared network resources<br><b>net view</b> – shows a list of computers and network devices on the network"
     },
     {
       "id": "m7-q9",
@@ -111,7 +111,7 @@
         { "text": "only active TCP connections in an ESTABLISHED state", "isCorrect": false },
         { "text": "a local routing table", "isCorrect": false }
       ],
-      "explanation": "With the optional switch -abno, the netstat command will display all network connections together with associated running processes. It helps a user identify possible malware connections."
+      "explanation": "With the optional switch <b>-abno</b>, the <b>netstat</b> command will display all network connections together with associated running processes. It helps a user identify possible malware connections."
     },
     {
       "id": "m7-q10",
@@ -123,7 +123,7 @@
         { "text": "changes directory to the root directory", "isCorrect": true },
         { "text": "changes directory to the previous directory", "isCorrect": false }
       ],
-      "explanation": "CLI commands are typed into the Command Prompt window of the Windows operating system. The cd\\ command is used to change the directory to the Windows root directory."
+      "explanation": "CLI commands are typed into the Command Prompt window of the Windows operating system. The <b>cd\\</b> command is used to change the directory to the Windows <b>root directory</b>."
     },
     {
       "id": "m7-q11",
@@ -135,7 +135,7 @@
         { "text": "Windows XP", "isCorrect": true },
         { "text": "Windows 7", "isCorrect": false }
       ],
-      "explanation": "There are more than 20 releases and versions of the Windows operating system. The Windows XP release introduced 64-bit processing to Windows computing."
+      "explanation": "There are more than 20 releases and versions of the Windows operating system. The <b>Windows XP</b> release introduced 64-bit processing to Windows computing."
     },
     {
       "id": "m7-q12",
@@ -147,7 +147,7 @@
         { "text": "32 GB", "isCorrect": false },
         { "text": "16 GB", "isCorrect": false }
       ],
-      "explanation": "A 32-bit operating system is capable of supporting approximately 4 GB of memory. This is because 2^32 is approximately 4 GB."
+      "explanation": "A <b>32-bit operating system</b> is capable of supporting approximately <b>4 GB</b> of memory. This is because $2^{32}$ is approximately 4 GB."
     },
     {
       "id": "m7-q13",
@@ -159,7 +159,7 @@
         { "text": "Performance Monitor", "isCorrect": false },
         { "text": "Event Viewer", "isCorrect": true }
       ],
-      "explanation": "Event Viewer is used to investigate the history of application, security, and system events. Events show the date and time that the event occurred along with the source of the event."
+      "explanation": "<b>Event Viewer</b> is used to investigate the history of application, security, and system events. Events show the date and time that the event occurred along with the source of the event."
     }
   ]
 }
