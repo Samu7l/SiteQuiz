@@ -361,8 +361,67 @@ const app = {
             
             // DO NOT RETURN HERE! We need to run the button logic below.
         } 
+        // --- CASE A : NEW DROPDOWN MATCHING LOGIC ---
+        else if (qData.type === 'dropdown-match') {
+            instructionEl.innerText = "(Select the correct option from the dropdown menu for each item.)";
+            
+            const ddContainer = document.createElement('div');
+            
+            // 1. Get all unique options for the dropdowns (from the 'right' side of pairs)
+            // We use a Set to remove duplicates, then sort them
+            const uniqueOptions = [...new Set(qData.pairs.map(p => p.right))].sort();
+
+            // 2. Get current user answers object { 0: "Answer A", 1: "Answer B" }
+            const currentAns = app.data.userAnswers[qIndex] || {};
+
+            // 3. Build rows
+            qData.pairs.forEach((pair, idx) => {
+                const row = document.createElement('div');
+                row.className = 'dd-match-row';
+
+                // Prompt Text
+                const prompt = document.createElement('div');
+                prompt.className = 'dd-match-prompt';
+                prompt.innerText = pair.left;
+
+                // Select Menu
+                const select = document.createElement('select');
+                select.className = 'dd-match-select';
+                
+                // Add Default "Select an option"
+                const defaultOpt = document.createElement('option');
+                defaultOpt.value = "";
+                defaultOpt.innerText = "Please select an option";
+                defaultOpt.disabled = true;
+                if (!currentAns[idx]) defaultOpt.selected = true;
+                select.appendChild(defaultOpt);
+
+                // Add Actual Options
+                uniqueOptions.forEach(optText => {
+                    const option = document.createElement('option');
+                    option.value = optText;
+                    option.innerText = optText;
+                    if (currentAns[idx] === optText) option.selected = true;
+                    select.appendChild(option);
+                });
+
+                // Event Listener
+                select.onchange = (e) => {
+                    let answers = app.data.userAnswers[qIndex] || {};
+                    answers[idx] = e.target.value;
+                    app.data.userAnswers[qIndex] = answers;
+                    app.updateNavStyles(); // Update progress bar
+                };
+
+                row.appendChild(prompt);
+                row.appendChild(select);
+                ddContainer.appendChild(row);
+            });
+
+            optsContainer.appendChild(ddContainer);
+        }
         
-        // --- CASE B: STANDARD QUESTION (Single/Multiple) ---
+        // --- CASE C: STANDARD QUESTION (Single/Multiple) ---
         else {
             const isMultiple = qData.type === 'multiple';
             instructionEl.innerText = isMultiple ? "(Select all that apply)" : "(Select one)";
@@ -433,8 +492,8 @@ const app = {
         app.data.currentQuiz.questions.forEach((q, idx) => {
             const userAns = app.data.userAnswers[idx];
 
-            if (q.type === 'match') {
-                // Match Logic: Check if EVERY pair is correct
+            if (q.type === 'match' || q.type === 'dropdown-match') {
+                // LOGIC IS IDENTICAL FOR BOTH MATCHING TYPES
                 if (userAns) {
                     let allCorrect = true;
                     // Check every pair defined in JSON
@@ -520,6 +579,25 @@ const app = {
                             ${isCorrect 
                                 ? `<span class="match-review-correct">${pair.right}</span>` 
                                 : `<span class="match-review-wrong">${userVal}</span> <br> <small style="color:green">Correct: ${pair.right}</small>`
+                            }
+                        </div>
+                    </div>`;
+                });
+                html += `</div>`;
+            } else if (q.type === 'dropdown-match') {
+                // --- NEW REVIEW FOR DROPDOWN ---
+                html += `<div style="background:#fff; border:1px solid #eee; border-radius:4px;">`;
+                q.pairs.forEach((pair, pairIdx) => {
+                    const userVal = userAns ? userAns[pairIdx] : "No Answer";
+                    const isCorrect = userVal === pair.right;
+                    
+                    html += `
+                    <div class="dd-review-row">
+                        <div style="margin-bottom:5px;"><strong>${pair.left}</strong></div>
+                        <div>
+                            ${isCorrect 
+                                ? `<span class="dd-correct">✔ ${userVal}</span>` 
+                                : `<span class="dd-wrong">${userVal}</span> <span class="dd-correct">➝ ${pair.right}</span>`
                             }
                         </div>
                     </div>`;

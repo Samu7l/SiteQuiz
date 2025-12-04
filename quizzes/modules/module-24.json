@@ -1,0 +1,129 @@
+
+{
+  "id": "module-24",
+  "type": "module",
+  "title": "Module 24: Threat Intelligence",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m24-q1",
+      "question": "What is the primary function of (ISC2)?",
+      "type": "single",
+      "options": [
+        { "text": "to maintain a list of common vulnerabilities and exposures (CVE) used by prominent security organizations", "isCorrect": false },
+        { "text": "to maintain a detailed list of all zero-day attacks", "isCorrect": false },
+        { "text": "to provide a weekly digest of news articles about computer security", "isCorrect": false },
+        { "text": "to provide vendor neutral education products and career services", "isCorrect": true }
+      ],
+      "explanation": "The International Information System Security Certification Consortium, or (ISC)², is a non-profit organization that specializes in information security education and certifications, such as the CISSP."
+    },
+    {
+      "id": "m24-q2",
+      "question": "What is the primary function of SANS?",
+      "type": "single",
+      "options": [
+        { "text": "to maintain the Internet Storm Center", "isCorrect": true },
+        { "text": "to maintain the list of common vulnerabilities and exposures (CVE)", "isCorrect": false },
+        { "text": "to foster cooperation and coordination in information sharing, incident prevention, and rapid reaction", "isCorrect": false },
+        { "text": "to provide vendor neutral education products and career services", "isCorrect": false }
+      ],
+      "explanation": "The SANS Institute is known for providing information security training and security research. It also maintains the Internet Storm Center (ISC), which monitors the level of malicious activity on the Internet."
+    },
+    {
+      "id": "m24-q3",
+      "question": "What is the primary function of the Center for Internet Security (CIS)?",
+      "type": "single",
+      "options": [
+        { "text": "to offer 24x7 cyberthreat warnings and advisories, vulnerability identification, and mitigation and incident responses", "isCorrect": true },
+        { "text": "to provide a security news portal that aggregates the latest breaking news pertaining to alerts, exploits, and vulnerabilities", "isCorrect": false },
+        { "text": "to maintain a list of common vulnerabilities and exposures (CVE) used by security organizations", "isCorrect": false },
+        { "text": "to provide vendor-neutral education products and career services to industry professionals worldwide", "isCorrect": false }
+      ],
+      "explanation": "The CIS is a non-profit organization focused on enhancing cybersecurity readiness. Through its Multi-State Information Sharing and Analysis Center (MS-ISAC), it provides 24x7 cyberthreat monitoring and warnings."
+    },
+    {
+      "id": "m24-q4",
+      "question": "What is the primary purpose of the Forum of Incident Response and Security Teams (FIRST)?",
+      "type": "single",
+      "options": [
+        { "text": "to provide vendor neutral education products and career services to industry professionals worldwide", "isCorrect": false },
+        { "text": "to provide a security news portal that aggregates the latest breaking news pertaining to alerts, exploits, and vulnerabilities", "isCorrect": false },
+        { "text": "to enable a variety of computer security incident response teams to collaborate, cooperate, and coordinate information sharing, incident prevention, and rapid reaction strategies", "isCorrect": true },
+        { "text": "to offer 24x7 cyberthreat warnings and advisories, vulnerability identification, and mitigation and incident response", "isCorrect": false }
+      ],
+      "explanation": "FIRST is a global association that brings together incident response teams (CSIRTs) from government, commercial, and educational sectors to foster cooperation and coordination in incident handling."
+    },
+    {
+      "id": "m24-q5",
+      "question": "Which service is offered by the U.S. Department of Homeland Security (DHS) that enables real-time exchange of cyberthreat indicators between the U.S. Federal Government and the private sector?",
+      "type": "single",
+      "options": [
+        { "text": "AIS", "isCorrect": true },
+        { "text": "STIX", "isCorrect": false },
+        { "text": "FireEye", "isCorrect": false },
+        { "text": "CVE", "isCorrect": false }
+      ],
+      "explanation": "Automated Indicator Sharing (AIS) is a DHS capability that enables the real-time exchange of cyber threat indicators between the federal government and the private sector."
+    },
+    {
+      "id": "m24-q6",
+      "question": "What does the MITRE Corporation create and maintain?",
+      "type": "single",
+      "options": [
+        { "text": "TAXII", "isCorrect": false },
+        { "text": "IOC", "isCorrect": false },
+        { "text": "CVE", "isCorrect": true },
+        { "text": "STIX", "isCorrect": false }
+      ],
+      "explanation": "The MITRE Corporation maintains the Common Vulnerabilities and Exposures (CVE) list, which is a dictionary of publicly known cybersecurity vulnerabilities."
+    },
+    {
+      "id": "m24-q7",
+      "question": "Which threat intelligence sharing open standard specifies, captures, characterizes, and communicates events and properties of network operations?",
+      "type": "single",
+      "options": [
+        { "text": "MISP", "isCorrect": false },
+        { "text": "CybOX", "isCorrect": true },
+        { "text": "Talos", "isCorrect": false },
+        { "text": "TAXII", "isCorrect": false }
+      ],
+      "explanation": "Cyber Observable Expression (CybOX) is a standardized schema for specifying, capturing, characterizing, and communicating events and properties of network operations."
+    },
+    {
+      "id": "m24-q8",
+      "question": "What is the primary objective of a threat intelligence platform (TIP)?",
+      "type": "single",
+      "options": [
+        { "text": "to provide a specification for an application layer protocol that allows the communication of CTI over HTTPS", "isCorrect": false },
+        { "text": "to provide a security operations platform that integrates and enhances diverse security tools and threat intelligence", "isCorrect": false },
+        { "text": "to provide a standardized schema for specifying, capturing, characterizing, and communicating events and properties of network operations", "isCorrect": false },
+        { "text": "to aggregate the data in one place and present it in a comprehensible and usable format", "isCorrect": true }
+      ],
+      "explanation": "A Threat Intelligence Platform (TIP) is designed to aggregate threat intelligence data from multiple sources in one place and present it in a format that is usable for security analysis."
+    },
+    {
+      "id": "m24-q9",
+      "question": "How does FireEye detect and prevent zero-day attacks?",
+      "type": "single",
+      "options": [
+        { "text": "by keeping a detailed analysis of all viruses and malware", "isCorrect": false },
+        { "text": "by establishing an authentication parameter prior to any data exchange", "isCorrect": false },
+        { "text": "by only accepting encrypted data packets that validate against their configured hash values", "isCorrect": false },
+        { "text": "by addressing all stages of an attack lifecycle with a signature-less engine utilizing stateful attack analysis", "isCorrect": true }
+      ],
+      "explanation": "FireEye uses a signature-less Multi-Vector Virtual Execution (MVX) engine that analyzes the state of attacks and addresses all stages of the attack lifecycle to detect zero-day threats."
+    },
+    {
+      "id": "m24-q10",
+      "question": "Which service is provided by the Cisco Talos Group?",
+      "type": "single",
+      "options": [
+        { "text": "preventing online malware from affecting end user devices", "isCorrect": false },
+        { "text": "collecting information about active, existing, and emerging threats", "isCorrect": true },
+        { "text": "preventing viruses from affecting end user devices", "isCorrect": false },
+        { "text": "scanning updates for malware code", "isCorrect": false }
+      ],
+      "explanation": "Cisco Talos is a threat intelligence group that collects and analyzes information about active, existing, and emerging threats to protect Cisco customers."
+    }
+  ]
+}

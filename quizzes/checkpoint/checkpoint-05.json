@@ -1,1 +1,302 @@
-
+{
+  "id": "checkpoint-05",
+  "type": "checkpoint",
+  "title": "Checkpoint 5: Evaluating Security Alerts",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "cp5-q1",
+      "question": "Which technique is necessary to ensure a private transfer of data using a VPN?",
+      "type": "single",
+      "options": [
+        { "text": "authorization", "isCorrect": false },
+        { "text": "virtualization", "isCorrect": false },
+        { "text": "scalability", "isCorrect": false },
+        { "text": "encryption", "isCorrect": true }
+      ],
+      "explanation": "Confidential and secure transfers of data with VPNs require data encryption."
+    },
+    {
+      "id": "cp5-q2",
+      "question": "What is the purpose of Tor?",
+      "type": "single",
+      "options": [
+        { "text": "to donate processor cycles to distributed computational tasks in a processor sharing P2P network", "isCorrect": false },
+        { "text": "to allow users to browse the Internet anonymously", "isCorrect": true },
+        { "text": "to securely connect to a remote network over an unsecure link such as an Internet connection", "isCorrect": false },
+        { "text": "to inspect incoming traffic and look for any that violates a rule or matches the signature of a known exploit", "isCorrect": false }
+      ],
+      "explanation": "Tor is a software platform and network of P2P hosts that allow users to browse the Internet anonymously."
+    },
+    {
+      "id": "cp5-q3",
+      "question": "Which two technologies are primarily used on peer-to-peer networks? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Darknet", "isCorrect": false },
+        { "text": "BitTorrent", "isCorrect": true },
+        { "text": "Snort", "isCorrect": false },
+        { "text": "Wireshark", "isCorrect": false },
+        { "text": "Bitcoin", "isCorrect": true }
+      ],
+      "explanation": "Bitcoin (distributed ledger) and BitTorrent (file sharing) are primary P2P technologies."
+    },
+    {
+      "id": "cp5-q4",
+      "question": "Which protocol is exploited by cybercriminals who create malicious iFrames?",
+      "type": "single",
+      "options": [
+        { "text": "ARP", "isCorrect": false },
+        { "text": "HTTP", "isCorrect": true },
+        { "text": "DNS", "isCorrect": false },
+        { "text": "DHCP", "isCorrect": false }
+      ],
+      "explanation": "An iFrame is an HTML element used in web pages (HTTP) that allows loading content from another source."
+    },
+    {
+      "id": "cp5-q5",
+      "question": "Which method is used by some malware to transfer files from infected hosts to a threat actor host?",
+      "type": "single",
+      "options": [
+        { "text": "iFrame injection", "isCorrect": false },
+        { "text": "UDP infiltration", "isCorrect": false },
+        { "text": "HTTPS traffic encryption", "isCorrect": false },
+        { "text": "ICMP tunneling", "isCorrect": true }
+      ],
+      "explanation": "Some malware uses ICMP packets to transfer files via ICMP tunneling."
+    },
+    {
+      "id": "cp5-q6",
+      "question": "Which type of attack is carried out by threat actors against a network to determine which IP addresses, protocols, and ports are allowed by ACLs?",
+      "type": "single",
+      "options": [
+        { "text": "reconnaissance", "isCorrect": true },
+        { "text": "denial of service", "isCorrect": false },
+        { "text": "social engineering", "isCorrect": false },
+        { "text": "phishing", "isCorrect": false }
+      ],
+      "explanation": "Threat actors use reconnaissance attacks involving port scanning to determine allowed IPs, protocols, and ports."
+    },
+    {
+      "id": "cp5-q7",
+      "question": "Which technique would a threat actor use to disguise traces of an ongoing exploit?",
+      "type": "single",
+      "options": [
+        { "text": "Create an invisible iFrame on a web page.", "isCorrect": false },
+        { "text": "Corrupt time information by attacking the NTP infrastructure.", "isCorrect": true },
+        { "text": "Use SSL to encapsulate malware.", "isCorrect": false },
+        { "text": "Encapsulate other protocols within DNS to evade security measures.", "isCorrect": false }
+      ],
+      "explanation": "Threat actors may attack the NTP infrastructure to corrupt time information used in network logs, disguising the timeline of an exploit."
+    },
+    {
+      "id": "cp5-q8",
+      "question": "After a security monitoring tool identifies a malware attachment entering the network, what is the benefit of performing a retrospective analysis?",
+      "type": "single",
+      "options": [
+        { "text": "It can determine which network host was first affected.", "isCorrect": false },
+        { "text": "It can identify how the malware originally entered the network.", "isCorrect": false },
+        { "text": "It can calculate the probability of a future incident.", "isCorrect": false },
+        { "text": "A retrospective analysis can help in tracking the behavior of the malware from the identification point forward.", "isCorrect": true }
+      ],
+      "explanation": "Retrospective analysis tracks the behavior of the malware from the point of entry forward."
+    },
+    {
+      "id": "cp5-q9",
+      "question": "Which two services are provided by the NetFlow tool? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "QoS configuration", "isCorrect": false },
+        { "text": "network monitoring", "isCorrect": true },
+        { "text": "access list monitoring", "isCorrect": false },
+        { "text": "usage-based network billing", "isCorrect": true },
+        { "text": "log analysis", "isCorrect": false }
+      ],
+      "explanation": "NetFlow provides services including network traffic accounting, usage-based network billing, and network monitoring."
+    },
+    {
+      "id": "cp5-q10",
+      "question": "Which Cisco appliance can be used to filter network traffic contents to report and deny traffic based on the web server reputation?",
+      "type": "single",
+      "options": [
+        { "text": "ASA", "isCorrect": false },
+        { "text": "AVC", "isCorrect": false },
+        { "text": "ESA", "isCorrect": false },
+        { "text": "WSA", "isCorrect": true }
+      ],
+      "explanation": "The Cisco Web Security Appliance (WSA) acts as a web proxy and can filter traffic based on web reputation."
+    },
+    {
+      "id": "cp5-q11",
+      "question": "What is a key difference between the data captured by NetFlow and data captured by Wireshark?",
+      "type": "single",
+      "options": [
+        { "text": "NetFlow collects metadata from a network flow whereas Wireshark captures full data packets.", "isCorrect": true },
+        { "text": "NetFlow data is analyzed by tcpdump whereas Wireshark data is analyzed by nfdump.", "isCorrect": false },
+        { "text": "NetFlow provides transaction data whereas Wireshark provides session data.", "isCorrect": false },
+        { "text": "NetFlow data shows network flow contents whereas Wireshark data shows network flow statistics.", "isCorrect": false }
+      ],
+      "explanation": "Wireshark captures full packet contents. NetFlow collects metadata about the flow."
+    },
+    {
+      "id": "cp5-q12",
+      "question": "A system administrator runs a file scan utility on a Windows PC and notices a file lsass.exe in the Program Files directory. What should the administrator do?",
+      "type": "single",
+      "options": [
+        { "text": "Uninstall the lsass application because it is a legacy application and no longer required by Windows.", "isCorrect": false },
+        { "text": "Move it to Program Files (x86) because it is a 32bit application.", "isCorrect": false },
+        { "text": "Open the Task Manager, right-click on the lsass process and choose End Task.", "isCorrect": false },
+        { "text": "Delete the file because it is probably malware.", "isCorrect": true }
+      ],
+      "explanation": "lsass.exe should run from Windows\\System32. If found elsewhere, it is likely malware."
+    },
+    {
+      "id": "cp5-q13",
+      "question": "Match the Windows host log to the messages contained in it.",
+      "type": "match",
+      "pairs": [
+        { "left": "events logged by various applications", "right": "application logs" },
+        { "left": "events related to the operation of drivers, processes, and hardware", "right": "system logs" },
+        { "left": "information about the installation of software, including Windows updates", "right": "setup logs" },
+        { "left": "events related to logon attempts and operations related to file or object management and access", "right": "security logs" }
+      ],
+      "explanation": "Application logs track apps. System logs track hardware/drivers. Setup logs track installations. Security logs track logins/access."
+    },
+    {
+      "id": "cp5-q14",
+      "question": "How does a web proxy device provide data loss prevention (DLP) for an enterprise?",
+      "type": "single",
+      "options": [
+        { "text": "by inspecting incoming traffic for potential exploits", "isCorrect": false },
+        { "text": "by functioning as a firewall", "isCorrect": false },
+        { "text": "by scanning and logging outgoing traffic", "isCorrect": true },
+        { "text": "by checking the reputation of external web servers", "isCorrect": false }
+      ],
+      "explanation": "A web proxy provides DLP by scanning outgoing traffic for sensitive information."
+    },
+    {
+      "id": "cp5-q15",
+      "question": "Match the network monitoring data type with the description.",
+      "type": "match",
+      "pairs": [
+        { "left": "contains details of network flows including the 5-tuples, the amount of data transmitted, and the duration of data transmission", "right": "session data" },
+        { "left": "generated by IPS or IDS devices when suspicious traffic is detected", "right": "alert data" },
+        { "left": "used to describe and analyze network flow or performance data", "right": "statistical data" },
+        { "left": "includes device-specific server and host logs", "right": "transaction data" }
+      ],
+      "explanation": "Session data details flows. Alert data comes from IDS/IPS. Statistical data analyzes performance. Transaction data includes logs."
+    },
+    {
+      "id": "cp5-q16",
+      "question": "Which type of data is used by Cisco Cognitive Intelligence to find malicious activity that has bypassed security controls, or entered through unmonitored channels, and is operating inside an enterprise network?",
+      "type": "single",
+      "options": [
+        { "text": "session", "isCorrect": false },
+        { "text": "statistical", "isCorrect": true },
+        { "text": "transaction", "isCorrect": false },
+        { "text": "alert", "isCorrect": false }
+      ],
+      "explanation": "Cisco Cognitive Intelligence uses statistical data analysis to find malicious activity."
+    },
+    {
+      "id": "cp5-q17",
+      "question": "Match the Snort rule source to the description.",
+      "type": "match",
+      "pairs": [
+        { "left": "open source rules under BSD license", "right": "ET" },
+        { "left": "rules created and maintained by Cisco Talos", "right": "VRT" },
+        { "left": "older rules created by Sourcefire", "right": "GPL" }
+      ],
+      "explanation": "ET = Emerging Threats (open source). VRT = Vulnerability Research Team (Cisco Talos). GPL = General Public License (older Sourcefire)."
+    },
+    {
+      "id": "cp5-q18",
+      "question": "What are the three core functions provided by the Security Onion? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "intrusion detection", "isCorrect": true },
+        { "text": "threat containment", "isCorrect": false },
+        { "text": "business continuity planning", "isCorrect": false },
+        { "text": "alert analysis", "isCorrect": true },
+        { "text": "full packet capture", "isCorrect": true },
+        { "text": "security device management", "isCorrect": false }
+      ],
+      "explanation": "Security Onion provides full packet capture, intrusion detection, and alert analysis tools."
+    },
+    {
+      "id": "cp5-q19",
+      "question": "What are two scenarios where probabilistic security analysis is best suited? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "when analyzing applications designed to circumvent firewalls", "isCorrect": true },
+        { "text": "when each event is the inevitable result of antecedent causes", "isCorrect": false },
+        { "text": "when analyzing events with the assumption that they follow predefined steps", "isCorrect": false },
+        { "text": "when applications that conform to application/networking standards are analyzed", "isCorrect": false },
+        { "text": "when random variables create difficulty in knowing with certainty the outcome of any given event", "isCorrect": true }
+      ],
+      "explanation": "Probabilistic analysis is best for uncertain events (random variables) and complex scenarios like applications circumventing firewalls."
+    },
+    {
+      "id": "cp5-q20",
+      "question": "Match the characteristic to the method of security analysis.",
+      "type": "dropdown-match",
+      "pairs": [
+        { "left": "random variables create difficulty in knowing the outcome of any given event with certainty", "right": "Probabilistic" },
+        { "left": "analysis of applications that conform to application/networking standards", "right": "Deterministic" },
+        { "left": "precise method that yields the same result every time by relying on predefined conditions", "right": "Deterministic" },
+        { "left": "preferred method for analyzing applications designed to circumvent firewalls", "right": "Probabilistic" },
+        { "left": "each event is the inevitable result of antecedent causes", "right": "Deterministic" }
+      ],
+      "explanation": "Probabilistic handles uncertainty and evasion. Deterministic handles standards and predictable causes."
+    },
+    {
+      "id": "cp5-q21",
+      "question": "What information is contained in the options section of a Snort rule?",
+      "type": "single",
+      "options": [
+        { "text": "text describing the event", "isCorrect": true },
+        { "text": "direction of traffic flow", "isCorrect": false },
+        { "text": "action to be taken", "isCorrect": false },
+        { "text": "source and destination address", "isCorrect": false }
+      ],
+      "explanation": "The rule options section consists of the message text describing the alert and metadata."
+    },
+    {
+      "id": "cp5-q22",
+      "question": "Which classification indicates that an alert is verified as an actual security incident?",
+      "type": "single",
+      "options": [
+        { "text": "false negative", "isCorrect": false },
+        { "text": "true negative", "isCorrect": false },
+        { "text": "false positive", "isCorrect": false },
+        { "text": "true positive", "isCorrect": true }
+      ],
+      "explanation": "A True Positive is an alert verified to be an actual security incident."
+    },
+    {
+      "id": "cp5-q23",
+      "question": "A threat actor has successfully breached the network firewall without being detected by the IDS system. What condition describes the lack of alert?",
+      "type": "single",
+      "options": [
+        { "text": "false positive", "isCorrect": false },
+        { "text": "true negative", "isCorrect": false },
+        { "text": "true positive", "isCorrect": false },
+        { "text": "false negative", "isCorrect": true }
+      ],
+      "explanation": "A false negative is when a system fails to detect an actual exploit."
+    },
+    {
+      "id": "cp5-q24",
+      "question": "Refer to the exhibit. Which field in the Sguil event window indicates the number of times an event is detected for the same source and destination IP address?",
+      "image": "cp5-q24.png",
+      "type": "single",
+      "options": [
+        { "text": "AlertID", "isCorrect": false },
+        { "text": "CNT", "isCorrect": true },
+        { "text": "Pr", "isCorrect": false },
+        { "text": "ST", "isCorrect": false }
+      ],
+      "explanation": "The CNT field indicates the count of times an event is detected from the same source/destination."
+    }
+  ]
+}

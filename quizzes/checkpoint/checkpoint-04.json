@@ -1,1 +1,321 @@
-
+{
+  "id": "checkpoint-04",
+  "type": "checkpoint",
+  "title": "Checkpoint 4: Firewalls, Cryptography and Cloud Security",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "cp4-q1",
+      "question": "Which type of packet is unable to be filtered by an outbound ACL?",
+      "type": "single",
+      "options": [
+        { "text": "ICMP packet", "isCorrect": false },
+        { "text": "broadcast packet", "isCorrect": false },
+        { "text": "multicast packet", "isCorrect": false },
+        { "text": "router-generated packet", "isCorrect": true }
+      ],
+      "explanation": "Traffic that originates within a router such as pings from a command prompt, remote access from a router to another device, or routing updates are not affected by outbound access lists. The traffic must flow through the router in order for the router to apply the ACEs."
+    },
+    {
+      "id": "cp4-q2",
+      "question": "Refer to the exhibit. What is the result of adding the established argument to the end of the ACE?",
+      "image": "cp4-q2.png",
+      "type": "single",
+      "options": [
+        { "text": "192.168.254.0 /23 traffic is allowed to reach any network.", "isCorrect": false },
+        { "text": "Any IP traffic is allowed to reach the 192.168.254.0 255.255.254.0 network as long as it is in response to an originated request.", "isCorrect": false },
+        { "text": "Any traffic is allowed to reach the 192.168.254.0 255.255.254.0 network.", "isCorrect": false },
+        { "text": "Any TCP traffic is allowed to reach the 192.168.254.0 255.255.254.0 network if it is in response to an originated request.", "isCorrect": true }
+      ],
+      "explanation": "The established argument allows TCP return traffic from established connections to be sent on an outgoing interface to a network."
+    },
+    {
+      "id": "cp4-q3",
+      "question": "Refer to the exhibit. A router has an existing ACL that permits all traffic from the 172.16.0.0 network. The administrator attempts to add a new statement to the ACL that denies packets from host 172.16.0.1 and receives the error message that is shown in the exhibit. What action can the administrator take to block packets from host 172.16.0.1 while still permitting all other traffic from the 172.16.0.0 network?",
+      "image": "cp4-q3.png",
+      "type": "single",
+      "options": [
+        { "text": "Add a deny any any statement to access-list 1.", "isCorrect": false },
+        { "text": "Manually add the new deny statement with a sequence number of 5.", "isCorrect": true },
+        { "text": "Manually add the new deny statement with a sequence number of 15.", "isCorrect": false },
+        { "text": "Create a second access list denying the host and apply it to the same interface.", "isCorrect": false }
+      ],
+      "explanation": "Because the new deny statement is a host address that falls within the existing 172.16.0.0 network that is permitted, the router rejects the command and displays an error message. For the new deny statement to take effect, it must be manually configured by the administrator with a sequence number that is less than 10."
+    },
+    {
+      "id": "cp4-q4",
+      "question": "When an inbound Internet-traffic ACL is being implemented, what should be included to prevent the spoofing of internal networks?",
+      "type": "single",
+      "options": [
+        { "text": "ACEs to prevent ICMP traffic", "isCorrect": false },
+        { "text": "ACEs to prevent traffic from private address spaces", "isCorrect": true },
+        { "text": "ACEs to prevent broadcast address traffic", "isCorrect": false },
+        { "text": "ACEs to prevent SNMP traffic", "isCorrect": false },
+        { "text": "ACEs to prevent HTTP traffic", "isCorrect": false }
+      ],
+      "explanation": "Common ACEs to assist with antispoofing include blocking packets that have a source address in the 127.0.0.0/8 range, any private address, or any multicast addresses."
+    },
+    {
+      "id": "cp4-q5",
+      "question": "What single access list statement matches all of the following networks? 192.168.16.0 192.168.17.0 192.168.18.0 192.168.19.0",
+      "type": "single",
+      "options": [
+        { "text": "access-list 10 permit 192.168.16.0 0.0.3.255", "isCorrect": true },
+        { "text": "access-list 10 permit 192.168.0.0 0.0.15.255", "isCorrect": false },
+        { "text": "access-list 10 permit 192.168.16.0 0.0.15.255", "isCorrect": false },
+        { "text": "access-list 10 permit 192.168.16.0 0.0.0.255", "isCorrect": false }
+      ],
+      "explanation": "The ACL statement access-list 10 permit 192.168.16.0 0.0.3.255 will match all four network prefixes. All four prefixes have the same 22 high order bits. These 22 high order bits are matched by the network prefix and wildcard mask of 192.168.16.0 0.0.3.255."
+    },
+    {
+      "id": "cp4-q6",
+      "question": "What are two characteristics of a stateful firewall? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "uses static packet filtering techniques", "isCorrect": false },
+        { "text": "prevents Layer 7 attacks", "isCorrect": false },
+        { "text": "uses complex ACLs which can be difficult to configure", "isCorrect": false },
+        { "text": "uses connection information maintained in a state table", "isCorrect": true },
+        { "text": "analyzes traffic at Layers 3, 4 and 5 of the OSI model", "isCorrect": true }
+      ],
+      "explanation": "Stateful firewalls provide stateful packet filtering by using connection information maintained in a state table. It also analyzes traffic at OSI Layers 4 and 5. Stateful firewalls cannot prevent application layer attacks because they do not examine the actual contents of an HTTP connection."
+    },
+    {
+      "id": "cp4-q7",
+      "question": "Which type of firewall is commonly part of a router firewall and allows or blocks traffic based on Layer 3 and Layer 4 information?",
+      "type": "single",
+      "options": [
+        { "text": "stateless firewall", "isCorrect": true },
+        { "text": "proxy firewall", "isCorrect": false },
+        { "text": "stateful firewall", "isCorrect": false },
+        { "text": "application gateway firewall", "isCorrect": false }
+      ],
+      "explanation": "A stateless firewall uses a simple policy table look-up that filters traffic based on specific criteria. These firewalls are usually part of a router firewall. They permit or deny traffic based on Layer 3 and Layer 4 information."
+    },
+    {
+      "id": "cp4-q8",
+      "question": "How does a firewall handle traffic when it is originating from the private network and traveling to the DMZ network?",
+      "type": "single",
+      "options": [
+        { "text": "The traffic is selectively denied based on service requirements.", "isCorrect": false },
+        { "text": "The traffic is usually permitted with little or no restrictions.", "isCorrect": true },
+        { "text": "The traffic is usually blocked.", "isCorrect": false },
+        { "text": "The traffic is selectively permitted and inspected.", "isCorrect": false }
+      ],
+      "explanation": "Traffic that is originating from the private network is usually permitted with little or no restriction as it is traveling to the DMZ network."
+    },
+    {
+      "id": "cp4-q9",
+      "question": "What is one limitation of a stateful firewall?",
+      "type": "single",
+      "options": [
+        { "text": "poor log information", "isCorrect": false },
+        { "text": "cannot filter unnecessary traffic", "isCorrect": false },
+        { "text": "not as effective with UDP- or ICMP-based traffic", "isCorrect": true },
+        { "text": "weak user authentication", "isCorrect": false }
+      ],
+      "explanation": "Limitations of stateful firewalls include that protocols such as UDP and ICMP are not stateful and do not generate information needed for a state table. Stateful firewalls also lack user authentication."
+    },
+    {
+      "id": "cp4-q10",
+      "question": "How does a firewall handle traffic when it is originating from the public network and traveling to the DMZ network?",
+      "type": "single",
+      "options": [
+        { "text": "Traffic that is originating from the public network is usually forwarded without inspection when traveling to the DMZ network.", "isCorrect": false },
+        { "text": "Traffic that is originating from the public network is usually permitted with little or no restriction when traveling to the DMZ network.", "isCorrect": false },
+        { "text": "Traffic that is originating from the public network is inspected and selectively permitted when traveling to the DMZ network.", "isCorrect": true },
+        { "text": "Traffic that is originating from the public network is usually blocked when traveling to the DMZ network.", "isCorrect": false }
+      ],
+      "explanation": "When traffic is originating from the public network and traveling to the DMZ network it will be inspected by a firewall and selectively permitted."
+    },
+    {
+      "id": "cp4-q11",
+      "question": "Which zone-based policy firewall zone is system-defined and applies to traffic destined for the router or originating from the router?",
+      "type": "single",
+      "options": [
+        { "text": "outside zone", "isCorrect": false },
+        { "text": "system zone", "isCorrect": false },
+        { "text": "inside zone", "isCorrect": false },
+        { "text": "self zone", "isCorrect": true },
+        { "text": "local zone", "isCorrect": false }
+      ],
+      "explanation": "Zone-based policy firewalls typically have the private (internal or trusted) zone, the public (external or untrusted) zone, and the default self zone, which does not require any interfaces. The self zone is system defined and applies to traffic destined for or originating from the router itself."
+    },
+    {
+      "id": "cp4-q12",
+      "question": "What are two benefits of using a ZPF rather than a Classic Firewall? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "The ZPF is not dependent on ACLs.", "isCorrect": true },
+        { "text": "With ZPF, the router will allow packets unless they are explicitly blocked.", "isCorrect": false },
+        { "text": "ZPF allows interfaces to be placed into zones for IP inspection.", "isCorrect": false },
+        { "text": "Multiple inspection actions are used with ZPF.", "isCorrect": false },
+        { "text": "ZPF policies are easy to read and troubleshoot.", "isCorrect": true }
+      ],
+      "explanation": "There are several benefits of a ZPF: It is not dependent on ACLs, and the router security posture is to block unless explicitly allowed. ZPF policies are easy to read and troubleshoot because of the hierarchical structure."
+    },
+    {
+      "id": "cp4-q13",
+      "question": "When using Cisco IOS zone-based policy firewall, where is the inspection policy applied?",
+      "type": "single",
+      "options": [
+        { "text": "to a global service policy", "isCorrect": false },
+        { "text": "to a zone pair", "isCorrect": true },
+        { "text": "to a zone", "isCorrect": false },
+        { "text": "to an interface", "isCorrect": false }
+      ],
+      "explanation": "After configuring the firewall policy, apply the policy to traffic that would flow between a pair of zones. Use the zone-pair security command in global configuration mode."
+    },
+    {
+      "id": "cp4-q14",
+      "question": "When a Cisco IOS zone-based policy firewall is being configured, which three actions can be applied to a traffic class? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "shape", "isCorrect": false },
+        { "text": "queue", "isCorrect": false },
+        { "text": "pass", "isCorrect": true },
+        { "text": "inspect", "isCorrect": true },
+        { "text": "drop", "isCorrect": true },
+        { "text": "reroute", "isCorrect": false }
+      ],
+      "explanation": "The three actions that can be applied are inspect, drop, and pass. Inspect is for stateful inspection, drop is to deny, and pass allows traffic through."
+    },
+    {
+      "id": "cp4-q15",
+      "question": "What is the first step in configuring a Cisco IOS zone-based policy firewall via the CLI?",
+      "type": "single",
+      "options": [
+        { "text": "Assign router interfaces to zones.", "isCorrect": false },
+        { "text": "Define traffic classes.", "isCorrect": false },
+        { "text": "Assign policy maps to zone pairs.", "isCorrect": false },
+        { "text": "Define firewall policies.", "isCorrect": false },
+        { "text": "Create zones.", "isCorrect": true }
+      ],
+      "explanation": "The steps for configuring a Cisco IOS zone-based policy firewall are as follows: Create zones, Define traffic classes, Define firewall policies, Apply policy maps to zone pairs, Assign router interfaces to zones."
+    },
+    {
+      "id": "cp4-q16",
+      "question": "In which phase of application development is new software verified to run under the required security settings?",
+      "type": "single",
+      "options": [
+        { "text": "developing", "isCorrect": false },
+        { "text": "staging", "isCorrect": true },
+        { "text": "provisioning", "isCorrect": false },
+        { "text": "testing", "isCorrect": false }
+      ],
+      "explanation": "In the staging phase developers test the application in a staging environment to verify that software runs under the required security settings."
+    },
+    {
+      "id": "cp4-q17",
+      "question": "Which algorithm is used with symmetric encryption to provide confidentiality?",
+      "type": "single",
+      "options": [
+        { "text": "ECC", "isCorrect": false },
+        { "text": "MD5", "isCorrect": false },
+        { "text": "RSA", "isCorrect": false },
+        { "text": "AES", "isCorrect": true }
+      ],
+      "explanation": "Advanced Encryption Standard (AES) is a symmetric encryption algorithm. MD5 is a hashing algorithm while RSA and ECC are asymmetric encryption algorithms."
+    },
+    {
+      "id": "cp4-q18",
+      "question": "What is the description of VM sprawl?",
+      "type": "single",
+      "options": [
+        { "text": "When a process breaks out of the VM and interacts with the host operating system.", "isCorrect": false },
+        { "text": "VMs are spread over too large of a geographic area.", "isCorrect": false },
+        { "text": "The demand for VMs is greater than the ability to create VMs.", "isCorrect": false },
+        { "text": "There are more VMs than can be effectively managed.", "isCorrect": true }
+      ],
+      "explanation": "VM Sprawl occurs when an organization has more VMs on the network than it can effectively control and manage."
+    },
+    {
+      "id": "cp4-q19",
+      "question": "Which cloud security domain covers cloud-specific aspects of infrastructure security and foundations for operating securely in the cloud?",
+      "type": "single",
+      "options": [
+        { "text": "Data Security and Encryption", "isCorrect": false },
+        { "text": "Management Plane and Business Continuity", "isCorrect": false },
+        { "text": "Application Security", "isCorrect": false },
+        { "text": "Infrastructure Security", "isCorrect": true }
+      ],
+      "explanation": "Infrastructure Security describes cloud-specific aspects of infrastructure security and the foundation for operating securely in the cloud."
+    },
+    {
+      "id": "cp4-q20",
+      "question": "Match the threats to cloud computing to the description.",
+      "type": "match",
+      "pairs": [
+        { "left": "occurs when the cloud computing resource is set up incorrectly, making it vulnerable to attacks", "right": "Cloud Misconfiguration" },
+        { "left": "occurs when the shared security responsibilities between a cloud customer and cloud provider are not implemented correctly", "right": "Poor Cloud Security Architecture Strategy" },
+        { "left": "occurs when a cloud customer employee, contractor, or business partner maliciously or unintentionally compromises the cloud service", "right": "Inside Threat" },
+        { "left": "occurs when the cloud customer does not have full visibility into the cloud service, making the identification of safe or malicious files more difficult", "right": "Limited Cloud Usage Visibility" },
+        { "left": "occurs when user accounts or access privileges are not properly secured and are hijacked by threat actors", "right": "Compromised Account Credentials" }
+      ],
+      "explanation": "Cloud Misconfiguration is incorrect setup. Poor Strategy is failed shared responsibility. Inside Threat is employee compromise. Limited Visibility is lack of full view. Compromised Credentials is hijacked accounts."
+    },
+    {
+      "id": "cp4-q21",
+      "question": "An IT enterprise is recommending the use of PKI applications to securely exchange information between the employees. In which two cases might an organization use PKI applications to securely exchange information between users? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "local NTP server", "isCorrect": false },
+        { "text": "FTP transfers", "isCorrect": false },
+        { "text": "HTTPS web service", "isCorrect": true },
+        { "text": "file and directory access permission", "isCorrect": false },
+        { "text": "802.1x authentication", "isCorrect": true }
+      ],
+      "explanation": "Common PKI applications include HTTPS Web traffic and controlling access to the network using 802.1x authentication."
+    },
+    {
+      "id": "cp4-q22",
+      "question": "Which method tries all possible passwords until a match is found?",
+      "type": "single",
+      "options": [
+        { "text": "dictionary", "isCorrect": false },
+        { "text": "brute force", "isCorrect": true },
+        { "text": "birthday", "isCorrect": false },
+        { "text": "cryptographic", "isCorrect": false },
+        { "text": "cloud", "isCorrect": false },
+        { "text": "rainbow tables", "isCorrect": false }
+      ],
+      "explanation": "Two common methods of cracking hashes are dictionary and brute force. Given time, the brute force method will always crack a password by trying all possibilities."
+    },
+    {
+      "id": "cp4-q23",
+      "question": "Which measure can a security analyst take to perform effective security monitoring against network traffic encrypted by SSL technology?",
+      "type": "single",
+      "options": [
+        { "text": "Use a Syslog server to capture network traffic.", "isCorrect": false },
+        { "text": "Deploy a Cisco SSL Appliance.", "isCorrect": true },
+        { "text": "Deploy a Cisco ASA.", "isCorrect": false },
+        { "text": "Require remote access connections through IPsec VPN.", "isCorrect": false }
+      ],
+      "explanation": "Cisco SSL Appliance can decrypt SSL traffic and send it to an intrusion prevention system (IPS) appliance for analysis to identify risks normally hidden by SSL."
+    },
+    {
+      "id": "cp4-q24",
+      "question": "What technology has a function of using trusted third-party protocols to issue credentials that are accepted as an authoritative identity?",
+      "type": "single",
+      "options": [
+        { "text": "digital signatures", "isCorrect": false },
+        { "text": "symmetric keys", "isCorrect": false },
+        { "text": "hashing algorithms", "isCorrect": false },
+        { "text": "PKI certificates", "isCorrect": true }
+      ],
+      "explanation": "PKI Certificate Authority is a trusted third-party entity that issues PKI certificates, which are used to provide authenticity, confidentiality, integrity, and nonrepudiation services."
+    },
+    {
+      "id": "cp4-q25",
+      "question": "A customer purchases an item from an e-commerce site. The e-commerce site must maintain proof that the data exchange took place between the site and the customer. Which feature of digital signatures is required?",
+      "type": "single",
+      "options": [
+        { "text": "nonrepudiation of the transaction", "isCorrect": true },
+        { "text": "authenticity of digitally signed data", "isCorrect": false },
+        { "text": "confidentiality of the public key", "isCorrect": false },
+        { "text": "integrity of digitally signed data", "isCorrect": false }
+      ],
+      "explanation": "Nonrepudiation of the transaction means the recipient can take the data to a third party, and the third party accepts the digital signature as proof that this data exchange did take place. The signing party cannot repudiate that it has signed the data."
+    }
+  ]
+}

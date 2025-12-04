@@ -1,0 +1,130 @@
+
+{
+  "id": "module-26",
+  "type": "module",
+  "title": "Module 26: Risk Management and Security Controls",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m26-q1",
+      "question": "A warning banner that lists the negative outcomes of breaking company policy is displayed each time a computer user logs in to the machine. What type of access control is implemented?",
+      "type": "single",
+      "options": [
+        { "text": "masking", "isCorrect": false },
+        { "text": "detective", "isCorrect": false },
+        { "text": "deterrent", "isCorrect": true },
+        { "text": "preventive", "isCorrect": false }
+      ],
+      "explanation": "Deterrent controls, such as warning banners, are designed to discourage individuals from violating security policies by warning them of the consequences."
+    },
+    {
+      "id": "m26-q2",
+      "question": "Which two types of controls are effective after a violation of a security policy occurs? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "compensative", "isCorrect": false },
+        { "text": "deterrent", "isCorrect": false },
+        { "text": "recovery", "isCorrect": true },
+        { "text": "corrective", "isCorrect": true },
+        { "text": "preventive", "isCorrect": false }
+      ],
+      "explanation": "Corrective controls attempt to mitigate the impact of a violation, while recovery controls attempt to restore the system to its normal state."
+    },
+    {
+      "id": "m26-q3",
+      "question": "Which type of security control includes backup and restore operations, as well as fault-tolerant data storage?",
+      "type": "single",
+      "options": [
+        { "text": "deterrent", "isCorrect": false },
+        { "text": "detection", "isCorrect": false },
+        { "text": "recovery", "isCorrect": true },
+        { "text": "compensative", "isCorrect": false }
+      ],
+      "explanation": "Recovery controls are deployed to repair or restore resources, functions, and capabilities after a violation or failure. Backups are a classic example."
+    },
+    {
+      "id": "m26-q4",
+      "question": "Which statement describes a cybersecurity risk?",
+      "type": "single",
+      "options": [
+        { "text": "It is a weakness in information systems.", "isCorrect": false },
+        { "text": "It is the damage incurred by an event which causes disruption of network services.", "isCorrect": false },
+        { "text": "It is the probability of loss due to a threat.", "isCorrect": true },
+        { "text": "It is a threat which causes loss of assets.", "isCorrect": false }
+      ],
+      "explanation": "Risk is typically defined as the probability or likelihood of a threat exploiting a vulnerability resulting in a loss."
+    },
+    {
+      "id": "m26-q5",
+      "question": "A public cloud service company provides data storage services to multiple customers. The company decides to purchase an insurance policy to cover the data loss due to natural disasters. Which risk management action level has the service company taken to manage the potential risk?",
+      "type": "single",
+      "options": [
+        { "text": "transfer", "isCorrect": true },
+        { "text": "avoidance", "isCorrect": false },
+        { "text": "accept", "isCorrect": false },
+        { "text": "mitigation", "isCorrect": false }
+      ],
+      "explanation": "Risk transference (or sharing) involves shifting the risk to a third party, such as an insurance company."
+    },
+    {
+      "id": "m26-q6",
+      "question": "Based on the risk management process, what should the cybersecurity team do as the next step when a cybersecurity risk is identified?",
+      "type": "single",
+      "options": [
+        { "text": "Respond to the risk.", "isCorrect": false },
+        { "text": "Frame the risk.", "isCorrect": false },
+        { "text": "Assess the risk.", "isCorrect": true },
+        { "text": "Monitor the risk.", "isCorrect": false }
+      ],
+      "explanation": "In the risk management process, once a risk is identified, the team must assess (analyze and evaluate) it to understand its magnitude before responding."
+    },
+    {
+      "id": "m26-q7",
+      "question": "A user is asked to perform a risk analysis of a company. The user asks for the company asset database that contains a list of all equipment. The user uses this information as part of a risk analysis. Which type of risk analysis could be performed?",
+      "type": "single",
+      "options": [
+        { "text": "hardware", "isCorrect": false },
+        { "text": "qualitative", "isCorrect": false },
+        { "text": "exposure factor", "isCorrect": false },
+        { "text": "quantitative", "isCorrect": true }
+      ],
+      "explanation": "Quantitative risk analysis relies on numerical data, such as monetary asset values derived from an equipment database."
+    },
+    {
+      "id": "m26-q8",
+      "question": "Which access control should the IT department use to restore a system back to its normal state?",
+      "type": "single",
+      "options": [
+        { "text": "preventive", "isCorrect": false },
+        { "text": "detective", "isCorrect": false },
+        { "text": "corrective", "isCorrect": true },
+        { "text": "compensative", "isCorrect": false }
+      ],
+      "explanation": "Corrective controls are designed to react to an incident and restore the system to its normal operational state."
+    },
+    {
+      "id": "m26-q9",
+      "question": "The CEO of a company is concerned that if a data breach should occur and customer data is exposed, the company could be sued. The CEO makes the decision to buy insurance for the company. What type of risk mitigation is the CEO implementing?",
+      "type": "single",
+      "options": [
+        { "text": "mitigation", "isCorrect": false },
+        { "text": "avoidance", "isCorrect": false },
+        { "text": "transference", "isCorrect": true },
+        { "text": "reduction", "isCorrect": false }
+      ],
+      "explanation": "Purchasing insurance is the primary method of risk transference, moving the financial burden of the risk to the insurer."
+    },
+    {
+      "id": "m26-q10",
+      "question": "What is the first step in the risk management process that helps to reduce the impact of threats and vulnerabilities?",
+      "type": "single",
+      "options": [
+        { "text": "Monitor the risk.", "isCorrect": false },
+        { "text": "Assess the risk.", "isCorrect": false },
+        { "text": "Respond to the risk.", "isCorrect": false },
+        { "text": "Frame the risk.", "isCorrect": true }
+      ],
+      "explanation": "Framing the risk is the first step in the risk management process. It establishes the context, assumptions, and constraints for managing risk."
+    }
+  ]
+}

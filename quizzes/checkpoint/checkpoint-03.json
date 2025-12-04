@@ -1,1 +1,305 @@
-
+{
+  "id": "checkpoint-03",
+  "type": "checkpoint",
+  "title": "Checkpoint 3: Principles, Practices and Processes of Network Defense",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "cp3-q1",
+      "question": "What is a characteristic of the security artichoke, defense-in-depth approach?",
+      "type": "single",
+      "options": [
+        { "text": "Threat actors can easily compromise all layers safeguarding the data or systems.", "isCorrect": false },
+        { "text": "Threat actors can no longer penetrate any layers safeguarding the data or system.", "isCorrect": false },
+        { "text": "Each layer has to be penetrated before the threat actor can reach the target data or system.", "isCorrect": false },
+        { "text": "Threat actors no longer have to peel away each layer before reaching the target data or system.", "isCorrect": true }
+      ],
+      "explanation": "In the security artichoke, defense-in-depth approach not every layer needs to be penetrated by the threat actor in order to get to the data or systems. Each layer provides a layer of protection while simultaneously providing a path to attack."
+    },
+    {
+      "id": "cp3-q2",
+      "question": "Which security measure is typically found both inside and outside a data center facility?",
+      "type": "single",
+      "options": [
+        { "text": "a gate", "isCorrect": false },
+        { "text": "continuous video surveillance", "isCorrect": true },
+        { "text": "security traps", "isCorrect": false },
+        { "text": "biometrics access", "isCorrect": false },
+        { "text": "exit sensors", "isCorrect": false }
+      ],
+      "explanation": "Continuous video surveillance is a security measure found both inside and outside a data center facility."
+    },
+    {
+      "id": "cp3-q3",
+      "question": "Which security management function is concerned with the inventory and control of hardware and software configurations of systems?",
+      "type": "single",
+      "options": [
+        { "text": "asset management", "isCorrect": false },
+        { "text": "risk management", "isCorrect": false },
+        { "text": "configuration management", "isCorrect": true },
+        { "text": "vulnerability management", "isCorrect": false }
+      ],
+      "explanation": "Configuration management addresses the inventory and control of hardware and software configurations of systems."
+    },
+    {
+      "id": "cp3-q4",
+      "question": "Match the term to the description.",
+      "type": "match",
+      "pairs": [
+        { "left": "information or equipment valuable enough to an organization to warrant protection", "right": "assets" },
+        { "left": "potential dangers to a protected asset", "right": "threats" },
+        { "left": "weaknesses in a system or design", "right": "vulnerabilities" }
+      ],
+      "explanation": "Assets warrant protection. Threats are potential dangers. Vulnerabilities are weaknesses."
+    },
+    {
+      "id": "cp3-q5",
+      "question": "Which two options are security best practices that help mitigate BYOD risks? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Keep the device OS and software updated.", "isCorrect": true },
+        { "text": "Decrease the wireless antenna gain level.", "isCorrect": false },
+        { "text": "Only turn on Wi-Fi when using the wireless network.", "isCorrect": true },
+        { "text": "Only allow devices that have been approved by the corporate IT team.", "isCorrect": false },
+        { "text": "Use paint that reflects wireless signals and glass that prevents the signals from going outside the building.", "isCorrect": false },
+        { "text": "Use wireless MAC address filtering.", "isCorrect": false }
+      ],
+      "explanation": "Mitigating BYOD risks involves keeping the device updated and turning off connectivity features like Wi-Fi when not in use."
+    },
+    {
+      "id": "cp3-q6",
+      "question": "Which type of business policy establishes the rules of conduct and the responsibilities of employees and employers?",
+      "type": "single",
+      "options": [
+        { "text": "company", "isCorrect": true },
+        { "text": "data", "isCorrect": false },
+        { "text": "security", "isCorrect": false },
+        { "text": "employee", "isCorrect": false }
+      ],
+      "explanation": "Company policies establish the rules and conduct and the responsibilities of both employees and the employer."
+    },
+    {
+      "id": "cp3-q7",
+      "question": "Which network monitoring tool is in the category of network protocol analyzers?",
+      "type": "single",
+      "options": [
+        { "text": "SNMP", "isCorrect": false },
+        { "text": "Wireshark", "isCorrect": true },
+        { "text": "SPAN", "isCorrect": false },
+        { "text": "SIEM", "isCorrect": false }
+      ],
+      "explanation": "Wireshark is a network protocol analyzer used to capture network traffic."
+    },
+    {
+      "id": "cp3-q8",
+      "question": "What device would be used as a second line of defense in a defense-in-depth approach?",
+      "type": "single",
+      "options": [
+        { "text": "firewall", "isCorrect": true },
+        { "text": "edge router", "isCorrect": false },
+        { "text": "internal router", "isCorrect": false },
+        { "text": "switch", "isCorrect": false }
+      ],
+      "explanation": "In a defense-in-depth approach, the firewall would be the second line of defense."
+    },
+    {
+      "id": "cp3-q9",
+      "question": "What is a strength of using a hashing function?",
+      "type": "single",
+      "options": [
+        { "text": "It can take only a fixed length message.", "isCorrect": false },
+        { "text": "It has a variable length output.", "isCorrect": false },
+        { "text": "Two different files can be created that have the same output.", "isCorrect": false },
+        { "text": "It is not commonly used in security.", "isCorrect": false },
+        { "text": "It is a one-way function and not reversible.", "isCorrect": true }
+      ],
+      "explanation": "A strength of a hashing function is that it is a one-way function and not reversible."
+    },
+    {
+      "id": "cp3-q10",
+      "question": "A user has created a new program and wants to distribute it to everyone in the company. The user wants to ensure that when the program is downloaded that the program is not changed while in transit. What can the user do to ensure that the program is not changed when downloaded?",
+      "type": "single",
+      "options": [
+        { "text": "Encrypt the program and require a password after it is downloaded.", "isCorrect": false },
+        { "text": "Install the program on individual computers.", "isCorrect": false },
+        { "text": "Distribute the program on a thumb drive.", "isCorrect": false },
+        { "text": "Turn off antivirus on all the computers.", "isCorrect": false },
+        { "text": "Create a hash of the program file that can be used to verify the integrity of the file after it is downloaded.", "isCorrect": true }
+      ],
+      "explanation": "Hashing is a method to ensure integrity and ensures that the data is not changed."
+    },
+    {
+      "id": "cp3-q11",
+      "question": "A company is developing an internet store website. Which protocol should be used to transfer credit card information from customers to the company web server?",
+      "type": "single",
+      "options": [
+        { "text": "SSH", "isCorrect": false },
+        { "text": "HTTPS", "isCorrect": true },
+        { "text": "HTTP", "isCorrect": false },
+        { "text": "WPA2", "isCorrect": false },
+        { "text": "FTPS", "isCorrect": false }
+      ],
+      "explanation": "HTTPS uses SSL/TLS to encrypt communication between the client and the server, thus providing confidentiality."
+    },
+    {
+      "id": "cp3-q12",
+      "question": "A large retail company uses EAP-based authentication in conjunction with 802.1X. When the client first initiates communication on the wireless network, which type of authentication method is used by the client to associate with the AP?",
+      "type": "single",
+      "options": [
+        { "text": "WPA", "isCorrect": false },
+        { "text": "WPA2", "isCorrect": false },
+        { "text": "Open Authentication", "isCorrect": true },
+        { "text": "WPA3", "isCorrect": false }
+      ],
+      "explanation": "When 802.1X is used in conjunction with EAP, a wireless device first uses Open Authentication to associate with the AP."
+    },
+    {
+      "id": "cp3-q13",
+      "question": "What is an example of the implementation of physical security?",
+      "type": "single",
+      "options": [
+        { "text": "encrypting all sensitive data that is stored on the servers", "isCorrect": false },
+        { "text": "requiring employees to use a card key when entering a secure area", "isCorrect": true },
+        { "text": "establishing personal firewalls on each computer", "isCorrect": false },
+        { "text": "ensuring that all operating system and antivirus software is up to date", "isCorrect": false }
+      ],
+      "explanation": "Requiring employees to use a card key when entering a secure area is a physical security implementation."
+    },
+    {
+      "id": "cp3-q14",
+      "question": "What is a purpose of implementing VLANs on a network?",
+      "type": "single",
+      "options": [
+        { "text": "They can separate user traffic.", "isCorrect": true },
+        { "text": "They allow switches to forward Layer 3 packets without a router.", "isCorrect": false },
+        { "text": "They prevent Layer 2 loops.", "isCorrect": false },
+        { "text": "They eliminate network collisions.", "isCorrect": false }
+      ],
+      "explanation": "VLANs are used on a network to separate user traffic based on factors such as function or application."
+    },
+    {
+      "id": "cp3-q15",
+      "question": "A user is purchasing a new server for the company data center. The user wants disk striping with parity on three disks. Which RAID level should the user implement?",
+      "type": "single",
+      "options": [
+        { "text": "1", "isCorrect": false },
+        { "text": "1+0", "isCorrect": false },
+        { "text": "0", "isCorrect": false },
+        { "text": "5", "isCorrect": true }
+      ],
+      "explanation": "RAID 5 provides striping with parity."
+    },
+    {
+      "id": "cp3-q16",
+      "question": "Why is asset management a critical function of a growing organization against security threats?",
+      "type": "single",
+      "options": [
+        { "text": "It identifies the ever increasing attack surface to threats.", "isCorrect": true },
+        { "text": "It prevents theft of older assets that are decommissioned.", "isCorrect": false },
+        { "text": "It allows for a build of a comprehensive AUP.", "isCorrect": false },
+        { "text": "It serves to preserve an audit trail of all new purchases.", "isCorrect": false }
+      ],
+      "explanation": "Asset management identifies the ever increasing attack surface to threats as an organization grows."
+    },
+    {
+      "id": "cp3-q17",
+      "question": "An intern has started working in the support group. One duty is to set local policy for passwords on the workstations. What tool would be best to use?",
+      "type": "single",
+      "options": [
+        { "text": "password policy", "isCorrect": false },
+        { "text": "account policy", "isCorrect": false },
+        { "text": "system administration", "isCorrect": false },
+        { "text": "grpol.msc", "isCorrect": false },
+        { "text": "secpol.msc", "isCorrect": true }
+      ],
+      "explanation": "secpol.msc is the tool used to set local security policies."
+    },
+    {
+      "id": "cp3-q18",
+      "question": "What is the purpose of the network security authentication function?",
+      "type": "single",
+      "options": [
+        { "text": "to determine which resources a user can access", "isCorrect": false },
+        { "text": "to require users to prove who they are", "isCorrect": true },
+        { "text": "to provide challenge and response questions", "isCorrect": false },
+        { "text": "to keep track of the actions of a user", "isCorrect": false }
+      ],
+      "explanation": "Authentication requires users to prove who they are."
+    },
+    {
+      "id": "cp3-q19",
+      "question": "Passwords, passphrases, and PINs are examples of which security term?",
+      "type": "single",
+      "options": [
+        { "text": "authentication", "isCorrect": true },
+        { "text": "authorization", "isCorrect": false },
+        { "text": "identification", "isCorrect": false },
+        { "text": "access", "isCorrect": false }
+      ],
+      "explanation": "Passwords, passphrases, and PINs are authentication methods."
+    },
+    {
+      "id": "cp3-q20",
+      "question": "What are three examples of administrative access controls? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "background checks", "isCorrect": true },
+        { "text": "encryption", "isCorrect": false },
+        { "text": "intrusion detection system (IDS)", "isCorrect": false },
+        { "text": "hiring practices", "isCorrect": true },
+        { "text": "policies and procedures", "isCorrect": true },
+        { "text": "guard dogs", "isCorrect": false }
+      ],
+      "explanation": "Administrative access controls include policies, procedures, hiring practices, and background checks."
+    },
+    {
+      "id": "cp3-q21",
+      "question": "What is privilege escalation?",
+      "type": "single",
+      "options": [
+        { "text": "A security problem occurs when high ranking corporate officials demand rights to systems or files that they should not have.", "isCorrect": false },
+        { "text": "Vulnerabilities in systems are exploited to grant higher levels of privilege than someone or some process should have.", "isCorrect": true },
+        { "text": "Everyone is given full rights by default to everything and rights are taken away only when someone abuses privileges.", "isCorrect": false },
+        { "text": "Someone is given rights because she or he has received a promotion.", "isCorrect": false }
+      ],
+      "explanation": "With privilege escalation, vulnerabilities are exploited to grant higher levels of privilege."
+    },
+    {
+      "id": "cp3-q22",
+      "question": "A network administrator is configuring an AAA server to manage RADIUS authentication. Which two features are included in RADIUS authentication? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "separate processes for authentication and authorization", "isCorrect": false },
+        { "text": "single process for authentication and authorization", "isCorrect": true },
+        { "text": "encryption for only the data", "isCorrect": false },
+        { "text": "encryption for all communication", "isCorrect": false },
+        { "text": "hidden passwords during transmission", "isCorrect": true }
+      ],
+      "explanation": "RADIUS authentication supports a single process for authentication and authorization, and encrypts only the password (hidden passwords during transmission)."
+    },
+    {
+      "id": "cp3-q23",
+      "question": "Which access control model applies the strictest access control and is often used in military and mission critical applications?",
+      "type": "single",
+      "options": [
+        { "text": "attribute-based", "isCorrect": false },
+        { "text": "discretionary", "isCorrect": false },
+        { "text": "nondiscretionary", "isCorrect": false },
+        { "text": "mandatory", "isCorrect": true }
+      ],
+      "explanation": "Military and mission critical applications typically use mandatory access control."
+    },
+    {
+      "id": "cp3-q24",
+      "question": "Which access control model allows users to control access to data as an owner of that data?",
+      "type": "single",
+      "options": [
+        { "text": "attribute-based access control", "isCorrect": false },
+        { "text": "mandatory access control", "isCorrect": false },
+        { "text": "nondiscretionary access control", "isCorrect": false },
+        { "text": "discretionary access control", "isCorrect": true }
+      ],
+      "explanation": "In the discretionary access control (DAC) model, users can control access to data as owners of the data."
+    }
+  ]
+}

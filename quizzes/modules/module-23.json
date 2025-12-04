@@ -1,0 +1,154 @@
+
+{
+  "id": "module-23",
+  "type": "module",
+  "title": "Module 23: Network Security Testing",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m23-q1",
+      "question": "What describes a feature of credentialed scans?",
+      "type": "single",
+      "options": [
+        { "text": "They are less invasive than non-credentialed scans.", "isCorrect": false },
+        { "text": "They do not require usernames and passwords to provide authorized access to a system.", "isCorrect": false },
+        { "text": "They try to exploit vulnerabilities and may even crash the target.", "isCorrect": false },
+        { "text": "They return fewer false positives and fewer false negatives.", "isCorrect": true }
+      ],
+      "explanation": "Credentialed scans use legitimate authentication to scan a system, reducing false positives and negatives compared to non-credentialed scans."
+    },
+    {
+      "id": "m23-q2",
+      "question": "An organization has hired a former hacker to test how well the organization would tolerate a real attack by using malicious techniques. What type of testing is the hacker performing for the organization?",
+      "type": "single",
+      "options": [
+        { "text": "penetration", "isCorrect": true },
+        { "text": "vulnerability", "isCorrect": false },
+        { "text": "sniffing", "isCorrect": false },
+        { "text": "reconnaissance", "isCorrect": false }
+      ],
+      "explanation": "Penetration testing involves simulating a cyberattack against a computer system to check for exploitable vulnerabilities."
+    },
+    {
+      "id": "m23-q3",
+      "question": "What network testing tool is used for password auditing and recovery?",
+      "type": "single",
+      "options": [
+        { "text": "Nessus", "isCorrect": false },
+        { "text": "L0phtcrack", "isCorrect": true },
+        { "text": "Metasploit", "isCorrect": false },
+        { "text": "SuperScan", "isCorrect": false }
+      ],
+      "explanation": "L0phtCrack is a password auditing and recovery application used to test password strength."
+    },
+    {
+      "id": "m23-q4",
+      "question": "The laptop of an attacker is attached to a corporate network. The attacker is examining all of the network traffic that is passing through the network interface card. Which network reconnaissance method does this scenario describe?",
+      "type": "single",
+      "options": [
+        { "text": "sniffing", "isCorrect": true },
+        { "text": "penetration exercise", "isCorrect": false },
+        { "text": "bug bounty", "isCorrect": false },
+        { "text": "red team blue team", "isCorrect": false }
+      ],
+      "explanation": "Sniffing involves capturing and inspecting data packets moving across a network."
+    },
+    {
+      "id": "m23-q5",
+      "question": "An administrator is troubleshooting NetBIOS name resolution on a Windows PC. What command line utility can be used to do this?",
+      "type": "single",
+      "options": [
+        { "text": "ipconfig", "isCorrect": false },
+        { "text": "nbtstat", "isCorrect": true },
+        { "text": "netstat", "isCorrect": false },
+        { "text": "arp", "isCorrect": false }
+      ],
+      "explanation": "The nbtstat utility is designed to help troubleshoot NetBIOS name resolution problems."
+    },
+    {
+      "id": "m23-q6",
+      "question": "Which approach provides automated tools allowing an organization to collect data about security threats from various sources?",
+      "type": "single",
+      "options": [
+        { "text": "NETCAT", "isCorrect": false },
+        { "text": "SuperScan", "isCorrect": false },
+        { "text": "Nmap", "isCorrect": false },
+        { "text": "SOAR", "isCorrect": true }
+      ],
+      "explanation": "SOAR (Security Orchestration, Automation, and Response) platforms collect data about security threats and respond to low-level events."
+    },
+    {
+      "id": "m23-q7",
+      "question": "A new technician was overheard telling colleagues that a secure network password had been discovered through a search of social media sites. What technique was used to acquire the password?",
+      "type": "single",
+      "options": [
+        { "text": "man-in-the-middle", "isCorrect": false },
+        { "text": "passive reconnaissance", "isCorrect": true },
+        { "text": "active reconnaissance", "isCorrect": false },
+        { "text": "buffer overflow", "isCorrect": false },
+        { "text": "brute force", "isCorrect": false }
+      ],
+      "explanation": "Passive reconnaissance involves gathering information about a target without directly interacting with it, such as searching public sites."
+    },
+    {
+      "id": "m23-q8",
+      "question": "What network scanning tool has advanced features that allows it to use decoy hosts to mask the source of the scan?",
+      "type": "single",
+      "options": [
+        { "text": "Nessus", "isCorrect": false },
+        { "text": "Tripwire", "isCorrect": false },
+        { "text": "Nmap", "isCorrect": true },
+        { "text": "Metasploit", "isCorrect": false }
+      ],
+      "explanation": "Nmap offers a 'decoy' option (-D) which makes it appear to the remote host that the host(s) specified as decoys are scanning the target network."
+    },
+    {
+      "id": "m23-q9",
+      "question": "How does network scanning help assess operations security?",
+      "type": "single",
+      "options": [
+        { "text": "It can detect open TCP ports on network systems.", "isCorrect": true },
+        { "text": "It can detect weak or blank passwords.", "isCorrect": false },
+        { "text": "It can simulate attacks from malicious sources.", "isCorrect": false },
+        { "text": "It can log abnormal activity.", "isCorrect": false }
+      ],
+      "explanation": "Network scanning is primarily used to identify available hosts and open ports/services on a network."
+    },
+    {
+      "id": "m23-q10",
+      "question": "A new person has joined the security operations team for a manufacturing plant. What is a common scope of responsibility for this person?",
+      "type": "single",
+      "options": [
+        { "text": "data security on host devices", "isCorrect": false },
+        { "text": "managing redundancy operations for all systems", "isCorrect": false },
+        { "text": "day-to-day maintenance of network security", "isCorrect": true },
+        { "text": "physical and logical security of all business personnel", "isCorrect": false }
+      ],
+      "explanation": "A security operations team is typically responsible for the day-to-day maintenance, monitoring, and defense of the organization's network security."
+    },
+    {
+      "id": "m23-q11",
+      "question": "What network security testing tool has the ability to provide details on the source of suspicious network activity?",
+      "type": "single",
+      "options": [
+        { "text": "SIEM", "isCorrect": true },
+        { "text": "Zenmap", "isCorrect": false },
+        { "text": "SuperScan", "isCorrect": false },
+        { "text": "Tripwire", "isCorrect": false }
+      ],
+      "explanation": "SIEM systems collect and analyze log data to identify, monitor, and report on security events, including the source of suspicious activity."
+    },
+    {
+      "id": "m23-q12",
+      "question": "Which cybersecurity weapon scans for use of default passwords, missing patches, open ports, misconfigurations, and active IP addresses?",
+      "type": "single",
+      "options": [
+        { "text": "password crackers", "isCorrect": false },
+        { "text": "packet analyzers", "isCorrect": false },
+        { "text": "packet sniffers", "isCorrect": false },
+        { "text": "vulnerability scanners", "isCorrect": true }
+      ],
+      "explanation": "Vulnerability scanners are designed to assess computers and networks for known weaknesses such as missing patches, default passwords, and misconfigurations."
+    }
+  ]
+}

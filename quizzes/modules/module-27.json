@@ -1,0 +1,169 @@
+{
+  "id": "module-27",
+  "type": "module",
+  "title": "Module 27: Digital Forensics and Incident Analysis and Response",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m27-q1",
+      "question": "Which action should be included in a plan element that is part of a computer security incident response capability (CSIRC)?",
+      "type": "single",
+      "options": [
+        { "text": "Create an organizational structure and definition of roles, responsibilities, and levels of authority.", "isCorrect": false },
+        { "text": "Prioritize severity ratings of security incidents.", "isCorrect": false },
+        { "text": "Develop metrics for measuring the incident response capability and its effectiveness.", "isCorrect": true },
+        { "text": "Detail how incidents should be handled based on the mission and functions of an organization.", "isCorrect": false }
+      ],
+      "explanation": "The incident response plan typically includes the development of metrics to measure the capability's effectiveness and a roadmap for maturing the capability."
+    },
+    {
+      "id": "m27-q2",
+      "question": "Which two actions can help identify an attacking host during a security incident? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Develop identifying criteria for all evidence such as serial number, hostname, and IP address.", "isCorrect": false },
+        { "text": "Log the time and date that the evidence was collected and the incident remediated.", "isCorrect": false },
+        { "text": "Use an Internet search engine to gain additional information about the attack.", "isCorrect": true },
+        { "text": "Determine the location of the recovery and storage of all evidence.", "isCorrect": false },
+        { "text": "Validate the IP address of the threat actor to determine if it is viable.", "isCorrect": true }
+      ],
+      "explanation": "To identify an attacking host, analysts validate the threat actor's IP address (to rule out spoofing) and use open-source intelligence (search engines) to gather context."
+    },
+    {
+      "id": "m27-q3",
+      "question": "Which meta-feature element in the Diamond Model describes tools and information (such as software, black hat knowledge base, username and password) that the adversary uses for the intrusion event?",
+      "type": "single",
+      "options": [
+        { "text": "results", "isCorrect": false },
+        { "text": "resources", "isCorrect": true },
+        { "text": "direction", "isCorrect": false },
+        { "text": "methodology", "isCorrect": false }
+      ],
+      "explanation": "In the Diamond Model, 'Resources' refers to the tools, information, and knowledge (assets) the adversary utilizes to execute the intrusion."
+    },
+    {
+      "id": "m27-q4",
+      "question": "Which term is used in the Diamond Model of intrusion to describe a tool that a threat actor uses toward a target system?",
+      "type": "single",
+      "options": [
+        { "text": "infrastructure", "isCorrect": false },
+        { "text": "adversary", "isCorrect": false },
+        { "text": "weaponization", "isCorrect": false },
+        { "text": "capability", "isCorrect": true }
+      ],
+      "explanation": "'Capability' in the Diamond Model refers to the tools and techniques (the tradecraft) the adversary employs to affect the victim."
+    },
+    {
+      "id": "m27-q5",
+      "question": "The company you work for has asked you to create a broad plan that includes DRP and getting critical systems to another location in case of disaster. What type of plan are you being asked to create?",
+      "type": "single",
+      "options": [
+        { "text": "annual loss expectancy", "isCorrect": false },
+        { "text": "disaster recovery plan", "isCorrect": false },
+        { "text": "Network Admission Control", "isCorrect": false },
+        { "text": "business continuity plan", "isCorrect": true }
+      ],
+      "explanation": "A Business Continuity Plan (BCP) is the comprehensive plan that ensures an organization can continue to operate during and after a disaster. It includes the Disaster Recovery Plan (DRP)."
+    },
+    {
+      "id": "m27-q6",
+      "question": "After containing an incident that infected user workstations with malware, what are three effective remediation procedures that an organization can take for eradication? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Update and patch the operating system and installed software of all hosts.", "isCorrect": true },
+        { "text": "Change assigned names and passwords for all devices.", "isCorrect": false },
+        { "text": "Rebuild hosts with installation media if no backups are available.", "isCorrect": true },
+        { "text": "Disconnect or disable all wired and wireless network adapters until the remediation is complete.", "isCorrect": false },
+        { "text": "Rebuild DHCP servers using clean installation media.", "isCorrect": false },
+        { "text": "Use clean and recent backups to recover hosts.", "isCorrect": true }
+      ],
+      "explanation": "Effective remediation/eradication typically involves reimaging machines (rebuilding), restoring data from clean backups, and patching systems to prevent reinfection."
+    },
+    {
+      "id": "m27-q7",
+      "question": "What is a MITRE ATT&CK framework?",
+      "type": "single",
+      "options": [
+        { "text": "documented processes and procedures for digital forensic analysis", "isCorrect": false },
+        { "text": "guidelines for the collection of digital evidence", "isCorrect": false },
+        { "text": "a collection of malware exploits and prevention solutions", "isCorrect": false },
+        { "text": "a knowledge base of threat actor behavior", "isCorrect": true }
+      ],
+      "explanation": "MITRE ATT&CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations."
+    },
+    {
+      "id": "m27-q8",
+      "question": "After a threat actor completes a port scan of the public web server of an organization and identifies a potential vulnerability, what is the next phase for the threat actor in order to prepare and launch an attack as defined in the Cyber Kill Chain?",
+      "type": "single",
+      "options": [
+        { "text": "weaponization", "isCorrect": true },
+        { "text": "reconnaissance", "isCorrect": false },
+        { "text": "action on objectives", "isCorrect": false },
+        { "text": "exploitation", "isCorrect": false }
+      ],
+      "explanation": "After Reconnaissance (scanning), the next phase is Weaponization, where the attacker creates a deliverable payload."
+    },
+    {
+      "id": "m27-q9",
+      "question": "According to NIST, which step in the digital forensics process involves extracting relevant information from data?",
+      "type": "single",
+      "options": [
+        { "text": "reporting", "isCorrect": false },
+        { "text": "collection", "isCorrect": false },
+        { "text": "examination", "isCorrect": true },
+        { "text": "analysis", "isCorrect": false }
+      ],
+      "explanation": "The Examination step in the NIST digital forensics process involves processing collected data and extracting relevant information."
+    },
+    {
+      "id": "m27-q10",
+      "question": "Which statement describes the Cyber Kill Chain?",
+      "type": "single",
+      "options": [
+        { "text": "It identifies the steps that adversaries must complete to accomplish their goals.", "isCorrect": true },
+        { "text": "It is a set of metrics designed to create a way to describe security incidents in a structured and repeatable way.", "isCorrect": false },
+        { "text": "It uses the OSI model to describe cyberattacks at each of the seven layers.", "isCorrect": false },
+        { "text": "It specifies common TCP/IP protocols used to fight against cyberattacks.", "isCorrect": false }
+      ],
+      "explanation": "The Cyber Kill Chain framework identifies the stages (steps) an adversary must typically go through to conduct a successful attack."
+    },
+    {
+      "id": "m27-q11",
+      "question": "A user is asked to create a disaster recovery plan for a company. The user needs to have a few questions answered by management to proceed. Which three questions should the user ask management as part of the process of creating the plan? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "What is the process?", "isCorrect": true },
+        { "text": "Does the process require approval?", "isCorrect": false },
+        { "text": "How long does the process take?", "isCorrect": true },
+        { "text": "Who is responsible for the process", "isCorrect": true },
+        { "text": "Can the individual perform the process?", "isCorrect": false },
+        { "text": "Where does the individual perform the process?", "isCorrect": false }
+      ],
+      "explanation": "To create a DRP, one must understand the critical business processes, the personnel involved, and the time tolerance/recovery targets."
+    },
+    {
+      "id": "m27-q12",
+      "question": "A threat actor has gained administrative access to a system and achieved the goal of controlling the system for a future DDoS attack by establishing a communication channel with a CnC owned by the threat actor. Which phase in the Cyber Kill Chain model describes the situation?",
+      "type": "single",
+      "options": [
+        { "text": "action on objectives", "isCorrect": false },
+        { "text": "exploitation", "isCorrect": false },
+        { "text": "delivery", "isCorrect": false },
+        { "text": "command and control", "isCorrect": true }
+      ],
+      "explanation": "Establishing a communication channel to a controller (CnC) to manipulate the victim system defines the Command and Control phase."
+    },
+    {
+      "id": "m27-q13",
+      "question": "What is the purpose of the policy element in a computer security incident response capability of an organization, as recommended by NIST?",
+      "type": "single",
+      "options": [
+        { "text": "It provides metrics for measuring the incident response capability and effectiveness.", "isCorrect": false },
+        { "text": "It details how incidents should be handled based on the organizational mission and functions.", "isCorrect": true },
+        { "text": "It provides a roadmap for maturing the incident response capability.", "isCorrect": false },
+        { "text": "It defines how the incident response teams will communicate with the rest of the organization and with other organizations.", "isCorrect": false }
+      ],
+      "explanation": "The Policy element details the high-level rules and how incidents are handled in alignment with the organization's mission."
+    }
+  ]
+}

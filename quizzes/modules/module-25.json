@@ -1,0 +1,152 @@
+{
+  "id": "module-25",
+  "type": "module",
+  "title": "Module 25: Endpoint Vulnerability Assessment",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m25-q1",
+      "question": "In profiling a server, what defines what an application is allowed to do or run on a server?",
+      "type": "single",
+      "options": [
+        { "text": "user accounts", "isCorrect": false },
+        { "text": "listening ports", "isCorrect": false },
+        { "text": "service accounts", "isCorrect": true },
+        { "text": "software environment", "isCorrect": false }
+      ],
+      "explanation": "The service accounts element of a server profile defines the type of service that an application is allowed to run on a given host."
+    },
+    {
+      "id": "m25-q2",
+      "question": "In network security assessments, which type of test is used to evaluate the risk posed by vulnerabilities to a specific organization including assessment of the likelihood of attacks and the impact of successful exploits on the organization?",
+      "type": "single",
+      "options": [
+        { "text": "risk analysis", "isCorrect": true },
+        { "text": "port scanning", "isCorrect": false },
+        { "text": "penetration testing", "isCorrect": false },
+        { "text": "vulnerability assessment", "isCorrect": false }
+      ],
+      "explanation": "In risk analysis, security analysts evaluate the risk posed by vulnerabilities, including assessing the likelihood of attacks and the impact of successful exploits."
+    },
+    {
+      "id": "m25-q3",
+      "question": "When a network baseline is being established for an organization, which network profile element indicates the time between the establishment of a data flow and its termination?",
+      "type": "single",
+      "options": [
+        { "text": "ports used", "isCorrect": false },
+        { "text": "total throughput", "isCorrect": false },
+        { "text": "session duration", "isCorrect": true },
+        { "text": "critical asset address space", "isCorrect": false }
+      ],
+      "explanation": "Session duration is the time between the establishment of a data flow and its termination."
+    },
+    {
+      "id": "m25-q4",
+      "question": "Match the server profile element to the description.",
+      "type": "match",
+      "pairs": [
+        { "left": "the parameters defining user access and behavior", "right": "user accounts" },
+        { "left": "the TCP and UDP daemons and ports that are allowed to be open on the server", "right": "listening ports" },
+        { "left": "the tasks, processes, and applications that are permitted to run on the server", "right": "software environment" },
+        { "left": "the definitions of the type of service that an application is allowed to run on a given host", "right": "service accounts" }
+      ],
+      "explanation": "User accounts define access/behavior. Listening ports define open ports. Software environment defines permitted apps. Service accounts define service permissions."
+    },
+    {
+      "id": "m25-q5",
+      "question": "Which type of evaluation includes the assessment of the likelihood of an attack, the type of threat actor likely to perpetrate such an attack, and what the consequences could be to the organization if the exploit is successful?",
+      "type": "single",
+      "options": [
+        { "text": "risk analysis", "isCorrect": true },
+        { "text": "vulnerability identification", "isCorrect": false },
+        { "text": "penetration testing", "isCorrect": false },
+        { "text": "server profiling", "isCorrect": false }
+      ],
+      "explanation": "Risk analysis involves assessing the likelihood of an attack, potential threat actors, and the consequences of a successful exploit."
+    },
+    {
+      "id": "m25-q6",
+      "question": "A cybersecurity analyst is performing a CVSS assessment on an attack where a web link was sent to several employees. Once clicked, an internal attack was launched. Which CVSS Base Metric Group Exploitability metric is used to document that the user had to click on the link in order for the attack to occur?",
+      "type": "single",
+      "options": [
+        { "text": "availability requirement", "isCorrect": false },
+        { "text": "integrity requirement", "isCorrect": false },
+        { "text": "scope", "isCorrect": false },
+        { "text": "user interaction", "isCorrect": true }
+      ],
+      "explanation": "The user interaction metric expresses the presence or absence of the requirement for user interaction in order for an exploit to be successful."
+    },
+    {
+      "id": "m25-q7",
+      "question": "Which metric class in the CVSS Basic Metric Group identifies the impacts on confidentiality, integrity, and availability?",
+      "type": "single",
+      "options": [
+        { "text": "Impact", "isCorrect": true },
+        { "text": "Exploitability", "isCorrect": false },
+        { "text": "Modified Base", "isCorrect": false },
+        { "text": "Exploit Code Maturity", "isCorrect": false }
+      ],
+      "explanation": "The Impact metrics class in the CVSS Base Metric Group identifies the impacts on confidentiality, integrity, and availability."
+    },
+    {
+      "id": "m25-q8",
+      "question": "Which metric in the CVSS Base Metric Group is used with an attack vector?",
+      "type": "single",
+      "options": [
+        { "text": "the proximity of the threat actor to the vulnerability", "isCorrect": true },
+        { "text": "the determination whether the initial authority changes to a second authority during the exploit", "isCorrect": false },
+        { "text": "the presence or absence of the requirement for user interaction in order for an exploit to be successful", "isCorrect": false },
+        { "text": "the number of components, software, hardware, or networks, that are beyond the control of the attacker and that must be present in order for a vulnerability to be successfully exploited", "isCorrect": false }
+      ],
+      "explanation": "The attack vector metric reflects how close the threat actor is to the vulnerable component (network, adjacent, local, physical)."
+    },
+    {
+      "id": "m25-q9",
+      "question": "Which statement describes the threat-vulnerability (T-V) pairing?",
+      "type": "single",
+      "options": [
+        { "text": "It is the advisory notice from a vulnerability research center.", "isCorrect": false },
+        { "text": "It is the comparison between known malware and system risks.", "isCorrect": false },
+        { "text": "It is the detection of malware against a central vulnerability research center.", "isCorrect": false },
+        { "text": "It is the identification of threats and vulnerabilities and the matching of threats with vulnerabilities.", "isCorrect": true }
+      ],
+      "explanation": "Threat-vulnerability (T-V) pairing is the process of identifying threats and vulnerabilities and matching specific threats with specific vulnerabilities."
+    },
+    {
+      "id": "m25-q10",
+      "question": "In addressing an identified risk, which strategy aims to shift some of the risk to other parties?",
+      "type": "single",
+      "options": [
+        { "text": "risk sharing", "isCorrect": true },
+        { "text": "risk retention", "isCorrect": false },
+        { "text": "risk reduction", "isCorrect": false },
+        { "text": "risk avoidance", "isCorrect": false }
+      ],
+      "explanation": "Risk sharing involves shifting some of the risk to other parties, such as through insurance or outsourcing."
+    },
+    {
+      "id": "m25-q11",
+      "question": "Which step in the Vulnerability Management Life Cycle categorizes assets into groups or business units, and assigns a business value to asset groups based on their criticality to business operations?",
+      "type": "single",
+      "options": [
+        { "text": "report", "isCorrect": false },
+        { "text": "assess", "isCorrect": false },
+        { "text": "remediate", "isCorrect": false },
+        { "text": "prioritize assets", "isCorrect": true }
+      ],
+      "explanation": "The 'prioritize assets' step categorizes assets and assigns business value based on criticality to operations."
+    },
+    {
+      "id": "m25-q12",
+      "question": "What is an action that should be taken in the discovery step of the vulnerability management life cycle?",
+      "type": "single",
+      "options": [
+        { "text": "assigning business value to assets", "isCorrect": false },
+        { "text": "determining a risk profile", "isCorrect": false },
+        { "text": "developing a network baseline", "isCorrect": true },
+        { "text": "documenting the security plan", "isCorrect": false }
+      ],
+      "explanation": "During the discovery step, an inventory of assets is made, a network baseline is developed, and vulnerabilities are identified."
+    }
+  ]
+}

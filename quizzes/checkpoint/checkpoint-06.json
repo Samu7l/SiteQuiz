@@ -1,1 +1,315 @@
 
+{
+  "id": "checkpoint-06",
+  "type": "checkpoint",
+  "title": "Checkpoint 6: Vulnerability Assessment and Risk Management",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "cp6-q1",
+      "question": "Which threat is mitigated through user awareness training and tying security awareness to performance reviews?",
+      "type": "single",
+      "options": [
+        { "text": "user-related threats", "isCorrect": true },
+        { "text": "physical threats", "isCorrect": false },
+        { "text": "cloud-related threats", "isCorrect": false },
+        { "text": "device-related threats", "isCorrect": false }
+      ],
+      "explanation": "Cybersecurity domains provide a framework for evaluating and implementing controls. User-related threats are specifically mitigated through awareness training."
+    },
+    {
+      "id": "cp6-q2",
+      "question": "As part of HR policy in a company, an individual may opt-out of having information shared with any third party other than the employer. Which law protects the privacy of personal shared information?",
+      "type": "single",
+      "options": [
+        { "text": "PCI", "isCorrect": false },
+        { "text": "GLBA", "isCorrect": true },
+        { "text": "FIRPA", "isCorrect": false },
+        { "text": "SOX", "isCorrect": false }
+      ],
+      "explanation": "The Gramm-Leach-Bliley Act (GLBA) includes privacy provisions for individuals and provides opt-out methods to restrict information sharing with third-party firms."
+    },
+    {
+      "id": "cp6-q3",
+      "question": "A company has had several incidents involving users downloading unauthorized software, using unauthorized websites, and using personal USB devices. The CIO wants to put in place a scheme to manage the user threats. What three things might be put in place to manage the threats? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Change to thin clients.", "isCorrect": false },
+        { "text": "Provide security awareness training.", "isCorrect": true },
+        { "text": "Disable CD and USB access.", "isCorrect": true },
+        { "text": "Monitor all activity by the users.", "isCorrect": false },
+        { "text": "Implement disciplinary action.", "isCorrect": false },
+        { "text": "Use content filtering.", "isCorrect": true }
+      ],
+      "explanation": "Users may be unaware of their actions if not educated. Implementing practices like security awareness training, disabling removable media access, and content filtering reduces the threat."
+    },
+    {
+      "id": "cp6-q4",
+      "question": "What is the workforce framework category that includes highly specialized review and evaluation of incoming cybersecurity information to determine if it is useful for intelligence?",
+      "type": "single",
+      "options": [
+        { "text": "Analyze", "isCorrect": true },
+        { "text": "Protect and Defend", "isCorrect": false },
+        { "text": "Securely Provision", "isCorrect": false },
+        { "text": "Oversight and Development", "isCorrect": false }
+      ],
+      "explanation": "The 'Analyze' category of the workforce framework includes specialty areas responsible for highly specialized review and evaluation of incoming cybersecurity information."
+    },
+    {
+      "id": "cp6-q5",
+      "question": "A breach occurs in a company that processes credit card information. Which industry specific law governs credit card data protection?",
+      "type": "single",
+      "options": [
+        { "text": "ECPA", "isCorrect": false },
+        { "text": "GLBA", "isCorrect": false },
+        { "text": "PCI DSS", "isCorrect": true },
+        { "text": "SOX", "isCorrect": false }
+      ],
+      "explanation": "The Payment Card Industry Data Security Standard (PCI DSS) governs how to protect credit card data as merchants and banks exchange transactions."
+    },
+    {
+      "id": "cp6-q6",
+      "question": "What type of network security test can detect and report changes made to network systems?",
+      "type": "single",
+      "options": [
+        { "text": "vulnerability scanning", "isCorrect": false },
+        { "text": "network scanning", "isCorrect": false },
+        { "text": "integrity checking", "isCorrect": true },
+        { "text": "penetration testing", "isCorrect": false }
+      ],
+      "explanation": "Integrity checking is used to detect and report changes made to systems."
+    },
+    {
+      "id": "cp6-q7",
+      "question": "What information does the SIEM network security management tool provide to network administrators?",
+      "type": "single",
+      "options": [
+        { "text": "real time reporting and analysis of security events", "isCorrect": true },
+        { "text": "assessment of system security configurations", "isCorrect": false },
+        { "text": "a map of network systems and services", "isCorrect": false },
+        { "text": "detection of open TCP and UDP ports", "isCorrect": false }
+      ],
+      "explanation": "SIEM (Security Information and Event Management) products provide real-time reporting and forensic analysis of security events."
+    },
+    {
+      "id": "cp6-q8",
+      "question": "A security professional is asked to perform an analysis of the current state of a company network. What tool would the security professional use to scan the network only for security risks?",
+      "type": "single",
+      "options": [
+        { "text": "vulnerability scanner", "isCorrect": true },
+        { "text": "malware", "isCorrect": false },
+        { "text": "packet analyzer", "isCorrect": false },
+        { "text": "pentest", "isCorrect": false }
+      ],
+      "explanation": "Vulnerability scanners are used to find weaknesses, such as missing patches, open ports, and misconfigurations."
+    },
+    {
+      "id": "cp6-q9",
+      "question": "What network testing tool would an administrator use to assess and validate system configurations against security policies and compliance standards?",
+      "type": "single",
+      "options": [
+        { "text": "Metasploit", "isCorrect": false },
+        { "text": "Nessus", "isCorrect": false },
+        { "text": "L0phtcrack", "isCorrect": false },
+        { "text": "Tripwire", "isCorrect": true }
+      ],
+      "explanation": "Tripwire is used to assess if network devices are compliant with network security policies."
+    },
+    {
+      "id": "cp6-q10",
+      "question": "What type of network security test uses simulated attacks to determine the feasibility of an attack as well as the possible consequences if the attack occurs?",
+      "type": "single",
+      "options": [
+        { "text": "penetration testing", "isCorrect": true },
+        { "text": "network scanning", "isCorrect": false },
+        { "text": "integrity checking", "isCorrect": false },
+        { "text": "vulnerability scanning", "isCorrect": false }
+      ],
+      "explanation": "Penetration testing determines the feasibility of attacks and their possible consequences."
+    },
+    {
+      "id": "cp6-q11",
+      "question": "Which organization defines unique CVE Identifiers for publicly known information-security vulnerabilities that make it easier to share data?",
+      "type": "single",
+      "options": [
+        { "text": "Cisco Talos", "isCorrect": false },
+        { "text": "DHS", "isCorrect": false },
+        { "text": "MITRE", "isCorrect": true },
+        { "text": "FireEye", "isCorrect": false }
+      ],
+      "explanation": "The MITRE Corporation creates and maintains the Common Vulnerabilities and Exposures (CVE) list."
+    },
+    {
+      "id": "cp6-q12",
+      "question": "How does AIS address a newly discovered threat?",
+      "type": "single",
+      "options": [
+        { "text": "by advising the U.S. Federal Government to publish internal response strategies", "isCorrect": false },
+        { "text": "by enabling real-time exchange of cyberthreat indicators with U.S. Federal Government and the private sector", "isCorrect": true },
+        { "text": "by mitigating the attack with active response defense mechanisms", "isCorrect": false },
+        { "text": "by creating response strategies against the new threat", "isCorrect": false }
+      ],
+      "explanation": "AIS (Automated Indicator Sharing) enables the real-time exchange of cyberthreat indicators between the federal government and the private sector."
+    },
+    {
+      "id": "cp6-q13",
+      "question": "Which statement describes Trusted Automated Exchange of Indicator Information (TAXII)?",
+      "type": "single",
+      "options": [
+        { "text": "It is the specification for an application layer protocol that allows the communication of CTI over HTTPS.", "isCorrect": true },
+        { "text": "It is a signature-less engine utilizing stateful attack analysis to detect zero-day threats.", "isCorrect": false },
+        { "text": "It is a set of specifications for exchanging cyber threat information between organizations.", "isCorrect": false },
+        { "text": "It is a dynamic database of real-time vulnerabilities.", "isCorrect": false }
+      ],
+      "explanation": "TAXII is the specification for an application layer protocol that allows the communication of Cyber Threat Intelligence (CTI) over HTTPS."
+    },
+    {
+      "id": "cp6-q14",
+      "question": "What are the three impact metrics contained in the CVSS 3.0 Base Metric Group? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "remediation level", "isCorrect": false },
+        { "text": "availability", "isCorrect": true },
+        { "text": "confidentiality", "isCorrect": true },
+        { "text": "integrity", "isCorrect": true },
+        { "text": "exploit", "isCorrect": false },
+        { "text": "attack vector", "isCorrect": false }
+      ],
+      "explanation": "The impact metrics in the CVSS Base Metric Group are confidentiality, integrity, and availability."
+    },
+    {
+      "id": "cp6-q15",
+      "question": "Which security management plan specifies a component that involves tracking the location and configuration of networked devices and software across an enterprise?",
+      "type": "single",
+      "options": [
+        { "text": "vulnerability management", "isCorrect": false },
+        { "text": "patch management", "isCorrect": false },
+        { "text": "asset management", "isCorrect": true },
+        { "text": "risk management", "isCorrect": false }
+      ],
+      "explanation": "Asset management involves tracking the location and configuration of networked devices and software across an enterprise."
+    },
+    {
+      "id": "cp6-q16",
+      "question": "In addressing an identified risk, which strategy aims to decrease the risk by taking measures to reduce vulnerability?",
+      "type": "single",
+      "options": [
+        { "text": "risk reduction", "isCorrect": true },
+        { "text": "risk avoidance", "isCorrect": false },
+        { "text": "risk sharing", "isCorrect": false },
+        { "text": "risk retention", "isCorrect": false }
+      ],
+      "explanation": "Risk reduction involves decreasing risk by taking measures to reduce vulnerability."
+    },
+    {
+      "id": "cp6-q17",
+      "question": "Match the security management function with the description.",
+      "type": "match",
+      "pairs": [
+        { "left": "the implementation of systems that track the location and configuration of networked devices and software across an enterprise", "right": "asset management" },
+        { "left": "the security practice designed to proactively prevent the exploitation of IT vulnerabilities that exist within an organization", "right": "vulnerability management" },
+        { "left": "the comprehensive analysis of impacts of attacks on core company assets and functioning", "right": "risk management" },
+        { "left": "the inventory and control of hardware and software configurations of systems", "right": "configuration management" }
+      ],
+      "explanation": "Asset management tracks devices/software. Vulnerability management prevents exploitation. Risk management analyzes impacts. Configuration management controls hardware/software configs."
+    },
+    {
+      "id": "cp6-q18",
+      "question": "When establishing a network profile for an organization, which element describes the time between the establishment of a data flow and its termination?",
+      "type": "single",
+      "options": [
+        { "text": "session duration", "isCorrect": true },
+        { "text": "routing protocol convergence", "isCorrect": false },
+        { "text": "bandwidth of the Internet connection", "isCorrect": false },
+        { "text": "total throughput", "isCorrect": false }
+      ],
+      "explanation": "Session duration is the time between the establishment of a data flow and its termination."
+    },
+    {
+      "id": "cp6-q19",
+      "question": "Which step in the Vulnerability Management Life Cycle determines a baseline risk profile to eliminate risks based on asset criticality, vulnerability threat, and asset classification?",
+      "type": "single",
+      "options": [
+        { "text": "prioritize assets", "isCorrect": false },
+        { "text": "discover", "isCorrect": false },
+        { "text": "verify", "isCorrect": false },
+        { "text": "assess", "isCorrect": true }
+      ],
+      "explanation": "The 'Assess' step determines a baseline risk profile to eliminate risks based on asset criticality, vulnerability threats, and asset classification."
+    },
+    {
+      "id": "cp6-q20",
+      "question": "Which risk mitigation strategies include outsourcing services and purchasing insurance?",
+      "type": "single",
+      "options": [
+        { "text": "transfer", "isCorrect": true },
+        { "text": "avoidance", "isCorrect": false },
+        { "text": "acceptance", "isCorrect": false },
+        { "text": "reduction", "isCorrect": false }
+      ],
+      "explanation": "Risk mitigation involving transferring risk includes outsourcing services or purchasing insurance."
+    },
+    {
+      "id": "cp6-q21",
+      "question": "The team is in the process of performing a risk analysis on the database services. The information collected includes the initial value of these assets, the threats to the assets and the impact of the threats. What type of risk analysis is the team performing by calculating the annual loss expectancy?",
+      "type": "single",
+      "options": [
+        { "text": "quantitative analysis", "isCorrect": true },
+        { "text": "protection analysis", "isCorrect": false },
+        { "text": "qualitative analysis", "isCorrect": false },
+        { "text": "loss analysis", "isCorrect": false }
+      ],
+      "explanation": "Quantitative risk analysis uses numerical data to calculate metrics like Annual Loss Expectancy (ALE)."
+    },
+    {
+      "id": "cp6-q22",
+      "question": "In quantitative risk analysis, what term is used to represent the degree of destruction that would occur if an event took place?",
+      "type": "single",
+      "options": [
+        { "text": "single loss expectancy", "isCorrect": false },
+        { "text": "exposure factor", "isCorrect": true },
+        { "text": "annualized rate of occurrence", "isCorrect": false },
+        { "text": "annualized loss expectancy", "isCorrect": false }
+      ],
+      "explanation": "Exposure Factor (EF) represents the percentage of value an asset loses if a specific threat is realized."
+    },
+    {
+      "id": "cp6-q23",
+      "question": "Which two values are required to calculate annual loss expectancy? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "frequency factor", "isCorrect": false },
+        { "text": "annual rate of occurrence", "isCorrect": true },
+        { "text": "asset value", "isCorrect": false },
+        { "text": "exposure factor", "isCorrect": false },
+        { "text": "single loss expectancy", "isCorrect": true },
+        { "text": "quantitative loss value", "isCorrect": false }
+      ],
+      "explanation": "Annual Loss Expectancy (ALE) is calculated using Single Loss Expectancy (SLE) and Annual Rate of Occurrence (ARO)."
+    },
+    {
+      "id": "cp6-q24",
+      "question": "In which situation would a detective control be warranted?",
+      "type": "single",
+      "options": [
+        { "text": "after the organization has experienced a breach in order to restore everything back to a normal state", "isCorrect": false },
+        { "text": "when the organization cannot use a guard dog, so it is necessary to consider an alternative", "isCorrect": false },
+        { "text": "when the organization needs to repair damage", "isCorrect": false },
+        { "text": "when the organization needs to look for prohibited activity", "isCorrect": true }
+      ],
+      "explanation": "Detective controls are used to look for and identify prohibited activity or events."
+    },
+    {
+      "id": "cp6-q25",
+      "question": "Based on the risk management process, what should the cybersecurity team do as the next step when a cybersecurity risk is identified?",
+      "type": "single",
+      "options": [
+        { "text": "Respond to the risk.", "isCorrect": false },
+        { "text": "Monitor the risk.", "isCorrect": false },
+        { "text": "Frame the risk.", "isCorrect": false },
+        { "text": "Assess the risk.", "isCorrect": true }
+      ],
+      "explanation": "Once a risk is identified, it is assessed and analyzed to determine the severity that the threat poses."
+    }
+  ]
+}

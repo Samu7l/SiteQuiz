@@ -1,1 +1,240 @@
-
+{
+  "id": "checkpoint-07",
+  "type": "checkpoint",
+  "title": "Checkpoint 7: Incident Response",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "cp7-q1",
+      "question": "According to the Cyber Kill Chain model, after a weapon is delivered to a targeted system, what is the next step that a threat actor would take?",
+      "type": "single",
+      "options": [
+        { "text": "exploitation", "isCorrect": true },
+        { "text": "action on objectives", "isCorrect": false },
+        { "text": "weaponization", "isCorrect": false },
+        { "text": "installation", "isCorrect": false }
+      ],
+      "explanation": "The threat actor uses the weapon delivered to break the vulnerability and gain control of the target (Exploitation)."
+    },
+    {
+      "id": "cp7-q2",
+      "question": "According to NIST, which step in the digital forensics process involves identifying potential sources of forensic data, its acquisition, handling, and storage?",
+      "type": "single",
+      "options": [
+        { "text": "analysis", "isCorrect": false },
+        { "text": "collection", "isCorrect": true },
+        { "text": "examination", "isCorrect": false },
+        { "text": "reporting", "isCorrect": false }
+      ],
+      "explanation": "Collection involves the identification of potential sources of forensic data and acquisition, handling, and storage of that data."
+    },
+    {
+      "id": "cp7-q3",
+      "question": "Match the intrusion event defined in the Diamond Model of intrusion to the description.",
+      "type": "match",
+      "pairs": [
+        { "left": "the target of the attack", "right": "victim" },
+        { "left": "network path used to establish and maintain command and control", "right": "infrastructure" },
+        { "left": "a tool or technique used to attack the victim", "right": "capability" },
+        { "left": "the parties responsible for the intrusion", "right": "adversary" }
+      ],
+      "explanation": "Victim is the target. Infrastructure is the network path. Capability is the tool/technique. Adversary is the responsible party."
+    },
+    {
+      "id": "cp7-q4",
+      "question": "What is a chain of custody?",
+      "type": "single",
+      "options": [
+        { "text": "the documentation surrounding the preservation of evidence related to an incident", "isCorrect": true },
+        { "text": "the disciplinary measures an organization may perform if an incident is caused by an employee", "isCorrect": false },
+        { "text": "a plan ensuring that each party involved in an incident response understands how to collect evidence", "isCorrect": false },
+        { "text": "a list of all of the stakeholders that were exploited by an attacker", "isCorrect": false }
+      ],
+      "explanation": "A chain of custody refers to the documentation of evidence collected about an incident that is used by authorities during an investigation."
+    },
+    {
+      "id": "cp7-q5",
+      "question": "In which step of the NIST incident response process does the CSIRT perform an analysis to determine which networks, systems, or applications are affected; who or what originated the incident; and how the incident is occurring?",
+      "type": "single",
+      "options": [
+        { "text": "scoping", "isCorrect": false },
+        { "text": "detection", "isCorrect": true },
+        { "text": "incident notification", "isCorrect": false },
+        { "text": "attacker identification", "isCorrect": false }
+      ],
+      "explanation": "In the detection and analysis phase, the CSIRT performs an initial analysis to determine the scope, origin, and method of the incident."
+    },
+    {
+      "id": "cp7-q6",
+      "question": "Match the NIST incident response stakeholder with the role.",
+      "type": "match",
+      "pairs": [
+        { "left": "preserves attack evidence", "right": "IT support" },
+        { "left": "designs the budget", "right": "management" },
+        { "left": "develops firewall rules", "right": "information assurance" },
+        { "left": "reviews policies for local or federal guideline violations", "right": "legal department" },
+        { "left": "performs disciplinary measures", "right": "human resources" }
+      ],
+      "explanation": "IT support preserves evidence. Management designs budgets. Information Assurance develops rules. Legal reviews policies. HR performs disciplinary measures."
+    },
+    {
+      "id": "cp7-q7",
+      "question": "Which type of controls restore the system after a disaster or an event?",
+      "type": "single",
+      "options": [
+        { "text": "Corrective controls", "isCorrect": true },
+        { "text": "Detective controls", "isCorrect": false },
+        { "text": "Preventive controls", "isCorrect": false }
+      ],
+      "explanation": "Corrective controls restore the system after a disaster or an event."
+    },
+    {
+      "id": "cp7-q8",
+      "question": "Which task describes threat attribution?",
+      "type": "single",
+      "options": [
+        { "text": "evaluating the server alert data", "isCorrect": false },
+        { "text": "determining who is responsible for the attack", "isCorrect": true },
+        { "text": "reporting the incident to the proper authorities", "isCorrect": false },
+        { "text": "obtaining the most volatile evidence", "isCorrect": false }
+      ],
+      "explanation": "Threat attribution refers to determining the individual, organization, or nation responsible for a successful intrusion or attack incident."
+    },
+    {
+      "id": "cp7-q9",
+      "question": "Which type of data would be considered an example of volatile data?",
+      "type": "single",
+      "options": [
+        { "text": "memory registers", "isCorrect": true },
+        { "text": "temp files", "isCorrect": false },
+        { "text": "log files", "isCorrect": false },
+        { "text": "web browser cache", "isCorrect": false }
+      ],
+      "explanation": "Volatile data is data stored in memory such as registers, cache, and RAM, which is lost when power is lost."
+    },
+    {
+      "id": "cp7-q10",
+      "question": "Place the seven steps defined in the Cyber Kill Chain in the correct order.",
+      "type": "match",
+      "pairs": [
+        { "left": "step 6", "right": "command and control" },
+        { "left": "step 4", "right": "exploitation" },
+        { "left": "step 1", "right": "reconnaissance" },
+        { "left": "step 5", "right": "installation" },
+        { "left": "step 7", "right": "action on objectives" },
+        { "left": "step 2", "right": "weaponization" },
+        { "left": "step 3", "right": "delivery" }
+      ],
+      "explanation": "1: Reconnaissance, 2: Weaponization, 3: Delivery, 4: Exploitation, 5: Installation, 6: Command and Control, 7: Action on Objectives."
+    },
+    {
+      "id": "cp7-q11",
+      "question": "Keeping data backups offsite is an example of which type of disaster recovery control?",
+      "type": "single",
+      "options": [
+        { "text": "detective", "isCorrect": false },
+        { "text": "corrective", "isCorrect": true },
+        { "text": "preventive", "isCorrect": true },
+        { "text": "management", "isCorrect": false }
+      ],
+      "explanation": "Backups can be considered preventive (preventing data loss) or corrective (restoring data). In this context, it often aligns with preventive measures to ensure continuity, but technically restores systems (corrective)."
+    },
+    {
+      "id": "cp7-q12",
+      "question": "What is specified in the plan element of the NIST incident response plan?",
+      "type": "single",
+      "options": [
+        { "text": "organizational structure and the definition of roles, responsibilities, and levels of authority", "isCorrect": false },
+        { "text": "incident handling based on the mission of the organization", "isCorrect": false },
+        { "text": "priority and severity ratings of incidents", "isCorrect": false },
+        { "text": "metrics for measuring the incident response capability and effectiveness", "isCorrect": true }
+      ],
+      "explanation": "One component of the plan element is to develop metrics for measuring the incident response capability and its effectiveness."
+    },
+    {
+      "id": "cp7-q13",
+      "question": "Which NIST-defined incident response stakeholder is responsible for coordinating incident response with other stakeholders and minimizing the damage of an incident?",
+      "type": "single",
+      "options": [
+        { "text": "IT support", "isCorrect": false },
+        { "text": "the legal department", "isCorrect": false },
+        { "text": "human resources", "isCorrect": false },
+        { "text": "management", "isCorrect": true }
+      ],
+      "explanation": "Management is responsible for coordinating the incident response with other stakeholders and minimizing the damage of an incident."
+    },
+    {
+      "id": "cp7-q14",
+      "question": "A cybersecurity analyst has been called to a crime scene that contains several technology items including a computer. Which technique will be used so that the information found on the computer can be used in court?",
+      "type": "single",
+      "options": [
+        { "text": "log collection", "isCorrect": false },
+        { "text": "unaltered disk image", "isCorrect": true },
+        { "text": "rootki", "isCorrect": false },
+        { "text": "Tor", "isCorrect": false }
+      ],
+      "explanation": "An unaltered disk image preserves the original evidence, preventing inadvertent alteration during the discovery phase."
+    },
+    {
+      "id": "cp7-q15",
+      "question": "A company is applying the NIST.SP800-61 r2 incident handling process to security events. What are two examples of incidents that are in the category of precursor? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "a newly-discovered vulnerability in Apache web servers", "isCorrect": true },
+        { "text": "an IDS alert message being sent", "isCorrect": false },
+        { "text": "log entries that show a response to a port scan", "isCorrect": true },
+        { "text": "a host that has been verified as infected with malware", "isCorrect": false },
+        { "text": "multiple failed logins from an unknown source", "isCorrect": false }
+      ],
+      "explanation": "Precursors are signs that an incident might occur in the future, such as a new vulnerability or logs showing a port scan response."
+    },
+    {
+      "id": "cp7-q16",
+      "question": "What is the objective the threat actor in establishing a two-way communication channel between the target system and a CnC infrastructure?",
+      "type": "single",
+      "options": [
+        { "text": "to steal network bandwidth from the network where the target is located", "isCorrect": false },
+        { "text": "to send user data stored on the target to the threat actor", "isCorrect": false },
+        { "text": "to launch a buffer overflow attack", "isCorrect": false },
+        { "text": "to allow the threat actor to issue commands to the software that is installed on the target", "isCorrect": true }
+      ],
+      "explanation": "With the two-way communication channel (Command and Control), the threat actor is able to issue commands to the malware software installed on the target."
+    },
+    {
+      "id": "cp7-q17",
+      "question": "Which activity is typically performed by a threat actor in the installation phase of the Cyber Kill Chain?",
+      "type": "single",
+      "options": [
+        { "text": "Open a two-way communication channel to the CnC infrastructure.", "isCorrect": false },
+        { "text": "Install a web shell on the target web server for persistent access.", "isCorrect": true },
+        { "text": "Obtain an automated tool to deliver the malware payload.", "isCorrect": false },
+        { "text": "Harvest email addresses of user accounts.", "isCorrect": false }
+      ],
+      "explanation": "In the installation phase, the threat actor establishes a back door (like a web shell) into the system to allow for continued access."
+    },
+    {
+      "id": "cp7-q18",
+      "question": "Which type of evidence supports an assertion based on previously obtained evidence?",
+      "type": "single",
+      "options": [
+        { "text": "direct evidence", "isCorrect": false },
+        { "text": "indirect evidence", "isCorrect": false },
+        { "text": "best evidence", "isCorrect": false },
+        { "text": "corroborating evidence", "isCorrect": true }
+      ],
+      "explanation": "Corroborating evidence supports a proposition already supported by initial evidence."
+    },
+    {
+      "id": "cp7-q19",
+      "question": "What will a threat actor do to create a back door on a compromised target according to the Cyber Kill Chain model?",
+      "type": "single",
+      "options": [
+        { "text": "Collect and exfiltrate data.", "isCorrect": false },
+        { "text": "Obtain an automated tool to deliver the malware payload.", "isCorrect": false },
+        { "text": "Add services and autorun keys.", "isCorrect": true },
+        { "text": "Open a two-way communications channel to the CnC infrastructure.", "isCorrect": false }
+      ],
+      "explanation": "Adding services and autorun keys is a way to create a point of persistent access (back door) during the installation phase."
+    }
+  ]
+}

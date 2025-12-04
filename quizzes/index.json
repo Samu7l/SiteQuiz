@@ -119,6 +119,48 @@
       "title": "Module 20: Network Security Data",
       "file": "modules/module-20.json",
       "moduleNumber": 20
+    },
+    {
+      "id": "module-21",
+      "title": "Module 21: Evaluating Alerts",
+      "file": "modules/module-21.json",
+      "moduleNumber": 21
+    },
+    {
+      "id": "module-22",
+      "title": "Module 22: Governance and Compliance",
+      "file": "modules/module-22.json",
+      "moduleNumber": 22
+    },
+    {
+      "id": "module-23",
+      "title": "Module 23: Network Security Testing",
+      "file": "modules/module-23.json",
+      "moduleNumber": 23
+    },
+    {
+      "id": "module-24",
+      "title": "Module 24: Threat Intelligence",
+      "file": "modules/module-24.json",
+      "moduleNumber": 24
+    },
+    {
+      "id": "module-25",
+      "title": "Module 25: Endpoint Vulnerability Assessment",
+      "file": "modules/module-25.json",
+      "moduleNumber": 25
+    },
+    {
+      "id": "module-26",
+      "title": "Module 26: Risk Management and Security Controls",
+      "file": "modules/module-26.json",
+      "moduleNumber": 26
+    },
+    {
+      "id": "module-27",
+      "title": "Module 27: Digital Forensics and Incident Analysis and Response",
+      "file": "modules/module-27.json",
+      "moduleNumber": 27
     }
   ],
   "checkpoints": [
@@ -135,6 +177,41 @@
       "file": "checkpoint/checkpoint-02.json",
       "moduleRange": [7, 10],
       "description": "Covers Modules 7 through 10."
+    },
+    {
+      "id": "checkpoint-03",
+      "title": "Checkpoint 3: Principles, Practices and Processes of Network Defense",
+      "file": "checkpoint/checkpoint-03.json",
+      "moduleRange": [11, 13],
+      "description": "Covers Modules 11 through 13."
+    },
+    {
+      "id": "checkpoint-04",
+      "title": "Checkpoint 4: Firewalls, Cryptography and Cloud Security",
+      "file": "checkpoint/checkpoint-04.json",
+      "moduleRange": [14, 18],
+      "description": "Covers Modules 14 through 18."
+    },
+    {
+      "id": "checkpoint-05",
+      "title": "Checkpoint 5: Evaluating Security Alerts",
+      "file": "checkpoint/checkpoint-05.json",
+      "moduleRange": [19, 21],
+      "description": "Covers Modules 19 through 21."
+    },
+    {
+      "id": "checkpoint-06",
+      "title": "Checkpoint 6: Vulnerability Assessment and Risk Management",
+      "file": "checkpoint/checkpoint-06.json",
+      "moduleRange": [22, 26],
+      "description": "Covers Modules 22 through 26."
+    },
+    {
+      "id": "checkpoint-07",
+      "title": "Checkpoint 7: Incident Response",
+      "file": "checkpoint/checkpoint-07.json",
+      "moduleRange": [27, 27],
+      "description": "Covers Module 27."
     }
   ],
   "finalExam": {

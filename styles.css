@@ -7,7 +7,7 @@
     --card-bg: #fff;
     --danger: #e74c3c;
     --grey-light: #e0e0e0;
-    --sidebar-width: 300px;
+    --sidebar-width: 450px;
 }
 
 * { box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
@@ -73,7 +73,7 @@ nav button:hover { text-decoration: underline; }
 }
 
 /* Views */
-.view { display: none; max-width: 800px; margin: 0 auto; animation: fadeIn 0.3s; }
+.view { display: none; max-width: 1200px; margin: 0 auto; animation: fadeIn 0.3s; }
 .view.active { display: block; }
 
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
@@ -272,6 +272,49 @@ nav button:hover { text-decoration: underline; }
 }
 .match-review-correct { color: var(--secondary); font-weight: bold; }
 .match-review-wrong { color: var(--danger); text-decoration: line-through; }
+
+
+/* --- Dropdown Matching Styles --- */
+.dd-match-row {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.dd-match-prompt {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.dd-match-select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.dd-match-select:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 188, 235, 0.2);
+}
+
+/* Review Mode for Dropdown */
+.dd-review-row {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 5px;
+}
+.dd-review-user { font-weight: bold; }
+.dd-correct { color: var(--secondary); }
+.dd-wrong { color: var(--danger); text-decoration: line-through; }
+.dd-correction-label { font-size: 0.85rem; color: #666; margin-left: 10px; }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {

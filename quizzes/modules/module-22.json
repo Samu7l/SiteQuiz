@@ -1,0 +1,144 @@
+
+{
+  "id": "module-22",
+  "type": "module",
+  "title": "Module 22: Governance and Compliance",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "m22-q1",
+      "question": "Cybersecurity professionals may have access to sensitive data. What one factor should they understand to help them make informed ethical decisions in relation to this data?",
+      "type": "single",
+      "options": [
+        { "text": "Cloud provider agreements", "isCorrect": false },
+        { "text": "Laws governing the data", "isCorrect": true },
+        { "text": "Partnerships with third parties", "isCorrect": false },
+        { "text": "A potential bonus", "isCorrect": false }
+      ],
+      "explanation": "A cybersecurity specialist needs to understand both the law and the interest of the organization to be able to make right decisions."
+    },
+    {
+      "id": "m22-q2",
+      "question": "Match the data governance role to the correct function.",
+      "type": "match",
+      "pairs": [
+        { "left": "Processes personal data on behalf of the data controller", "right": "Data processor" },
+        { "left": "Determines the purposes and means of personal data processing", "right": "Data controller" },
+        { "left": "Implements the classification and security controls for data", "right": "Data custodian" },
+        { "left": "Oversees an organization’s data protection strategy", "right": "Data protection officer" },
+        { "left": "Ensures compliance with policies and procedures", "right": "Data owner" }
+      ],
+      "explanation": "Data processor processes on behalf of controller. Data controller determines purpose. Data custodian implements controls. Data protection officer oversees strategy. Data owner ensures compliance."
+    },
+    {
+      "id": "m22-q3",
+      "question": "What is the primary goal of IT security governance?",
+      "type": "single",
+      "options": [
+        { "text": "To make decisions to mitigate risk", "isCorrect": false },
+        { "text": "To define a set of controls that an organization should implement", "isCorrect": false },
+        { "text": "To provide a set of policies and procedures to manage sensitive data", "isCorrect": false },
+        { "text": "To provide oversight to ensure that risks are adequately mitigated", "isCorrect": true }
+      ],
+      "explanation": "IT security governance demonstrates accountability and provides oversight to ensure that any risks are adequately mitigated and that security strategies are aligned with business objectives."
+    },
+    {
+      "id": "m22-q4",
+      "question": "Which of the following frameworks identifies controls based on the latest information about common cyber attacks and provides benchmarks for various platforms?",
+      "type": "single",
+      "options": [
+        { "text": "The National Cybersecurity Workforce", "isCorrect": false },
+        { "text": "CSA", "isCorrect": false },
+        { "text": "ISO", "isCorrect": false },
+        { "text": "CIS", "isCorrect": true }
+      ],
+      "explanation": "The Center for Internet Security (CIS) developed a set of critical security controls to help organizations improve their cyber defenses."
+    },
+    {
+      "id": "m22-q5",
+      "question": "What is the function of the Cloud Security Alliance (CSA)?",
+      "type": "single",
+      "options": [
+        { "text": "It audits the CIA Triad objectives.", "isCorrect": false },
+        { "text": "It ensures total compliance with the ISO 27000 standards.", "isCorrect": false },
+        { "text": "It provides security guidance to any organization that uses cloud computing.", "isCorrect": true },
+        { "text": "It produces a statement of applicability (SOA) which stipulates control objectives and audit controls to be implemented.", "isCorrect": false }
+      ],
+      "explanation": "The Cloud Security Alliance (CSA) provides security guidance to any organization that uses cloud computing or wants to assess the overall security risk of a cloud provider."
+    },
+    {
+      "id": "m22-q6",
+      "question": "An organization has experienced several incidents involving employees downloading unauthorized software and using unauthorized websites and personal USB devices. What measures could the organization implement to manage these threats? (Choose three correct answers)",
+      "type": "multiple",
+      "options": [
+        { "text": "Implement disciplinary action", "isCorrect": false },
+        { "text": "Monitor all employee activity", "isCorrect": false },
+        { "text": "Use content filtering", "isCorrect": true },
+        { "text": "Provide security awareness training", "isCorrect": true },
+        { "text": "Run computers from a central server rather than localized hard drives", "isCorrect": false },
+        { "text": "Disable USB access", "isCorrect": true }
+      ],
+      "explanation": "Measures include conducting security awareness training, enabling content filtering, and disabling USB ports."
+    },
+    {
+      "id": "m22-q7",
+      "question": "What federal act law would an individual be subject to if they knowingly accessed a government computer without permission?",
+      "type": "single",
+      "options": [
+        { "text": "CFAA", "isCorrect": true },
+        { "text": "SOX", "isCorrect": false },
+        { "text": "GLBA", "isCorrect": false },
+        { "text": "ECPA", "isCorrect": false }
+      ],
+      "explanation": "The Computer Fraud and Abuse Act (CFAA) prohibits unauthorized access to computer systems, including government computers."
+    },
+    {
+      "id": "m22-q8",
+      "question": "What law protects the privacy of an employee’s personal information from being shared with third parties?",
+      "type": "single",
+      "options": [
+        { "text": "FIRPA", "isCorrect": false },
+        { "text": "GLBA", "isCorrect": true },
+        { "text": "SOX", "isCorrect": false },
+        { "text": "PCI DSS", "isCorrect": false }
+      ],
+      "explanation": "The Gramm-Leach-Bliley Act (GLBA) provides opt-out provisions for individuals regarding information sharing with third parties."
+    },
+    {
+      "id": "m22-q9",
+      "question": "What act protects the personal information of students in schools?",
+      "type": "single",
+      "options": [
+        { "text": "CIPA", "isCorrect": false },
+        { "text": "FERPA", "isCorrect": true },
+        { "text": "COPPA", "isCorrect": false },
+        { "text": "HIPPA", "isCorrect": false }
+      ],
+      "explanation": "Family Education Records and Privacy Act (FERPA) is a US federal law that governs the access to education records."
+    },
+    {
+      "id": "m22-q10",
+      "question": "What do penetration tests and red team exercises achieve?",
+      "type": "single",
+      "options": [
+        { "text": "They provide a list of malware that has successfully penetrated the firewall.", "isCorrect": false },
+        { "text": "They provide audit controls for all NetBIOS connections made.", "isCorrect": false },
+        { "text": "They simulate attacks to gauge the security capabilities of an organization.", "isCorrect": true },
+        { "text": "They provide audit trails for all TCP connections in place at any given time.", "isCorrect": false }
+      ],
+      "explanation": "Penetration tests and red team exercises simulate attacks to gauge the security capabilities of an organization."
+    },
+    {
+      "id": "m22-q11",
+      "question": "Which of the following principles is used by the U.S. government in its access control models?",
+      "type": "single",
+      "options": [
+        { "text": "Need to know", "isCorrect": true },
+        { "text": "Separation of duties", "isCorrect": false },
+        { "text": "Mandatory vacations", "isCorrect": false },
+        { "text": "Job rotation", "isCorrect": false }
+      ],
+      "explanation": "The U.S. government uses the 'need to know' principle in its access control models, granting access only to necessary information."
+    }
+  ]
+}
