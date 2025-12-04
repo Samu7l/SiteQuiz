@@ -57,12 +57,12 @@
       "question": "In which step of the NIST incident response process does the CSIRT perform an analysis to determine which networks, systems, or applications are affected; who or what originated the incident; and how the incident is occurring?",
       "type": "single",
       "options": [
-        { "text": "scoping", "isCorrect": false },
-        { "text": "detection", "isCorrect": true },
+        { "text": "scoping", "isCorrect": true },
+        { "text": "detection", "isCorrect": false },
         { "text": "incident notification", "isCorrect": false },
         { "text": "attacker identification", "isCorrect": false }
       ],
-      "explanation": "In the detection and analysis phase, the CSIRT performs an initial analysis to determine the scope, origin, and method of the incident."
+      "explanation": "In the detection and analysis phase of the NIST incident response process life cycle, the CSIRT should immediately perform an initial analysis to determine the scope of the incident, such as which networks, systems, or applications are affected; who or what originated the incident; and how the incident is occurring."
     },
     {
       "id": "cp7-q6",
