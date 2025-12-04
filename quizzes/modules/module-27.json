@@ -14,7 +14,7 @@
         { "text": "Develop metrics for measuring the incident response capability and its effectiveness.", "isCorrect": true },
         { "text": "Detail how incidents should be handled based on the mission and functions of an organization.", "isCorrect": false }
       ],
-      "explanation": "The incident response plan typically includes the development of metrics to measure the capability's effectiveness and a roadmap for maturing the capability."
+      "explanation": "NIST recommends creating policies, plans, and procedures for establishing and maintaining a CSIRC. A purpose of the plan element is to develop metrics for measuring the incident response capability and its effectiveness."
     },
     {
       "id": "m27-q2",
@@ -27,7 +27,7 @@
         { "text": "Determine the location of the recovery and storage of all evidence.", "isCorrect": false },
         { "text": "Validate the IP address of the threat actor to determine if it is viable.", "isCorrect": true }
       ],
-      "explanation": "To identify an attacking host, analysts validate the threat actor's IP address (to rule out spoofing) and use open-source intelligence (search engines) to gather context."
+      "explanation": "The following actions can help identify an attacking host during a security incident: \n Use incident databases to research related activity.\n Validate the IP address of the threat actor to determine if it is a viable one.\n Use an Internet search engine to gain additional information about the attack.\n Monitor the communication channels that some threat actors use, such as IRC."
     },
     {
       "id": "m27-q3",
@@ -39,7 +39,7 @@
         { "text": "direction", "isCorrect": false },
         { "text": "methodology", "isCorrect": false }
       ],
-      "explanation": "In the Diamond Model, 'Resources' refers to the tools, information, and knowledge (assets) the adversary utilizes to execute the intrusion."
+      "explanation": "The resources element in the Diamond Model is used to describe one or more external resources used by the adversary for the intrusion event. The resources include software, knowledge gained by the adversary, information (e.g., username/passwords), and assets to carry out the attack."
     },
     {
       "id": "m27-q4",
@@ -51,7 +51,7 @@
         { "text": "weaponization", "isCorrect": false },
         { "text": "capability", "isCorrect": true }
       ],
-      "explanation": "'Capability' in the Diamond Model refers to the tools and techniques (the tradecraft) the adversary employs to affect the victim."
+      "explanation": "The Diamond Model of intrusion contains four parts:\n Adversary - the parties responsible for the intrusion\n Capability - a tool or technique that the adversary uses to attack the victim\n Infrastructure - the network path or paths that the adversaries use to establish and maintain command and control over their capabilities\n Victim - the target of the attack"
     },
     {
       "id": "m27-q5",
@@ -63,7 +63,7 @@
         { "text": "Network Admission Control", "isCorrect": false },
         { "text": "business continuity plan", "isCorrect": true }
       ],
-      "explanation": "A Business Continuity Plan (BCP) is the comprehensive plan that ensures an organization can continue to operate during and after a disaster. It includes the Disaster Recovery Plan (DRP)."
+      "explanation": "A plan that goes beyond an incident response or DRP also allows for succession planning in case of disaster. The broader plan needs to make sure the company can continue to operate in the face of a disaster."
     },
     {
       "id": "m27-q6",
@@ -77,7 +77,7 @@
         { "text": "Rebuild DHCP servers using clean installation media.", "isCorrect": false },
         { "text": "Use clean and recent backups to recover hosts.", "isCorrect": true }
       ],
-      "explanation": "Effective remediation/eradication typically involves reimaging machines (rebuilding), restoring data from clean backups, and patching systems to prevent reinfection."
+      "explanation": "To recover infected user workstations, use clean and recent backups or rebuild the PCs with installation media if no backups are available or they have been compromised. Also, fully update and patch the operating system and installed software of all hosts. All users are encouraged to change their passwords for the workstation or workstations they use. Rebuilding DHCP servers is needed only if they are affected by the incident.Also not all devices need to change the name and password configuration setting unless they are affected by the incident."
     },
     {
       "id": "m27-q7",
@@ -89,7 +89,7 @@
         { "text": "a collection of malware exploits and prevention solutions", "isCorrect": false },
         { "text": "a knowledge base of threat actor behavior", "isCorrect": true }
       ],
-      "explanation": "MITRE ATT&CK is a globally accessible knowledge base of adversary tactics and techniques based on real-world observations."
+      "explanation": "The MITRE framework is a global knowledge base of threat actor behavior. It is based on observation and analysis of real-world exploits with the purpose of describing the behavior of the attacker, not the attack itself. It is designed to enable automated information sharing by defining data structures for the exchange of information between its community of users and MITRE."
     },
     {
       "id": "m27-q8",
@@ -101,7 +101,7 @@
         { "text": "action on objectives", "isCorrect": false },
         { "text": "exploitation", "isCorrect": false }
       ],
-      "explanation": "After Reconnaissance (scanning), the next phase is Weaponization, where the attacker creates a deliverable payload."
+      "explanation": "The Cyber Kill Chain specifies seven steps (or phases) and sequences that a threat actor must complete to accomplish an attack: \n Reconnaissance - The threat actor performs research, gathers intelligence, and selects targets.\n Weaponization - The threat actor uses the information from the reconnaissance phase to develop a weapon against specific targeted systems.\n Delivery - The weapon is transmitted to the target using a delivery vector.\n Exploitation - The threat actor uses the weapon delivered to break the vulnerability and gain control of the target.\n Installation - The threat actor establishes a back door into the system to allow for continued access to the target.\n Command and Control (CnC) - The threat actor establishes command and control (CnC) with the target system.\n Action on Objectives - The threat actor is able to take action on the target system, thus achieving the original objective."
     },
     {
       "id": "m27-q9",
@@ -125,7 +125,7 @@
         { "text": "It uses the OSI model to describe cyberattacks at each of the seven layers.", "isCorrect": false },
         { "text": "It specifies common TCP/IP protocols used to fight against cyberattacks.", "isCorrect": false }
       ],
-      "explanation": "The Cyber Kill Chain framework identifies the stages (steps) an adversary must typically go through to conduct a successful attack."
+      "explanation": "The Cyber Kill Chain was developed to identify and prevent cyber intrusions by specifying what threat actors must complete to accomplish their goals."
     },
     {
       "id": "m27-q11",
@@ -134,24 +134,24 @@
       "options": [
         { "text": "What is the process?", "isCorrect": true },
         { "text": "Does the process require approval?", "isCorrect": false },
-        { "text": "How long does the process take?", "isCorrect": true },
+        { "text": "How long does the process take?", "isCorrect": false },
         { "text": "Who is responsible for the process", "isCorrect": true },
         { "text": "Can the individual perform the process?", "isCorrect": false },
-        { "text": "Where does the individual perform the process?", "isCorrect": false }
+        { "text": "Where does the individual perform the process?", "isCorrect": true }
       ],
-      "explanation": "To create a DRP, one must understand the critical business processes, the personnel involved, and the time tolerance/recovery targets."
+      "explanation": "Disaster recovery plans are made based on the criticality of a service or process. Answers to questions of who, what, where, and why are necessary for a plan to be successful."
     },
     {
       "id": "m27-q12",
       "question": "A threat actor has gained administrative access to a system and achieved the goal of controlling the system for a future DDoS attack by establishing a communication channel with a CnC owned by the threat actor. Which phase in the Cyber Kill Chain model describes the situation?",
       "type": "single",
       "options": [
-        { "text": "action on objectives", "isCorrect": false },
+        { "text": "action on objectives", "isCorrect": true },
         { "text": "exploitation", "isCorrect": false },
         { "text": "delivery", "isCorrect": false },
-        { "text": "command and control", "isCorrect": true }
+        { "text": "command and control", "isCorrect": false }
       ],
-      "explanation": "Establishing a communication channel to a controller (CnC) to manipulate the victim system defines the Command and Control phase."
+      "explanation": "The Cyber Kill Chain specifies seven steps (or phases) and sequences that a threat actor must complete to accomplish an attack: \n Reconnaissance - The threat actor performs research, gathers intelligence, and selects targets.\n Weaponization - The threat actor uses the information from the reconnaissance phase to develop a weapon against specific targeted systems.\n Delivery - The weapon is transmitted to the target using a delivery vector.\n Exploitation - The threat actor uses the weapon delivered to break the vulnerability and gain control of the target.\n Installation - The threat actor establishes a back door into the system to allow for continued access to the target.\n Command and Control (CnC) - The threat actor establishes command and control (CnC) with the target system.\n Action on Objectives - The threat actor is able to take action on the target system, thus achieving the original objective."
     },
     {
       "id": "m27-q13",
@@ -163,7 +163,7 @@
         { "text": "It provides a roadmap for maturing the incident response capability.", "isCorrect": false },
         { "text": "It defines how the incident response teams will communicate with the rest of the organization and with other organizations.", "isCorrect": false }
       ],
-      "explanation": "The Policy element details the high-level rules and how incidents are handled in alignment with the organization's mission."
+      "explanation": "NIST recommends creating policies, plans, and procedures for establishing and maintaining a CSIRC. A purpose of the policy element is to detail how incidents should be handled based on the mission and functions of an organization."
     }
   ]
 }
