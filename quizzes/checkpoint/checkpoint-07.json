@@ -26,7 +26,7 @@
         { "text": "examination", "isCorrect": false },
         { "text": "reporting", "isCorrect": false }
       ],
-      "explanation": "Collection involves the identification of potential sources of forensic data and acquisition, handling, and storage of that data."
+      "explanation": "NIST describes the digital forensics process as involving the following four steps:<br><b>Collection</b> - the identification of potential sources of forensic data and acquisition, handling, and storage of that data.<br><b>Examination</b> - assessing and extracting relevant information from the collected data. This may involve decompression or decryption of the data.<br><b>Analysis</b> - drawing conclusions from the data. Salient features, such as people, places, times, events, and so on should be documented.<br><b>Reporting</b>  - preparing and presenting information that resulted from the analysis. Reporting should be impartial and alternative explanations should be offered if appropriate."
     },
     {
       "id": "cp7-q3",
@@ -133,7 +133,7 @@
       "type": "single",
       "options": [
         { "text": "detective", "isCorrect": false },
-        { "text": "corrective", "isCorrect": true },
+        { "text": "corrective", "isCorrect": false },
         { "text": "preventive", "isCorrect": true },
         { "text": "management", "isCorrect": false }
       ],
