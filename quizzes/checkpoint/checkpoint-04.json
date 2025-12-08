@@ -368,6 +368,30 @@
         { "text": "Hash functions can be duplicated for authentication purposes.", "isCorrect": false }
       ],
       "explanation": "A cryptographic hash function should have the following properties:<br>1. The input can be any length.<br>2. The <b>output has a fixed length</b>.<br>3. The hash value is relatively easy to compute for any given input.<br>4. The hash is <b>one way and not reversible</b>.<br>5. The hash is collision free, meaning that two different input values will result in different hash values."
+    },
+    {
+      "id": "cp4-q30",
+      "question": "Which technique can be used to leverage virtual network topologies to run smaller and more isolated networks without incurring additional hardware costs?",
+      "type": "single",
+      "options": [
+        { "text": "fog computing", "isCorrect": false },
+        { "text": "edge computing", "isCorrect": false },
+        { "text": "microsegmentation", "isCorrect": true },
+        { "text": "shadow IT", "isCorrect": false }
+      ],
+      "explanation": "<b>Microsegmentation</b> (also referred to as hypersegregation) leverages virtual network topologies to run smaller and more isolated networks without incurring additional hardware costs. Microsegmentation techniques allow for more granular control of security for traffic and workflows within the cloud."
+    },
+    {
+      "id": "cp4-q31",
+      "question": "Match the description with the correct term.",
+      "type": "match",
+      "pairs": [
+        { "left": "creating a message that says one thing but means something else to a specific audience", "right": "social steganography" },
+        { "left": "making a message confusing so it is harder to understand", "right": "obfuscation" },
+        { "left": "discovering that hidden information exists within a graphic file", "right": "steganalysis" },
+        { "left": "hiding data within an audio file", "right": "steganography" }
+      ],
+      "explanation": "<b>Social steganography</b> = creating a message that says one thing but means something else to a specific audience<br><b>Obfuscation</b> = making a message confusing so it is harder to understand<br><b>Steganalysis</b> = discovering that hidden information exists within a graphic file<br><b>Steganography</b> = hiding data within an audio file"
     }
   ]
 }
