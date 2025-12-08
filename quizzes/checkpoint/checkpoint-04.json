@@ -316,6 +316,58 @@
         { "text": "integrity of digitally signed data", "isCorrect": false }
       ],
       "explanation": "Nonrepudiation of the transaction means the recipient can take the data to a third party, and the third party accepts the digital signature as proof that this data exchange did take place. The signing party cannot repudiate that it has signed the data."
+    },
+    {
+      "id": "cp4-q26",
+      "question": "Refer to the exhibit. The IPv6 access list LIMITED_ACCESS is applied on the S0/0/0 interface of R1 in the inbound direction. Which IPv6 packets from the ISP will be dropped by the ACL on R1?",
+      "image": "cp4-q26.png",
+      "type": "single",
+      "options": [
+        { "text": "packets that are destined to PC1 on port 80", "isCorrect": false },
+        { "text": "ICMPv6 packets that are destined to PC1", "isCorrect": true },
+        { "text": "neighbor advertisements that are received from the ISP router", "isCorrect": false },
+        { "text": "HTTPS packets to PC1", "isCorrect": false }
+      ],
+      "explanation": "The access list LIMITED_ACCESS will block <b>ICMPv6 packets</b> from the ISP. Both port 80, HTTP traffic, and port 443, HTTPS traffic, are explicitly permitted by the ACL.<br>The neighbor advertisements from the ISP router are implicitly permitted by the implicit permit icmp any any nd-na statement at the end of all IPv6 ACLs."
+    },
+    {
+      "id": "cp4-q27",
+      "question": "Refer to the exhibit. An administrator has configured a standard ACL on R1 and applied it to interface serial 0/0/0 in the outbound direction. What happens to traffic leaving interface serial 0/0/0 that does not match the configured ACL statements?",
+      "image": "cp4-q27.png",
+      "type": "single",
+      "options": [
+        { "text": "The source IP address is checked and, if a match is not found, traffic is routed out interface serial 0/0/1.", "isCorrect": false },
+        { "text": "The resulting action is determined by the destination IP address and port number.", "isCorrect": false },
+        { "text": "The traffic is dropped.", "isCorrect": true },
+        { "text": "The resulting action is determined by the destination IP address.", "isCorrect": false }
+      ],
+      "explanation": "Any traffic that does not match one of the statements in an ACL has the <b>implicit deny</b> applied to it, which means the traffic is dropped."
+    },
+    {
+      "id": "cp4-q28",
+      "question": "Which two statements describe the two configuration models for Cisco IOS firewalls? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "The IOS Classic Firewall and ZPF cannot be combined on a single interface.", "isCorrect": true },
+        { "text": "IOS Classic Firewalls must be enabled in the router configuration before enabling ZPF.", "isCorrect": false },
+        { "text": "Both IOS Classic Firewall and ZPF models require ACLs to define traffic filtering policies.", "isCorrect": false },
+        { "text": "ZPF must be enabled in the router configuration before enabling an IOS Classic Firewall.", "isCorrect": false },
+        { "text": "IOS Classic Firewalls and ZPF models can be enabled on a router concurrently.", "isCorrect": true }
+      ],
+      "explanation": "There are two configuration models for Cisco IOS Firewalls, <b>IOS Classic Firewalls</b> and <b>zone-based policy firewalls (ZPF)</b>.<br>Both configuration models can be enabled concurrently on a router but they cannot be combined on a single interface. One benefit of using ZPF is that ZPF is not dependent on ACLs."
+    },
+    {
+      "id": "cp4-q29",
+      "question": "What are two properties of a cryptographic hash function? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "The hash function is one way and irreversible.", "isCorrect": true },
+        { "text": "Complex inputs will produce complex hashes.", "isCorrect": false },
+        { "text": "The output is a fixed length.", "isCorrect": true },
+        { "text": "The input for a particular hash algorithm has to have a fixed size.", "isCorrect": false },
+        { "text": "Hash functions can be duplicated for authentication purposes.", "isCorrect": false }
+      ],
+      "explanation": "A cryptographic hash function should have the following properties:<br>1. The input can be any length.<br>2. The <b>output has a fixed length</b>.<br>3. The hash value is relatively easy to compute for any given input.<br>4. The hash is <b>one way and not reversible</b>.<br>5. The hash is collision free, meaning that two different input values will result in different hash values."
     }
   ]
 }
