@@ -303,6 +303,67 @@
         { "left": "maintains system logs", "right": "Event Viewer" }
       ],
       "explanation": "Registry stores system info. Windows Firewall denies traffic. PowerShell runs scripts. Event Viewer maintains logs."
+    },
+    {
+      "id": "cp2-q25",
+      "question": "What would be a reason for a computer user to use the Task Manager Performance tab?",
+      "type": "single",
+      "options": [
+        { "text": "to check the CPU usage of the PC", "isCorrect": true },
+        { "text": "to view the services that are currently running on the PC", "isCorrect": false },
+        { "text": "to view the processes that are running and end a process if needed", "isCorrect": false },
+        { "text": "to increase the performance of the CPU", "isCorrect": false }
+      ],
+      "explanation": "The Performance tab is commonly used to check current computer performance. Two key areas that are shown are memory and CPU usage."
+    },
+    {
+      "id": "cp2-q26",
+      "question": "What is the difference between an HIDS and a firewall?",
+      "type": "single",
+      "options": [
+        { "text": "A firewall allows and denies traffic based on rules and an HIDS monitors network traffic.", "isCorrect": false },
+        { "text": "A firewall performs packet filtering and therefore is limited in effectiveness, whereas an HIDS blocks intrusions.", "isCorrect": false },
+        { "text": "An HIDS works like an IPS, whereas a firewall just monitors traffic.", "isCorrect": false },
+        { "text": "An HIDS monitors operating systems on host computers and processes file system activity. Firewalls allow or deny traffic between the computer and other systems.", "isCorrect": true },
+        { "text": "An HIDS blocks intrusions, whereas a firewall filters them.", "isCorrect": false }
+      ],
+      "explanation": "In order to monitor local activity an HIDS should be implemented. Network activity monitors are concerned with traffic and not operating system activity."
+    },
+    {
+      "id": "cp2-q27",
+      "question": "A PC user issues the netstat command without any options. What is displayed as the result of this command?",
+      "type": "single",
+      "options": [
+        { "text": "a network connection and usage report", "isCorrect": false },
+        { "text": "a list of all established active TCP connections", "isCorrect": true },
+        { "text": "a local routing table", "isCorrect": false },
+        { "text": "a historical list of successful pings that have been sent", "isCorrect": false }
+      ],
+      "explanation": "When used by itself (without any options), the netstat command will display all the active TCP connections that are available."
+    },
+    {
+      "id": "cp2-q28",
+      "question": "Consider the result of the ls -l command in the Linux output below. What are the file permissions assigned to the sales user for the analyst.txt file?\n\nls –l analyst.txt\n-rwxrw-r-- sales staff 1028 May 28 15:50 analyst.txt",
+      "type": "single",
+      "options": [
+        { "text": "read, write", "isCorrect": false },
+        { "text": "read only", "isCorrect": false },
+        { "text": "read, write, execute", "isCorrect": true },
+        { "text": "write only", "isCorrect": false }
+      ],
+      "explanation": "The file permissions are always displayed in the User, Group and Other order. The first set of characters is for user permission (rwx). The user, sales, who owns the file can read, write and execute the file."
+    },
+    {
+      "id": "cp2-q29",
+      "question": "Match the Windows system tool with the description. (Not all options are used.)",
+      "type": "match",
+      "pairs": [
+        { "left": "a CLI environment used to run scripts and automate tasks", "right": "PowerShell" },
+        { "left": "selectively denies traffic on specified interfaces", "right": "Windows Firewall" },
+        { "left": "maintains system logs", "right": "Event Viewer" },
+        { "left": "a hierarchical database of all system and user information", "right": "Registry" }
+      ],
+      "explanation": "PowerShell is for scripting/automation. Windows Firewall filters traffic. Event Viewer maintains logs. Registry holds system config."
     }
   ]
 }
