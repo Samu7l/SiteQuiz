@@ -42,6 +42,25 @@ const app = {
         app.renderSavedCustom();
     },
 
+    showFinalSelector: () => {
+        const container = document.getElementById('final-exam-list-container');
+        container.innerHTML = '';
+
+        app.data.manifest.finalExams.forEach(exam => {
+            const card = document.createElement('div');
+            card.className = 'exam-card';
+            card.innerHTML = `
+                <h3>${exam.title}</h3>
+                <p>${exam.description || "Aucune description."}</p>
+                <small>Cliquez pour commencer</small>
+            `;
+            card.onclick = () => app.prepareQuiz(exam.id, 'Final Exam');
+            container.appendChild(card);
+        });
+
+        app.showView('view-final-selection');
+    },
+
     showCustomBuilder: () => {
         app.renderCustomBuilder();
         app.showView('view-custom-builder');
@@ -79,8 +98,17 @@ const app = {
         
         const finalC = document.getElementById('list-final');
         finalC.innerHTML = '';
-        if (app.data.manifest.finalExam) {
-            finalC.appendChild(createItem(app.data.manifest.finalExam, 'Final Exam'));
+        if (app.data.manifest.finalExams && app.data.manifest.finalExams.length > 0) {
+            const div = document.createElement('div');
+            div.className = 'sidebar-item';
+            div.innerHTML = `<div><strong>Accéder aux Examens</strong><br><small>Sélection</small></div>`;
+            
+            div.onclick = () => {
+                document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
+                div.classList.add('active');
+                app.showFinalSelector();
+            };
+            finalC.appendChild(div);
         }
         app.renderSavedCustom();
     },
@@ -175,7 +203,7 @@ const app = {
                 }
             } 
             else if (type === 'Final Exam') {
-                item = app.data.manifest.finalExam;
+                item = app.data.manifest.finalExams.find(f => f.id === id);
                 quizData = await app.fetchJson(item.file, signal);
                 if (!quizData.questions || quizData.questions.length === 0) {
                     quizData = await app.generateQuestionsFromRange(quizData, [1, 27], signal);

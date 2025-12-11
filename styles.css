@@ -359,3 +359,30 @@ nav button:hover { text-decoration: underline; }
     align-items: center;
     flex-wrap: wrap;
 }
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.exam-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-left: 5px solid #e74c3c; /* Rouge pour Final Exam */
+}
+
+.exam-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.exam-card h3 { margin-top: 0; color: #2c3e50; }
+.exam-card p { color: #7f8c8d; font-size: 0.9em; }
