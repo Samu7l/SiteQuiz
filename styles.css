@@ -340,3 +340,22 @@ nav button:hover { text-decoration: underline; }
     opacity: 0;
     transform: translateY(10px); /* Moves down slightly while fading out */
 }
+
+.timer-display {
+    background: #f1f1f1;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}

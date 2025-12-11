@@ -7,7 +7,8 @@ const app = {
         isAnimating: false,
         cache: {},
         // KILL SWITCH : Permet d'annuler les chargements en cours si on change de quiz
-        abortController: null 
+        abortController: null,
+        timerInterval: null
     },
 
     init: async () => {
@@ -35,6 +36,7 @@ const app = {
     },
 
     showHome: () => {
+        if (app.data.timerInterval) clearInterval(app.data.timerInterval);
         app.showView('view-home');
         document.querySelectorAll('.sidebar-item').forEach(el => el.classList.remove('active'));
         app.renderSavedCustom();
@@ -178,6 +180,7 @@ const app = {
                 if (!quizData.questions || quizData.questions.length === 0) {
                     quizData = await app.generateQuestionsFromRange(quizData, [1, 27], signal);
                 }
+                quizData.timeLimit = 75;
             }
 
             if (quizData && !signal.aborted) {
@@ -237,6 +240,15 @@ const app = {
         document.getElementById('start-title').innerText = quizObj.title;
         document.getElementById('start-pass').innerText = quizObj.passPercentage || 70;
         document.getElementById('start-qcount').innerText = quizObj.questions ? quizObj.questions.length : 0;
+
+        const infoBox = document.querySelector('.info-box p:last-child');
+        if (quizObj.timeLimit) {
+            infoBox.innerHTML = `<strong>⚠️ Attention :</strong> Vous avez <strong>${quizObj.timeLimit} minutes</strong> pour compléter cet examen.`;
+            infoBox.style.color = "#d35400";
+        } else {
+            infoBox.innerHTML = "You have unlimited attempts. There is no time limit.";
+            infoBox.style.color = "";
+        }
         
         document.getElementById('btn-begin').onclick = app.startQuizFlow;
         app.showView('view-start');
@@ -246,6 +258,50 @@ const app = {
         app.showView('view-quiz');
         app.renderQuestionNav();
         app.renderCurrentQuestion(false);
+
+        const timerDisplay = document.getElementById('quiz-timer');
+    
+        if (app.data.timerInterval) clearInterval(app.data.timerInterval);
+
+        if (app.data.currentQuiz.timeLimit) {
+            timerDisplay.classList.remove('hidden');
+            app.startTimer(app.data.currentQuiz.timeLimit * 60);
+        } else {
+            timerDisplay.classList.add('hidden');
+        }
+    },
+    startTimer: (durationInSeconds) => {
+        let timer = durationInSeconds;
+        const display = document.getElementById('timer-val');
+        
+        const updateDisplay = () => {
+            const hours = Math.floor(timer / 3600);
+            const minutes = Math.floor((timer % 3600) / 60);
+            const seconds = timer % 60;
+
+            const h = hours > 0 ? (hours < 10 ? "0" + hours : hours) + ":" : "";
+            const m = minutes < 10 ? "0" + minutes : minutes;
+            const s = seconds < 10 ? "0" + seconds : seconds;
+
+            display.textContent = h + m + ":" + s;
+            
+            // Optionnel : Passer en rouge quand il reste moins de 5 min
+            if (timer < 300) display.style.color = "red";
+            else display.style.color = "";
+        };
+
+        updateDisplay(); // Affichage immédiat
+
+        app.data.timerInterval = setInterval(() => {
+            timer--;
+            updateDisplay();
+
+            if (timer <= 0) {
+                clearInterval(app.data.timerInterval);
+                alert("Temps écoulé ! L'examen va être soumis automatiquement.");
+                app.finishQuiz();
+            }
+        }, 1000);
     },
 
     changeQuestion: (direction) => {
@@ -507,6 +563,7 @@ const app = {
 
     // --- Score & Custom ---
     finishQuiz: () => {
+        if (app.data.timerInterval) clearInterval(app.data.timerInterval);
         const total = app.data.currentQuiz.questions.length;
         let correctCount = 0;
         app.data.currentQuiz.questions.forEach((q, idx) => {
