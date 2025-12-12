@@ -376,7 +376,7 @@
       "options": [
         { "text": "fog computing", "isCorrect": false },
         { "text": "edge computing", "isCorrect": false },
-        { "text": "microsegmentation", "isCorrect": true },
+        { "text": "microsegmentation", "isCorrect": true},
         { "text": "shadow IT", "isCorrect": false }
       ],
       "explanation": "<b>Microsegmentation</b> (also referred to as hypersegregation) leverages virtual network topologies to run smaller and more isolated networks without incurring additional hardware costs. Microsegmentation techniques allow for more granular control of security for traffic and workflows within the cloud."

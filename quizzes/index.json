@@ -217,8 +217,8 @@
   "finalExams": [
     {
       "id": "final-v1",
-      "title": "Final Exam - Geremy RUIS",
-      "file": "./final/final-exam-gerem.json",
+      "title": "Final Exam - V1 (GR)",
+      "file": "./final/final-exam-v1.json",
       "description": "L'examen standard."
     },
     {

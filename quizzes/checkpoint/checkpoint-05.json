@@ -124,7 +124,7 @@
         { "text": "ESA", "isCorrect": false },
         { "text": "WSA", "isCorrect": true }
       ],
-      "explanation": "The Cisco Web Security Appliance (WSA) acts as a web proxy and can filter traffic based on web reputation."
+      "explanation": "The Cisco Web Security Appliance (WSA) acts as a web proxy for an enterprise network. WSA can provide many types of logs related to web traffic security including ACL decision logs, malware scan logs, and web reputation filtering logs. <br><br>The Cisco Email Security Appliance (ESA) is a tool to monitor most aspects of email delivery, system functioning, antivirus, antispam operations, and blacklist and whitelist decisions. The Cisco ASA is a firewall appliance. <br><br>The Cisco Application Visibility and Control (AVC) system combines multiple technologies to recognize, analyze, and control over 1000 applications."
     },
     {
       "id": "cp5-q11",
