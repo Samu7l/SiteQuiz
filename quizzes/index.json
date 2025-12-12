@@ -214,11 +214,20 @@
       "description": "Covers Module 27."
     }
   ],
-  "finalExam": {
-    "id": "final-exam",
-    "title": "Course Final Exam",
-    "file": "final/final-exam.json",
-    "fromModules": "all"
-  },
+  "finalExams": [
+    {
+      "id": "final-v1",
+      "title": "Final Exam - Geremy RUIS",
+      "file": "./final/final-exam-gerem.json",
+      "description": "L'examen standard."
+    },
+    {
+      "id": "final-v2",
+      "title": "Final Exam - test",
+      "file": "./final/final-exam-v2.json",
+      "description": "Testeeeee"
+    }
+  ],
+
   "customSaved": []
 }

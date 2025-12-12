@@ -1,0 +1,739 @@
+{
+  "id": "final-exam",
+  "type": "checkpoint",
+  "title": "Final Exam: Network Analysis",
+  "passPercentage": 70,
+  "questions": [
+    {
+      "id": "fe-q1",
+      "question": "Refer to the exhibit. Which technology generated the event log?",
+      "type": "single",
+      "options": [
+        { "text": "Wireshark", "isCorrect": false },
+        { "text": "Netflow", "isCorrect": true },
+        { "text": "web proxy", "isCorrect": false },
+        { "text": "syslog", "isCorrect": false }
+      ],
+      "explanation": "The source of the output is <b>Netflow</b>."
+    },
+    {
+      "id": "fe-q2",
+      "question": "Users report that a database file on the main server cannot be accessed. A database administrator verifies the issue and notices that the database file is now encrypted. The organization receives a threatening email demanding payment for the decryption of the database file. What type of attack has the organization experienced?",
+      "type": "single",
+      "options": [
+        { "text": "Trojan horse", "isCorrect": false },
+        { "text": "ransomware", "isCorrect": true },
+        { "text": "DoS attack", "isCorrect": false },
+        { "text": "man-in-the-middle attack", "isCorrect": false }
+      ],
+      "explanation": "A cybersecurity specialist needs to be familiar with the characteristics of the different types of malware and attacks that threaten an organization."
+    },
+    {
+      "id": "fe-q3",
+      "question": "What is the first step taken in risk assessment?",
+      "type": "single",
+      "options": [
+        { "text": "Identify threats and vulnerabilities and the matching of threats with vulnerabilities.", "isCorrect": true },
+        { "text": "Establish a baseline to indicate risk before security controls are implemented.", "isCorrect": false },
+        { "text": "Compare to any ongoing risk assessment as a means of evaluating risk management effectiveness.", "isCorrect": false },
+        { "text": "Perform audits to verify threats are eliminated.", "isCorrect": false }
+      ],
+      "explanation": "The three steps of risk assessment in order are as follows:<br>1. <b>Identify threats and vulnerabilities and the matching of threats with vulnerabilities.</b><br>2. Establish a baseline to indicate risk before security controls are implemented.<br>3. Compare to an ongoing risk assessment as a means of evaluating risk management effectiveness."
+    },
+    {
+      "id": "fe-q4",
+      "question": "What is the function of the pass action on a Cisco IOS Zone-Based Policy Firewall?",
+      "type": "single",
+      "options": [
+        { "text": "logging of rejected or dropped packets", "isCorrect": false },
+        { "text": "inspecting traffic between zones for traffic control", "isCorrect": false },
+        { "text": "tracking the state of connections between zones", "isCorrect": false },
+        { "text": "forwarding traffic from one zone to another", "isCorrect": true }
+      ],
+      "explanation": "The <b>pass action</b> performed by Cisco IOS ZPF permits forwarding of traffic in a manner similar to the permit statement in an access control list."
+    },
+    {
+      "id": "fe-q5",
+      "question": "After host A receives a web page from server B, host A terminates the connection with server B. Match each step to its correct option in the normal termination process for a TCP connection. (Not all options are used.)",
+      "type": "match",
+      "pairs": [
+        { "left": "Step 1", "right": "Host A sends a FIN to server B." },
+        { "left": "Step 2", "right": "Server B sends an ACK to host A." },
+        { "left": "Step 3", "right": "Server B sends a FIN to host A." },
+        { "left": "Step 4", "right": "Host A sends an ACK to server B." }
+      ],
+      "explanation": "The normal TCP termination process (4-way handshake) initiated by Host A proceeds as follows:<br><b>Step 1:</b> Host A sends a <b>FIN</b> (Finish) segment to Server B to indicate it has no more data to send.<br><b>Step 2:</b> Server B receives the FIN and sends an <b>ACK</b> (Acknowledgment) to Host A to confirm receipt.<br><b>Step 3:</b> Server B closes its application and sends its own <b>FIN</b> to Host A.<br><b>Step 4:</b> Host A receives the FIN and sends a final <b>ACK</b> to Server B. The option regarding SYN-ACK is used for connection establishment, not termination."
+    },
+    {
+      "id": "fe-q6",
+      "question": "A network administrator is setting up a web server for a small advertising office and is concerned with data availability. The administrator wishes to implement disk fault tolerance using the minimum number of disks required. Which RAID level should the administrator choose?",
+      "type": "single",
+      "options": [
+        { "text": "RAID 5", "isCorrect": false },
+        { "text": "RAID 0", "isCorrect": false },
+        { "text": "RAID 1", "isCorrect": true },
+        { "text": "RAID 6", "isCorrect": false }
+      ],
+      "explanation": "Both RAID 0 and RAID 1 require at least 2 disks. However, RAID 0 does not provide fault tolerance. The minimum numbers of disks for RAID 5 and RAID 6 are 3 and 4 respectively."
+    },
+    {
+      "id": "fe-q7",
+      "question": "Which statement describes Cisco IOS Zone-Based Policy Firewall operation?",
+      "type": "single",
+      "options": [
+        { "text": "The pass action works in only one direction.", "isCorrect": true },
+        { "text": "Router management interfaces must be manually assigned to the self zone.", "isCorrect": false },
+        { "text": "A router interface can belong to multiple zones.", "isCorrect": false },
+        { "text": "Service policies are applied in interface configuration mode.", "isCorrect": false }
+      ],
+      "explanation": "The <b>pass action</b> allows traffic only in one direction. Interfaces automatically become members of the self zone. Interfaces are assigned to zones in interface configuration mode, but most configuration takes place in global configuration mode and associated submodes. Interfaces can belong to only one zone at any time."
+    },
+    {
+      "id": "fe-q8",
+      "question": "A flood of packets with invalid source IP addresses requests a connection on the network. The server busily tries to respond, resulting in valid requests being ignored. What type of attack has occurred?",
+      "type": "single",
+      "options": [
+        { "text": "TCP session hijacking", "isCorrect": false },
+        { "text": "TCP SYN flood", "isCorrect": true },
+        { "text": "TCP reset", "isCorrect": false },
+        { "text": "UDP flood", "isCorrect": false }
+      ],
+      "explanation": "The <b>TCP SYN Flood</b> attack exploits the TCP three-way handshake. The threat actor continually sends TCP SYN session request packets with a randomly spoofed source IP address to an intended target. The target device replies with a TCP SYN-ACK packet to the spoofed IP address and waits for a TCP ACK packet. Those responses never arrive. Eventually the target host is overwhelmed with half-open TCP connections and denies TCP services."
+    },
+    {
+      "id": "fe-q9",
+      "question": "What three security tools does Cisco Talos maintain security incident detection rule sets for? (Choose three.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Snort", "isCorrect": true },
+        { "text": "NetStumbler", "isCorrect": false },
+        { "text": "Socat", "isCorrect": false },
+        { "text": "SpamCop", "isCorrect": true },
+        { "text": "ClamAV", "isCorrect": true }
+      ],
+      "explanation": "Talos maintains the security incident detection rule sets for the <b>Snort.org</b>, <b>ClamAV</b>, and <b>SpamCop</b> network security tools."
+    },
+    {
+      "id": "fe-q10",
+      "question": "When ACLs are configured to block IP address spoofing and DoS flood attacks, which ICMP message should be allowed both inbound and outbound?",
+      "type": "single",
+      "options": [
+        { "text": "source quench", "isCorrect": true },
+        { "text": "echo", "isCorrect": false },
+        { "text": "unreachable", "isCorrect": false },
+        { "text": "echo reply", "isCorrect": false }
+      ],
+      "explanation": "<b>Source quench</b> ICMP messages provide the ability to have the sender throttle down the rate of messages when necessary. These messages should be allowed through the firewall in both inbound and outbound directions."
+    },
+    {
+      "id": "fe-q11",
+      "question": "A cybersecurity analyst is going to verify security alerts using the Security Onion. Which tool should the analyst visit first?",
+      "type": "single",
+      "options": [
+        { "text": "Bro", "isCorrect": false },
+        { "text": "Sguil", "isCorrect": true },
+        { "text": "CapME", "isCorrect": false },
+        { "text": "ELK", "isCorrect": false }
+      ],
+      "explanation": "The primary duty of a cybersecurity analyst is the verification of security alerts. In the Security Onion, the first place that a cybersecurity analyst will go to verify alerts is <b>Sguil</b> because it provides a high-level console for investigating security alerts from a wide variety of sources."
+    },
+    {
+      "id": "fe-q12",
+      "question": "What is a feature of distributed firewalls?",
+      "type": "single",
+      "options": [
+        { "text": "They all use an open sharing standard platform.", "isCorrect": false },
+        { "text": "They use only TCP wrappers to configure rule-based access control and logging systems.", "isCorrect": false },
+        { "text": "They use only iptables to configure network rules.", "isCorrect": false },
+        { "text": "They combine the feature of host-based firewalls with centralized management.", "isCorrect": true }
+      ],
+      "explanation": "<b>Distributed firewalls</b> combine features of host-based firewalls with centralized management, which pushes rules to the hosts."
+    },
+    {
+      "id": "fe-q13",
+      "question": "After host A receives a web page from server B, host A terminates the connection with server B. Match each step to its correct option in the normal termination process for a TCP connection. (Not all options are used.)",
+      "type": "match",
+      "pairs": [
+        { "left": "Step 1", "right": "Host A sends a FIN to server B." },
+        { "left": "Step 2", "right": "Server B sends an ACK to host A." },
+        { "left": "Step 3", "right": "Server B sends a FIN to host A." },
+        { "left": "Step 4", "right": "Host A sends an ACK to server B." }
+      ],
+      "explanation": "The normal TCP termination process (4-way handshake) initiated by Host A proceeds as follows:<br><b>Step 1:</b> Host A sends a <b>FIN</b> (Finish) segment to Server B.<br><b>Step 2:</b> Server B receives the FIN and sends an <b>ACK</b> (Acknowledgment) to Host A.<br><b>Step 3:</b> Server B sends its own <b>FIN</b> to Host A to close the connection from its side.<br><b>Step 4:</b> Host A receives the FIN and sends a final <b>ACK</b> to Server B. The option 'Server B sends a SYN-ACK' is used for connection establishment, not termination."
+    },
+    {
+      "id": "fe-q14",
+      "question": "A network administrator is reviewing server alerts because of reports of network slowness. The administrator confirms that an alert was an actual security incident. What is the security alert classification of this type of scenario?",
+      "type": "single",
+      "options": [
+        { "text": "false negative", "isCorrect": false },
+        { "text": "true positive", "isCorrect": true },
+        { "text": "true negative", "isCorrect": false },
+        { "text": "false positive", "isCorrect": false }
+      ],
+      "explanation": "<b>True Positive</b>: The alert has been verified to be an actual security incident.<br><b>False Positive</b>: The alert does not indicate an actual security incident. Benign activity that results in a false positive is sometimes referred to as a benign trigger.<br><b>True Negative</b>: No security incident has occurred. The activity is benign.<br><b>False Negative</b>: An undetected incident has occurred."
+    },
+    {
+      "id": "fe-q15",
+      "question": "What device would be used as the third line of defense in a defense-in-depth approach?",
+      "type": "single",
+      "options": [
+        { "text": "host", "isCorrect": false },
+        { "text": "firewall", "isCorrect": false },
+        { "text": "edge router", "isCorrect": false },
+        { "text": "internal router", "isCorrect": true }
+      ],
+      "explanation": "In a defense-in-depth approach, the edge router would form the first line of defense. The firewall would be the second line of defense followed by the <b>internal router</b> making up the third line of defense."
+    },
+    {
+      "id": "fe-q16",
+      "question": "Which component of the zero trust security model focuses on secure access when an API, a microservice, or a container is accessing a database within an application?",
+      "type": "single",
+      "options": [
+        { "text": "workflow", "isCorrect": false },
+        { "text": "workforce", "isCorrect": false },
+        { "text": "workload", "isCorrect": true },
+        { "text": "workplace", "isCorrect": false }
+      ],
+      "explanation": "The <b>workload</b> pillar focuses on applications that are running in the cloud, in data centers, and other virtualized environments that interact with one another. It focuses on secure access when an API, a microservice, or a container is accessing a database within an application."
+    },
+    {
+      "id": "fe-q17",
+      "question": "Which type of firewall makes use of a proxy server to connect to remote servers on behalf of clients?",
+      "type": "single",
+      "options": [
+        { "text": "stateful firewall", "isCorrect": false },
+        { "text": "stateless firewall", "isCorrect": false },
+        { "text": "packet filtering firewall", "isCorrect": false },
+        { "text": "application gateway firewall", "isCorrect": true }
+      ],
+      "explanation": "An <b>application gateway firewall</b>, also called a <b>proxy firewall</b>, filters information at Layers 3, 4, 5, and 7 of the OSI model. It uses a proxy server to connect to remote servers on behalf of clients. Remote servers will see only a connection from the proxy server, not from the individual clients."
+    },
+    {
+      "id": "fe-q18",
+      "question": "What are two differences between stateful and stateless firewalls? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "A stateless firewall is able to filter sessions that use dynamic port negotiations while a stateful firewall cannot.", "isCorrect": false },
+        { "text": "A stateless firewall will examine each packet individually while a stateful firewall observes the state of a connection.", "isCorrect": true },
+        { "text": "A stateless firewall will provide more logging information than a stateful firewall.", "isCorrect": false },
+        { "text": "A stateful firewall will prevent spoofing by determining whether packets belong to an existing connection while a stateless firewall follows pre-configured rule sets.", "isCorrect": true },
+        { "text": "A stateless firewall provides more stringent control over security than a stateful firewall.", "isCorrect": false }
+      ],
+      "explanation": "There are many differences between a stateless and stateful firewall.<br><b>Stateless firewalls:</b><br> - are susceptible to IP spoofing<br> - do not reliably filter fragmented packets<br> - use complex ACLs, which can be difficult to implement and maintain<br> - cannot dynamically filter certain services<br> - examine each packet individually rather than in the context of the state of a connection<br><b>Stateful firewalls:</b><br> - are often used as a primary means of defense by filtering unwanted, unnecessary, or undesirable traffic<br> - strengthen packet filtering by providing more stringent control over security<br> - improve performance over packet filters or proxy servers<br> - defend against spoofing and DoS attacks by determining whether packets belong to an existing connection or are from an unauthorized source<br> - provide more log information than a packet filtering firewall"
+    },
+    {
+      "id": "fe-q19",
+      "question": "The entrepreneur is concerned about company employees having uninterrupted access to important resources and data. Which of the CIA triad components would address the concern?",
+      "type": "single",
+      "options": [
+        { "text": "integrity", "isCorrect": false },
+        { "text": "availability", "isCorrect": true },
+        { "text": "authentication", "isCorrect": false },
+        { "text": "confidentiality", "isCorrect": false }
+      ],
+      "explanation": "Communications security is usually discussed using the CIA triad: confidentiality, integrity, and availability. Confidentiality ensures that only authorized individuals, devices, entities, or processes can access sensitive information. Integrity protects data from unauthorized alteration. <b>Availability</b> provides uninterrupted access for authorized users to important resources and data."
+    },
+    {
+      "id": "fe-q20",
+      "question": "Which two commands could be used to check if DNS name resolution is working properly on a Windows PC? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "nslookup cisco.com", "isCorrect": true },
+        { "text": "net cisco.com", "isCorrect": false },
+        { "text": "ipconfig /flushdns", "isCorrect": false },
+        { "text": "nbtstat cisco.com", "isCorrect": false },
+        { "text": "ping cisco.com", "isCorrect": true }
+      ],
+      "explanation": "The <b>ping</b> command tests the connection between two hosts. When ping uses a host domain name to test the connection, the resolver on the PC will first perform the name resolution to query the DNS server for the IP address of the host. If the ping command is unable to resolve the domain name to an IP address, an error will result."
+    },
+    {
+      "id": "fe-q21",
+      "question": "In which configuration would an outbound ACL placement be preferred over an inbound ACL placement?",
+      "type": "single",
+      "options": [
+        { "text": "when the ACL is applied to an outbound interface to filter packets coming from multiple inbound interfaces before the packets exit the interface", "isCorrect": true },
+        { "text": "when a router has more than one ACL", "isCorrect": false },
+        { "text": "when an outbound ACL is closer to the source of the traffic flow", "isCorrect": false },
+        { "text": "when an interface is filtered by an outbound ACL and the network attached to the interface is the source network being filtered within the ACL", "isCorrect": false }
+      ],
+      "explanation": "An <b>outbound ACL</b> should be utilized when the same ACL filtering rules will be applied to packets coming from more than one inbound interface before exiting a single outbound interface. The outbound ACL will be applied on the single outbound interface."
+    },
+    {
+      "id": "fe-q22",
+      "question": "What are two shared characteristics of the IDS and the IPS? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "Both have minimal impact on network performance.​", "isCorrect": false },
+        { "text": "Both are deployed as sensors.", "isCorrect": true },
+        { "text": "Both analyze copies of network traffic.", "isCorrect": false },
+        { "text": "Both use signatures to detect malicious traffic.", "isCorrect": true },
+        { "text": "Both rely on an additional network device to respond to malicious traffic.", "isCorrect": false }
+      ],
+      "explanation": "Both the <b>IDS</b> and the <b>IPS</b> are deployed as sensors and use signatures to detect malicious traffic. The IDS analyzes copies of network traffic, which results in minimal impact on network performance. The IDS also relies on an IPS to stop malicious traffic. ​​"
+    },
+    {
+      "id": "fe-q23",
+      "question": "What is the purpose of a digital certificate?",
+      "type": "single",
+      "options": [
+        { "text": "It provides proof that data has a traditional signature attached.", "isCorrect": false },
+        { "text": "It guarantees that a website has not been hacked.", "isCorrect": false },
+        { "text": "It ensures that the person who is gaining access to a network device is authorized.", "isCorrect": false },
+        { "text": "It authenticates a website and establishes a secure connection to exchange confidential data.", "isCorrect": true }
+      ],
+      "explanation": "Digital signatures commonly use <b>digital certificates</b> that are used to verify the identity of the originator in order to authenticate a vendor website and establish an encrypted connection to exchange confidential data. One such example is when a person logs into a financial institution from a web browser."
+    },
+    {
+      "id": "fe-q24",
+      "question": "What are two tasks that can be accomplished with the Nmap and Zenmap network tools? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "password recovery", "isCorrect": false },
+        { "text": "password auditing", "isCorrect": false },
+        { "text": "identification of Layer 3 protocol support on hosts", "isCorrect": true },
+        { "text": "TCP and UDP port scanning", "isCorrect": true },
+        { "text": "validation of IT system configuration", "isCorrect": false }
+      ],
+      "explanation": "Nmap is a low-level network scanner that is available to the public and which has the ability to perform port scanning, to identify open <b>TCP and UDP ports</b>, and perform system identification. It can also be used to <b>identify Layer 3 protocols</b> that are running on a system."
+    },
+    {
+      "id": "fe-q25",
+      "question": "A technician has installed a third party utility that is used to manage a Windows 7 computer. However, the utility does not automatically start whenever the computer is started. What can the technician do to resolve this problem?",
+      "type": "single",
+      "options": [
+        { "text": "Set the application registry key value to one.", "isCorrect": false },
+        { "text": "Use the Add or Remove Programs utility to set program access and defaults.", "isCorrect": false },
+        { "text": "Change the startup type for the utility to Automatic in Services .", "isCorrect": true },
+        { "text": "Uninstall the program and then choose Add New Programs in the Add or Remove Programs utility to install the application.", "isCorrect": false }
+      ],
+      "explanation": "The <b>Services console</b> in Windows OS allows for the management of all the services on the local and remote computers. The setting of <b>Automatic</b> in the Services console enables the chosen service to start when the computer is started."
+    },
+    {
+      "id": "fe-q26",
+      "question": "What is the motivation of a white hat attacker?",
+      "type": "single",
+      "options": [
+        { "text": "fine tuning network devices to improve their performance and efficiency", "isCorrect": false },
+        { "text": "taking advantage of any vulnerability for illegal personal gain", "isCorrect": false },
+        { "text": "studying operating systems of various platforms to develop a new system", "isCorrect": false },
+        { "text": "discovering weaknesses of networks and systems to improve the security level of these systems", "isCorrect": true }
+      ],
+      "explanation": "<b>White hat attackers</b> break into networks or computer systems in order to discover weaknesses for the purpose of improving the security of these systems. These break-ins are done with permission from the owner or the organization. Any results are reported back to the owner or the organization."
+    },
+    {
+      "id": "fe-q27",
+      "question": "Which two keywords can be used in an access control list to replace a wildcard mask or address and wildcard mask pair? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "host", "isCorrect": true },
+        { "text": "most", "isCorrect": false },
+        { "text": "gt", "isCorrect": false },
+        { "text": "some", "isCorrect": false },
+        { "text": "any", "isCorrect": true },
+        { "text": "all", "isCorrect": false }
+      ],
+      "explanation": "The <b>host</b> keyword is used when using a specific device IP address in an ACL. For example, the <code>deny host 192.168.5.5</code> command is the same is the <code>deny 192.168.5.5 0.0.0.0</code> command. The <b>any</b> keyword is used to allow any mask through that meets the criteria. For example, the <code>permit any</code> command is the same as <code>permit 0.0.0.0 255.255.255.255</code> command."
+    },
+    {
+      "id": "fe-q28",
+      "question": "A new PC is taken out of the box, started up and connected to the Internet. Patches were downloaded and installed. Antivirus was updated. In order to further harden the operating system what can be done?",
+      "type": "single",
+      "options": [
+        { "text": "Turn off the firewall.", "isCorrect": false },
+        { "text": "Install a hardware firewall.", "isCorrect": false },
+        { "text": "Give the computer a nonroutable address.", "isCorrect": false },
+        { "text": "Remove the administrator account.", "isCorrect": false },
+        { "text": "Disconnect the computer from the network.", "isCorrect": false },
+        { "text": "Remove unnecessary programs and services.", "isCorrect": true }
+      ],
+      "explanation": "When hardening an operating system, patching and antivirus are part of the process. Many extra components are added by the manufacturer that are not necessarily needed, so the administrator should <b>remove unnecessary programs and services</b>."
+    },
+    {
+      "id": "fe-q29",
+      "question": "A security specialist is asked for advice on a security measure to prevent unauthorized hosts from accessing the home network of employees. Which measure would be most effective?",
+      "type": "single",
+      "options": [
+        { "text": "Implement a firewall.", "isCorrect": true },
+        { "text": "Implement intrusion detection systems.", "isCorrect": false },
+        { "text": "Implement a VLAN.", "isCorrect": false },
+        { "text": "Implement RAID.", "isCorrect": false }
+      ],
+      "explanation": "Protecting data confidentiality requires an understanding of the technologies used to protect data in all three data states. A <b>firewall</b> is the most effective measure to prevent unauthorized hosts from accessing a network."
+    },
+    {
+      "id": "fe-q30",
+      "question": "What is a nontechnical method that a cybercriminal would use to gather sensitive information from an organization?",
+      "type": "single",
+      "options": [
+        { "text": "man-in-the-middle", "isCorrect": false },
+        { "text": "social engineering", "isCorrect": true },
+        { "text": "pharming", "isCorrect": false },
+        { "text": "ransomeware", "isCorrect": false }
+      ],
+      "explanation": "A cybersecurity specialist needs to be familiar with the characteristics of the different types of malware and attacks that threaten an organization. <b>Social engineering</b> is a non-technical strategy that relies on human interaction to trick individuals into revealing sensitive information."
+    },
+    {
+      "id": "fe-q31",
+      "question": "Before data is sent out for analysis, which technique can be used to replace sensitive data in nonproduction environments to protect the underlying information?",
+      "type": "single",
+      "options": [
+        { "text": "data masking substitution", "isCorrect": true },
+        { "text": "steganography", "isCorrect": false },
+        { "text": "software obfuscation", "isCorrect": false },
+        { "text": "steganalysis", "isCorrect": false }
+      ],
+      "explanation": "Technologies exist to confuse attackers by changing data and using techniques to hide the original data. <b>Data masking substitution</b> involves replacing sensitive data with realistic but fake data to protect confidentiality."
+    },
+    {
+      "id": "fe-q32",
+      "question": "In a comparison of biometric systems, what is the crossover error rate?",
+      "type": "single",
+      "options": [
+        { "text": "rate of false positives and rate of acceptability", "isCorrect": false },
+        { "text": "rate of false negatives and rate of false positives", "isCorrect": true },
+        { "text": "rate of rejection and rate of false negatives", "isCorrect": false },
+        { "text": "rate of acceptability and rate of false negatives", "isCorrect": false }
+      ],
+      "explanation": "In comparing biometric systems, there are several important factors to consider including accuracy, speed or throughput rate, and acceptability to users."
+    },
+    {
+      "id": "fe-q33",
+      "question": "Which two application layer protocols manage the exchange of messages between a client with a web browser and a remote web server? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "HTTP", "isCorrect": true },
+        { "text": "HTTPS", "isCorrect": true },
+        { "text": "DNS", "isCorrect": false },
+        { "text": "DHCP", "isCorrect": false },
+        { "text": "HTML", "isCorrect": false }
+      ],
+      "explanation": "<b>Hypertext Transfer Protocol (HTTP)</b> and <b>HTTP Secure (HTTPS)</b> are two application layer protocols that manage the content requests from clients and the responses from the web server. HTML (Hypertext Mark-up Language) is the encoding language that describes the content and display features of a web page. DNS is for domain name to IP address resolution. DHCP manages and provides dynamic IP configurations to clients."
+    },
+    {
+      "id": "fe-q34",
+      "question": "What would be the target of an SQL injection attack?",
+      "type": "single",
+      "options": [
+        { "text": "DHCP", "isCorrect": false },
+        { "text": "DNS", "isCorrect": false },
+        { "text": "email", "isCorrect": false },
+        { "text": "database", "isCorrect": true }
+      ],
+      "explanation": "<b>SQL</b> is the language used to query a relational database. Cybercriminals use <b>SQL injections</b> to get information, create fake or malicious queries, or to breach the database in some other way."
+    },
+    {
+      "id": "fe-q35",
+      "question": "Which wireless parameter is used by an access point to broadcast frames that include the SSID?",
+      "type": "single",
+      "options": [
+        { "text": "passive mode", "isCorrect": true },
+        { "text": "security mode", "isCorrect": false },
+        { "text": "channel setting", "isCorrect": false },
+        { "text": "active mode", "isCorrect": false }
+      ],
+      "explanation": "The two scanning or probing modes an access point can be placed into are passive or active. In <b>passive mode</b>, the AP advertises the SSID, supported standards, and security settings in broadcast beacon frames. In active mode, the wireless client must be manually configured for the same wireless parameters as the AP has configured."
+    },
+    {
+      "id": "fe-q36",
+      "question": "Which method can be used to harden a device?",
+      "type": "single",
+      "options": [
+        { "text": "use SSH and disable the root account access over SSH", "isCorrect": true },
+        { "text": "allow default services to remain enabled", "isCorrect": false },
+        { "text": "maintain use of the same passwords", "isCorrect": false },
+        { "text": "allow USB auto-detection", "isCorrect": false }
+      ],
+      "explanation": "The basic best practices for device hardening are as follows:<br> - Ensure physical security.<br> - Minimize installed packages.<br> - Disable unused services.<br> - <b>Use SSH and disable the root account login over SSH.</b><br> - Keep the system updated.<br> - Disable USB auto-detection.<br> - Enforce strong passwords.<br> - Force periodic password changes.<br> - Keep users from re-using old passwords.<br> - Review logs regularly."
+    },
+    {
+      "id": "fe-q50",
+      "question": "A risk analyst conducts quantitative risk analysis and determines that the SLE factor is $10,000 and the ARO factor is 10%. What would be the ALE factor given these values?",
+      "type": "single",
+      "options": [
+        { "text": "$100", "isCorrect": false },
+        { "text": "$150", "isCorrect": false },
+        { "text": "$1,500", "isCorrect": false },
+        { "text": "$1,000", "isCorrect": true }
+      ],
+      "explanation": "The <b>Annualized Loss Expectancy (ALE)</b> is calculated by multiplying the <b>Single Loss Expectancy (SLE)</b> by the <b>Annualized Rate of Occurrence (ARO)</b>.<br>Formula: $$ALE = SLE \\times ARO$$<br>Calculation: $10,000 \\times 0.10 = <b>$1,000</b>."
+    },
+    {
+      "id": "fe-q38",
+      "question": "Which step in the Vulnerability Management Life Cycle performs inventory of all assets across the network and identifies host details, including operating system and open services?",
+      "type": "single",
+      "options": [
+        { "text": "Assess", "isCorrect": false },
+        { "text": "Discover", "isCorrect": true },
+        { "text": "Remediate", "isCorrect": false },
+        { "text": "Prioritize assets", "isCorrect": false }
+      ],
+      "explanation": "The steps in the Vulnerability Management Life Cycle include these:<br><b>Discover</b> – inventory all assets across the network and identify host details, including operating systems and open services to identify vulnerabilities<br><b>Prioritize assets</b> – categorize assets into groups or business units, and assign a business value to asset groups based on their criticality to business operations<br><b>Assess</b> – determine a baseline risk profile to eliminate risks based on asset criticality, vulnerability threats, and asset classification<br><b>Report</b> – measure the level of business risk associated with your assets according to your security policies. Document a security plan, monitor suspicious activity, and describe known vulnerabilities<br><b>Remediate</b> – prioritize according to business risk and fix vulnerabilities in order of risk<br><b>Verify</b> – verify that threats have been eliminated through follow-up audits"
+    },
+    {
+      "id": "fe-q39",
+      "question": "Which information can be provided by the Cisco NetFlow utility?",
+      "type": "single",
+      "options": [
+        { "text": "security and user account restrictions", "isCorrect": false },
+        { "text": "IDS and IPS capabilities", "isCorrect": false },
+        { "text": "peak usage times and traffic routing", "isCorrect": true },
+        { "text": "source and destination UDP port mapping", "isCorrect": false }
+      ],
+      "explanation": "NetFlow efficiently provides an important set of services for IP applications including network traffic accounting, usage-based network billing, network planning, security, denial of service monitoring capabilities, and network monitoring. NetFlow provides valuable information about network users and applications, <b>peak usage times, and traffic routing</b>."
+    },
+    {
+      "id": "fe-q40",
+      "question": "What is an example of a local exploit?",
+      "type": "single",
+      "options": [
+        { "text": "Port scanning is used to determine if the Telnet service is running on a remote server.", "isCorrect": false },
+        { "text": "A threat actor performs a brute force attack on an enterprise edge router to gain illegal access.", "isCorrect": false },
+        { "text": "A buffer overflow attack is launched against an online shopping website and causes the server crash.", "isCorrect": false },
+        { "text": "A threat actor tries to gain the user password of a remote host by using a keyboard capture software installed on it by a Trojan.", "isCorrect": true }
+      ],
+      "explanation": "Vulnerability exploits may be remote or local. In a <b>local exploit</b>, the threat actor has some type of user access to the end system, either physically or through remote access. The exploitation activity is within the local network."
+    },
+    {
+      "id": "fe-q41",
+      "question": "According to NIST standards, which incident response stakeholder is responsible for coordinating an incident response with other stakeholders to minimize the damage of an incident?",
+      "type": "single",
+      "options": [
+        { "text": "human resources", "isCorrect": false },
+        { "text": "legal department", "isCorrect": false },
+        { "text": "management", "isCorrect": true },
+        { "text": "IT support", "isCorrect": false }
+      ],
+      "explanation": "The management team creates the policies, designs the budget, and is in charge of staffing all departments. <b>Management</b> is also responsible for coordinating the incident response with other stakeholders and minimizing the damage of an incident."
+    },
+    {
+      "id": "fe-q42",
+      "question": "Which statement describes the threat to a public cloud due to a poor cloud security architecture strategy?",
+      "type": "single",
+      "options": [
+        { "text": "when a cloud customer does not have full visibility into the cloud services", "isCorrect": false },
+        { "text": "when user accounts or access privileges are not properly secured and are hijacked by threat actors", "isCorrect": false },
+        { "text": "when a cloud customer employee, contractor, or business partner maliciously or unintentionally compromise the cloud service", "isCorrect": false },
+        { "text": "when the shared security responsibilities between a cloud customer and cloud provider are not implemented correctly", "isCorrect": true }
+      ],
+      "explanation": "There are many threats associated with cloud computing including:<br><b>inside threat</b> – occurs when a cloud customer employee, contractor, or business partner maliciously or unintentionally compromise the cloud service.<br><b>compromised account credentials</b> – occurs when user accounts or access privileges are not properly secured and are hijacked by threat actors.<br><b>cloud misconfiguration</b> – occurs when the cloud computing resource is set up incorrectly making it vulnerable to attacks.<br><b>poor cloud security architecture strategy</b> – when the shared security responsibilities between a cloud customer and cloud provider are not implemented correctly."
+    },
+    {
+      "id": "fe-q43",
+      "question": "Which cloud security domain describes controls related to securing the data itself?",
+      "type": "single",
+      "options": [
+        { "text": "Data Security and Encryption", "isCorrect": true },
+        { "text": "Application Security", "isCorrect": false },
+        { "text": "Security as a Service", "isCorrect": false },
+        { "text": "Infrastructure Security", "isCorrect": false }
+      ],
+      "explanation": "The Security Guidance for Critical Areas of Focus in Cloud Computing v4 document developed by the Cloud Security Alliance (CSA) covers 14 domains of cloud security. Some of these domains are:<br><b>Infrastructure Security</b> – describes cloud-specific aspects of infrastructure security and the foundation for operating securely in the cloud.<br><b>Data Security and Encryption</b> – describes those controls related to securing the data itself, of which encryption is one of the most important.<br><b>Application Security</b> – provides guidance on how to securely build and deploy applications in cloud computing environments, specifically for PaaS and IaaS.<br><b>Security as a Service</b> – covers the continually evolving security services delivered from the cloud."
+    },
+    {
+      "id": "fe-q44",
+      "question": "A company is developing security policies. Which security policy would address the rules that determine access to and use of network resources and define the consequences of policy violations?",
+      "type": "single",
+      "options": [
+        { "text": "data policy", "isCorrect": false },
+        { "text": "remote access policy", "isCorrect": false },
+        { "text": "acceptable use policy", "isCorrect": true },
+        { "text": "password policy", "isCorrect": false }
+      ],
+      "explanation": "An organization needs to establish clear and detailed security policies. Some of these policies are:<br><b>Password policy</b>- Defines minimum password requirements, such as the number and type of characters used and how often they need to be changed.<br><b>Acceptable use policy</b>- Highlights a set of rules that determine access to and use of network resources. It may also define the consequences of policy violations.<br><b>Remote access policy</b>- Sets out how to remotely connect to the internal network of an organization and explains what information is remotely accessible.<br><b>Data policy</b>- Sets out measurable rules for processing data within an organization, such as specifying where data is stored, how data is classified, and how data is handled and disposed of."
+    },
+    {
+      "id": "fe-q45",
+      "question": "Which security organization maintains a list of common vulnerabilities and exposures (CVE) and is used by prominent security organizations?",
+      "type": "single",
+      "options": [
+        { "text": "CIS", "isCorrect": false },
+        { "text": "SecurityNewsWire", "isCorrect": false },
+        { "text": "MITRE", "isCorrect": true },
+        { "text": "SANDS", "isCorrect": false }
+      ],
+      "explanation": "The <b>MITRE Corporation</b> maintains a list of common vulnerabilities and exposures (CVE) used by prominent security organizations."
+    },
+    {
+      "id": "fe-q46",
+      "question": "As a Cybersecurity Analyst, it is very important to keep current. It was suggested by some colleagues that NewsBites contains many good current articles to read. What network security organization maintains this weekly digest?",
+      "type": "single",
+      "options": [
+        { "text": "MITRE", "isCorrect": false },
+        { "text": "CIS", "isCorrect": false },
+        { "text": "SANDS", "isCorrect": true },
+        { "text": "(ISC)2", "isCorrect": false }
+      ],
+      "explanation": "The <b>SysAdmin, Audit, Network, Security (SANS) Institute</b> has many resources. One of them is called <b>NewsBites</b>, the weekly digest of news articles about computer security."
+    },
+    {
+      "id": "fe-q47",
+      "question": "How does the Diamond Model of intrusion analysis assist cybersecurity analysts?",
+      "type": "single",
+      "options": [
+        { "text": "by illustrating how an adversary pivots from one intrusion event to the next", "isCorrect": false },
+        { "text": "by tracing the stages of an intrusion event from the early reconnaissance stages to the exfiltration of data", "isCorrect": false },
+        { "text": "by illustrating the tactics, techniques, and procedures (TTP) as part of intrusion defense and attribution", "isCorrect": true },
+        { "text": "by conveying the common attributes and severity of intrusion vulnerabilities in computer hardware and software systems", "isCorrect": false }
+      ],
+      "explanation": "The <b>Diamond Model</b> of intrusion analysis helps cybersecurity analysts by illustrating the tactics, techniques, and procedures (TTP) used in intrusion defense and attribution."
+    },
+    {
+      "id": "fe-q48",
+      "question": "Which type of controls help uncover new potential threats?",
+      "type": "single",
+      "options": [
+        { "text": "Preventive controls", "isCorrect": false },
+        { "text": "Detective controls", "isCorrect": true },
+        { "text": "Corrective controls", "isCorrect": false }
+      ],
+      "explanation": "<b>Detective measures</b> include controls that discover unwanted events. These measures uncover new potential threats."
+    },
+    {
+      "id": "fe-q49",
+      "question": "An organization has experienced several data breaches over the last five years... The organization has hired a cybersecurity penetration team... found the following vulnerabilities:\n- Several user accounts allowed unauthorized and escalated privileges.\n- Systems and information without formal authorization.\nWhat two steps can the organization take to mitigate these risks? (Choose two.)",
+      "type": "multiple",
+      "options": [
+        { "text": "assign the least privilege to perform the given task", "isCorrect": true },
+        { "text": "log when elevated privileges are used", "isCorrect": true },
+        { "text": "terminate access and reset all passwords", "isCorrect": false },
+        { "text": "adopt a no reuse of passwords on different applications policy", "isCorrect": false }
+      ],
+      "explanation": "D'après les vulnérabilités identifiées (privilèges excessifs et accès non autorisés) :<br>1. <b>Attribuer le moindre privilège</b> (Least Privilege) est la solution directe pour empêcher les escalades de droits non autorisées en limitant les utilisateurs au strict nécessaire.<br>2. <b>Journaliser l'utilisation des privilèges élevés</b> crée une piste d'audit essentielle pour surveiller l'accès aux systèmes et combler le manque d'autorisation formelle.<br>Les autres options (mots de passe) sont des mesures d'hygiène générale qui ne résolvent pas la cause racine liée à la gestion des droits d'accès."
+    },
+    {
+      "id": "fe-q50",
+      "question": "If the Single Loss Expectancy (SLE) of an asset is $10,000 and the Annualized Rate of Occurrence (ARO) is 0.1, what is the Annualized Loss Expectancy (ALE)?",
+      "type": "single",
+      "options": [
+        { "text": "$1,000", "isCorrect": true },
+        { "text": "$10,000", "isCorrect": false },
+        { "text": "$100,000", "isCorrect": false },
+        { "text": "$100", "isCorrect": false }
+      ],
+      "explanation": "The <b>Annualized Loss Expectancy (ALE)</b> is calculated by multiplying the <b>Single Loss Expectancy (SLE)</b> by the <b>Annualized Rate of Occurrence (ARO)</b>. Therefore, the ALE is $10,000 * 0.1 = <b>$1,000</b>."
+    },
+    {
+      "id": "fe-q51",
+      "question": "Which statement describes a DNS stealth attack using threat actors' double IP flux technique?",
+      "type": "single",
+      "options": [
+        { "text": "They gather domain account credentials to silently create multiple sub-domains to be used during the attacks.", "isCorrect": false },
+        { "text": "They hide phishing and malware delivery sites behind a quickly-changing network of compromised DNS hosts.", "isCorrect": true },
+        { "text": "They use it in malware to randomly generate domain names that can then be used as rendezvous points to command and control servers.", "isCorrect": false },
+        { "text": "They rapidly change the hostname to IP address mappings and to also change the authoritative name server to be difficult to identify the source of the attack.", "isCorrect": false }
+      ],
+      "explanation": "The first option describes credential harvesting. The third option describes a technique used to evade detection (DGA). The fourth option is closer but doesn't fully capture the essence. The second option accurately describes a <b>DNS stealth attack using the double IP flux technique</b>: threat actors hide malicious sites behind rapidly changing compromised DNS servers, making them difficult to track and block."
+    },
+    {
+      "id": "fe-q52",
+      "question": "Which statement describes a characteristic on WLANs?",
+      "type": "single",
+      "options": [
+        { "text": "IEEE 802.11 prescribes CSMA/CD for media access to proactively avoid collisions within the media.", "isCorrect": false },
+        { "text": "An attacker may not have to physically enter the workplace to gain access to a WLAN.", "isCorrect": true },
+        { "text": "Tethering is a variation of infrastructure mode", "isCorrect": false },
+        { "text": "The 5GHz band is more prone to interference than the 2.4 GHz.", "isCorrect": false }
+      ],
+      "explanation": "Because WLANs use radio waves that radiate past physical boundaries, an <b>attacker may not have to physically enter the workplace</b> to gain access to a WLAN. Signals can often be intercepted from parking lots or adjacent buildings."
+    },
+    {
+      "id": "fe-q53",
+      "question": "What is a significant factor in the high vulnerability of industrial and embedded systems?",
+      "type": "single",
+      "options": [
+        { "text": "Many devices in these systems have poor authentication and cannot be upgraded or patched.", "isCorrect": true },
+        { "text": "These systems often have numerous points of administrative access.", "isCorrect": false },
+        { "text": "Many of these systems have deployed, which means that implementing security is expensive and time-consuming.", "isCorrect": false },
+        { "text": "Improving the security of these often low-cost systems would increase the cost excessively", "isCorrect": false }
+      ],
+      "explanation": "Many of these SoC devices have <b>poor authentication and/or they cannot be upgraded or patched</b>. Due to the nature of these devices, a level of implied trust is necessary since there is no formal program in place to verify security controls."
+    },
+    {
+      "id": "fe-q54",
+      "question": "What is a feature of a Zero Trust approach to network security?",
+      "type": "single",
+      "options": [
+        { "text": "A hashing algorithm applies to all network traffic.", "isCorrect": false },
+        { "text": "Defense-in-depth policies apply to identifying assets, threats, and vulnerabilities.", "isCorrect": false },
+        { "text": "Zone-based Policy Firewalls manage all network traffic.", "isCorrect": false },
+        { "text": "A user must re-authenticate even if they have successfully passed access control.", "isCorrect": true }
+      ],
+      "explanation": "In a <b>Zero trust approach</b>, any place at which an access control decision is required should be considered a perimeter. This means that although a user or other entity may have successfully passed access control previously, they are not trusted to access another area or resource until they are authenticated."
+    },
+    {
+      "id": "fe-q55",
+      "question": "What actions are employed when configuring an IOS ZPF for network traffic?",
+      "type": "single",
+      "options": [
+        { "text": "inspect action", "isCorrect": true },
+        { "text": "zone pair", "isCorrect": false },
+        { "text": "class-map", "isCorrect": false },
+        { "text": "policy-map", "isCorrect": false }
+      ],
+      "explanation": "The actions used in an IOS ZPF:<br>– <b>Inspect</b>: Performs stateful packet inspection.<br>– <b>Drop</b>: Blocks traffic (with optional logging).<br>– <b>Pass</b>: Allows traffic without state tracking.<br>The “inspect action” is one of these core actions applied to network traffic. The other options (zone pair, class-map, policy-map) are configuration components used to define policies but are not actions directly applied to traffic."
+    },
+    {
+      "id": "fe-q56",
+      "question": "Why could network Syslog servers be a target for threat actors?",
+      "type": "single",
+      "options": [
+        { "text": "Syslog servers are usually not installed behind a firewall.", "isCorrect": false },
+        { "text": "Syslog servers contain configurations and passwords for all devices on the network.", "isCorrect": false },
+        { "text": "Syslog data could be encrypted by the attacker and used as ransomware.", "isCorrect": false },
+        { "text": "Syslog servers could contain information that could lead to the detection of an exploit by a hacker.", "isCorrect": true }
+      ],
+      "explanation": "Syslog servers aggregate logs from various network devices. These logs are critical for forensic analysis as they may contain evidence of an intrusion. Threat actors target these servers to <b>delete or alter log files</b>, thereby removing information that could lead to the detection of their exploits and covering their tracks."
+    },
+    {
+      "id": "fe-q57",
+      "question": "Which technology provides flexible network isolation without the constraints of physical hardware in a cloud infrastructure?",
+      "type": "single",
+      "options": [
+        { "text": "SaaS", "isCorrect": false },
+        { "text": "SDN", "isCorrect": true },
+        { "text": "IaaS", "isCorrect": false },
+        { "text": "PaaS", "isCorrect": false }
+      ],
+      "explanation": "<b>Software-defined networks (SDN)</b> enable new types of security controls and provide an overall gain for network security including: Easy network isolation without constraints of physical hardware. SDN firewalls (security groups in cloud computing) applied to assets based on more flexible criteria than hardware firewalls."
+    },
+    {
+      "id": "fe-q58",
+      "question": "Match the security policy with the description. (Not all options are used.)",
+      "type": "match",
+      "pairs": [
+        { "left": "acceptable use policy (AUP)", "right": "identifies network applications and uses that are acceptable to the organization" },
+        { "left": "password policy", "right": "ensures that passwords meet minimum requirements and are changed regularly" },
+        { "left": "identification and authentication policy", "right": "specifies authorized persons that can have access to network resources and identity verification procedures" },
+        { "left": "network maintenance policy", "right": "specifies network device operating systems and end user application update procedures" },
+        { "left": "remote access policy", "right": "identifies how remote users can access a network and what is accessible via remote connectivity" }
+      ],
+      "explanation": "<b>Acceptable Use Policy (AUP)</b>: Identifies network applications and uses that are acceptable to the organization.<br><b>Password Policy</b>: Ensures that passwords meet minimum requirements and are changed regularly.<br><b>Identification and Authentication Policy</b>: Specifies authorized persons that can have access to network resources and identity verification procedures.<br><b>Network Maintenance Policy</b>: Specifies network device operating systems and end user application update procedures.<br><b>Remote Access Policy</b>: Identifies how remote users can access a network and what is accessible via remote connectivity."
+    },
+    {
+      "id": "fe-q51",
+      "question": "What is the purpose of server profiling?",
+      "type": "single",
+      "options": [
+        { "text": "to establish a security baseline for a given server", "isCorrect": true },
+        { "text": "to identify the potential for data loss", "isCorrect": false },
+        { "text": "to reverse engineer a malware payload", "isCorrect": false },
+        { "text": "to identifying the source of an attack", "isCorrect": false }
+      ],
+      "explanation": "The purpose of <b>server profiling</b> is to establish a <b>security baseline</b> for a given server. By observing normal behavior (traffic, ports, services), analysts can define what is 'normal' and effectively detect anomalies (intrusions, malware) that deviate from this baseline."
+    },
+    {
+      "id": "fe-q60",
+      "question": "Match the command line tool with its function.",
+      "type": "match",
+      "pairs": [
+        { "left": "used to assemble and analyze packets, and is used for port scanning, path discovery, OS fingerprinting, and firewall testing.", "right": "hping" },
+        { "left": "used to gather information from TCP and UDP network connections and can also be used for port scanning, monitoring, banner grabbing, and file copying.", "right": "netcat" },
+        { "left": "used in security auditing. It locates network hosts, detects operating systems, and identifies services.", "right": "nmap" },
+        { "left": "used for help troubleshooting NetBIOS name resolution problems in a Windows system.", "right": "nbtstat" },
+        { "left": "used in Mac/Linux operating systems to display TCP/IP settings (IP address, subnet mask, default gateway, DNS, and MAC information.", "right": "ifconfig" }
+      ],
+      "explanation": "Tool functions:<br><b>hping</b>: A packet assembler and analyzer often used for firewall testing and advanced scanning.<br><b>netcat</b>: Known as the 'Swiss Army knife' of networking, used for reading/writing data across network connections (banner grabbing, file transfer).<br><b>nmap</b>: The standard tool for network discovery and security auditing.<br><b>nbtstat</b>: A Windows utility for troubleshooting NetBIOS over TCP/IP.<br><b>ifconfig</b>: A legacy command-line utility for configuring network interfaces in Unix-like systems."
+    }
+  ]
+}
