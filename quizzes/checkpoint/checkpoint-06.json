@@ -310,6 +310,42 @@
         { "text": "Assess the risk.", "isCorrect": true }
       ],
       "explanation": "Once a risk is identified, it is assessed and analyzed to determine the severity that the threat poses."
+    },
+    {
+      "id": "cp6-q26",
+      "question": "What are the steps in the vulnerability management life cycle?",
+      "type": "single",
+      "options": [
+        { "text": "plan, do, act, check", "isCorrect": false },
+        { "text": "discover, prioritize assets, assess, report, remediate, verify", "isCorrect": true },
+        { "text": "identify, protect, detect, respond, recover", "isCorrect": false },
+        { "text": "detect, analyze, recover, respond", "isCorrect": false }
+      ],
+      "explanation": "There are six steps in the vulnerability management life cycle:<br>1. <b>Discover</b><br>2. <b>Prioritize assets</b><br>3. <b>Assess</b><br>4. <b>Report</b><br>5. <b>Remediate</b><br>6. <b>Verify</b>"
+    },
+    {
+      "id": "cp6-q27",
+      "question": "The team is in the process of performing a risk analysis on the database services. The information collected includes the initial value of these assets, the threats to the assets and the impact of the threats. What type of risk analysis is the team performing by calculating the annual loss expectancy?",
+      "type": "single",
+      "options": [
+        { "text": "qualitative analysis", "isCorrect": false },
+        { "text": "protection analysis", "isCorrect": false },
+        { "text": "quantitative analysis", "isCorrect": true },
+        { "text": "loss analysis", "isCorrect": false }
+      ],
+      "explanation": "A <b>qualitative</b> or <b>quantitative</b> risk analysis is used to identify and prioritize threats to the organization. Calculating Annual Loss Expectancy (ALE) is a specific characteristic of <b>quantitative analysis</b>."
+    },
+    {
+      "id": "cp6-q28",
+      "question": "Why would an organization perform a quantitative risk analysis for network security threats?",
+      "type": "single",
+      "options": [
+        { "text": "so that management has documentation about the number of security attacks that have occurred within a particular time period", "isCorrect": false },
+        { "text": "so that the organization knows the top areas where network security holes exist", "isCorrect": false },
+        { "text": "so that management can determine the number of network devices needed to inspect, analyze, and protect the corporate resources", "isCorrect": false },
+        { "text": "so that the organization can focus resources where they are most needed", "isCorrect": true }
+      ],
+      "explanation": "<b>Quantitative risk analysis</b> takes the top threats, assigns a cost value to each threat if it actually occurred, and orders the list from most expensive to least expensive.<br>This priority list allows management to determine where to apply current resources to the threat or threats that would cost the most to the organization."
     }
   ]
 }

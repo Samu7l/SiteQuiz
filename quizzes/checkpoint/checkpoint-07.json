@@ -235,6 +235,17 @@
         { "text": "Open a two-way communications channel to the CnC infrastructure.", "isCorrect": false }
       ],
       "explanation": "Adding services and autorun keys is a way to create a point of persistent access (back door) during the installation phase."
+    },
+    {
+      "id": "cp7-q20",
+      "question": "What type of exercise interrupts services to verify that all aspects of a business continuity plan are able to respond to a certain type of incident?",
+      "type": "single",
+      "options": [
+        { "text": "Operational exercise", "isCorrect": true },
+        { "text": "Functional test", "isCorrect": false },
+        { "text": "Tabletop exercise", "isCorrect": false }
+      ],
+      "explanation": "<b>Operational exercises</b> interrupt services to verify that the designed plans are sufficient to respond to the simulated incident."
     }
   ]
 }
