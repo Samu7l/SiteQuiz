@@ -226,6 +226,12 @@
       "title": "Final Exam - test",
       "file": "./final/final-exam-v2.json",
       "description": "Testeeeee"
+    },
+    {
+      "id": "final-v3",
+      "title": "Toute les questions",
+      "file": "./final/final-exam-v3.json",
+      "description": "Littéralement tout"
     }
   ],
 
