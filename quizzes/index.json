@@ -222,7 +222,7 @@
       "description": "L'examen standard."
     },
     {
-      "id": "final-v3",
+      "id": "final-v2",
       "title": "Final Exam - V2 (SM)",
       "file": "./final/final-exam-v2.json",
       "description": "L'examen standard."

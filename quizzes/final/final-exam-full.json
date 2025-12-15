@@ -1,7 +1,7 @@
 {
-  "id": "final-exam",
+  "id": "final-exam-full",
   "type": "checkpoint",
-  "title": "Final Exam: Network Analysis",
+  "title": "Toutes les questions",
   "passPercentage": 70,
   "questions": [
     {

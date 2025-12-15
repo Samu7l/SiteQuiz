@@ -1,7 +1,7 @@
 {
-  "id": "final-exam",
+  "id": "final-exam-v1",
   "type": "checkpoint",
-  "title": "Final Exam: Network Analysis",
+  "title": "Final Quiz - V1 (GR)",
   "passPercentage": 70,
   "questions": [
     {
