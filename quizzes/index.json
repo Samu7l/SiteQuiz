@@ -222,15 +222,15 @@
       "description": "L'examen standard."
     },
     {
-      "id": "final-v2",
-      "title": "Final Exam - test",
+      "id": "final-v3",
+      "title": "Final Exam - V2 (SM)",
       "file": "./final/final-exam-v2.json",
-      "description": "Testeeeee"
+      "description": "L'examen standard."
     },
     {
       "id": "final-v3",
       "title": "Toute les questions",
-      "file": "./final/final-exam-v3.json",
+      "file": "./final/final-exam-full.json",
       "description": "Littéralement tout"
     }
   ],

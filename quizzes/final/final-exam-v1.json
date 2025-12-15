@@ -550,7 +550,7 @@
         { "text": "CIS", "isCorrect": false },
         { "text": "SecurityNewsWire", "isCorrect": false },
         { "text": "MITRE", "isCorrect": true },
-        { "text": "SANDS", "isCorrect": false }
+        { "text": "SANS", "isCorrect": false }
       ],
       "explanation": "The <b>MITRE Corporation</b> maintains a list of common vulnerabilities and exposures (CVE) used by prominent security organizations."
     },
@@ -561,7 +561,7 @@
       "options": [
         { "text": "MITRE", "isCorrect": false },
         { "text": "CIS", "isCorrect": false },
-        { "text": "SANDS", "isCorrect": true },
+        { "text": "SANS", "isCorrect": true },
         { "text": "(ISC)2", "isCorrect": false }
       ],
       "explanation": "The <b>SysAdmin, Audit, Network, Security (SANS) Institute</b> has many resources. One of them is called <b>NewsBites</b>, the weekly digest of news articles about computer security."
